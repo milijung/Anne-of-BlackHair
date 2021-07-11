@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SwitchScene : MonoBehaviour
 {
+
     public void PlayGame()
     {
         SceneManager.LoadScene("mainGame");
@@ -18,6 +19,7 @@ public class SwitchScene : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene("Title");
+        Time.timeScale = 1;
     }
 
     public void Setting()
@@ -29,4 +31,5 @@ public class SwitchScene : MonoBehaviour
     {
         SceneManager.LoadScene("Tutorial");
     }
+
 }
