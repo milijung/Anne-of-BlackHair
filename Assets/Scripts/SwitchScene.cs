@@ -19,4 +19,14 @@ public class SwitchScene : MonoBehaviour
     {
         SceneManager.LoadScene("Title");
     }
+
+    public void Setting()
+    {
+        SceneManager.LoadScene("Setting");
+    }
+
+    public void Tutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
 }
