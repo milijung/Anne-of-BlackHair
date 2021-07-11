@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     private CharacterController controller;
     private Vector2 direction;
+    public GameObject gamePanel;
 
     private int desiredLane = 1; // 0: 왼쪽라인, 1: 중간라인, 2: 오른쪽 라인
     public float laneDisance = 1.5f;// 라인 사이의 거리
@@ -51,6 +52,11 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        controller.Move(direction * Time.fixedDeltaTime);    
+        controller.Move(direction * Time.fixedDeltaTime);
+        if (Input.GetKey(KeyCode.Escape)) // 스마트폰 뒤로가기 버튼 눌렀을 때
+        {
+            Time.timeScale = 0; // 일시정지
+            gamePanel.SetActive(true); // 패널 보이기
+        }
     }
 }
