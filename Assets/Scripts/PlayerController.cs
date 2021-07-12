@@ -6,11 +6,10 @@ public class PlayerController : MonoBehaviour
 {
     private CharacterController controller;
     private Vector2 direction;
-    public GameObject gamePanel;
+    public GameObject gamePanel, fadeSprite;
 
     private int desiredLane = 1; // 0: 왼쪽라인, 1: 중간라인, 2: 오른쪽 라인
     public float laneDisance = 1.5f;// 라인 사이의 거리
-
 
     private void Start()
     {
@@ -57,6 +56,7 @@ public class PlayerController : MonoBehaviour
         {
             Time.timeScale = 0; // 일시정지
             gamePanel.SetActive(true); // 패널 보이기
+            fadeSprite.SetActive(true);
         }
     }
 }
