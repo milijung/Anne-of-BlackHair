@@ -56,7 +56,6 @@ public class PlayerController : MonoBehaviour
         {
             gamePanel.SetActive(true); // 패널 보이기
             fadeSprite.SetActive(true);
-            StopCoroutine(GameManager.AddScore());
             Time.timeScale = 0; // 일시정지
         }
     }
