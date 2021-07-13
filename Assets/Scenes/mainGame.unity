@@ -1451,6 +1451,7 @@ GameObject:
   - component: {fileID: 1802883850}
   - component: {fileID: 1802883849}
   - component: {fileID: 1802883848}
+  - component: {fileID: 1802883853}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1575,6 +1576,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1802883853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802883847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a6defe42a08da14a9f5107323ef1fdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreTxt: {fileID: 1877968040}
 --- !u!1 &1855333124
 GameObject:
   m_ObjectHideFlags: 0
@@ -1728,7 +1742,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 50
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 50
@@ -1738,7 +1752,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Score
+  m_Text: 0
 --- !u!222 &1877968041
 CanvasRenderer:
   m_ObjectHideFlags: 0
