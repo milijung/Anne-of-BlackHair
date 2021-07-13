@@ -20,7 +20,5 @@ public class ButtonManager : MonoBehaviour
         Time.timeScale = 1;
         gamePanel.SetActive(false);
         fadeSprite.SetActive(false);
-        StartCoroutine(GameManager.AddScore());
-        
     }
 }
