@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SwitchSceneManager : MonoBehaviour
+public class SwitchScene : MonoBehaviour // 씬 전환함수가 모여있는 class
 {
-
     public void PlayGame()
     {
         SceneManager.LoadScene("mainGame");
@@ -31,5 +30,4 @@ public class SwitchSceneManager : MonoBehaviour
     {
         SceneManager.LoadScene("Tutorial");
     }
-
 }

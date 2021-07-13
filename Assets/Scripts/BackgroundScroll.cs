@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class BackgroundScroll : MonoBehaviour
 {
-    Material mat;
-    float current_Y = 0;
-    public float speed;
+    Material mat; // Material 인스턴스
+    float current_Y = 0; // 배경 이미지의 Y좌표
+    public float speed; // 배경 이미지의 스크롤 속도
     void Start()
     {
         mat = GetComponent<SpriteRenderer>().material; 

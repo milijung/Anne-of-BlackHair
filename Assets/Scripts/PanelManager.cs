@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PanelController : MonoBehaviour
+public class PanelManager : MonoBehaviour
 {
     public GameObject gamePanel;
     public GameObject fadeSprite;
