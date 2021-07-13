@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     {
         GamePlay();
     }
-    private void Update()
+    private void FixedUpdate()
     {
         scoreTxt.text = score.ToString(); // score 값을 Text 내용으로
     }
