@@ -54,9 +54,10 @@ public class PlayerController : MonoBehaviour
         controller.Move(direction * Time.fixedDeltaTime);
         if (Input.GetKey(KeyCode.Escape)) // 스마트폰 뒤로가기 버튼 눌렀을 때
         {
-            Time.timeScale = 0; // 일시정지
             gamePanel.SetActive(true); // 패널 보이기
             fadeSprite.SetActive(true);
+            StopCoroutine(GameManager.AddScore());
+            Time.timeScale = 0; // 일시정지
         }
     }
 }
