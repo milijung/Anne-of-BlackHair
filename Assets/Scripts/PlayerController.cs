@@ -56,7 +56,11 @@ public class PlayerController : MonoBehaviour
         {
             gamePanel.SetActive(true); // 패널 보이기
             fadeSprite.SetActive(true);
+<<<<<<< Updated upstream
             StopCoroutine(GameManager.AddScore());
+=======
+            StopCoroutine(GameManager.AddScore()); 
+>>>>>>> Stashed changes
             Time.timeScale = 0; // 일시정지
         }
     }

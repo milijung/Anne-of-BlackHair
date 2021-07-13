@@ -12,6 +12,7 @@ public class ButtonManager : MonoBehaviour
     {
         gamePanel.SetActive(true);
         fadeSprite.SetActive(true);
+        StopCoroutine(GameManager.AddScore());
         Time.timeScale = 0;
     }
     public void Continue() // 다시 게임 시작 버튼 눌렀을 때
