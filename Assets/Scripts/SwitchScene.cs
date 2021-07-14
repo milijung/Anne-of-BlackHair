@@ -10,7 +10,11 @@ public class SwitchScene : MonoBehaviour // 씬 전환함수가 모여있는 class
     {
         SceneManager.LoadScene("mainGame");
     }
-    
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     public void MainMenu()
     {
         SceneManager.LoadScene("Title");

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ButtonManager : MonoBehaviour
 {
     public GameObject gamePanel; // 패널 인스턴스
+    public GameObject exitPanel;
     public GameObject fadeSprite; // 패널 제외한 화면부분 어두워지게 하는 역할
 
     public GameObject BackgroundMusic;
@@ -35,6 +36,7 @@ public class ButtonManager : MonoBehaviour
     public void Home()
     {
         gamePanel.SetActive(false);
+        exitPanel.SetActive(false);
         fadeSprite.SetActive(false);
     }
 
