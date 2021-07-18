@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
         scoreTxt.text = score.ToString(); // score 값을 Text 내용으로
     }
 
-    public static IEnumerator AddScore()
+    public IEnumerator AddScore()
     {
         while (Time.timeScale == 1) // 게임이 진행중이면
         {
