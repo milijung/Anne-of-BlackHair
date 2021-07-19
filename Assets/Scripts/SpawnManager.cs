@@ -10,7 +10,10 @@ public class SpawnManager : MonoBehaviour
 
     public float startNum, finalNum; // mob 등장간의 시간 간격. startNum: 최소 시간 간격, finalNum: 최대 시간 간격
 
-
+    void Awake()
+    {
+        MobStartNum = 0;
+    }
     private void Start()
     {
         StartCoroutine(CreateMob());

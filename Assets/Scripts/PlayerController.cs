@@ -11,9 +11,21 @@ public class PlayerController : MonoBehaviour
     private int desiredLane = 1; // 0: 왼쪽라인, 1: 중간라인, 2: 오른쪽 라인
     public float laneDisance = 1.5f;// 라인 사이의 거리
 
+    public GameObject stepSound;
+    AudioSource stepAudio;
+
     private void Start()
     {
         controller = GetComponent<CharacterController>();
+        stepAudio = stepSound.GetComponent<AudioSource>();
+        if (MainMenu.AudioPlay)
+        {
+            stepAudio.Play();
+        }
+        else
+        {
+            stepAudio.Pause();
+        }
     }
 
     private void Update()

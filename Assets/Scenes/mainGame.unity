@@ -1627,7 +1627,7 @@ GameObject:
   - component: {fileID: 998696762}
   - component: {fileID: 998696761}
   m_Layer: 0
-  m_Name: Audio
+  m_Name: StepAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1646,7 +1646,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: ac9f34f4ea0fbce4b9321fd2486344d9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 0.5
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -2730,7 +2730,8 @@ MonoBehaviour:
   gamePanel: {fileID: 1855333124}
   exitPanel: {fileID: 0}
   fadeSprite: {fileID: 338657894}
-  BackgroundMusic: {fileID: 998696760}
+  BackgroundMusic: {fileID: 0}
+  stepSound: {fileID: 998696760}
   audioButton: {fileID: 0}
   SoundOnImage: {fileID: 0}
   SoundOffImage: {fileID: 0}
@@ -2953,6 +2954,7 @@ MonoBehaviour:
   gamePanel: {fileID: 1855333124}
   fadeSprite: {fileID: 338657894}
   laneDisance: 1.4
+  stepSound: {fileID: 998696760}
 --- !u!143 &1802883849
 CharacterController:
   m_ObjectHideFlags: 0
