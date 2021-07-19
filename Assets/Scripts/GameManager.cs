@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
             return;
         }
         instance = this;
+
+        SpawnManager.MobStartNum = 0;
     }
     #endregion
     private void Start()
@@ -43,6 +45,7 @@ public class GameManager : MonoBehaviour
     public void GamePlay()
     {
         score = -1;
+        SpawnManager.MobStartNum = 0;
         StartCoroutine(AddScore()); // score++ ½ÇÇà
     }
     public void GameOver()
