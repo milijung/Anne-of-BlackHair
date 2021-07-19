@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bdddcac71d6c1f64db2be0294def019a
+guid: 8924253b2dcebca41a88fc9f58181da5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 33106449693902612
-    second: rumor_in_0
+      213: 7635013726552783190
+    second: home_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -49,7 +49,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 7
+  spritePixelsToUnits: 77
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rumor_in_0
+      name: home_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 11
-        width: 42
-        height: 7
+        x: 6
+        y: 3
+        width: 77
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,8 +120,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41787cdf32e957000800000000000000
-      internalID: 33106449693902612
+      spriteID: 659f862488405f960800000000000000
+      internalID: 7635013726552783190
       vertices: []
       indices: 
       edges: []
