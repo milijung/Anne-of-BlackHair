@@ -19,7 +19,7 @@ public class ItemBase : MonoBehaviour
             gameObject.SetActive(true);
         }
         #region position X
-        LineNum = Random.Range(0, 3);
+        LineNum = (int)Random.Range(0, 3);
         if(LineNum == 0)
         {
             posX = -1.4f;

@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
 {
     public Text scoreTxt; // 점수 Text
     public static int score = -1;
-    public static float AddScoreNum = 0.1f; // 몇초단위로 점수를 1씩 더할 것인지 결정
 
     public float gameSpeed;
     #region instance
@@ -38,7 +37,7 @@ public class GameManager : MonoBehaviour
         while (Time.timeScale == 1) // 게임이 진행중이면
         {
             score++;
-            yield return new WaitForSeconds(AddScoreNum);
+            yield return new WaitForSeconds(gameSpeed); // 게임 속도 단위로 점수를 더함
         }
     }
 
