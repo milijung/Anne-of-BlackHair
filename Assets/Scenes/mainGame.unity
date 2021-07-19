@@ -2132,8 +2132,8 @@ MonoBehaviour:
   - {fileID: 1348553451}
   - {fileID: 1106300840}
   - {fileID: 1250011934}
-  startNum: 1
-  finalNum: 3
+  startNum_Create: 1
+  finalNum_Create: 2
 --- !u!4 &1310858858
 Transform:
   m_ObjectHideFlags: 0

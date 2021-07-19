@@ -20,6 +20,7 @@ public class MainMenu: MonoBehaviour
 
     private void Awake()
     {
+        SpawnManager.MobStartNum = 0;
         buttonImage = audioButton.GetComponent<Image>();
         if (AudioPlay == true) //  오디오가 켜져있으면
         {
