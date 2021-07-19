@@ -2,70 +2,91 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// Controll Script for Item
-
 public class ItemController : MonoBehaviour
 {
+    Slot item_slot;
+    Item item;
+
     // Start is called before the first frame update
     void Start()
     {
-        Slot slot = new Slot();
-        slot.init();
+        item_slot = new Slot();
+        item_slot.slot_init();
+        //_get_new_item_on_the_road();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        // if anne gets new item
-        //      check the stack (item_slot)
-        if (!slot.full())
-        {
-            item_type new_item = slot.new_random_item();
-            int item_number = slot.item_stack.Count++;
+        //_get_new_item_on_the_road();
+        //_use_item_in_the_slot();
+    }
 
-            if (new_item == Slot.item_type.red_wig)
+    void _get_new_item_on_the_road()
+    {
+        // Check the slot 
+        if (!item_slot.full())
+        {
+            item = new Item();
+            Item.item_type typetype = item.new_random_item(item_slot);
+            
+            if (typetype == Item.item_type.red_wig)
             {
-                Debug.Log("red wig");
-                // item slot UI 
-                // add new_item to ( item_number slot ) 
+                Debug.Log("GET RED WIG");
             }
-            else if (new_item == Slot.item_type.slate)
+            else if (typetype == Item.item_type.slate)
             {
-                Debug.Log("slate");
-                // item slot UI 
-                // add new_item to ( item_number slot ) 
+                Debug.Log("GET SLATE");
             }
-            else if (new_item == Slot.item_type.hat)
+            else if (typetype == Item.item_type.hat)
             {
-                Debug.Log("hat");
-                // item slot UI 
-                // add new_item to ( item_number slot ) 
+                Debug.Log("GET HAT");
             }
-            else if (new_item == Slot.item_type.snail)
+            else if (typetype == Item.item_type.snail)
             {
-                Debug.Log("snail");
-                // item slot UI 
-                // add new_item to ( item_number slot ) 
+                Debug.Log("GET SNAIL");
             }
-            else if (new_item == Slot.item_type.eraser)
+            else if (typetype == Item.item_type.eraser)
             {
-                Debug.Log("eraser");
-                // item slot UI 
-                // add new_item to ( item_number slot ) 
+                Debug.Log("GET ERASER");
             }
         }
-        
-        // if anne uses item
-        //      check the stack is not empty
-        //      if (!empty(item_slot))
-        //          slot.use_item()
+    }
 
+    void _use_item_in_the_slot()
+    {
+        // Check the slot
+        if (!item_slot.empty() && !item_slot.full())
+        {
+            Item.item_type typetype = (Item.item_type) item_slot.stack.Pop();
+            if (typetype == Item.item_type.red_wig)
+            {
+                Debug.Log("USE RED WIG");
+            }
+            else if (typetype == Item.item_type.slate)
+            {
+                Debug.Log("USE SLATE");
+            }
+            else if (typetype == Item.item_type.hat)
+            {
+                Debug.Log("USE HAT");
+            }
+            else if (typetype == Item.item_type.snail)
+            {
+                Debug.Log("USE SNAIL");
+            }
+            else if (typetype == Item.item_type.eraser)
+            {
+                Debug.Log("USE ERASER");
+            }
+        }
     }
 }
 
-public class Slot
+public class Item
 {
-    enum item_type
+    public enum item_type
     {
         red_wig,
         slate,
@@ -74,45 +95,39 @@ public class Slot
         eraser
     }
 
-    Stack<int> item_stack;
-
-    public void init()
+    public item_type new_random_item(Slot slot)
     {
-        item_stack = new Stack<int>();
+        item_type new_item;
+        new_item = (item_type)Random.Range(0,4);
+
+        // store new item in slot
+        slot.stack.Push((int)new_item);
+    
+        return new_item;
+    }
+}
+
+public class Slot
+{
+    public Stack<int> stack;
+
+    public void slot_init()
+    {
+        stack = new Stack<int>();
     }
 
-    bool empty()
+    public int item_have()
     {
-        if (item_stack.Count == 0)
-            return true;
-        else return false;
+        return stack.Count;
     }
 
-    bool full()
+    public bool empty()
     {
-        if (item_stack.Count == 2)
-            return true;
-        else return false;
+        return (stack.Count == 0);
     }
 
-    item_type new_random_item()
+    public bool full()
     {
-        // randomly initialize type
-        item_type itemitem = new item_type();
-        
-        /*
-        Random rand = new Random();
-        int random = rand.Next(5); // 0~4
-        */
-        itemitem = randomEnum(Slot.item_type);
-
-        item_stack.Push((int)itemitem);
-
-        return itemitem;
-    }
-
-    void use_item()
-    {
-        int item_pop = item_stack.Pop();
+        return (stack.Count == 2);
     }
 }
