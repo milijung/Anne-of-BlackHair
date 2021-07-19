@@ -8,6 +8,20 @@ public class GameManager : MonoBehaviour
     public Text scoreTxt; // 점수 Text
     public static int score = -1;
     public static float AddScoreNum = 0.1f; // 몇초단위로 점수를 1씩 더할 것인지 결정
+
+    public float gameSpeed;
+    #region instance
+    public static GameManager instance;
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        instance = this;
+    }
+    #endregion
     private void Start()
     {
         GamePlay();
@@ -35,4 +49,7 @@ public class GameManager : MonoBehaviour
     {
         StopCoroutine(AddScore()); // score++ 멈춤
     }
+
+
+
 }

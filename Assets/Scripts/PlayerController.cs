@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        transform.Translate(Vector2.up* Time.deltaTime * GameManager.instance.gameSpeed);
         // 입력된 swipe에 따라 라인번호 결정
         if (SwipeManager.swipeRight) // 만약 오른쪽으로 스와이프했다면
         {
