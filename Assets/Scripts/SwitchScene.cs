@@ -25,4 +25,8 @@ public class SwitchScene : MonoBehaviour // 씬 전환함수가 모여있는 class
     {
         SceneManager.LoadScene("Tutorial");
     }
+    public void LoadScene()
+    {
+        SceneManager.LoadScene("Loading");
+    }
 }
