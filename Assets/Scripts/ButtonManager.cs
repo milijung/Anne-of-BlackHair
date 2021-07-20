@@ -11,6 +11,9 @@ public class ButtonManager : MonoBehaviour
 
     public GameObject BackgroundMusic;
     AudioSource backmusic;
+    public GameObject stepSound;
+    AudioSource stepAudio;
+
     public Button audioButton;
     Image buttonImage;
     public Sprite SoundOnImage;
@@ -21,12 +24,24 @@ public class ButtonManager : MonoBehaviour
         gamePanel.SetActive(true);
         fadeSprite.SetActive(true);
         Time.timeScale = 0;
+
+        stepAudio = stepSound.GetComponent<AudioSource>();
+        if (MainMenu.AudioPlay)
+        {
+            stepAudio.Pause();
+        }
     }
     public void Continue() // 다시 게임 시작 버튼 눌렀을 때
     {
         Time.timeScale = 1;
         gamePanel.SetActive(false);
         fadeSprite.SetActive(false);
+
+        stepAudio = stepSound.GetComponent<AudioSource>();
+        if (MainMenu.AudioPlay)
+        {
+            stepAudio.Play();
+        }
     }
     public void Setting()
     {

@@ -11,13 +11,26 @@ public class PlayerController : MonoBehaviour
     private int desiredLane = 1; // 0: 왼쪽라인, 1: 중간라인, 2: 오른쪽 라인
     public float laneDisance = 1.5f;// 라인 사이의 거리
 
+    public GameObject stepSound;
+    AudioSource stepAudio;
+
     private void Start()
     {
         controller = GetComponent<CharacterController>();
+        stepAudio = stepSound.GetComponent<AudioSource>();
+        if (MainMenu.AudioPlay)
+        {
+            stepAudio.Play();
+        }
+        else
+        {
+            stepAudio.Pause();
+        }
     }
 
     private void Update()
     {
+        transform.Translate(Vector2.up* Time.deltaTime * GameManager.instance.gameSpeed);
         // 입력된 swipe에 따라 라인번호 결정
         if (SwipeManager.swipeRight) // 만약 오른쪽으로 스와이프했다면
         {
@@ -54,6 +67,7 @@ public class PlayerController : MonoBehaviour
         controller.Move(direction * Time.fixedDeltaTime);
         if (Input.GetKey(KeyCode.Escape)) // 스마트폰 뒤로가기 버튼 눌렀을 때
         {
+            stepAudio.Pause();
             gamePanel.SetActive(true); // 패널 보이기
             fadeSprite.SetActive(true);
             Time.timeScale = 0; // 일시정지
