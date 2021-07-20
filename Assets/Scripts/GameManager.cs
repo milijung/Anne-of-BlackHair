@@ -50,6 +50,8 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         StopCoroutine(AddScore()); // score++ ∏ÿ√„
+        Debug.Log("Game Over!");
+
     }
 
 
