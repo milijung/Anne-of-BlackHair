@@ -86,7 +86,6 @@ public class GameManager : MonoBehaviour
     {
         isPlay = false;
         StopCoroutine(AddScore()); // score++ ∏ÿ√„
-
         finalScore.text = score.ToString();
         GameOverPanel.SetActive(true);
         fadeSprite.SetActive(true);
@@ -99,8 +98,6 @@ public class GameManager : MonoBehaviour
             backmusic.Pause();
             stepAudio.Pause();
         }
-
-
 
     }
 
