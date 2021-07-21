@@ -11,21 +11,16 @@ public class PlayerController : MonoBehaviour
     private int desiredLane = 1; // 0: 왼쪽라인, 1: 중간라인, 2: 오른쪽 라인
     public float laneDisance = 1.5f;// 라인 사이의 거리
 
+    public GameObject BackgroundMusic;
+    AudioSource backmusic;
     public GameObject stepSound;
     AudioSource stepAudio;
 
     private void Start()
     {
         controller = GetComponent<CharacterController>();
+        backmusic = BackgroundMusic.GetComponent<AudioSource>();
         stepAudio = stepSound.GetComponent<AudioSource>();
-        if (MainMenu.AudioPlay)
-        {
-            stepAudio.Play();
-        }
-        else
-        {
-            stepAudio.Pause();
-        }
     }
 
     private void Update()
@@ -68,6 +63,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.Escape)) // 스마트폰 뒤로가기 버튼 눌렀을 때
         {
             stepAudio.Pause();
+            backmusic.Pause();
             gamePanel.SetActive(true); // 패널 보이기
             fadeSprite.SetActive(true);
             Time.timeScale = 0; // 일시정지

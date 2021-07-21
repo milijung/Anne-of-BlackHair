@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PanelManager : MonoBehaviour
 {
-    public GameObject gamePanel;
+    public GameObject stopPanel;
+    public GameObject GameOverPanel;
     public GameObject fadeSprite;
 
     void Start()
     {
-        gamePanel.SetActive(false); // ÆÐ³Î ¼û±â±â
+        stopPanel.SetActive(false); // ÆÐ³Î ¼û±â±â
+        GameOverPanel.SetActive(false);
         fadeSprite.SetActive(false);
     }
 

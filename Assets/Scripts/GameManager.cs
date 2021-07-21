@@ -5,8 +5,20 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public static bool isPlay;
+
     public Text scoreTxt; // 점수 Text
-    public static int score = -1;
+    public static int score = 0;
+
+    public GameObject GameOverPanel;
+    public GameObject fadeSprite;
+    public Text finalScore;
+    public GameObject player;
+
+    public GameObject BackgroundMusic;
+    AudioSource backmusic;
+    public GameObject stepSound;
+    AudioSource stepAudio;
 
     public float gameSpeed;
     #region instance
@@ -19,8 +31,6 @@ public class GameManager : MonoBehaviour
             return;
         }
         instance = this;
-
-        SpawnManager.MobStartNum = 0;
     }
     #endregion
     private void Start()
@@ -30,11 +40,16 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         scoreTxt.text = score.ToString(); // score 값을 Text 내용으로
+        if (Input.GetKey(KeyCode.S))
+        {
+            GameOver();
+        }
     }
+
 
     public IEnumerator AddScore()
     {
-        while (Time.timeScale == 1) // 게임이 진행중이면
+        while (Time.timeScale == 1 && isPlay == true) // 게임이 진행중이면
         {
             score++;
             yield return new WaitForSeconds(gameSpeed); // 게임 속도 단위로 점수를 더함
@@ -43,13 +58,45 @@ public class GameManager : MonoBehaviour
 
     public void GamePlay()
     {
-        score = -1;
+        score = 0;
+        isPlay = true;
+        scoreTxt.text = string.Empty;
+        scoreTxt.gameObject.SetActive(true);
+        player.SetActive(true);
+
         SpawnManager.MobStartNum = 0;
         StartCoroutine(AddScore()); // score++ 실행
+
+        backmusic = BackgroundMusic.GetComponent<AudioSource>();
+        stepAudio = stepSound.GetComponent<AudioSource>();
+        if (MainMenu.AudioPlay)
+        {
+            backmusic.Play();
+            stepAudio.Play();
+        }
+        else
+        {
+            backmusic.Pause();
+            stepAudio.Pause();
+        }
     }
     public void GameOver()
     {
+        isPlay = false;
         StopCoroutine(AddScore()); // score++ 멈춤
+        finalScore.text = score.ToString();
+        GameOverPanel.SetActive(true);
+        fadeSprite.SetActive(true);
+        scoreTxt.gameObject.SetActive(false);
+        player.SetActive(false);
+
+        backmusic = BackgroundMusic.GetComponent<AudioSource>();
+        stepAudio = stepSound.GetComponent<AudioSource>();
+        if (MainMenu.AudioPlay)
+        {
+            backmusic.Pause();
+            stepAudio.Pause();
+        }
     }
 
 

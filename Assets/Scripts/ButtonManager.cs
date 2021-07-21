@@ -25,9 +25,11 @@ public class ButtonManager : MonoBehaviour
         fadeSprite.SetActive(true);
         Time.timeScale = 0;
 
+        backmusic = BackgroundMusic.GetComponent<AudioSource>();
         stepAudio = stepSound.GetComponent<AudioSource>();
         if (MainMenu.AudioPlay)
         {
+            backmusic.Pause();
             stepAudio.Pause();
         }
     }
@@ -37,9 +39,11 @@ public class ButtonManager : MonoBehaviour
         gamePanel.SetActive(false);
         fadeSprite.SetActive(false);
 
+        backmusic = BackgroundMusic.GetComponent<AudioSource>();
         stepAudio = stepSound.GetComponent<AudioSource>();
         if (MainMenu.AudioPlay)
         {
+            backmusic.Play();
             stepAudio.Play();
         }
     }
