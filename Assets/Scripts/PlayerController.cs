@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
         controller = GetComponent<CharacterController>();
         backmusic = BackgroundMusic.GetComponent<AudioSource>();
         stepAudio = stepSound.GetComponent<AudioSource>();
+
     }
 
     private void Update()

@@ -27,11 +27,10 @@ public class ButtonManager : MonoBehaviour
 
         backmusic = BackgroundMusic.GetComponent<AudioSource>();
         stepAudio = stepSound.GetComponent<AudioSource>();
-        if (MainMenu.AudioPlay)
-        {
-            backmusic.Pause();
-            stepAudio.Pause();
-        }
+
+        backmusic.Pause();
+        stepAudio.Pause();
+
     }
     public void Continue() // 다시 게임 시작 버튼 눌렀을 때
     {

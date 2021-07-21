@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject fadeSprite;
     public Text finalScore;
     public GameObject player;
+    public GameObject AnneCry;
 
     public GameObject BackgroundMusic;
     AudioSource backmusic;
@@ -25,6 +26,8 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     private void Awake()
     {
+        backmusic = BackgroundMusic.GetComponent<AudioSource>();
+        stepAudio = stepSound.GetComponent<AudioSource>();
         if (instance != null)
         {
             Destroy(gameObject);
@@ -67,9 +70,7 @@ public class GameManager : MonoBehaviour
         SpawnManager.MobStartNum = 0;
         StartCoroutine(AddScore()); // score++ ½ÇÇà
 
-        backmusic = BackgroundMusic.GetComponent<AudioSource>();
-        stepAudio = stepSound.GetComponent<AudioSource>();
-        if (MainMenu.AudioPlay)
+        if (MainMenu.AudioPlay == true)
         {
             backmusic.Play();
             stepAudio.Play();
@@ -79,6 +80,7 @@ public class GameManager : MonoBehaviour
             backmusic.Pause();
             stepAudio.Pause();
         }
+
     }
     public void GameOver()
     {
@@ -89,16 +91,17 @@ public class GameManager : MonoBehaviour
         fadeSprite.SetActive(true);
         scoreTxt.gameObject.SetActive(false);
         player.SetActive(false);
+        AnneCry.SetActive(true);
 
-        backmusic = BackgroundMusic.GetComponent<AudioSource>();
-        stepAudio = stepSound.GetComponent<AudioSource>();
-        if (MainMenu.AudioPlay)
+        if (MainMenu.AudioPlay == true)
         {
             backmusic.Pause();
             stepAudio.Pause();
         }
+
     }
 
 
 
 }
+

@@ -30,7 +30,6 @@ public class MainMenu: MonoBehaviour
             else
             {
                 backmusic.Play();
-                //DontDestroyOnLoad(BackgroundMusic); // 배경음악 계속 재생
             }
         }
         else // 오디오가 꺼져있으면
