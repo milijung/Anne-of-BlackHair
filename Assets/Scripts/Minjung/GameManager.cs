@@ -43,10 +43,6 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         scoreTxt.text = score.ToString(); // score 값을 Text 내용으로
-        if (Input.GetKey(KeyCode.S))
-        {
-            GameOver();
-        }
     }
 
 
