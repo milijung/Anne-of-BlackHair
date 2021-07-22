@@ -15,6 +15,7 @@ public class PanelManager : MonoBehaviour
         GameOverPanel.SetActive(false);
         fadeSprite.SetActive(false);
         AnneCry.SetActive(false);
+
     }
 
 }

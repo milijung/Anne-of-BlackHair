@@ -471,7 +471,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 17.505997, y: 0}
-  m_SizeDelta: {x: -35.033, y: 0}
+  m_SizeDelta: {x: -35.03, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &104141083
 GameObject:
@@ -874,7 +874,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -280, y: -100}
+  m_AnchoredPosition: {x: -260, y: -100}
   m_SizeDelta: {x: 300, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &326959770
@@ -1531,9 +1531,9 @@ RectTransform:
   - {fileID: 1801218964}
   - {fileID: 1861992977}
   - {fileID: 326959769}
+  - {fileID: 642800339}
   - {fileID: 1455731836}
   - {fileID: 1622547909}
-  - {fileID: 642800339}
   - {fileID: 485285893}
   - {fileID: 15976789}
   m_Father: {fileID: 0}
@@ -1879,7 +1879,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1538091325}
-        m_TargetAssemblyTypeName: PanelButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
         m_MethodName: Continue
         m_Mode: 1
         m_Arguments:
@@ -2004,11 +2004,11 @@ RectTransform:
   m_LocalScale: {x: 1.0005332, y: 1.0005332, z: 1.0005332}
   m_Children: []
   m_Father: {fileID: 485988662}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 110, y: -100}
+  m_AnchoredPosition: {x: 110, y: -99.99994}
   m_SizeDelta: {x: 140, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &642800340
@@ -2033,11 +2033,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 3664b7e6f3585614a952503a2c270e21, type: 3}
-    m_FontSize: 100
+    m_FontSize: 80
     m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 5
-    m_MaxSize: 100
+    m_MaxSize: 80
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -2754,8 +2754,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 2.3896484, y: -0.02999878}
-  m_SizeDelta: {x: -4.77, y: 13.56}
+  m_AnchoredPosition: {x: 2.5299988, y: 0.10999966}
+  m_SizeDelta: {x: -5.05, y: 8.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &983332888
 GameObject:
@@ -3381,7 +3381,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -60, y: -100}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1153653886
 MonoBehaviour:
@@ -4129,7 +4129,7 @@ RectTransform:
   m_LocalScale: {x: 1.0005332, y: 1.0005332, z: 1.0005332}
   m_Children: []
   m_Father: {fileID: 485988662}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4370,7 +4370,7 @@ RectTransform:
   - {fileID: 584259081}
   - {fileID: 759136985}
   m_Father: {fileID: 485988662}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4704,8 +4704,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -60, y: 100}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -100, y: 110}
+  m_SizeDelta: {x: 130, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1801218965
 MonoBehaviour:
@@ -5011,8 +5011,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 160, y: -250}
-  m_SizeDelta: {x: 280, y: 140}
+  m_AnchoredPosition: {x: 200, y: -240}
+  m_SizeDelta: {x: 340, y: 170}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1861992978
 MonoBehaviour:
@@ -5392,6 +5392,9 @@ MonoBehaviour:
   finalScore: {fileID: 1958780223}
   player: {fileID: 104141083}
   AnneCry: {fileID: 1011398746}
+  rumor: {fileID: 326959770}
+  itemSlot: {fileID: 1861992976}
+  itemButton: {fileID: 1801218963}
   BackgroundMusic: {fileID: 330983559}
   stepSound: {fileID: 998696760}
   gameSpeed: 0.3

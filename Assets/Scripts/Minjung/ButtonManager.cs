@@ -25,13 +25,12 @@ public class ButtonManager : MonoBehaviour
         fadeSprite.SetActive(true);
         Time.timeScale = 0;
         GameManager.isPlay = false;
-
+        
         backmusic = BackgroundMusic.GetComponent<AudioSource>();
         stepAudio = stepSound.GetComponent<AudioSource>();
 
         backmusic.Pause();
         stepAudio.Pause();
-
     }
     public void Continue() // 다시 게임 시작 버튼 눌렀을 때
     {
@@ -47,6 +46,8 @@ public class ButtonManager : MonoBehaviour
             backmusic.Play();
             stepAudio.Play();
         }
+
+
     }
     public void Setting()
     {

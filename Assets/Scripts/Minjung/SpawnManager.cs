@@ -21,24 +21,27 @@ public class SpawnManager : MonoBehaviour
         yield return new WaitForSeconds(3f); // 시작하고 3초 후부터 Mob 등장
         while (true)
         {
-            if (MobCreateNum != ItemCreateTerm)
+            if (GameManager.isPlay)
             {
-                SideMobs[DeactiveMob()].SetActive(true); // 비활성화된 Mob들 중에서 1개를 활성화
-                yield return new WaitForSeconds(Random.Range(startNum_Create, finalNum_Create));
-                MobCreateNum++;
-            }
-            else
-            {
-                Item[DeactiveItem()].SetActive(true); // 비활성화된 Item들 중에서 1개를 활성화
-                yield return new WaitForSeconds(Random.Range(0.4f, 0.7f)); // 아이템이 생성된 후, 0.4초-0.7초 지나고 바로 Mob이 생성
-                SideMobs[DeactiveMob()].SetActive(true);
-                yield return new WaitForSeconds(Random.Range(startNum_Create, finalNum_Create));
-                ItemCreateTerm = Random.Range(3, 6); // 새로운 ItemCreateTerm 정하기
-                MobCreateNum = 0;
-            }
-            if (MobStartNum == 0)
-            {
-                MobStartNum++;
+                if (MobCreateNum != ItemCreateTerm)
+                {
+                    SideMobs[DeactiveMob()].SetActive(true); // 비활성화된 Mob들 중에서 1개를 활성화
+                    yield return new WaitForSeconds(Random.Range(startNum_Create, finalNum_Create));
+                    MobCreateNum++;
+                }
+                else
+                {
+                    Item[DeactiveItem()].SetActive(true); // 비활성화된 Item들 중에서 1개를 활성화
+                    yield return new WaitForSeconds(Random.Range(0.4f, 0.7f)); // 아이템이 생성된 후, 0.4초-0.7초 지나고 바로 Mob이 생성
+                    SideMobs[DeactiveMob()].SetActive(true);
+                    yield return new WaitForSeconds(Random.Range(startNum_Create, finalNum_Create));
+                    ItemCreateTerm = Random.Range(3, 6); // 새로운 ItemCreateTerm 정하기
+                    MobCreateNum = 0;
+                }
+                if (MobStartNum == 0)
+                {
+                    MobStartNum++;
+                }
             }
         }
     }
