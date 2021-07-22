@@ -24,6 +24,7 @@ public class ButtonManager : MonoBehaviour
         gamePanel.SetActive(true);
         fadeSprite.SetActive(true);
         Time.timeScale = 0;
+        GameManager.isPlay = false;
 
         backmusic = BackgroundMusic.GetComponent<AudioSource>();
         stepAudio = stepSound.GetComponent<AudioSource>();
@@ -37,6 +38,7 @@ public class ButtonManager : MonoBehaviour
         Time.timeScale = 1;
         gamePanel.SetActive(false);
         fadeSprite.SetActive(false);
+        GameManager.isPlay = true;
 
         backmusic = BackgroundMusic.GetComponent<AudioSource>();
         stepAudio = stepSound.GetComponent<AudioSource>();
@@ -51,7 +53,7 @@ public class ButtonManager : MonoBehaviour
         gamePanel.SetActive(true);
         fadeSprite.SetActive(true);
     }
-    public void Home()
+    public void Home() // MainMenu PanelÀÇ home ¹öÆ°
     {
         gamePanel.SetActive(false);
         exitPanel.SetActive(false);
