@@ -8,6 +8,7 @@ public class PanelManager : MonoBehaviour
     public GameObject GameOverPanel;
     public GameObject fadeSprite;
     public GameObject AnneCry;
+    public GameObject[] Count;
 
     void Start()
     {
@@ -15,7 +16,10 @@ public class PanelManager : MonoBehaviour
         GameOverPanel.SetActive(false);
         fadeSprite.SetActive(false);
         AnneCry.SetActive(false);
-
+        for(int i = 0; i < Count.Length; i++)
+        {
+            Count[i].SetActive(false);
+        }
     }
 
 }

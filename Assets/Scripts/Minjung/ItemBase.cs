@@ -35,13 +35,16 @@ public class ItemBase : MonoBehaviour
         #endregion
         transform.position = new Vector2(posX,8);
     }
+
     private void Update()
     {
-
-        transform.Translate(Vector2.down * Time.deltaTime * GameManager.instance.gameSpeed * 12);
-        if (transform.position.y < -8) // 화면 끝까지 Mob이 이동하면 해당 Mob 비활성화
+        if (GameManager.isPlay || GameManager.gameOver)
         {
-            gameObject.SetActive(false);
+            transform.Translate(Vector2.down * Time.deltaTime * GameManager.instance.gameSpeed * 12);
+            if (transform.position.y < -8) // 화면 끝까지 Mob이 이동하면 해당 Mob 비활성화
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
 }

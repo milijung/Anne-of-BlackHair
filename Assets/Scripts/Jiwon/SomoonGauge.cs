@@ -27,15 +27,15 @@ public class SomoonGauge : MonoBehaviour
     {
         //게임진행시간 업데이트
         realTime = Time.time - startTime;
-        SomoonCtrl();
-        /*if (Input.GetKey(KeyCode.P) && GameManager.isPlay == true)
+        //SomoonCtrl();
+        if (Input.GetKey(KeyCode.P) && GameManager.isPlay == true)
         {
             somoonGauge += 1;
         }
         if (somoonGauge >= 100.0f)
         {
             gameManager.GameOver();
-        }*/ //소문게이지 테스트용 코드. 키보드 P를 누르면 소문게이지가 올라감
+        } //소문게이지 테스트용 코드. 키보드 P를 누르면 소문게이지가 올라감
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

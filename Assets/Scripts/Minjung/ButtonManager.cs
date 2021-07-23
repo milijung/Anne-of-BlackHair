@@ -19,6 +19,8 @@ public class ButtonManager : MonoBehaviour
     public Sprite SoundOnImage;
     public Sprite SoundOffImage;
 
+
+
     public void Stop() // 일시정지 버튼 눌렀을 때
     {
         gamePanel.SetActive(true);
@@ -37,8 +39,8 @@ public class ButtonManager : MonoBehaviour
         Time.timeScale = 1;
         gamePanel.SetActive(false);
         fadeSprite.SetActive(false);
-        GameManager.isPlay = true;
-
+        StartCoroutine(GameManager.instance.CountDown());
+        
         backmusic = BackgroundMusic.GetComponent<AudioSource>();
         stepAudio = stepSound.GetComponent<AudioSource>();
         if (MainMenu.AudioPlay)
