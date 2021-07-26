@@ -6,9 +6,11 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject[] SideMobs;
     public GameObject[] Item;
+    public GameObject[] BackGround;
     public static int MobStartNum = 0; // SpawnManager 실행 전에 Mob이 등장하는 것 방지
     int MobCreateNum = 0;
     int ItemCreateTerm; // Mob이 ItemCreateTerm번 생성될 때마다 Item 1개 생성
+    int BackCreateNum = 0;
 
     public float startNum_Create, finalNum_Create; // mob 등장간의 시간 간격. startNum: 최소 시간 간격, finalNum: 최대 시간 간격
     private void Start()
@@ -18,6 +20,7 @@ public class SpawnManager : MonoBehaviour
     IEnumerator CreateMob()
     {
         ItemCreateTerm = Random.Range(3, 6);
+        int BackNum = Random.Range(1, 4);
         yield return new WaitForSeconds(3f); // 시작하고 3초 후부터 Mob 등장
         while (true)
         {
@@ -25,20 +28,33 @@ public class SpawnManager : MonoBehaviour
             {
                 if (MobCreateNum != ItemCreateTerm)
                 {
+                    float time = Random.Range(startNum_Create, finalNum_Create);
                     SideMobs[DeactiveMob()].SetActive(true); // 비활성화된 Mob들 중에서 1개를 활성화
-                    yield return new WaitForSeconds(Random.Range(startNum_Create, finalNum_Create));
+                    BackCreateNum++;
+                    yield return new WaitForSeconds(time/2);
+                    if (BackCreateNum == BackNum)
+                    {
+                        BackGround[DeactiveBack()].SetActive(true);
+                        yield return new WaitForSeconds(time / 2);
+                        BackCreateNum = 0;
+                        BackNum = Random.Range(1, 3);
+                    }
+                    else
+                    {
+                        yield return new WaitForSeconds(time / 2);
+                    }
                     MobCreateNum++;
                 }
                 else
                 {
                     Item[DeactiveItem()].SetActive(true); // 비활성화된 Item들 중에서 1개를 활성화
                     yield return new WaitForSeconds(Random.Range(0.4f, 0.7f)); // 아이템이 생성된 후, 0.4초-0.7초 지나고 바로 Mob이 생성
-                    SideMobs[DeactiveMob()].SetActive(true);
+                    SideMobs[DeactiveMob()].SetActive(true); // 비활성화된 Mob들 중에서 1개를 활성화
                     yield return new WaitForSeconds(Random.Range(startNum_Create, finalNum_Create));
                     ItemCreateTerm = Random.Range(3, 6); // 새로운 ItemCreateTerm 정하기
                     MobCreateNum = 0;
                 }
-                if (MobStartNum == 0)
+                if (MobStartNum ==0)
                 {
                     MobStartNum++;
                 }
@@ -68,6 +84,23 @@ public class SpawnManager : MonoBehaviour
             x = num[Random.Range(0, num.Count)]; 
         }
         return x; // 비활성화된 Mob의 인덱스중 1개를 반환
+    }
+    int DeactiveBack()
+    {
+        List<int> num = new List<int>();
+        for(int i=0; i < BackGround.Length; i++)
+        {
+            if (!BackGround[i].activeSelf)
+            {
+                num.Add(i);
+            }
+        }
+        int x = 0;
+        if(num.Count > 0)
+        {
+            x = num[Random.Range(0, num.Count)];
+        }
+        return x; // 비활성화된 BackGround의 인덱스중 1개를 반환
     }
     int DeactiveItem() // 비활성화된 아이템 중에서 선택하는 함수
     {
