@@ -1,0 +1,3468 @@
+fileFormatVersion: 2
+guid: d5432c283a497d04fb0a50e3604a523d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7471429779826053011
+    second: Ann-Hair_0
+  - first:
+      213: -3748220057114117515
+    second: Ann-Hair_1
+  - first:
+      213: 9072568020537426308
+    second: Ann-Hair_2
+  - first:
+      213: -9020771250791085795
+    second: Ann-Hair_3
+  - first:
+      213: -28364767280467083
+    second: Ann-Hair_4
+  - first:
+      213: 5415076123875052226
+    second: Ann-Hair_5
+  - first:
+      213: 1099533468245831587
+    second: Ann-Hair_6
+  - first:
+      213: 3238880707276692270
+    second: Ann-Hair_7
+  - first:
+      213: 5001906146554782611
+    second: Ann-Hair_8
+  - first:
+      213: 4131842706029676066
+    second: Ann-Hair_9
+  - first:
+      213: 7391225903941016819
+    second: Ann-Hair_10
+  - first:
+      213: -1971289344813774416
+    second: Ann-Hair_11
+  - first:
+      213: 6282856356221152103
+    second: Ann-Hair_12
+  - first:
+      213: 980051358374218983
+    second: Ann-Hair_13
+  - first:
+      213: 8330736037712571770
+    second: Ann-Hair_14
+  - first:
+      213: -2777271124301952161
+    second: Ann-Hair_15
+  - first:
+      213: 6670823831835118958
+    second: Ann-Hair_16
+  - first:
+      213: 2661260258887948173
+    second: Ann-Hair_17
+  - first:
+      213: -6713981217848268547
+    second: Ann-Hair_18
+  - first:
+      213: -5818765438705503225
+    second: Ann-Hair_19
+  - first:
+      213: 4883224998319136014
+    second: Ann-Hair_20
+  - first:
+      213: -7668307012758558680
+    second: Ann-Hair_21
+  - first:
+      213: -6452681586906520478
+    second: Ann-Hair_22
+  - first:
+      213: -7434993360809059317
+    second: Ann-Hair_23
+  - first:
+      213: -624250827990251546
+    second: Ann-Hair_24
+  - first:
+      213: 8784393956089607504
+    second: Ann-Hair_25
+  - first:
+      213: -4924459715444022794
+    second: Ann-Hair_26
+  - first:
+      213: -4292819827777283601
+    second: Ann-Hair_27
+  - first:
+      213: -6022577788740738515
+    second: Ann-Hair_28
+  - first:
+      213: -602284874986829697
+    second: Ann-Hair_29
+  - first:
+      213: -7664437047042499298
+    second: Ann-Hair_30
+  - first:
+      213: -538809305748980266
+    second: Ann-Hair_31
+  - first:
+      213: 5013060825982862163
+    second: Ann-Hair_32
+  - first:
+      213: -1989249760870249180
+    second: Ann-Hair_33
+  - first:
+      213: 2782505415513873505
+    second: Ann-Hair_34
+  - first:
+      213: 2185857927861002105
+    second: Ann-Hair_35
+  - first:
+      213: -5455910165887544009
+    second: Ann-Hair_36
+  - first:
+      213: -7521565225474783606
+    second: Ann-Hair_37
+  - first:
+      213: -6937165695192806376
+    second: Ann-Hair_38
+  - first:
+      213: -1121864920446013315
+    second: Ann-Hair_39
+  - first:
+      213: -8615747773732317951
+    second: Ann-Hair_40
+  - first:
+      213: -2131440946843215800
+    second: Ann-Hair_41
+  - first:
+      213: 3556354896734748954
+    second: Ann-Hair_42
+  - first:
+      213: 693582744392972366
+    second: Ann-Hair_43
+  - first:
+      213: 6185489531170013708
+    second: Ann-Hair_44
+  - first:
+      213: 7378867609486396297
+    second: Ann-Hair_45
+  - first:
+      213: 648596205278439880
+    second: Ann-Hair_46
+  - first:
+      213: -7459953396574714541
+    second: Ann-Hair_47
+  - first:
+      213: 3385200248345390144
+    second: Ann-Hair_48
+  - first:
+      213: -7307250857887685592
+    second: Ann-Hair_49
+  - first:
+      213: 8251897206889451120
+    second: Ann-Hair_50
+  - first:
+      213: 2625914288393750975
+    second: Ann-Hair_51
+  - first:
+      213: 5227475407385150533
+    second: Ann-Hair_52
+  - first:
+      213: -6676456007668682917
+    second: Ann-Hair_53
+  - first:
+      213: 5900698989645606431
+    second: Ann-Hair_54
+  - first:
+      213: -7925700396703823220
+    second: Ann-Hair_55
+  - first:
+      213: 8379440633102528269
+    second: Ann-Hair_56
+  - first:
+      213: -6363813477848352300
+    second: Ann-Hair_57
+  - first:
+      213: 8671184548689046831
+    second: Ann-Hair_58
+  - first:
+      213: -5209100439638892772
+    second: Ann-Hair_59
+  - first:
+      213: 7554226315381330614
+    second: Ann-Hair_60
+  - first:
+      213: -5133905770449400004
+    second: Ann-Hair_61
+  - first:
+      213: 4514109150025911188
+    second: Ann-Hair_62
+  - first:
+      213: -1885988519260824329
+    second: Ann-Hair_63
+  - first:
+      213: -2595534989616335756
+    second: Ann-Hair_64
+  - first:
+      213: 6104590579093881290
+    second: Ann-Hair_65
+  - first:
+      213: -1684921839056539739
+    second: Ann-Hair_66
+  - first:
+      213: -818116704324919169
+    second: Ann-Hair_67
+  - first:
+      213: -8140851840384871060
+    second: Ann-Hair_68
+  - first:
+      213: 1000329420282532105
+    second: Ann-Hair_69
+  - first:
+      213: -6160598635270453822
+    second: Ann-Hair_70
+  - first:
+      213: -5025589147471784594
+    second: Ann-Hair_71
+  - first:
+      213: 1149546440759811842
+    second: Ann-Hair_72
+  - first:
+      213: -1259161943692246306
+    second: Ann-Hair_73
+  - first:
+      213: -6436964512356131293
+    second: Ann-Hair_74
+  - first:
+      213: -6685195107783143428
+    second: Ann-Hair_75
+  - first:
+      213: -957357186746988916
+    second: Ann-Hair_76
+  - first:
+      213: -5348911424118864163
+    second: Ann-Hair_77
+  - first:
+      213: 287359931379565296
+    second: Ann-Hair_78
+  - first:
+      213: 7241784447439539458
+    second: Ann-Hair_79
+  - first:
+      213: 4726563410581030675
+    second: Ann-Hair_80
+  - first:
+      213: 4507030031958970095
+    second: Ann-Hair_81
+  - first:
+      213: -5369512450866499826
+    second: Ann-Hair_82
+  - first:
+      213: -8223268552685197264
+    second: Ann-Hair_83
+  - first:
+      213: 7121156208528889664
+    second: Ann-Hair_84
+  - first:
+      213: -4516396646926536464
+    second: Ann-Hair_85
+  - first:
+      213: -4035517741559832493
+    second: Ann-Hair_86
+  - first:
+      213: -8018453472187113719
+    second: Ann-Hair_87
+  - first:
+      213: -550228778656990321
+    second: Ann-Hair_88
+  - first:
+      213: -1479998491736563529
+    second: Ann-Hair_89
+  - first:
+      213: 8864899789442475752
+    second: Ann-Hair_90
+  - first:
+      213: 4486891706884282895
+    second: Ann-Hair_91
+  - first:
+      213: 1161417380003608299
+    second: Ann-Hair_92
+  - first:
+      213: 3108403889767744863
+    second: Ann-Hair_93
+  - first:
+      213: 2487707535976353178
+    second: Ann-Hair_94
+  - first:
+      213: 8501242322751678069
+    second: Ann-Hair_95
+  - first:
+      213: 829033010644084180
+    second: Ann-Hair_96
+  - first:
+      213: 4176879627362897833
+    second: Ann-Hair_97
+  - first:
+      213: -4696874542917080301
+    second: Ann-Hair_98
+  - first:
+      213: 2736312081600215223
+    second: Ann-Hair_99
+  - first:
+      213: -3006776583299477594
+    second: Ann-Hair_100
+  - first:
+      213: 397186844716749161
+    second: Ann-Hair_101
+  - first:
+      213: -7523965399685709004
+    second: Ann-Hair_102
+  - first:
+      213: 5108794272114330736
+    second: Ann-Hair_103
+  - first:
+      213: -2318420593550087018
+    second: Ann-Hair_104
+  - first:
+      213: -1757655237825135677
+    second: Ann-Hair_105
+  - first:
+      213: 4391073692457738971
+    second: Ann-Hair_106
+  - first:
+      213: 3053651314996677976
+    second: Ann-Hair_107
+  - first:
+      213: -4669412557903307445
+    second: Ann-Hair_108
+  - first:
+      213: -6298744059113746944
+    second: Ann-Hair_109
+  - first:
+      213: -1456713897325228445
+    second: Ann-Hair_110
+  - first:
+      213: 6617235114342034455
+    second: Ann-Hair_111
+  - first:
+      213: -9156853656350726134
+    second: Ann-Hair_112
+  - first:
+      213: -7221131968848858441
+    second: Ann-Hair_113
+  - first:
+      213: 2872219902985989277
+    second: Ann-Hair_114
+  - first:
+      213: 2182210474902973046
+    second: Ann-Hair_115
+  - first:
+      213: 6577559726159545622
+    second: Ann-Hair_116
+  - first:
+      213: -9020782550518040864
+    second: Ann-Hair_117
+  - first:
+      213: -2902760679190517237
+    second: Ann-Hair_118
+  - first:
+      213: -2295339016501113709
+    second: Ann-Hair_119
+  - first:
+      213: -1094212312316158024
+    second: Ann-Hair_120
+  - first:
+      213: 3748665992901516238
+    second: Ann-Hair_121
+  - first:
+      213: -538307308612848385
+    second: Ann-Hair_122
+  - first:
+      213: 433204410391985774
+    second: Ann-Hair_123
+  - first:
+      213: 2372572214529430754
+    second: Ann-Hair_124
+  - first:
+      213: -4906634234738342618
+    second: Ann-Hair_125
+  - first:
+      213: -4210945315726192315
+    second: Ann-Hair_126
+  - first:
+      213: -6283125698747460111
+    second: Ann-Hair_127
+  - first:
+      213: 8408181775145685923
+    second: Ann-Hair_128
+  - first:
+      213: 8859422528760757178
+    second: Ann-Hair_129
+  - first:
+      213: 3984726262871438191
+    second: Ann-Hair_130
+  - first:
+      213: 516475853903790225
+    second: Ann-Hair_131
+  - first:
+      213: -4707616530132309957
+    second: Ann-Hair_132
+  - first:
+      213: 6526056927109280401
+    second: Ann-Hair_133
+  - first:
+      213: -5496289110310495635
+    second: Ann-Hair_134
+  - first:
+      213: 8272420048307353641
+    second: Ann-Hair_135
+  - first:
+      213: 3473752566963734374
+    second: Ann-Hair_136
+  - first:
+      213: 8687471554975382744
+    second: Ann-Hair_137
+  - first:
+      213: -5360668050294604237
+    second: Ann-Hair_138
+  - first:
+      213: 8203640977906750605
+    second: Ann-Hair_139
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ann-Hair_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1164
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f8ec6acc9dfa760800000000000000
+      internalID: 7471429779826053011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_1
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1163
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57af7bb87b5abfbc0800000000000000
+      internalID: -3748220057114117515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_2
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1160
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481c3b0db8c38ed70800000000000000
+      internalID: 9072568020537426308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_3
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1164
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d198a8c6758cfc280800000000000000
+      internalID: -9020771250791085795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_4
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1160
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5737c1af46a3b9ff0800000000000000
+      internalID: -28364767280467083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_5
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1164
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca854b5b07362b40800000000000000
+      internalID: 5415076123875052226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_6
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 1164
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af22712dd3524f00800000000000000
+      internalID: 1099533468245831587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_7
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 1164
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2bd71bc7d0d2fc20800000000000000
+      internalID: 3238880707276692270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_8
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1164
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393ad3993275a6540800000000000000
+      internalID: 5001906146554782611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_9
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 1160
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22600b8bc01475930800000000000000
+      internalID: 4131842706029676066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_10
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1164
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fcd11b9cc8e29660800000000000000
+      internalID: 7391225903941016819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_11
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1160
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9ccd409c294a4e0800000000000000
+      internalID: -1971289344813774416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_12
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 1164
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76bed576190313750800000000000000
+      internalID: 6282856356221152103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_13
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 1164
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ecc8859487d99d00800000000000000
+      internalID: 980051358374218983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_14
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1036
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d2765c948bc9370800000000000000
+      internalID: 8330736037712571770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_15
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1036
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b480780a62579d0800000000000000
+      internalID: -2777271124301952161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_16
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1032
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6d0eb77ee6839c50800000000000000
+      internalID: 6670823831835118958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_17
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1036
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8751e10b12bee420800000000000000
+      internalID: 2661260258887948173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_18
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1032
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8628197a523d2a0800000000000000
+      internalID: -6713981217848268547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_19
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1036
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70473a2a9a79f3fa0800000000000000
+      internalID: -5818765438705503225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_20
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 1036
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d9e177343b4c340800000000000000
+      internalID: 4883224998319136014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_21
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 1036
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828a3eb7663b49590800000000000000
+      internalID: -7668307012758558680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_22
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1036
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264abb3d8487376a0800000000000000
+      internalID: -6452681586906520478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_23
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 1032
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c969d3ee891d890800000000000000
+      internalID: -7434993360809059317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_24
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1036
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7c5eaed273657f0800000000000000
+      internalID: -624250827990251546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_25
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1032
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0553fc7e2cf68e970800000000000000
+      internalID: 8784393956089607504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_26
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 1036
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1ec3ecafdc8abb0800000000000000
+      internalID: -4924459715444022794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_27
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 1036
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9d4986c17dc64c0800000000000000
+      internalID: -4292819827777283601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_28
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 904
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2263fdf8618b6ca0800000000000000
+      internalID: -6022577788740738515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_29
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 908
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78c1d4e81144a7f0800000000000000
+      internalID: -602284874986829697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_30
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 904
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d10b71d1372a590800000000000000
+      internalID: -7664437047042499298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_31
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 908
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd38298ac3c588f0800000000000000
+      internalID: -538809305748980266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_32
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 904
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353822ac248f19540800000000000000
+      internalID: 5013060825982862163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_33
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 908
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d4cc9c1e3c464e0800000000000000
+      internalID: -1989249760870249180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_34
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 908
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c1e4ddee17d9620800000000000000
+      internalID: 2782505415513873505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_35
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 908
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f50a7443ab55e10800000000000000
+      internalID: 2185857927861002105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_36
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 908
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73594db5c96b844b0800000000000000
+      internalID: -5455910165887544009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_37
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 904
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8605a447480e9790800000000000000
+      internalID: -7521565225474783606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_38
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 908
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81cc10e0e8c3abf90800000000000000
+      internalID: -6937165695192806376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_39
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 904
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70f7da7cc55e60f0800000000000000
+      internalID: -1121864920446013315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_40
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 908
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10592584c07be6880800000000000000
+      internalID: -8615747773732317951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_41
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 908
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84810bf60c99b62e0800000000000000
+      internalID: -2131440946843215800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_42
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 780
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11881bafe5ba5130800000000000000
+      internalID: 3556354896734748954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_43
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 780
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4832edc4d910a900800000000000000
+      internalID: 693582744392972366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_44
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 776
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c02494bd4f547d550800000000000000
+      internalID: 6185489531170013708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_45
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 780
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b8214fef0076660800000000000000
+      internalID: 7378867609486396297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_46
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 776
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9a942ffc6400900800000000000000
+      internalID: 648596205278439880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_47
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 780
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355023c09ebe87890800000000000000
+      internalID: -7459953396574714541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_48
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 780
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ce038b0b5aafe20800000000000000
+      internalID: 3385200248345390144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_49
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 780
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824afea6f0e679a90800000000000000
+      internalID: -7307250857887685592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_50
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 780
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e0fab0ac0a48270800000000000000
+      internalID: 8251897206889451120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_51
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 776
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb90552f12f117420800000000000000
+      internalID: 2625914288393750975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_52
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 780
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5444849cf29bb8840800000000000000
+      internalID: 5227475407385150533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_53
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 776
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5fa26862a67853a0800000000000000
+      internalID: -6676456007668682917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_54
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 780
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e2554c77e73e150800000000000000
+      internalID: 5900698989645606431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_55
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 780
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8acb4a3b71420290800000000000000
+      internalID: -7925700396703823220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_56
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 652
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0fec801cd0c94470800000000000000
+      internalID: 8379440633102528269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_57
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 652
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9710cdb513fa7a0800000000000000
+      internalID: -6363813477848352300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_58
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 648
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d6776b76c365870800000000000000
+      internalID: 8671184548689046831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_59
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 652
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f1ef7cfbe85b7b0800000000000000
+      internalID: -5209100439638892772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_60
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 648
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b256315fc006d860800000000000000
+      internalID: 7554226315381330614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_61
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 652
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f090207e3b0c8b0800000000000000
+      internalID: -5133905770449400004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_62
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 652
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b82acea5655ae30800000000000000
+      internalID: 4514109150025911188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_63
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 652
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc5ef22f6f93d5e0800000000000000
+      internalID: -1885988519260824329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_64
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 652
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47432ddbdaecafbd0800000000000000
+      internalID: -2595534989616335756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_65
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 648
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac14616c9ccd7b450800000000000000
+      internalID: 6104590579093881290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_66
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 652
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5afacb4b384fd98e0800000000000000
+      internalID: -1684921839056539739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_67
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 648
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7066e5213775a4f0800000000000000
+      internalID: -818116704324919169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_68
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 652
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6556cc1262e50f80800000000000000
+      internalID: -8140851840384871060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_69
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 652
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901105ace42e1ed00800000000000000
+      internalID: 1000329420282532105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_70
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 524
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c5c2f47e28218aa0800000000000000
+      internalID: -6160598635270453822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_71
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 524
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65d2ed0c45814ab0800000000000000
+      internalID: -5025589147471784594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_72
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 520
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f9d46b56204ff00800000000000000
+      internalID: 1149546440759811842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_73
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 524
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed2888f22ee868ee0800000000000000
+      internalID: -1259161943692246306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_74
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 520
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e973961ee4ba6a0800000000000000
+      internalID: -6436964512356131293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_75
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 524
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff086a187a6933a0800000000000000
+      internalID: -6685195107783143428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_76
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 524
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8647c006b8c6b2f0800000000000000
+      internalID: -957357186746988916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_77
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 524
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6cd564669d4c5b0800000000000000
+      internalID: -5348911424118864163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_78
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 524
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f24f88c558ecf300800000000000000
+      internalID: 287359931379565296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_79
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 520
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d0599169cff7460800000000000000
+      internalID: 7241784447439539458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_80
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 524
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3178a082160289140800000000000000
+      internalID: 4726563410581030675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_81
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 520
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee8eee4fef2c8e30800000000000000
+      internalID: 4507030031958970095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_82
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 524
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0fa015ffd8ab75b0800000000000000
+      internalID: -5369512450866499826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_83
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 524
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038ee80f1d411ed80800000000000000
+      internalID: -8223268552685197264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_84
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 396
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0479e6797dd63d260800000000000000
+      internalID: 7121156208528889664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_85
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 396
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0bd23bd298251c0800000000000000
+      internalID: -4516396646926536464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_86
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 392
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3502a81cef5fef7c0800000000000000
+      internalID: -4035517741559832493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_87
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 396
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f1a46fc0bb8b090800000000000000
+      internalID: -8018453472187113719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_88
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 392
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8bf3fe47d13d58f0800000000000000
+      internalID: -550228778656990321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_89
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 396
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0adef863df57be0800000000000000
+      internalID: -1479998491736563529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_90
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 396
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e66727e363760b70800000000000000
+      internalID: 8864899789442475752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_91
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 396
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0adb7e1c34a44e30800000000000000
+      internalID: 4486891706884282895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_92
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 396
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6741324fe2e1010800000000000000
+      internalID: 1161417380003608299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_93
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 392
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f558c046ed4432b20800000000000000
+      internalID: 3108403889767744863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_94
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 396
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9dcee2d2dc168220800000000000000
+      internalID: 2487707535976353178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_95
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 392
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576612dd9da7af570800000000000000
+      internalID: 8501242322751678069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_96
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 396
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d5638a7121518b00800000000000000
+      internalID: 829033010644084180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_97
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 396
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af088a14e147f930800000000000000
+      internalID: 4176879627362897833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_98
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 268
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b2ad20d7951deb0800000000000000
+      internalID: -4696874542917080301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_99
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 268
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8f362375559f520800000000000000
+      internalID: 2736312081600215223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_100
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 264
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6afc879c0a8c546d0800000000000000
+      internalID: -3006776583299477594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_101
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 268
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961dcc4b457138500800000000000000
+      internalID: 397186844716749161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_102
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 264
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43347692551859790800000000000000
+      internalID: -7523965399685709004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_103
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 268
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ccceba25516e640800000000000000
+      internalID: 5108794272114330736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_104
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 268
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c2f71f0c053dfd0800000000000000
+      internalID: -2318420593550087018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_105
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 268
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cbf3d7afdd8b97e0800000000000000
+      internalID: -1757655237825135677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_106
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 268
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2a185224a30fc30800000000000000
+      internalID: 4391073692457738971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_107
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 264
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d084a21bfb06a20800000000000000
+      internalID: 3053651314996677976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_108
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 268
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ddc68a40ae23fb0800000000000000
+      internalID: -4669412557903307445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_109
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 264
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e4c6186ad5698a0800000000000000
+      internalID: -6298744059113746944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_110
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 268
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e0e8aad66b8cbe0800000000000000
+      internalID: -1456713897325228445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_111
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 268
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c2991e64425db50800000000000000
+      internalID: 6617235114342034455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_112
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 140
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a086af85d125ce080800000000000000
+      internalID: -9156853656350726134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_113
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 140
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2fb88cbb269cb90800000000000000
+      internalID: -7221131968848858441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_114
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 136
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c694ab8cc2cd720800000000000000
+      internalID: 2872219902985989277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_115
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 140
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a6ab57dd4c84e10800000000000000
+      internalID: 2182210474902973046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_116
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 136
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 615c7a6b8bf284b50800000000000000
+      internalID: 6577559726159545622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_117
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 140
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e67450801ebfc280800000000000000
+      internalID: -9020782550518040864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_118
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 140
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0aa0e0ba8257b7d0800000000000000
+      internalID: -2902760679190517237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_119
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 140
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c4b5263515520e0800000000000000
+      internalID: -2295339016501113709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_120
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 140
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf598703b390d0f0800000000000000
+      internalID: -1094212312316158024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_121
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 136
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb5b78fbdfe50430800000000000000
+      internalID: 3748665992901516238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_122
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 140
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff4722ada5c8788f0800000000000000
+      internalID: -538307308612848385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_123
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 136
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6efb84bd1d030600800000000000000
+      internalID: 433204410391985774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_124
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 140
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e41df2dbd11de020800000000000000
+      internalID: 2372572214529430754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_125
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 140
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62586a3f82228ebb0800000000000000
+      internalID: -4906634234738342618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_126
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 12
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5419b8fbb87bf85c0800000000000000
+      internalID: -4210945315726192315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_127
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 12
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f59707677addc8a0800000000000000
+      internalID: -6283125698747460111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_128
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 8
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3d87aa6ccdfa470800000000000000
+      internalID: 8408181775145685923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_129
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 12
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abbb0e5c9ddf2fa70800000000000000
+      internalID: 8859422528760757178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_130
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 8
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f633f919c679c4730800000000000000
+      internalID: 3984726262871438191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_131
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 12
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190800f7d04ea2700800000000000000
+      internalID: 516475853903790225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_132
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 12
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38e4b635bf2baeb0800000000000000
+      internalID: -4707616530132309957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_133
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 12
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192735cd236319a50800000000000000
+      internalID: 6526056927109280401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_134
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 12
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a581dbc2249b3b0800000000000000
+      internalID: -5496289110310495635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_135
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 8
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928fd2c643a8dc270800000000000000
+      internalID: 8272420048307353641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_136
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 12
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667897f0e8f353030800000000000000
+      internalID: 3473752566963734374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_137
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 8
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc3e9ed959109870800000000000000
+      internalID: 8687471554975382744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_138
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 12
+        width: 68
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e776f6fc41b95b0800000000000000
+      internalID: -5360668050294604237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Hair_139
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 12
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8458f0310039d170800000000000000
+      internalID: 8203640977906750605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
