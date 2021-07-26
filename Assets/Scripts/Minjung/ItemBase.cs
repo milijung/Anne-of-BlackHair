@@ -47,4 +47,11 @@ public class ItemBase : MonoBehaviour
             }
         }
     }
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.tag == "Player")
+        {
+            gameObject.SetActive(false);
+        }
+    }
 }

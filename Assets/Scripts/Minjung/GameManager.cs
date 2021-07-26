@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
     #endregion
+
     private void Start()
     {
         GamePlay();
