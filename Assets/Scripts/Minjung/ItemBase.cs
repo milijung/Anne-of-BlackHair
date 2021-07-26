@@ -38,7 +38,7 @@ public class ItemBase : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.isPlay || GameManager.gameOver)
+        if (GameManager.isPlay)
         {
             transform.Translate(Vector2.down * Time.deltaTime * GameManager.instance.gameSpeed * 12);
             if (transform.position.y < -8) // 화면 끝까지 Mob이 이동하면 해당 Mob 비활성화

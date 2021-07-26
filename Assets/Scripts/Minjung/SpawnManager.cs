@@ -21,7 +21,7 @@ public class SpawnManager : MonoBehaviour
         yield return new WaitForSeconds(3f); // 시작하고 3초 후부터 Mob 등장
         while (true)
         {
-            if (GameManager.isPlay || GameManager.gameOver)
+            if (GameManager.isPlay)
             {
                 if (MobCreateNum != ItemCreateTerm)
                 {

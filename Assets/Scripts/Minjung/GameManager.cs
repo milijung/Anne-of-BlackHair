@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public static bool isPlay;
-    public static bool gameOver;
 
     public Text scoreTxt; // 점수 Text
     public static int score = 0;
@@ -51,6 +50,10 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         scoreTxt.text = score.ToString(); // score 값을 Text 내용으로
+        if (Input.GetKey(KeyCode.S))
+        {
+            GameOver();
+        }
     }
 
     public IEnumerator AddScore()
@@ -84,7 +87,6 @@ public class GameManager : MonoBehaviour
     {
         score = 0;
         isPlay = true;
-        gameOver = false;
         scoreTxt.text = string.Empty;
         scoreTxt.gameObject.SetActive(true);
         player.SetActive(true);
@@ -110,7 +112,6 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         isPlay = false;
-        gameOver = true;
         StopCoroutine(AddScore()); // score++ 멈춤
         finalScore.text = score.ToString(); // 게임오버 화면 활성화
         GameOverPanel.SetActive(true);

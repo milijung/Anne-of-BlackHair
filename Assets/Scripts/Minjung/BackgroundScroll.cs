@@ -14,7 +14,7 @@ public class BackgroundScroll : MonoBehaviour
 
     void Update()
     {
-        if (GameManager.isPlay || GameManager.gameOver)
+        if (GameManager.isPlay)
         {
             current_Y += GameManager.instance.gameSpeed * Time.deltaTime;
             mat.mainTextureOffset = new Vector2(0, current_Y);
