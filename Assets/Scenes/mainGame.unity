@@ -257,6 +257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartPosition: {x: 2.5, y: 8}
+  somoon: {fileID: 994894087}
 --- !u!212 &68687842
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -368,6 +369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartPosition: {x: 2.5, y: 8}
+  somoon: {fileID: 994894087}
 --- !u!212 &89262827
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -654,6 +656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartPosition: {x: -2.5, y: 8}
+  somoon: {fileID: 994894087}
 --- !u!212 &263667207
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -765,6 +768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartPosition: {x: -2.5, y: 8}
+  somoon: {fileID: 994894087}
 --- !u!212 &284670617
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1093,6 +1097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartPosition: {x: -2.5, y: 8}
+  somoon: {fileID: 994894087}
 --- !u!212 &417299333
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1279,6 +1284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartPosition: {x: -2.5, y: 8}
+  somoon: {fileID: 994894087}
 --- !u!212 &442684338
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1548,7 +1554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1220bf889c77864fb4520d1eb2d85ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  somoon_Gauge: {fileID: 2094339641}
+  somoon_Gauge: {fileID: 994894087}
   somoonBar: {fileID: 326959770}
 --- !u!1 &514692575
 GameObject:
@@ -2027,7 +2033,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _flashImage: {fileID: 15976792}
   _newColor: {r: 1, g: 0, b: 0, a: 1}
-  somoon_Gauge: {fileID: 2094339641}
+  somoon_Gauge: {fileID: 994894087}
 --- !u!4 &626241508
 Transform:
   m_ObjectHideFlags: 0
@@ -2288,6 +2294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartPosition: {x: 2.5, y: 8}
+  somoon: {fileID: 994894087}
 --- !u!212 &737256915
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2935,6 +2942,56 @@ Transform:
   m_Father: {fileID: 676892200}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &994894086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 994894088}
+  - component: {fileID: 994894087}
+  m_Layer: 0
+  m_Name: SomoonGauge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &994894087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994894086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d676c56a7efde2429b555f767bd6af5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1960746220}
+  adultFirstTouchTime: 0
+  childFirstTouchTime: 0
+  realTime: 0
+  somoonGauge: 0
+  adultTouch_Num: 0
+  childTouch_Num: 0
+--- !u!4 &994894088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994894086}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &998696760
 GameObject:
   m_ObjectHideFlags: 0
@@ -3108,6 +3165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartPosition: {x: 2.5, y: 8}
+  somoon: {fileID: 994894087}
 --- !u!212 &1002250996
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3625,6 +3683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartPosition: {x: -2.5, y: 8}
+  somoon: {fileID: 994894087}
 --- !u!212 &1154958720
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3736,6 +3795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartPosition: {x: 2.5, y: 8}
+  somoon: {fileID: 994894087}
 --- !u!212 &1170984082
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3926,6 +3986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartPosition: {x: -2.5, y: 8}
+  somoon: {fileID: 994894087}
 --- !u!212 &1271783031
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4169,6 +4230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartPosition: {x: 2.5, y: 8}
+  somoon: {fileID: 994894087}
 --- !u!212 &1392984836
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4485,6 +4547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartPosition: {x: -2.5, y: 8}
+  somoon: {fileID: 994894087}
 --- !u!212 &1558708054
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4752,6 +4815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartPosition: {x: 2.5, y: 8}
+  somoon: {fileID: 994894087}
 --- !u!212 &1666714729
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5199,6 +5263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartPosition: {x: -2.5, y: 8}
+  somoon: {fileID: 994894087}
 --- !u!212 &1818840857
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5371,6 +5436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartPosition: {x: -2.5, y: 8}
+  somoon: {fileID: 994894087}
 --- !u!136 &1869650203
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5496,6 +5562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartPosition: {x: 2.5, y: 8}
+  somoon: {fileID: 994894087}
 --- !u!212 &1912259363
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5746,6 +5813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartPosition: {x: 2.5, y: 8}
+  somoon: {fileID: 994894087}
 --- !u!212 &2063240093
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5810,54 +5878,4 @@ Transform:
   m_Children: []
   m_Father: {fileID: 676892200}
   m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2094339640
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2094339642}
-  - component: {fileID: 2094339641}
-  m_Layer: 0
-  m_Name: SomoonGauge
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2094339641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2094339640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d676c56a7efde2429b555f767bd6af5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameManager: {fileID: 1960746220}
-  adultFirstTouchTime: 0
-  childFirstTouchTime: 0
-  realTime: 0
-  somoonGauge: 0
-  adultTouch_Num: 0
-  childTouch_Num: 0
---- !u!4 &2094339642
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2094339640}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
