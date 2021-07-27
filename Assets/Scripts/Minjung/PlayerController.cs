@@ -32,13 +32,17 @@ public class PlayerController : MonoBehaviour
         {
             desiredLane++; // 라인번호++
             if (desiredLane == 3) // 라인번호<=2
-                desiredLane = 2;
+                desiredLane = 2;        
         }
         if (SwipeManager.swipeLeft) // 만약 왼쪽으로 스와이프했다면
         {
-            desiredLane--; // 라인번호--
+            desiredLane--; // 라인번호--e;
             if (desiredLane == -1) // 라인번호>=0
                 desiredLane = 0;
+        }
+        if (SwipeManager.doubleTap) // 만약 더블탭했다면
+        {
+            Debug.Log("더블탭");
         }
 
         // 라인번호에 따른 object 좌표값 설정 

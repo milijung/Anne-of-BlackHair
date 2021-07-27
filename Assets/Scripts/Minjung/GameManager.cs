@@ -17,7 +17,6 @@ public class GameManager : MonoBehaviour
     public GameObject AnneCry;
     public Slider rumor;
     public GameObject itemSlot;
-    public GameObject itemButton;
 
     public GameObject BackgroundMusic;
     AudioSource backmusic;
@@ -88,7 +87,6 @@ public class GameManager : MonoBehaviour
         player.SetActive(true);
         rumor.gameObject.SetActive(true);
         itemSlot.SetActive(true);
-        itemButton.SetActive(true);
 
         SpawnManager.MobStartNum = 0;
         StartCoroutine(AddScore()); // score++ ½ÇÇà
@@ -118,7 +116,6 @@ public class GameManager : MonoBehaviour
         player.SetActive(false);
         rumor.gameObject.SetActive(false);
         itemSlot.SetActive(false);
-        itemButton.SetActive(false);
 
         if (MainMenu.AudioPlay == true)
         {
