@@ -7,6 +7,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] SideMobs;
     public GameObject[] Item;
     public GameObject[] BackGround;
+    public GameObject[] Road;
     public static int MobStartNum = 0; // SpawnManager 실행 전에 Mob이 등장하는 것 방지
     int MobCreateNum = 0;
     int ItemCreateTerm; // Mob이 ItemCreateTerm번 생성될 때마다 Item 1개 생성
@@ -16,6 +17,7 @@ public class SpawnManager : MonoBehaviour
     private void Start()
     {
         StartCoroutine(CreateMob());
+        StartCoroutine(CreateRoad());
     }
     IEnumerator CreateMob()
     {
@@ -66,7 +68,24 @@ public class SpawnManager : MonoBehaviour
             yield return null;
         }
     }
+    IEnumerator CreateRoad()
+    {
+        while (true)
+        {
+            if (GameManager.score % 50 == 0)
+            {
+                int score = GameManager.score;
+                int num = Random.Range(15, 20);
+                while (GameManager.score <= score + num)
+                {
+                    Road[DeactiveRoad()].SetActive(true);
+                    yield return new WaitForSeconds(Random.Range(1, 2));
 
+                }
+            }
+                yield return null;
+        }
+    }
 
     int DeactiveMob() // 비활성화된 Mob중에서 선택하는 함수
     {
@@ -119,7 +138,23 @@ public class SpawnManager : MonoBehaviour
         }
         return x; // 비활성화된 서브캐릭터의 인덱스중 1개를 반환
     }
-
+    int DeactiveRoad()
+    {
+        List<int> num = new List<int>();
+        for(int i=0; i< Road.Length; i++)
+        {
+            if (!Road[i].activeSelf)
+            {
+                num.Add(i);
+            }
+        }
+        int x = 0;
+        if(num.Count > 0)
+        {
+            x = num[Random.Range(0, num.Count)];
+        }
+        return x;
+    }
     GameObject CreateObj(GameObject obj, Transform parent)
     {
         GameObject copy = Instantiate(obj); // 매개변수로 받은 게임 오브젝트를 복제

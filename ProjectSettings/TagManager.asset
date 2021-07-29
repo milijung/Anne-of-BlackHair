@@ -7,6 +7,9 @@ TagManager:
   - Radar
   - Item
   - Color
+  - Road2
+  - Road1
+  - Tal
   layers:
   - Default
   - TransparentFX

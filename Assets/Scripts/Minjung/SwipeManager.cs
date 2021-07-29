@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class SwipeManager : MonoBehaviour
 {
-    public static bool tap, doubleTap, swipeLeft, swipeRight;
+    public static bool tap, doubleTap, swipeLeft, swipeRight, swipeUp;
     private bool isDraging = false; // 드래그하고 있으면 true
     private bool Move = false;
     private Vector2 startTouch; // tap이 시작된 좌표값
@@ -20,7 +20,7 @@ public class SwipeManager : MonoBehaviour
     }
     private void Update()
     {
-        doubleTap = tap = swipeLeft = swipeRight = false;
+        doubleTap = tap = swipeLeft = swipeRight = swipeUp = false;
 
         // Standalone Input 모듈: 컨트롤러/마우스 입력에 대해 동작하도록 설계됨.
         #region Standalone Inputs 
@@ -78,11 +78,13 @@ public class SwipeManager : MonoBehaviour
         {
             Move = true; // 스와이프 했는지 체크
             float x = swipeDelta.x;
-
+            float y = swipeDelta.y;
             if (x < 0)
                 swipeLeft = true; // swipeDelta.x<0이면 swipeLeft = true
-            else
+            if (x>= 0)
                 swipeRight = true; // swipeDelta.x>0이면 swipeRight = true
+            if (y > 0)
+                swipeUp = true; // swipeDelta.y>0이면 swipeUp = true
             Reset();
         }
     } 
