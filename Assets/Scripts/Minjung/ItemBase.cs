@@ -74,7 +74,8 @@ public class ItemBase : MonoBehaviour
                 // ann_get_bleach
 
                 // change_the_ann_hair_bleach
-                // _hair_controller._get_bleach();
+
+                _hair_controller._get_bleach();
 
             }
             else if(this.type == 2)
@@ -82,8 +83,8 @@ public class ItemBase : MonoBehaviour
                 // ann_get_dye
 
                 // change_the_ann_hair_bleach
-                //_hair_controller._get_dye();
 
+                _hair_controller._get_dye();
             }
         }
     }
