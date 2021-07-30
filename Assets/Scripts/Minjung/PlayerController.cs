@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour
         }
         if (SwipeManager.doubleTap) // 만약 더블탭했다면
         {
+            // 아이템 사용
             Debug.Log("더블탭");
         }
 

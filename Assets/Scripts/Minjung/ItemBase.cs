@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ItemBase : MonoBehaviour
 {
+    public int type; // 0 = item_box , 1 = bleach , 2 = dye
     int LineNum;
     float posX;
 
@@ -52,6 +53,21 @@ public class ItemBase : MonoBehaviour
         if (collision.tag == "Player")
         {
             gameObject.SetActive(false);
+            if(this.type == 0)
+            {
+                // ann_get_item_box
+                Debug.Log("ann_get_item_box");
+            }
+            else if(this.type == 1)
+            {
+                // ann_get_bleach
+                Debug.Log("ann_get_bleach");
+            }
+            else if(this.type == 2)
+            {
+                // ann_get_dye
+                Debug.Log("ann_get_dye");
+            }
         }
     }
 }

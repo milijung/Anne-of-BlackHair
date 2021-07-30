@@ -19,8 +19,8 @@ public class ItemController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //_get_new_item_on_the_road();
-        //_use_item_in_the_slot();
+        _get_new_item_on_the_road();
+        _use_item_in_the_slot();
     }
 
     void _get_new_item_on_the_road()
