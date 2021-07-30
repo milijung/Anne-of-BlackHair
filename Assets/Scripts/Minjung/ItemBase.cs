@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class ItemBase : MonoBehaviour
 {
-    
 
     public int type; // 0 = item_box , 1 = bleach , 2 = dye
     int LineNum;
     float posX;
     
     ItemController _item_controller;
-    
+    HairController _hair_controller;
+
     void Start()
     {
         _item_controller = GameObject.Find("Item_Controller").GetComponent<ItemController>();
+        _hair_controller = GameObject.Find("Hair_Controller").GetComponent<HairController>();
     }
 
     private void OnEnable() // 오브젝트가 활성화되면 실행
@@ -71,12 +72,18 @@ public class ItemBase : MonoBehaviour
             else if(this.type == 1)
             {
                 // ann_get_bleach
-                Debug.Log("ann_get_bleach");
+
+                // change_the_ann_hair_bleach
+                // _hair_controller._get_bleach();
+
             }
             else if(this.type == 2)
             {
                 // ann_get_dye
-                Debug.Log("ann_get_dye");
+
+                // change_the_ann_hair_bleach
+                //_hair_controller._get_dye();
+
             }
         }
     }

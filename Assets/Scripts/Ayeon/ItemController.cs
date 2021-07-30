@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class ItemController : MonoBehaviour
 {
+    public Sprite BleachImage;
+    public Sprite DyeImage;
+
     public Sprite[] ItemImage;
     public GameObject item0,item1;
+
     Slot item_slot;
     Item item;
 
@@ -14,12 +18,6 @@ public class ItemController : MonoBehaviour
     {
         item_slot = new Slot();
         item_slot.slot_init();  
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     public void _get_new_item_on_the_road()
@@ -47,7 +45,6 @@ public class ItemController : MonoBehaviour
     public void _use_item_in_the_slot()
     {
         // Check the slot
-        //if( item_slot.empty() ) return;
 
         Item.item_type typetype = (Item.item_type) item_slot.stack.Pop();
 
@@ -63,6 +60,7 @@ public class ItemController : MonoBehaviour
             item0.GetComponent<SpriteRenderer>().sprite = null;
         }
 
+        // ITEM USE FUNCTION 
         if (typetype == Item.item_type.red_wig)
         {
             Debug.Log("USE RED WIG");
