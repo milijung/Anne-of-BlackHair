@@ -4,9 +4,18 @@ using UnityEngine;
 
 public class ItemBase : MonoBehaviour
 {
+    
+
     public int type; // 0 = item_box , 1 = bleach , 2 = dye
     int LineNum;
     float posX;
+    
+    ItemController _item_controller;
+    
+    void Start()
+    {
+        _item_controller = GameObject.Find("Item_Controller").GetComponent<ItemController>();
+    }
 
     private void OnEnable() // 오브젝트가 활성화되면 실행
     {
@@ -56,7 +65,8 @@ public class ItemBase : MonoBehaviour
             if(this.type == 0)
             {
                 // ann_get_item_box
-                Debug.Log("ann_get_item_box");
+                _item_controller._get_new_item_on_the_road();
+                //Debug.Log("ann_get_item_box");
             }
             else if(this.type == 1)
             {

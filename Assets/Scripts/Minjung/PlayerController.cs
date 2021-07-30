@@ -16,12 +16,15 @@ public class PlayerController : MonoBehaviour
     public GameObject stepSound;
     AudioSource stepAudio;
 
+    ItemController _item_controller;
+
     private void Start()
     {
         controller = GetComponent<CharacterController>();
         backmusic = BackgroundMusic.GetComponent<AudioSource>();
         stepAudio = stepSound.GetComponent<AudioSource>();
 
+        _item_controller = GameObject.Find("Item_Controller").GetComponent<ItemController>();
     }
 
     private void Update()
@@ -43,7 +46,7 @@ public class PlayerController : MonoBehaviour
         if (SwipeManager.doubleTap) // 만약 더블탭했다면
         {
             // 아이템 사용
-            Debug.Log("더블탭");
+            _item_controller._use_item_in_the_slot();
         }
 
         // 라인번호에 따른 object 좌표값 설정 
