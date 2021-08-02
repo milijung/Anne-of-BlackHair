@@ -30,7 +30,13 @@ public class HairController : MonoBehaviour
 
     public void _get_dye()
     {
-        animator.SetTrigger("Dye");
+        if(animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.BLACK")
+        || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.HAIR_ROOT")
+        || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.HAIR_ROOT2")
+        || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.HAIR_ROOT3"))
+        return;
+    
+        else animator.SetTrigger("Dye");
     }
 
 }
