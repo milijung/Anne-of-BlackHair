@@ -72,7 +72,7 @@ public class SpawnManager : MonoBehaviour
     {
         while (true)
         {
-            if (GameManager.score % 50 == 0)
+            if (GameManager.score %50 == 0 && GameManager.isPlay)
             {
                 int score = GameManager.score;
                 int num = Random.Range(15, 20);
@@ -82,8 +82,8 @@ public class SpawnManager : MonoBehaviour
                     yield return new WaitForSeconds(Random.Range(1, 2));
 
                 }
-            }
-                yield return null;
+            }      
+            yield return null;
         }
     }
 

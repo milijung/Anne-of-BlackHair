@@ -34,7 +34,7 @@ public class ItemBase : MonoBehaviour
         {
             posX = 0;
         }
-        if (LineNum == 2)
+        if(LineNum == 2)
         {
             posX = 1.4f;
         }
@@ -61,5 +61,6 @@ public class ItemBase : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+        
     }
 }
