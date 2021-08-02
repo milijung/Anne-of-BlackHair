@@ -67,11 +67,30 @@ public class GameManager : MonoBehaviour
     {
         for(int i = 0;i<Count.Length;i++)
         {
+            Count[i].transform.position = new Vector2(-5.5f, 0);
             Count[i].SetActive(true);
+            while (true)
+            {
+                if (Count[i].transform.position.x >= 0)
+                {
+                    break;
+                }
+                Count[i].transform.Translate(Vector2.right * 17 * Time.deltaTime);
+                yield return null;
+            }
             yield return new WaitForSeconds(0.5f);
+            while (true)
+            {
+                if (Count[i].transform.position.x >= 5.5f)
+                {
+                    break;
+                }
+                Count[i].transform.Translate(Vector2.right * 17 * Time.deltaTime);
+                yield return null;
+            }
             Count[i].SetActive(false);
             yield return new WaitForSeconds(0.5f);
-            yield return null;
+            yield return null;   
         }
         isPlay = true;
         StopCoroutine(CountDown());

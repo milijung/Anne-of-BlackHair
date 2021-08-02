@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class ItemBase : MonoBehaviour
 {
+    public int type; // 0 = item_box , 1 = bleach , 2 = dye
     public int LineNum;
     float posX;
-    private Animator animator;
 
-    private void Awake()
+    ItemController _item_controller;
+    HairController _hair_controller;
+    void Start()
     {
-        animator = GetComponent<Animator>();
-
+        _item_controller = GameObject.Find("Item_Controller").GetComponent<ItemController>();
+        _hair_controller = GameObject.Find("Hair_Controller").GetComponent<HairController>();
     }
     private void OnEnable() // 오브젝트가 활성화되면 실행
     {
@@ -60,7 +62,37 @@ public class ItemBase : MonoBehaviour
         if (collision.tag == "Player")
         {
             gameObject.SetActive(false);
+            if (this.type == 0)
+            {
+                // ann_get_item_box
+                _item_controller._get_new_item_on_the_road();
+                //Debug.Log("ann_get_item_box");
+            }
+            else if (this.type == 1)
+            {
+                // ann_get_bleach
+
+                // change_the_ann_hair_bleach
+
+                _hair_controller._get_bleach();
+
+            }
+            else if (this.type == 2)
+            {
+                // ann_get_dye
+
+                // change_the_ann_hair_bleach
+
+                _hair_controller._get_dye();
+            }
         }
-        
+        else if(collision.tag == "Radar")
+        {
+            gameObject.SetActive(false);
+        }
+        else if(collision.tag == "Item") // 탈색약/염색약이 아이템주머니랑 동시에 활성화되면, 아이템주머니를 비활성화
+        {
+            collision.gameObject.SetActive(false);
+        }
     }
 }

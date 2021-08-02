@@ -15,13 +15,7 @@ public class PlayerController : MonoBehaviour
     AudioSource backmusic;
     public GameObject stepSound;
     AudioSource stepAudio;
-    private Animator animator;
 
-    private void Awake()
-    {
-        animator = GetComponent<Animator>();
-
-    }
 
     private void Start()
     {
@@ -46,10 +40,6 @@ public class PlayerController : MonoBehaviour
             desiredLane--; // 라인번호--e;
             if (desiredLane == -1) // 라인번호>=0
                 desiredLane = 0;
-        }
-        if (SwipeManager.doubleTap) // 만약 더블탭했다면
-        {
-            Debug.Log("더블탭");
         }
         if (SwipeManager.swipeUp) // 만약 위쪽으로 스와이프했다면
         {

@@ -25,24 +25,24 @@ public class HairController : MonoBehaviour
 
     public void _get_bleach()
     {
-        if(animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.RED")
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.RED")
         || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.DEEP_RED")
         || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.ORANGE")
         || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.DEEP_YELLOW"))
-        return;
-        animator.SetTrigger("Bleach");
+            return;
+        animator.SetTrigger("Bleach"); ;
     }
 
     public void _get_dye()
     {
-        if(animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.RED")
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.RED")
         || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.DEEP_RED")
         || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.ORANGE")
         || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.DEEP_RED"))
-        animator.SetTrigger("Dye");
+            animator.SetTrigger("Dye");
 
-        if(!animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.BLEACH"))
-        return;
+        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.BLEACH"))
+            return;
 
     }
 

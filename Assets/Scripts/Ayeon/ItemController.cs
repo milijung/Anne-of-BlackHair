@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemController : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class ItemController : MonoBehaviour
     public Sprite DyeImage;
 
     public Sprite[] ItemImage;
-    public GameObject item0,item1;
+    public GameObject item0, item1;
 
     Slot item_slot;
     Item item;
@@ -17,47 +18,77 @@ public class ItemController : MonoBehaviour
     void Start()
     {
         item_slot = new Slot();
-        item_slot.slot_init();  
+        item_slot.slot_init();
+    }
+    private void Update()
+    {
+        if (SwipeManager.doubleTap) // 만약 더블탭했다면
+        {
+            // 아이템 사용
+            if (item_slot.item_have() != 0)
+            {
+                _use_item_in_the_slot();
+            }
+            return;
+        }
+        if(item0.GetComponent<Image>().sprite == null)
+        {
+            item0.SetActive(false);
+        }
+        if (item0.GetComponent<Image>().sprite != null)
+        {
+            item0.SetActive(true);
+        }
+        if (item1.GetComponent<Image>().sprite == null)
+        {
+            item1.SetActive(false);
+        }
+        if (item1.GetComponent<Image>().sprite != null)
+        {
+            item1.SetActive(true);
+        }
     }
 
     public void _get_new_item_on_the_road()
     {
         // Check the slot 
-        if( item_slot.full() ) return;
+        if (item_slot.full()) return;
 
         item = new Item();
         Item.item_type typetype = item.new_random_item(item_slot);
 
-        if ( item_slot.item_have() == 1 )
+        if (item_slot.item_have() == 1)
         {
             // item0.Sprite
-            item0.GetComponent<SpriteRenderer>().sprite = ItemImage[(int)typetype];
+            item0.GetComponent<Image>().sprite = ItemImage[(int)typetype];
 
         }
-        else if ( item_slot.item_have() == 2 )
+        else if (item_slot.item_have() == 2)
         {
             // item1.Sprite
-            item1.GetComponent<SpriteRenderer>().sprite = ItemImage[(int)typetype];
+            item1.GetComponent<Image>().sprite = ItemImage[(int)typetype];
         }
-                    
+
     }
 
     public void _use_item_in_the_slot()
     {
         // Check the slot
 
-        Item.item_type typetype = (Item.item_type) item_slot.stack.Pop();
+        Item.item_type typetype = (Item.item_type)item_slot.stack.Pop();
 
-        if ( item_slot.item_have() == 1 )
+        if (item_slot.item_have() == 1)
         {
             // item1.Sprite
-            item1.GetComponent<SpriteRenderer>().sprite = null;
+            item1.SetActive(false);
+            item1.GetComponent<Image>().sprite = null;
 
         }
-        else if ( item_slot.item_have() == 0 )
+        else if (item_slot.item_have() == 0)
         {
             // item0.Sprite
-            item0.GetComponent<SpriteRenderer>().sprite = null;
+            item0.SetActive(false);
+            item0.GetComponent<Image>().sprite = null;
         }
 
         // ITEM USE FUNCTION 
@@ -81,7 +112,7 @@ public class ItemController : MonoBehaviour
         {
             Debug.Log("USE ERASER");
         }
-        
+
     }
 }
 
@@ -99,11 +130,11 @@ public class Item
     public item_type new_random_item(Slot slot)
     {
         item_type new_item;
-        new_item = (item_type)Random.Range(0,4);
+        new_item = (item_type)Random.Range(0, 4);
 
         // store new item in slot
         slot.stack.Push((int)new_item);
-    
+
         return new_item;
     }
 }

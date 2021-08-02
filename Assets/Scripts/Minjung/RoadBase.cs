@@ -6,7 +6,11 @@ public class RoadBase : MonoBehaviour
 {
     int LineNum;
     float posX;
-
+    bool jump = false;
+    private void Start()
+    {
+        StartCoroutine(Jump());
+    }
     private void OnEnable() // 오브젝트가 활성화되면 실행
     {
         if (SpawnManager.MobStartNum == 0 || GameManager.score < 50)
@@ -52,11 +56,28 @@ public class RoadBase : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Debug.Log("장애물 충돌");
+            if (!jump)
+                Debug.Log("장애물 충돌");
+
+            else
+                return;
         }
         else
         {
             gameObject.SetActive(false);
+        }
+    }
+    IEnumerator Jump()
+    {
+        while (true)
+        {
+            if (SwipeManager.swipeUp == true)
+            {
+                jump = true;
+                yield return new WaitForSeconds(2); // 점프 애니메이션이 들어오면 점프 시간 수정할 예정
+                jump = false;
+            }
+            yield return null;
         }
     }
 }

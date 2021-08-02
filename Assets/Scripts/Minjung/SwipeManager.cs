@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -14,9 +15,12 @@ public class SwipeManager : MonoBehaviour
     private float lastTouchTime;
     private const float doubleTouchDelay = 0.5f;
 
+    public static int touchNum;
+
     private void Start()
     {
         lastTouchTime = Time.time;
+        touchNum = 0;
     }
     private void Update()
     {
@@ -24,19 +28,25 @@ public class SwipeManager : MonoBehaviour
 
         // Standalone Input 모듈: 컨트롤러/마우스 입력에 대해 동작하도록 설계됨.
         #region Standalone Inputs 
-        if (Input.GetMouseButtonDown(0)) // 만약 마우스 버튼을 눌렀다면 (0: 마우스 왼쪽버튼)
+        if (Input.GetMouseButtonDown(0) && GameManager.isPlay) // 만약 마우스 버튼을 눌렀다면 (0: 마우스 왼쪽버튼)
         {
             tap = true;
             isDraging = true;
             Move = false;
-            if(doubleTap) { doubleTap = false; } // 짝수번 눌렀을때만 더블탭 인식
+            if(doubleTap) 
+            {
+                doubleTap = false;
+            } // 짝수번 눌렀을때만 더블탭 인식
             startTouch = Input.mousePosition; // startTouch = 클릭한 마우스 좌표값
         }
-        else if (Input.GetMouseButtonUp(0)) // 만약 마우스 버튼을 눌렀다 바로 뗐다면 (0: 마우스 왼쪽버튼)
+        else if (Input.GetMouseButtonUp(0) && GameManager.isPlay) // 만약 마우스 버튼을 눌렀다 바로 뗐다면 (0: 마우스 왼쪽버튼)
         {
             isDraging = false;
             StartCoroutine("isDoubleTap");
-            if (!doubleTap && !Move) { lastTouchTime = Time.time; }
+            if (!doubleTap && !Move) 
+            { 
+                lastTouchTime = Time.time;
+            }
             Reset();
         }
         #endregion
@@ -53,11 +63,16 @@ public class SwipeManager : MonoBehaviour
             }
             else if (Input.touches[0].phase == TouchPhase.Ended || Input.touches[0].phase == TouchPhase.Canceled)// 만약 터치된 손가락이 스크린에서 떨어질 때|| 모바일폰을 귀에 갖다 대거나 touch tracking을 수행하지 않아야 할 경우면
             {
+                if (GameManager.isPlay)
+                {
+                    touchNum++;
+                }
                 isDraging = false;
-                if (Input.touchCount == 2 && !Move)
+                if (touchNum == 2 && !Move)
                 {
                     StartCoroutine("isDoubleTap");
                     lastTouchTime = Time.time;
+                    touchNum = 0;
                 }
                 Reset();
             }
@@ -79,12 +94,17 @@ public class SwipeManager : MonoBehaviour
             Move = true; // 스와이프 했는지 체크
             float x = swipeDelta.x;
             float y = swipeDelta.y;
-            if (x < 0)
-                swipeLeft = true; // swipeDelta.x<0이면 swipeLeft = true
-            if (x>= 0)
-                swipeRight = true; // swipeDelta.x>0이면 swipeRight = true
-            if (y > 0)
+            if (Math.Abs(swipeDelta.y) > Math.Abs(swipeDelta.x)) // 점프를 먼저 인식
+            {
                 swipeUp = true; // swipeDelta.y>0이면 swipeUp = true
+            }
+            else // 그 다음에 좌우 스와이프를 인식
+            {
+                if (x < 0)
+                    swipeLeft = true; // swipeDelta.x<0이면 swipeLeft = true
+                if (x >= 0)
+                    swipeRight = true; // swipeDelta.x>0이면 swipeRight = true
+            }
             Reset();
         }
     } 
