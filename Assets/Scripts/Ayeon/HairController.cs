@@ -30,7 +30,8 @@ public class HairController : MonoBehaviour
         || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.ORANGE")
         || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.DEEP_YELLOW"))
             return;
-        animator.SetTrigger("Bleach"); ;
+        animator.SetBool("B",true);
+        animator.SetTrigger("Bleach");
     }
 
     public void _get_dye()
