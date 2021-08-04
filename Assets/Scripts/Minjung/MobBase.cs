@@ -49,7 +49,6 @@ public class MobBase : MonoBehaviour
             else if (isAdult && somoon.adultTouch_Num != 0)
             {
                 somoon.adultTouch_Num++;
-
             }
 
             //아이와 처음 부딪쳤을 경우

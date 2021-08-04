@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e1bca4aa67f13fd4781a28fb7f10025c
+guid: a6b9e82d4f5075440b77f632eaeb1413
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6040040508471998880
-    second: tal_color 1_0
+      213: -4725236856158800622
+    second: tal_color (1)_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,7 +106,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tal_color 1_0
+      name: tal_color (1)_0
       rect:
         serializedVersion: 2
         x: 10
@@ -120,8 +120,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0668e87b8277d2ca0800000000000000
-      internalID: -6040040508471998880
+      spriteID: 215321d5d169c6eb0800000000000000
+      internalID: -4725236856158800622
       vertices: []
       indices: 
       edges: []

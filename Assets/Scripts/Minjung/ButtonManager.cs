@@ -20,14 +20,13 @@ public class ButtonManager : MonoBehaviour
     public Sprite SoundOffImage;
 
 
-
     public void Stop() // 일시정지 버튼 눌렀을 때
-    {
+    { 
         gamePanel.SetActive(true);
         fadeSprite.SetActive(true);
         Time.timeScale = 0;
         GameManager.isPlay = false;
-        
+
         backmusic = BackgroundMusic.GetComponent<AudioSource>();
         stepAudio = stepSound.GetComponent<AudioSource>();
 
@@ -36,9 +35,10 @@ public class ButtonManager : MonoBehaviour
     }
     public void Continue() // 다시 게임 시작 버튼 눌렀을 때
     {
-        Time.timeScale = 1;
+        SwipeManager.touchNum = 0;
         gamePanel.SetActive(false);
         fadeSprite.SetActive(false);
+        Time.timeScale = 1;
         StartCoroutine(GameManager.instance.CountDown());
         
         backmusic = BackgroundMusic.GetComponent<AudioSource>();

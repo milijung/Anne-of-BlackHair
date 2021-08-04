@@ -1,25 +1,34 @@
 fileFormatVersion: 2
-guid: 9fd4d93bc51f30643b7b0b4627fda044
+guid: cfe69d6a1910fba42ac3c21e9b3f23fe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5078973449296430216
-    second: LyndSide-Sheet_0
+      213: 2049095738339344036
+    second: Ann-Jump-Sheet_0
   - first:
-      213: -7423987977141886586
-    second: LyndSide-Sheet_1
+      213: -6283666720499328500
+    second: Ann-Jump-Sheet_1
   - first:
-      213: 1812035648894160791
-    second: LyndSide-Sheet_2
+      213: -923392109033545055
+    second: Ann-Jump-Sheet_2
   - first:
-      213: -120342140651510688
-    second: LyndSide-Sheet_3
+      213: 5969474635808921467
+    second: Ann-Jump-Sheet_3
   - first:
-      213: -4938833692751323432
-    second: LyndSide-Sheet_4
+      213: -6435633619395978729
+    second: Ann-Jump-Sheet_4
   - first:
-      213: -6566088520045932579
-    second: LyndSide-Sheet_5
+      213: -4237883251517825720
+    second: Ann-Jump-Sheet_5
+  - first:
+      213: -6607953659471822427
+    second: Ann-Jump-Sheet_6
+  - first:
+      213: -5297280464328469381
+    second: Ann-Jump-Sheet_7
+  - first:
+      213: 498103169380312706
+    second: Ann-Jump-Sheet_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -64,7 +73,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 72
+  spritePixelsToUnits: 90
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,13 +130,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LyndSide-Sheet_0
+      name: Ann-Jump-Sheet_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 12
-        width: 68
-        height: 96
+        x: 28
+        y: 0
+        width: 72
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,20 +144,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88444fc41732c7640800000000000000
-      internalID: 5078973449296430216
+      spriteID: 4aebb7aa7b9df6c10800000000000000
+      internalID: 2049095738339344036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LyndSide-Sheet_1
+      name: Ann-Jump-Sheet_1
       rect:
         serializedVersion: 2
         x: 156
-        y: 12
-        width: 68
-        height: 96
+        y: 0
+        width: 72
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 681efadc442b8f890800000000000000
-      internalID: -7423987977141886586
+      spriteID: c0a91b5f86eebc8a0800000000000000
+      internalID: -6283666720499328500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LyndSide-Sheet_2
+      name: Ann-Jump-Sheet_2
       rect:
         serializedVersion: 2
-        x: 288
-        y: 12
-        width: 68
-        height: 88
+        x: 276
+        y: 0
+        width: 88
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79f4ea472d4a52910800000000000000
-      internalID: 1812035648894160791
+      spriteID: 1a228a8e4c37f23f0800000000000000
+      internalID: -923392109033545055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LyndSide-Sheet_3
+      name: Ann-Jump-Sheet_3
       rect:
         serializedVersion: 2
-        x: 412
-        y: 12
-        width: 68
-        height: 88
+        x: 404
+        y: 0
+        width: 88
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -198,20 +207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 064e4fee575745ef0800000000000000
-      internalID: -120342140651510688
+      spriteID: b77581bbd85d7d250800000000000000
+      internalID: 5969474635808921467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LyndSide-Sheet_4
+      name: Ann-Jump-Sheet_4
       rect:
         serializedVersion: 2
-        x: 544
-        y: 16
-        width: 80
-        height: 84
+        x: 532
+        y: 0
+        width: 88
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,20 +228,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8de93da6cecb57bb0800000000000000
-      internalID: -4938833692751323432
+      spriteID: 71a5753125900b6a0800000000000000
+      internalID: -6435633619395978729
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LyndSide-Sheet_5
+      name: Ann-Jump-Sheet_5
       rect:
         serializedVersion: 2
-        x: 656
-        y: 16
-        width: 80
-        height: 84
+        x: 660
+        y: 0
+        width: 88
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,8 +249,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddf44e6974190e4a0800000000000000
-      internalID: -6566088520045932579
+      spriteID: 84dd3b1d2a30035c0800000000000000
+      internalID: -4237883251517825720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 0
+        width: 88
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a180fa3825db44a0800000000000000
+      internalID: -6607953659471822427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 0
+        width: 72
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74d510eb774c76b0800000000000000
+      internalID: -5297280464328469381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 0
+        width: 72
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286e868813e99e600800000000000000
+      internalID: 498103169380312706
       vertices: []
       indices: 
       edges: []

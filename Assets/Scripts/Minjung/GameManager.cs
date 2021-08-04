@@ -17,7 +17,6 @@ public class GameManager : MonoBehaviour
     public GameObject AnneCry;
     public Slider rumor;
     public GameObject itemSlot;
-    public GameObject itemButton;
 
     public GameObject BackgroundMusic;
     AudioSource backmusic;
@@ -73,11 +72,30 @@ public class GameManager : MonoBehaviour
     {
         for(int i = 0;i<Count.Length;i++)
         {
+            Count[i].transform.position = new Vector2(-5.5f, 0);
             Count[i].SetActive(true);
+            while (true)
+            {
+                if (Count[i].transform.position.x >= 0)
+                {
+                    break;
+                }
+                Count[i].transform.Translate(Vector2.right * 17 * Time.deltaTime);
+                yield return null;
+            }
             yield return new WaitForSeconds(0.5f);
+            while (true)
+            {
+                if (Count[i].transform.position.x >= 5.5f)
+                {
+                    break;
+                }
+                Count[i].transform.Translate(Vector2.right * 17 * Time.deltaTime);
+                yield return null;
+            }
             Count[i].SetActive(false);
             yield return new WaitForSeconds(0.5f);
-            yield return null;
+            yield return null;   
         }
         isPlay = true;
         StopCoroutine(CountDown());
@@ -93,7 +111,6 @@ public class GameManager : MonoBehaviour
         player.SetActive(true);
         rumor.gameObject.SetActive(true);
         itemSlot.SetActive(true);
-        itemButton.SetActive(true);
 
         SpawnManager.MobStartNum = 0;
         StartCoroutine(AddScore()); // score++ ½ÇÇà
@@ -123,7 +140,6 @@ public class GameManager : MonoBehaviour
         player.SetActive(false);
         rumor.gameObject.SetActive(false);
         itemSlot.SetActive(false);
-        itemButton.SetActive(false);
 
         if (MainMenu.AudioPlay == true)
         {
