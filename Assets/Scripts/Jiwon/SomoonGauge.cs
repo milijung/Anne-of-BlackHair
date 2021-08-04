@@ -5,6 +5,9 @@ using UnityEngine;
 public class SomoonGauge : MonoBehaviour
 {
     public GameManager gameManager;
+    public GameObject Emergency;
+    public GameObject EmergencyCar;
+
     public float adultFirstTouchTime;
     public float childFirstTouchTime;
     float startTime;
@@ -16,6 +19,8 @@ public class SomoonGauge : MonoBehaviour
 
     private void Awake()
     {
+        Emergency.SetActive(false);
+        EmergencyCar.SetActive(false);
         startTime = Time.time;
         somoonGauge = 0;
 
@@ -47,6 +52,12 @@ public class SomoonGauge : MonoBehaviour
             if(childTouch_Num != 0)
             {
                 somoonGauge += 0.8f * (realTime - childFirstTouchTime);
+            }
+
+            if (somoonGauge > 85 && somoonGauge < 88)
+            {
+                Emergency.SetActive(true);
+                EmergencyCar.SetActive(true);
             }
         }
     }
