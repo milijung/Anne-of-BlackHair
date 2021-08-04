@@ -15,12 +15,11 @@ public class HairController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void FixedUpdate()
     {
-
     }
 
     public void _get_bleach()
@@ -29,22 +28,20 @@ public class HairController : MonoBehaviour
         || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.DEEP_RED")
         || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.ORANGE")
         || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.DEEP_YELLOW"))
-            return;
+            animator.SetBool("B",false);
         animator.SetBool("B",true);
-        animator.SetTrigger("Bleach");
     }
 
     public void _get_dye()
     {
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.RED")
-        || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.DEEP_RED")
-        || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.ORANGE")
-        || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.DEEP_RED"))
-            animator.SetTrigger("Dye");
-
-        if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.BLEACH"))
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.BLACK")
+        || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.HAIR_ROOT1")
+        || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.HAIR_ROOT2")
+        || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.HAIR_ROOT3")
+        || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.HAIR_ROOT4"))
             return;
 
+        animator.SetBool("D",true);
     }
 
 }
