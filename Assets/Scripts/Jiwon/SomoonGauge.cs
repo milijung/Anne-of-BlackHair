@@ -42,7 +42,7 @@ public class SomoonGauge : MonoBehaviour
         }
         else
         {
-            somoonGauge = 3f * (adultTouch_Num + childTouch_Num * 2);
+            somoonGauge = 10f * (adultTouch_Num + childTouch_Num * 2);
 
             if(adultTouch_Num != 0)
             {
