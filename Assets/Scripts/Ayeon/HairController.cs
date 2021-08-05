@@ -15,21 +15,28 @@ public class HairController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
     }
 
     private void FixedUpdate()
     {
     }
 
+    public void _get_jump()
+    {
+        animator.SetTrigger("J");
+    }
+
     public void _get_bleach()
     {
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.RED")
+        animator.SetBool("B",true);
+
+         if (animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.RED")
         || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.DEEP_RED")
         || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.ORANGE")
-        || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.DEEP_YELLOW"))
+        || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.DEEP_YELLOW")
+        || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.BLEACH"))
             animator.SetBool("B",false);
-        animator.SetBool("B",true);
+
     }
 
     public void _get_dye()
