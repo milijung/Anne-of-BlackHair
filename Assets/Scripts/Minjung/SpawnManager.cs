@@ -9,21 +9,23 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] BackGround;
     public GameObject[] Road;
     public static int MobStartNum = 0; // SpawnManager 실행 전에 Mob이 등장하는 것 방지
-   // int MobCreateNum = 0;
-   //int ItemCreateTerm; // Mob이 ItemCreateTerm번 생성될 때마다 Item 1개 생성
+                                       // int MobCreateNum = 0;
+                                       //int ItemCreateTerm; // Mob이 ItemCreateTerm번 생성될 때마다 Item 1개 생성
+    int x_Back;
     int BackCreateNum = 0; // 풀,나무,집 생성관련 수
 
     public float startNum_Create, finalNum_Create; // mob 등장간의 시간 간격. startNum: 최소 시간 간격, finalNum: 최대 시간 간격
     private void Start()
     {
+        x_Back = 0;
         StartCoroutine(CreateMob());
         StartCoroutine(CreateRoad());
+        StartCoroutine(CreateBack());
         StartCoroutine(CreateItem());
         StartCoroutine(CreateColor());
     }
     IEnumerator CreateMob() // 마을사람들 생성
     {
-        int BackNum = Random.Range(1, 4); // 풀, 나무, 집 생성 term
         yield return new WaitForSeconds(3f); // 시작하고 3초 후부터 Mob 등장
         while (true)
         {
@@ -32,18 +34,8 @@ public class SpawnManager : MonoBehaviour
                 float time = Random.Range(startNum_Create, finalNum_Create); // 마을사람들이 등장하는 시간 간격
                 SideMobs[DeactiveMob()].SetActive(true); // 비활성화된 Mob들 중에서 1개를 활성화
                 BackCreateNum++;
-                yield return new WaitForSeconds(time/2);
-                if (BackCreateNum == BackNum) // 마을사람들이 BackNum번 생성될때마다 풀/나무/집 중 1개 활성화
-                {
-                    BackGround[DeactiveBack()].SetActive(true);
-                    yield return new WaitForSeconds(time / 2);
-                    BackCreateNum = 0;
-                    BackNum = Random.Range(1, 3);
-                }
-                else
-                {
-                    yield return new WaitForSeconds(time / 2);
-                }
+                yield return new WaitForSeconds(time);
+                
                 if (MobStartNum ==0)
                 {
                     MobStartNum++;
@@ -65,6 +57,10 @@ public class SpawnManager : MonoBehaviour
                 Item[0].SetActive(true); // 아이템주머니 활성화
                 yield return new WaitForSeconds(2); // 아이템이 생성된 후, 몇초 지나고 다음 아이템이 생성
             }
+            else
+            {
+                yield return new WaitForSeconds(GameManager.instance.Count.Length);
+            }
             yield return null;
         }
     }
@@ -78,6 +74,49 @@ public class SpawnManager : MonoBehaviour
                 yield return new WaitForSeconds(1);
                 Item[2].SetActive(true);
                 yield return new WaitForSeconds(3);
+            }
+            else
+            {
+                yield return new WaitForSeconds(GameManager.instance.Count.Length);
+            }
+            yield return null;
+        }
+    }
+    IEnumerator CreateBack() // 풀,나무,집 생성
+    {
+        yield return new WaitForSeconds(5f);
+        while (true)
+        {
+            if (GameManager.isPlay)
+            {
+                
+                if (x_Back <= 22)
+                {
+                    BackGround[x_Back].SetActive(true);
+                    BackGround[x_Back + 1].SetActive(true);
+                    if (x_Back == 22)
+                        yield return new WaitForSeconds(10f);
+                    else
+                        yield return new WaitForSeconds(0.8f);
+                    x_Back +=2;
+                }
+                else
+                {
+                    if(x_Back == 25||x_Back==30 || x_Back == 34 || x_Back == 39) { BackGround[x_Back].SetActive(true); x_Back++; }
+                    BackGround[x_Back].SetActive(true);
+                    yield return new WaitForSeconds(0.8f);
+                    x_Back++;
+                    if (x_Back == BackGround.Length)
+                    {
+                        x_Back = 0;
+                        yield return new WaitForSeconds(9.2f);
+                    }
+                }  
+                
+            }
+            else
+            {
+                yield return new WaitForSeconds(GameManager.instance.Count.Length);
             }
             yield return null;
         }
@@ -94,9 +133,12 @@ public class SpawnManager : MonoBehaviour
                 {
                     Road[DeactiveRoad()].SetActive(true);
                     yield return new WaitForSeconds(Random.Range(1, 2));
-
                 }
-            }      
+            }
+            else
+            {
+                yield return new WaitForSeconds(GameManager.instance.Count.Length);
+            }
             yield return null;
         }
     }
@@ -118,23 +160,6 @@ public class SpawnManager : MonoBehaviour
         }
         return x; // 비활성화된 Mob의 인덱스중 1개를 반환
     }
-    int DeactiveBack()
-    {
-        List<int> num = new List<int>();
-        for(int i=0; i < BackGround.Length; i++)
-        {
-            if (!BackGround[i].activeSelf)
-            {
-                num.Add(i);
-            }
-        }
-        int x = 0;
-        if(num.Count > 0)
-        {
-            x = num[Random.Range(0, num.Count)];
-        }
-        return x; // 비활성화된 BackGround의 인덱스중 1개를 반환
-    }
     
     int DeactiveRoad()
     {
@@ -152,12 +177,5 @@ public class SpawnManager : MonoBehaviour
             x = num[Random.Range(0, num.Count)];
         }
         return x;
-    }
-    GameObject CreateObj(GameObject obj, Transform parent)
-    {
-        GameObject copy = Instantiate(obj); // 매개변수로 받은 게임 오브젝트를 복제
-        copy.transform.SetParent(parent);
-        copy.SetActive(false);
-        return copy;
     }
 }
