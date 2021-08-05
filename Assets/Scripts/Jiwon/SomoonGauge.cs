@@ -42,16 +42,16 @@ public class SomoonGauge : MonoBehaviour
         }
         else
         {
-            somoonGauge = 0.5f * (adultTouch_Num + childTouch_Num * 2);
+            somoonGauge = 3f * (adultTouch_Num + childTouch_Num * 2);
 
             if(adultTouch_Num != 0)
             {
-                somoonGauge += 0.5f * (realTime - adultFirstTouchTime);
+                somoonGauge += 0.1f * (realTime - adultFirstTouchTime);
             }
 
             if(childTouch_Num != 0)
             {
-                somoonGauge += 0.8f * (realTime - childFirstTouchTime);
+                somoonGauge += 0.1f * (realTime - childFirstTouchTime);
             }
 
             if (somoonGauge > 85 && somoonGauge < 88)
