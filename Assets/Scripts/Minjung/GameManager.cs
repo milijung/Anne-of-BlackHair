@@ -26,6 +26,9 @@ public class GameManager : MonoBehaviour
     public float gameSpeed;
     public GameObject[] Count;
 
+    
+    
+
     #region instance
     public static GameManager instance;
     private void Awake()
@@ -49,6 +52,8 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         scoreTxt.text = score.ToString(); // score 값을 Text 내용으로
+
+        
     }
 
     public IEnumerator AddScore()
