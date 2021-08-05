@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
                 {
                     break;
                 }
-                Count[i].transform.Translate(Vector2.right * 17 * Time.deltaTime);
+                Count[i].transform.Translate(Vector2.right * 20 * Time.deltaTime);
                 yield return null;
             }
             yield return new WaitForSeconds(0.5f);
@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour
                 {
                     break;
                 }
-                Count[i].transform.Translate(Vector2.right * 17 * Time.deltaTime);
+                Count[i].transform.Translate(Vector2.right * 20 * Time.deltaTime);
                 yield return null;
             }
             Count[i].SetActive(false);
