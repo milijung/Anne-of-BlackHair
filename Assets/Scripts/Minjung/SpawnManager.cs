@@ -87,16 +87,17 @@ public class SpawnManager : MonoBehaviour
                 if (x_Back <= 22) // ½£
                 {
                     BackGround[x_Back].SetActive(true);
+                    yield return new WaitForSeconds(0.3f);
                     BackGround[x_Back + 1].SetActive(true);
                     if (x_Back == 22)
                         yield return new WaitForSeconds(10f);
                     else
-                        yield return new WaitForSeconds(0.8f);
+                        yield return new WaitForSeconds(0.5f);
                     x_Back +=2;
                 }
                 else // ¸¶À»
                 {
-                    if(x_Back == 25||x_Back==30 || x_Back == 34 || x_Back == 39) { BackGround[x_Back].SetActive(true); x_Back++; }
+                    if(x_Back == 25||x_Back==30 || x_Back == 34 || x_Back == 39 || x_Back == 44) { BackGround[x_Back].SetActive(true); x_Back++; }
                     BackGround[x_Back].SetActive(true);
                     yield return new WaitForSeconds(0.8f);
                     x_Back++;
