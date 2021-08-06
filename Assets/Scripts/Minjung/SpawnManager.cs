@@ -4,14 +4,46 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
+    List<GameObject> TreePool = new List<GameObject>();
+    List<GameObject> HousePool = new List<GameObject>();
+    List<GameObject> BackGround = new List<GameObject>();
+    List<int> StreetLightNum = new List<int>();
     public GameObject[] SideMobs;
     public GameObject[] Item;
-    public GameObject[] BackGround;
+    public GameObject[] Tree;
+    public GameObject[] House;
     public GameObject[] Road;
     public static int MobStartNum = 0; // SpawnManager 실행 전에 Mob이 등장하는 것 방지
+    public int objCnt = 4;
     int x_Back;
 
     public float startNum_Create, finalNum_Create; // mob 등장간의 시간 간격. startNum: 최소 시간 간격, finalNum: 최대 시간 간격
+    private void Awake()
+    {
+        for(int q = 0; q < objCnt; q++)
+        {
+            for(int i = 0; i < Tree.Length; i++)
+            {
+                TreePool.Add(CreateObj(Tree[i], transform));
+            }
+            for(int i=0; i < House.Length; i++)
+            {
+                HousePool.Add(CreateObj(House[i], transform));
+            }
+        }
+        for(int i = 0; i < TreePool.Count; i++)
+        {
+            BackGround.Add(TreePool[i]);
+        }
+        for (int i = 0; i < HousePool.Count; i++)
+        {
+            BackGround.Add(HousePool[i]);
+            if (HousePool[i].name.Contains("streetlight"))
+            {
+                StreetLightNum.Add(TreePool.Count + i);
+            }
+        }
+    }
     private void Start()
     {
         x_Back = 0;
@@ -20,6 +52,53 @@ public class SpawnManager : MonoBehaviour
         StartCoroutine(CreateBack());
         StartCoroutine(CreateItem());
         StartCoroutine(CreateColor());
+    }
+    IEnumerator CreateBack() // 풀,나무,집 생성
+    {
+        yield return new WaitForSeconds(5f);
+        while (true)
+        {
+            if (GameManager.isPlay)
+            {
+                if (x_Back <= TreePool.Count)
+                {
+                    BackGround[x_Back].SetActive(true);
+                    yield return new WaitForSeconds(0.2f);
+                    x_Back++;
+                    if (x_Back == TreePool.Count)
+                    {
+                        yield return new WaitForSeconds(9.8f);
+                    }
+                }
+                else
+                {
+                    if (StreetLightNum.Contains(x_Back))
+                    {
+                        BackGround[x_Back].SetActive(true);
+                        BackGround[x_Back + 1].SetActive(true);
+                        x_Back += 2;
+                    }
+                    else
+                    {
+                        BackGround[x_Back].SetActive(true);
+                        x_Back++;
+                    }
+                    yield return new WaitForSeconds(0.7f);
+                    
+                    if (x_Back == BackGround.Count)
+                    {
+                        yield return new WaitForSeconds(9.3f);
+                        x_Back = 0;
+                    }
+                }
+
+            }
+            else
+            {
+                yield return new WaitForSeconds(GameManager.instance.Count.Length);
+            }
+            yield return null;
+        }
     }
     IEnumerator CreateMob() // 마을사람들 생성
     {
@@ -68,46 +147,6 @@ public class SpawnManager : MonoBehaviour
                 yield return new WaitForSeconds(1);
                 Item[2].SetActive(true);
                 yield return new WaitForSeconds(3);
-            }
-            else
-            {
-                yield return new WaitForSeconds(GameManager.instance.Count.Length);
-            }
-            yield return null;
-        }
-    }
-    IEnumerator CreateBack() // 풀,나무,집 생성
-    {
-        yield return new WaitForSeconds(5f);
-        while (true)
-        {
-            if (GameManager.isPlay)
-            {
-                
-                if (x_Back <= 22) // 숲
-                {
-                    BackGround[x_Back].SetActive(true);
-                    yield return new WaitForSeconds(0.3f);
-                    BackGround[x_Back + 1].SetActive(true);
-                    if (x_Back == 22)
-                        yield return new WaitForSeconds(10f);
-                    else
-                        yield return new WaitForSeconds(0.5f);
-                    x_Back +=2;
-                }
-                else // 마을
-                {
-                    if(x_Back == 25||x_Back==30 || x_Back == 34 || x_Back == 39 || x_Back == 44) { BackGround[x_Back].SetActive(true); x_Back++; }
-                    BackGround[x_Back].SetActive(true);
-                    yield return new WaitForSeconds(0.8f);
-                    x_Back++;
-                    if (x_Back == BackGround.Length)
-                    {
-                        x_Back = 0;
-                        yield return new WaitForSeconds(9.2f);
-                    }
-                }  
-                
             }
             else
             {
@@ -167,5 +206,12 @@ public class SpawnManager : MonoBehaviour
             x = num[Random.Range(0, num.Count)];
         }
         return x;
+    }
+    GameObject CreateObj(GameObject obj, Transform parent)
+    {
+        GameObject copy = Instantiate(obj);
+        copy.transform.SetParent(parent);
+        copy.SetActive(false);
+        return copy;
     }
 }
