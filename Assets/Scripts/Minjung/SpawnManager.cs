@@ -9,10 +9,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] BackGround;
     public GameObject[] Road;
     public static int MobStartNum = 0; // SpawnManager 실행 전에 Mob이 등장하는 것 방지
-                                       // int MobCreateNum = 0;
-                                       //int ItemCreateTerm; // Mob이 ItemCreateTerm번 생성될 때마다 Item 1개 생성
     int x_Back;
-    int BackCreateNum = 0; // 풀,나무,집 생성관련 수
 
     public float startNum_Create, finalNum_Create; // mob 등장간의 시간 간격. startNum: 최소 시간 간격, finalNum: 최대 시간 간격
     private void Start()
@@ -33,13 +30,10 @@ public class SpawnManager : MonoBehaviour
             {
                 float time = Random.Range(startNum_Create, finalNum_Create); // 마을사람들이 등장하는 시간 간격
                 SideMobs[DeactiveMob()].SetActive(true); // 비활성화된 Mob들 중에서 1개를 활성화
-                BackCreateNum++;
                 yield return new WaitForSeconds(time);
                 
                 if (MobStartNum ==0)
-                {
                     MobStartNum++;
-                }
             }
             else
             {
@@ -90,7 +84,7 @@ public class SpawnManager : MonoBehaviour
             if (GameManager.isPlay)
             {
                 
-                if (x_Back <= 22)
+                if (x_Back <= 22) // 숲
                 {
                     BackGround[x_Back].SetActive(true);
                     BackGround[x_Back + 1].SetActive(true);
@@ -100,7 +94,7 @@ public class SpawnManager : MonoBehaviour
                         yield return new WaitForSeconds(0.8f);
                     x_Back +=2;
                 }
-                else
+                else // 마을
                 {
                     if(x_Back == 25||x_Back==30 || x_Back == 34 || x_Back == 39) { BackGround[x_Back].SetActive(true); x_Back++; }
                     BackGround[x_Back].SetActive(true);
@@ -125,15 +119,10 @@ public class SpawnManager : MonoBehaviour
     {
         while (true)
         {
-            if (GameManager.score %50 == 0 && GameManager.isPlay) // 점수가 50의 배수가 될때마다 생성
+            if (GameManager.isPlay)
             {
-                int score = GameManager.score;
-                int num = Random.Range(15, 20); // 언제까지 장애물이 등장할지 결정
-                while (GameManager.score <= score + num) // 점수가 50n + num이 될때까지 장애물 등장
-                {
-                    Road[DeactiveRoad()].SetActive(true);
-                    yield return new WaitForSeconds(Random.Range(1, 2));
-                }
+                Road[DeactiveRoad()].SetActive(true);
+                yield return new WaitForSeconds(Random.Range(1, 3));
             }
             else
             {
@@ -161,7 +150,7 @@ public class SpawnManager : MonoBehaviour
         return x; // 비활성화된 Mob의 인덱스중 1개를 반환
     }
     
-    int DeactiveRoad()
+    int DeactiveRoad() // 비활성화된 장애물중에서 선택하는 함수
     {
         List<int> num = new List<int>();
         for(int i=0; i< Road.Length; i++)

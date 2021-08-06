@@ -83,6 +83,7 @@ public class GameManager : MonoBehaviour
                 Count[i].transform.Translate(Vector2.right * 20 * Time.deltaTime);
                 yield return null;
             }
+            Count[i].transform.position = new Vector2(0, 0);
             yield return new WaitForSeconds(0.5f);
             while (true)
             {

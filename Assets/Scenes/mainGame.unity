@@ -2527,11 +2527,11 @@ MonoBehaviour:
   BleachImage: {fileID: 0}
   DyeImage: {fileID: 0}
   ItemImage:
-  - {fileID: 2873660405995735944, guid: b8bcc895d3fe06447a9cad2b7ac82fb3, type: 3}
-  - {fileID: -5195538162078977787, guid: b8bcc895d3fe06447a9cad2b7ac82fb3, type: 3}
-  - {fileID: -2593516898835043115, guid: b8bcc895d3fe06447a9cad2b7ac82fb3, type: 3}
   - {fileID: 6910042003115432476, guid: b8bcc895d3fe06447a9cad2b7ac82fb3, type: 3}
-  - {fileID: -8841160648971155050, guid: b8bcc895d3fe06447a9cad2b7ac82fb3, type: 3}
+  - {fileID: -2593516898835043115, guid: b8bcc895d3fe06447a9cad2b7ac82fb3, type: 3}
+  - {fileID: 6291011919758860086, guid: b8bcc895d3fe06447a9cad2b7ac82fb3, type: 3}
+  - {fileID: -5195538162078977787, guid: b8bcc895d3fe06447a9cad2b7ac82fb3, type: 3}
+  - {fileID: 2873660405995735944, guid: b8bcc895d3fe06447a9cad2b7ac82fb3, type: 3}
   item0: {fileID: 1682050272}
   item1: {fileID: 1271950594}
 --- !u!1 &485285892
@@ -3022,7 +3022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 3664b7e6f3585614a952503a2c270e21, type: 3}
-  m_Color: {r: 0.8078432, g: 0.18823531, b: 0.18823531, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6974,7 +6974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 3664b7e6f3585614a952503a2c270e21, type: 3}
-  m_Color: {r: 0.8078432, g: 0.18823531, b: 0.18823531, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
