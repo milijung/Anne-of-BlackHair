@@ -13,7 +13,7 @@ public class RoadBase : MonoBehaviour
     }
     private void OnEnable() // 오브젝트가 활성화되면 실행
     {
-        if (SpawnManager.MobStartNum == 0 || GameManager.score < 50)
+        if (SpawnManager.MobStartNum == 0)
         {
             gameObject.SetActive(false); // SpawnManager 실행 전에 Mob이 등장하는 것 방지
 
@@ -60,21 +60,21 @@ public class RoadBase : MonoBehaviour
                 Debug.Log("장애물 충돌");
 
             else
-                return;
+                Debug.Log("장애물 피함");
         }
         else
         {
             gameObject.SetActive(false);
         }
     }
-    IEnumerator Jump()
+    IEnumerator Jump() // 점프 애니메이션이 들어오면 애니메이션 상태로 조건 수정할 예정
     {
         while (true)
         {
             if (SwipeManager.swipeUp == true)
             {
                 jump = true;
-                yield return new WaitForSeconds(2); // 점프 애니메이션이 들어오면 점프 시간 수정할 예정
+                yield return new WaitForSeconds(2); 
                 jump = false;
             }
             yield return null;
