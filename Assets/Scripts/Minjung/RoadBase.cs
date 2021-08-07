@@ -7,15 +7,17 @@ public class RoadBase : MonoBehaviour
     int LineNum;
     float posX;
     bool jump = false;
+
     private void Start()
     {
         StartCoroutine(Jump());
     }
-    private void OnEnable() // ¿ÀºêÁ§Æ®°¡ È°¼ºÈ­µÇ¸é ½ÇÇà
+    
+    private void OnEnable() // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ È°ï¿½ï¿½È­ï¿½Ç¸ï¿½ ï¿½ï¿½ï¿½ï¿½
     {
         if (SpawnManager.MobStartNum == 0 || GameManager.score < 50)
         {
-            gameObject.SetActive(false); // SpawnManager ½ÇÇà Àü¿¡ MobÀÌ µîÀåÇÏ´Â °Í ¹æÁö
+            gameObject.SetActive(false); // SpawnManager ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Mobï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
         }
         else
@@ -46,7 +48,7 @@ public class RoadBase : MonoBehaviour
         if (GameManager.isPlay)
         {
             transform.Translate(Vector2.down * Time.deltaTime * GameManager.instance.gameSpeed * 12);
-            if (transform.position.y < -8) // È­¸é ³¡±îÁö MobÀÌ ÀÌµ¿ÇÏ¸é ÇØ´ç Mob ºñÈ°¼ºÈ­
+            if (transform.position.y < -8) // È­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Mobï¿½ï¿½ ï¿½Ìµï¿½ï¿½Ï¸ï¿½ ï¿½Ø´ï¿½ Mob ï¿½ï¿½È°ï¿½ï¿½È­
             {
                 gameObject.SetActive(false);
             }
@@ -57,7 +59,7 @@ public class RoadBase : MonoBehaviour
         if (collision.tag == "Player")
         {
             if (!jump)
-                Debug.Log("Àå¾Ö¹° Ãæµ¹");
+                Debug.Log("ï¿½ï¿½Ö¹ï¿½ ï¿½æµ¹");
 
             else
                 return;
@@ -74,7 +76,7 @@ public class RoadBase : MonoBehaviour
             if (SwipeManager.swipeUp == true)
             {
                 jump = true;
-                yield return new WaitForSeconds(2); // Á¡ÇÁ ¾Ö´Ï¸ÞÀÌ¼ÇÀÌ µé¾î¿À¸é Á¡ÇÁ ½Ã°£ ¼öÁ¤ÇÒ ¿¹Á¤
+                yield return new WaitForSeconds(2); // ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´Ï¸ï¿½ï¿½Ì¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
                 jump = false;
             }
             yield return null;
