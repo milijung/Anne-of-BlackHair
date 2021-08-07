@@ -9,12 +9,14 @@ public class ItemBase : MonoBehaviour
     float posX;
 
     ItemController _item_controller;
-    HairController _hair_controller;
+    AnimationController _animation_controller;
+
     void Start()
     {
         _item_controller = GameObject.Find("Item_Controller").GetComponent<ItemController>();
-        _hair_controller = GameObject.Find("Hair_Controller").GetComponent<HairController>();
+        _animation_controller = GameObject.Find("Animation_Controller").GetComponent<AnimationController>();
     }
+
     private void OnEnable() // ������Ʈ�� Ȱ��ȭ�Ǹ� ����
     {
         if (SpawnManager.MobStartNum == 0)
@@ -66,24 +68,16 @@ public class ItemBase : MonoBehaviour
             {
                 // ann_get_item_box
                 _item_controller._get_new_item_on_the_road();
-                //Debug.Log("ann_get_item_box");
             }
             else if (this.type == 1)
             {
                 // ann_get_bleach
-
-                // change_the_ann_hair_bleach
-
-                _hair_controller._get_bleach();
-
+                _animation_controller._ann_get_bleach();
             }
             else if (this.type == 2)
             {
                 // ann_get_dye
-
-                // change_the_ann_hair_bleach
-
-                _hair_controller._get_dye();
+                _animation_controller._ann_get_dye();
             }
         }
         else if(collision.tag == "Radar")

@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class ItemController : MonoBehaviour
 {
-    public Sprite BleachImage;
-    public Sprite DyeImage;
 
     public Sprite[] ItemImage;
-    public GameObject item0, item1;
+    public GameObject item0, item1, item2;
+    // item0, item1 => slot_item
+    // item2 => twinkle
 
     Slot item_slot;
     Item item;
@@ -22,9 +22,8 @@ public class ItemController : MonoBehaviour
     }
     private void Update()
     {
-        if (SwipeManager.doubleTap) // 만약 더블탭했다면
+        if (SwipeManager.doubleTap)
         {
-            // 아이템 사용
             if (item_slot.item_have() != 0)
             {
                 _use_item_in_the_slot();
@@ -73,8 +72,6 @@ public class ItemController : MonoBehaviour
 
     public void _use_item_in_the_slot()
     {
-        // Check the slot
-
         Item.item_type typetype = (Item.item_type)item_slot.stack.Pop();
 
         if (item_slot.item_have() == 1)
