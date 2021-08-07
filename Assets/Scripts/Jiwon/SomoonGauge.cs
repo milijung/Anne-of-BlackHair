@@ -6,8 +6,10 @@ public class SomoonGauge : MonoBehaviour
 {
     public GameManager gameManager;
     public GameObject Emergency;
-    public GameObject EmergencyCar;
+    
+    public Animator animator;
 
+    public bool somoonContinue;
     public float adultFirstTouchTime;
     public float childFirstTouchTime;
     float startTime;
@@ -19,10 +21,12 @@ public class SomoonGauge : MonoBehaviour
 
     private void Awake()
     {
+        animator = GameObject.Find("Player").GetComponent<Animator>();
         Emergency.SetActive(false);
-        EmergencyCar.SetActive(false);
+        
         startTime = Time.time;
         somoonGauge = 0;
+        somoonContinue = true;
 
     }
 
@@ -33,32 +37,51 @@ public class SomoonGauge : MonoBehaviour
         SomoonCtrl();
     }
 
+    
+
 
     public void SomoonCtrl()
     {
-        if(somoonGauge >= 100.0f)
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.RED") || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.DEEP_RED"))
         {
-            gameManager.GameOver();
+            somoonContinue = false;
         }
+
         else
         {
-            somoonGauge = 0.5f * (adultTouch_Num + childTouch_Num * 2);
-
-            if(adultTouch_Num != 0)
+            somoonContinue = true;
+            if (somoonGauge >= 100.0f)
             {
-                somoonGauge += 0.5f * (realTime - adultFirstTouchTime);
+                gameManager.GameOver();
             }
-
-            if(childTouch_Num != 0)
+            else if (somoonGauge < 100.0f && somoonContinue == true)
             {
-                somoonGauge += 0.8f * (realTime - childFirstTouchTime);
-            }
+                somoonGauge = 0.5f * (adultTouch_Num + childTouch_Num * 2);
 
-            if (somoonGauge > 85 && somoonGauge < 88)
-            {
-                Emergency.SetActive(true);
-                EmergencyCar.SetActive(true);
+                if (adultTouch_Num != 0)
+                {
+                    somoonGauge += 0.5f * (realTime - adultFirstTouchTime);
+                }
+
+                if (childTouch_Num != 0)
+                {
+                    somoonGauge += 0.8f * (realTime - childFirstTouchTime);
+                }
+
+                if ((somoonGauge > 85 && somoonGauge < 88))
+                {
+                    Emergency.SetActive(true);
+                    
+                }
+                else
+                {
+                    Emergency.SetActive(false);
+                    
+                }
+
             }
-        }
+        }        
+
     }
+    
 }

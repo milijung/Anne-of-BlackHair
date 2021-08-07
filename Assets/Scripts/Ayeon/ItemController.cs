@@ -10,6 +10,7 @@ public class ItemController : MonoBehaviour
 
     public Sprite[] ItemImage;
     public GameObject item0, item1;
+    public SomoonGauge somoon;
 
     Slot item_slot;
     Item item;
@@ -111,6 +112,7 @@ public class ItemController : MonoBehaviour
         else if (typetype == Item.item_type.eraser)
         {
             Debug.Log("USE ERASER");
+            somoon.somoonGauge = somoon.somoonGauge * 0.8f;
         }
 
     }

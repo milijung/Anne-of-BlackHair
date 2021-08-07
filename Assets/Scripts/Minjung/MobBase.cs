@@ -6,9 +6,12 @@ public class MobBase : MonoBehaviour
 {
     public Vector2 StartPosition;
     public SomoonGauge somoon;
+    Animator ani;
 
     private void OnEnable() // 오브젝트가 활성화되면 실행
     {
+        ani = GetComponent<Animator>();
+
         if (SpawnManager.MobStartNum == 0)
         {
             gameObject.SetActive(false); // SpawnManager 실행 전에 Mob이 등장하는 것 방지
@@ -22,6 +25,8 @@ public class MobBase : MonoBehaviour
     }
     private void Update()
     {
+        
+
         if (GameManager.isPlay)
         {
             transform.Translate(Vector2.down * Time.deltaTime * GameManager.instance.gameSpeed * 12);
@@ -31,10 +36,17 @@ public class MobBase : MonoBehaviour
             }
         }
     }
+
+    private void Surprised()
+    {
+        ani.SetBool("isTouch", true);
+    }
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.tag == "Player")
         {
+            Invoke("Surprised", 2);
+
             //부딪힌 게 어른인지 아이인지 구별
             bool isAdult = gameObject.name.Contains("Adult");
             bool isChildren = gameObject.name.Contains("Children");

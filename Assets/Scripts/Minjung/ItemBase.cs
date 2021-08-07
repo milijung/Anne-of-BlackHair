@@ -15,11 +15,11 @@ public class ItemBase : MonoBehaviour
         _item_controller = GameObject.Find("Item_Controller").GetComponent<ItemController>();
         _hair_controller = GameObject.Find("Hair_Controller").GetComponent<HairController>();
     }
-    private void OnEnable() // ¿ÀºêÁ§Æ®°¡ È°¼ºÈ­µÇ¸é ½ÇÇà
+    private void OnEnable() // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ È°ï¿½ï¿½È­ï¿½Ç¸ï¿½ ï¿½ï¿½ï¿½ï¿½
     {
         if (SpawnManager.MobStartNum == 0)
         {
-            gameObject.SetActive(false); // SpawnManager ½ÇÇà Àü¿¡ MobÀÌ µîÀåÇÏ´Â °Í ¹æÁö
+            gameObject.SetActive(false); // SpawnManager ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Mobï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
         }
         else
@@ -51,7 +51,7 @@ public class ItemBase : MonoBehaviour
         {
             transform.Translate(Vector2.down * Time.deltaTime * GameManager.instance.gameSpeed * 12);
             
-            if (transform.position.y < -8) // È­¸é ³¡±îÁö MobÀÌ ÀÌµ¿ÇÏ¸é ÇØ´ç Mob ºñÈ°¼ºÈ­
+            if (transform.position.y < -8) // È­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Mobï¿½ï¿½ ï¿½Ìµï¿½ï¿½Ï¸ï¿½ ï¿½Ø´ï¿½ Mob ï¿½ï¿½È°ï¿½ï¿½È­
             {
                 gameObject.SetActive(false);
             }
@@ -90,7 +90,7 @@ public class ItemBase : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
-        else if(collision.tag == "Item") // Å»»ö¾à/¿°»ö¾àÀÌ ¾ÆÀÌÅÛÁÖ¸Ó´Ï¶û µ¿½Ã¿¡ È°¼ºÈ­µÇ¸é, ¾ÆÀÌÅÛÁÖ¸Ó´Ï¸¦ ºñÈ°¼ºÈ­
+        else if(collision.tag == "Item") // Å»ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸Ó´Ï¶ï¿½ ï¿½ï¿½ï¿½Ã¿ï¿½ È°ï¿½ï¿½È­ï¿½Ç¸ï¿½, ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸Ó´Ï¸ï¿½ ï¿½ï¿½È°ï¿½ï¿½È­
         {
             collision.gameObject.SetActive(false);
         }
