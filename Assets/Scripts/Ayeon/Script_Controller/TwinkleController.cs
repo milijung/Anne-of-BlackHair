@@ -25,4 +25,9 @@ public class TwinkleController : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+
+    public void twinkle_play()
+    {
+        gameObject.GetComponent<Animator>().Play("twinkle_anim",-1,0.0f);
+    }
 }

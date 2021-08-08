@@ -28,21 +28,25 @@ public class AnimationController : MonoBehaviour
     }
 
     public void _ann_get_bleach()
-    {
+    {   
         _ann_animator.SetBool("B",true);
+        if(_ann_animator.GetCurrentAnimatorStateInfo(0).IsName("RED")) _ann_animator.SetBool("B",false);
     }
 
     public void _ann_get_dye()
     {
-
-        if (_ann_animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.BLACK")
-        || _ann_animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.HAIR_ROOT1")
-        || _ann_animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.HAIR_ROOT2")
-        || _ann_animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.HAIR_ROOT3")
-        || _ann_animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.HAIR_ROOT4"))
-            return;
-
         _ann_animator.SetBool("D",true);
-        _twinkle_controller.twinkle_on();
+        
+        if(_ann_animator.GetCurrentAnimatorStateInfo(0).IsName("BLACK")
+            || _ann_animator.GetCurrentAnimatorStateInfo(0).IsName("HAIR_ROOT1")
+            || _ann_animator.GetCurrentAnimatorStateInfo(0).IsName("HAIR_ROOT2")
+            || _ann_animator.GetCurrentAnimatorStateInfo(0).IsName("HAIR_ROOT3")
+            || _ann_animator.GetCurrentAnimatorStateInfo(0).IsName("HAIR_ROOT4"))
+            _ann_animator.SetBool("D",false);
+        else
+        {
+            _twinkle_controller.twinkle_on();
+            _twinkle_controller.twinkle_play();
+        }
     }
 }
