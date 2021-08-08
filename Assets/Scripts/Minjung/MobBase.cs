@@ -24,7 +24,7 @@ public class MobBase : MonoBehaviour
         if (GameManager.isPlay)
         {
             transform.Translate(Vector2.down * Time.deltaTime * GameManager.instance.gameSpeed * 12);
-            if (transform.position.y < -8) // ȭ�� ������ Mob�� �̵��ϸ� �ش� Mob ��Ȱ��ȭ
+            if (transform.position.y < -8) 
             {
                 gameObject.SetActive(false);
             }
@@ -34,31 +34,30 @@ public class MobBase : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            //�ε��� �� ����� �������� ����
             bool isAdult = gameObject.name.Contains("Adult");
             bool isChildren = gameObject.name.Contains("Children");
-            //��� ó�� �ε����� ���
+
             if (isAdult && somoon.adultTouch_Num == 0)
             {
                 somoon.adultTouch_Num++;
-                somoon.adultFirstTouchTime = somoon.realTime;  //ó�� �ε��� �ð� ����
+                somoon.adultFirstTouchTime = somoon.realTime;
             }
 
-            //��� n��° �ε�ģ ���
+           
             else if (isAdult && somoon.adultTouch_Num != 0)
             {
                 somoon.adultTouch_Num++;
             }
 
-            //���̿� ó�� �ε����� ���
+           
             else if (isChildren && somoon.childTouch_Num == 0)
             {
                 somoon.childTouch_Num++;
-                somoon.childFirstTouchTime = somoon.realTime;  //ó�� �ε��� �ð� ����
+                somoon.childFirstTouchTime = somoon.realTime;  
 
             }
 
-            //���̿� n ��° �ε��� ���
+
             else if (isChildren && somoon.childTouch_Num != 0)
             {
                 somoon.childTouch_Num++;

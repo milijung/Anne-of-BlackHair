@@ -9,6 +9,7 @@ public class PanelManager : MonoBehaviour
     public GameObject fadeSprite;
     public GameObject AnneCry;
     public GameObject[] Count;
+    public GameObject[] Berry;
 
     void Start()
     {
@@ -19,6 +20,10 @@ public class PanelManager : MonoBehaviour
         for(int i = 0; i < Count.Length; i++)
         {
             Count[i].SetActive(false);
+        }
+        for(int i = 0; i < Berry.Length; i++)
+        {
+            Berry[i].SetActive(false);
         }
     }
 
