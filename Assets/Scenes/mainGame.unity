@@ -532,7 +532,7 @@ Animator:
   m_GameObject: {fileID: 104141083}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c4cd3a2e9637cad489a1559944a9a6e2, type: 2}
+  m_Controller: {fileID: 9100000, guid: a5ae9dd86443adf4db718cecd667d293, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7170,7 +7170,7 @@ GameObject:
   - component: {fileID: 1496990354}
   - component: {fileID: 1496990355}
   m_Layer: 0
-  m_Name: Hair_Controller
+  m_Name: Animation_Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7199,7 +7199,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1496990353}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98815d459f67e9f40948969024d16f5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 8bb1d2b5954430f4f94f75b10e8c7b2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _twinkle: {fileID: 1832090818}
