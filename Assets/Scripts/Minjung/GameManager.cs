@@ -26,6 +26,9 @@ public class GameManager : MonoBehaviour
     public float gameSpeed;
     public GameObject[] Count;
 
+    
+    
+
     #region instance
     public static GameManager instance;
     private void Awake()
@@ -49,6 +52,8 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         scoreTxt.text = score.ToString(); // score 값을 Text 내용으로
+
+        
     }
 
     public IEnumerator AddScore()
@@ -78,6 +83,7 @@ public class GameManager : MonoBehaviour
                 Count[i].transform.Translate(Vector2.right * 20 * Time.deltaTime);
                 yield return null;
             }
+            Count[i].transform.position = new Vector2(0, 0);
             yield return new WaitForSeconds(0.5f);
             while (true)
             {

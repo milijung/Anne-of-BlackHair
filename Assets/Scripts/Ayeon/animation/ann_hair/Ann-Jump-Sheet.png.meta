@@ -1,0 +1,2280 @@
+fileFormatVersion: 2
+guid: 471e30ac50aee6242b28c781f20e0588
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2049095738339344036
+    second: Ann-Jump-Sheet_0
+  - first:
+      213: -6283666720499328500
+    second: Ann-Jump-Sheet_1
+  - first:
+      213: -923392109033545055
+    second: Ann-Jump-Sheet_2
+  - first:
+      213: 5969474635808921467
+    second: Ann-Jump-Sheet_3
+  - first:
+      213: -6435633619395978729
+    second: Ann-Jump-Sheet_4
+  - first:
+      213: -4237883251517825720
+    second: Ann-Jump-Sheet_5
+  - first:
+      213: -6607953659471822427
+    second: Ann-Jump-Sheet_6
+  - first:
+      213: -5297280464328469381
+    second: Ann-Jump-Sheet_7
+  - first:
+      213: 498103169380312706
+    second: Ann-Jump-Sheet_8
+  - first:
+      213: 8229982675945022742
+    second: Ann-Jump-Sheet_9
+  - first:
+      213: 4476394458400015734
+    second: Ann-Jump-Sheet_10
+  - first:
+      213: 4332832123713962754
+    second: Ann-Jump-Sheet_11
+  - first:
+      213: -5018242169949258115
+    second: Ann-Jump-Sheet_12
+  - first:
+      213: 811377532388494765
+    second: Ann-Jump-Sheet_13
+  - first:
+      213: 3982998670560788775
+    second: Ann-Jump-Sheet_14
+  - first:
+      213: -6952282148244936508
+    second: Ann-Jump-Sheet_15
+  - first:
+      213: -6889537356893501849
+    second: Ann-Jump-Sheet_16
+  - first:
+      213: 7565786715994422935
+    second: Ann-Jump-Sheet_17
+  - first:
+      213: -2549845206810921179
+    second: Ann-Jump-Sheet_18
+  - first:
+      213: 2323311224843267066
+    second: Ann-Jump-Sheet_19
+  - first:
+      213: -5874221179501426958
+    second: Ann-Jump-Sheet_20
+  - first:
+      213: -8101180047799103067
+    second: Ann-Jump-Sheet_21
+  - first:
+      213: -3261652501626593930
+    second: Ann-Jump-Sheet_22
+  - first:
+      213: 1257651185476151434
+    second: Ann-Jump-Sheet_23
+  - first:
+      213: -2123232217620692279
+    second: Ann-Jump-Sheet_24
+  - first:
+      213: 8165768235842944016
+    second: Ann-Jump-Sheet_25
+  - first:
+      213: -7377911498369249496
+    second: Ann-Jump-Sheet_26
+  - first:
+      213: -4313789615045318665
+    second: Ann-Jump-Sheet_27
+  - first:
+      213: -5667021477965649289
+    second: Ann-Jump-Sheet_28
+  - first:
+      213: 4848907603458589303
+    second: Ann-Jump-Sheet_29
+  - first:
+      213: -4695954897485945845
+    second: Ann-Jump-Sheet_30
+  - first:
+      213: 298472039720163937
+    second: Ann-Jump-Sheet_31
+  - first:
+      213: 668499667643854627
+    second: Ann-Jump-Sheet_32
+  - first:
+      213: -3165078833668300814
+    second: Ann-Jump-Sheet_33
+  - first:
+      213: -1860929536149750570
+    second: Ann-Jump-Sheet_34
+  - first:
+      213: -3146920605550565790
+    second: Ann-Jump-Sheet_35
+  - first:
+      213: 3196673187005018088
+    second: Ann-Jump-Sheet_36
+  - first:
+      213: -2390021398065697533
+    second: Ann-Jump-Sheet_37
+  - first:
+      213: 3212952206541193267
+    second: Ann-Jump-Sheet_38
+  - first:
+      213: 191938907675883338
+    second: Ann-Jump-Sheet_39
+  - first:
+      213: 9102653962661876209
+    second: Ann-Jump-Sheet_40
+  - first:
+      213: 4914810637586617653
+    second: Ann-Jump-Sheet_41
+  - first:
+      213: 8596867024054767792
+    second: Ann-Jump-Sheet_42
+  - first:
+      213: -7699224567335661750
+    second: Ann-Jump-Sheet_43
+  - first:
+      213: 309928072781308471
+    second: Ann-Jump-Sheet_44
+  - first:
+      213: -37283754635511590
+    second: Ann-Jump-Sheet_45
+  - first:
+      213: -8862208777328540568
+    second: Ann-Jump-Sheet_46
+  - first:
+      213: 5982816370935909327
+    second: Ann-Jump-Sheet_47
+  - first:
+      213: -2466768657647484419
+    second: Ann-Jump-Sheet_48
+  - first:
+      213: 5474744662513702750
+    second: Ann-Jump-Sheet_49
+  - first:
+      213: -3752260456213899453
+    second: Ann-Jump-Sheet_50
+  - first:
+      213: 6127124096281549536
+    second: Ann-Jump-Sheet_51
+  - first:
+      213: -7167613324691278393
+    second: Ann-Jump-Sheet_52
+  - first:
+      213: 1273898312556420757
+    second: Ann-Jump-Sheet_53
+  - first:
+      213: 3126181178421796720
+    second: Ann-Jump-Sheet_54
+  - first:
+      213: 587986550190494116
+    second: Ann-Jump-Sheet_55
+  - first:
+      213: -6474168760947865798
+    second: Ann-Jump-Sheet_56
+  - first:
+      213: -2375583734790420542
+    second: Ann-Jump-Sheet_57
+  - first:
+      213: 4689103784617994095
+    second: Ann-Jump-Sheet_58
+  - first:
+      213: 3968723713993068769
+    second: Ann-Jump-Sheet_59
+  - first:
+      213: 8285456426367286593
+    second: Ann-Jump-Sheet_60
+  - first:
+      213: 2241704093048436549
+    second: Ann-Jump-Sheet_61
+  - first:
+      213: 5303081643132797656
+    second: Ann-Jump-Sheet_62
+  - first:
+      213: 3338064562844459014
+    second: Ann-Jump-Sheet_63
+  - first:
+      213: -3346358583382619168
+    second: Ann-Jump-Sheet_64
+  - first:
+      213: 3499553232765017455
+    second: Ann-Jump-Sheet_65
+  - first:
+      213: -8198398538809085925
+    second: Ann-Jump-Sheet_66
+  - first:
+      213: 5930233051129959538
+    second: Ann-Jump-Sheet_67
+  - first:
+      213: -7247845573128203974
+    second: Ann-Jump-Sheet_68
+  - first:
+      213: 6039045837944148309
+    second: Ann-Jump-Sheet_69
+  - first:
+      213: 2715743397135623435
+    second: Ann-Jump-Sheet_70
+  - first:
+      213: 1842325445983301237
+    second: Ann-Jump-Sheet_71
+  - first:
+      213: -7226946192273706386
+    second: Ann-Jump-Sheet_72
+  - first:
+      213: -7982023452822383454
+    second: Ann-Jump-Sheet_73
+  - first:
+      213: -6957902382720238360
+    second: Ann-Jump-Sheet_74
+  - first:
+      213: 1976772850925009263
+    second: Ann-Jump-Sheet_75
+  - first:
+      213: -2894017577631389254
+    second: Ann-Jump-Sheet_76
+  - first:
+      213: 4611055759338376709
+    second: Ann-Jump-Sheet_77
+  - first:
+      213: -7368982372431022522
+    second: Ann-Jump-Sheet_78
+  - first:
+      213: 4557070787447166151
+    second: Ann-Jump-Sheet_79
+  - first:
+      213: 1074912170184926551
+    second: Ann-Jump-Sheet_80
+  - first:
+      213: 1337056462652142130
+    second: Ann-Jump-Sheet_81
+  - first:
+      213: -3363773554416224754
+    second: Ann-Jump-Sheet_82
+  - first:
+      213: 6574965661703197413
+    second: Ann-Jump-Sheet_83
+  - first:
+      213: -349342555226910200
+    second: Ann-Jump-Sheet_84
+  - first:
+      213: -2740394297604037922
+    second: Ann-Jump-Sheet_85
+  - first:
+      213: 2066090751512313796
+    second: Ann-Jump-Sheet_86
+  - first:
+      213: 3422622020031000542
+    second: Ann-Jump-Sheet_87
+  - first:
+      213: -8835368743937733523
+    second: Ann-Jump-Sheet_88
+  - first:
+      213: -5173581212858905976
+    second: Ann-Jump-Sheet_89
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1160
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aebb7aa7b9df6c10800000000000000
+      internalID: 2049095738339344036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1160
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a91b5f86eebc8a0800000000000000
+      internalID: -6283666720499328500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1160
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a228a8e4c37f23f0800000000000000
+      internalID: -923392109033545055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1160
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77581bbd85d7d250800000000000000
+      internalID: 5969474635808921467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1160
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a5753125900b6a0800000000000000
+      internalID: -6435633619395978729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1160
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84dd3b1d2a30035c0800000000000000
+      internalID: -4237883251517825720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 1160
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a180fa3825db44a0800000000000000
+      internalID: -6607953659471822427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1160
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74d510eb774c76b0800000000000000
+      internalID: -5297280464328469381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1160
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286e868813e99e600800000000000000
+      internalID: 498103169380312706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1032
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6156253b3a5c63270800000000000000
+      internalID: 8229982675945022742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1032
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675c57ffa095f1e30800000000000000
+      internalID: 4476394458400015734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1032
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2034f553cdf412c30800000000000000
+      internalID: 4332832123713962754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1032
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ef94f855f9b5ab0800000000000000
+      internalID: -5018242169949258115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 1032
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dadcfbc1197924b00800000000000000
+      internalID: 811377532388494765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1032
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72101a32034764730800000000000000
+      internalID: 3982998670560788775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 1032
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8229f8838848f90800000000000000
+      internalID: -6952282148244936508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1032
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7664497b6427360a0800000000000000
+      internalID: -6889537356893501849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 1032
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e7735dee21ff860800000000000000
+      internalID: 7565786715994422935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 904
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5277dc74b412d9cd0800000000000000
+      internalID: -2549845206810921179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 904
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbe573ef3f0e3020800000000000000
+      internalID: 2323311224843267066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 904
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6cdbfc5f29a7ea0800000000000000
+      internalID: -5874221179501426958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 904
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1d37d1ba3d29f80800000000000000
+      internalID: -8101180047799103067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 904
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d58cba4584cb2d0800000000000000
+      internalID: -3261652501626593930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 904
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88a7a10713147110800000000000000
+      internalID: 1257651185476151434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 904
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c2cd052c83c882e0800000000000000
+      internalID: -2123232217620692279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 904
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c369742f2a25170800000000000000
+      internalID: 8165768235842944016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 904
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f4e6305946c9990800000000000000
+      internalID: -7377911498369249496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 776
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7647753375224c0800000000000000
+      internalID: -4313789615045318665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 776
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a295fadf1ba51b0800000000000000
+      internalID: -5667021477965649289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 776
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77207d456c7ca4340800000000000000
+      internalID: 4848907603458589303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 776
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b042816a6ed94deb0800000000000000
+      internalID: -4695954897485945845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 776
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a18ee1db2642400800000000000000
+      internalID: 298472039720163937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 776
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32fe066e7ecf64900800000000000000
+      internalID: 668499667643854627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 776
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ffd711f1916314d0800000000000000
+      internalID: -3165078833668300814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 776
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dcf2cd4276ac26e0800000000000000
+      internalID: -1860929536149750570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 776
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2662dc1e164e354d0800000000000000
+      internalID: -3146920605550565790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 648
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef237ea35ddc5c20800000000000000
+      internalID: 3196673187005018088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 648
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d26ba8330f4ded0800000000000000
+      internalID: -2390021398065697533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 648
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33002374203b69c20800000000000000
+      internalID: 3212952206541193267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 648
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47f89a6b67e9a200800000000000000
+      internalID: 191938907675883338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 648
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f153c51d8f135e70800000000000000
+      internalID: 9102653962661876209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 648
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53559af2c3ae43440800000000000000
+      internalID: 4914810637586617653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 648
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0dd0e92053e4770800000000000000
+      internalID: 8596867024054767792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 648
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f4ff95c0cd62590800000000000000
+      internalID: -7699224567335661750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 648
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7322d0ca0f51d4400800000000000000
+      internalID: 309928072781308471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 520
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8be096f9a8b7ff0800000000000000
+      internalID: -37283754635511590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 520
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864cbfd221c130580800000000000000
+      internalID: -8862208777328540568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 520
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcbc6028acb370350800000000000000
+      internalID: 5982816370935909327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 520
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1cad1b9f644cdd0800000000000000
+      internalID: -2466768657647484419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 520
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57581d93433afb40800000000000000
+      internalID: 5474744662513702750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 520
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34710a2defa4debc0800000000000000
+      internalID: -3752260456213899453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 520
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea199517eae70550800000000000000
+      internalID: 6127124096281549536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 520
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c57b6628a5878c90800000000000000
+      internalID: -7167613324691278393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 520
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e15ef04cbcda110800000000000000
+      internalID: 1273898312556420757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 392
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07fd753f73d626b20800000000000000
+      internalID: 3126181178421796720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 392
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1dfc0f6a2f82800800000000000000
+      internalID: 587986550190494116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 392
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3785c340d12726a0800000000000000
+      internalID: -6474168760947865798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 392
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c70f99fd2b380fd0800000000000000
+      internalID: -2375583734790420542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 392
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6768155c0b031140800000000000000
+      internalID: 4689103784617994095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 392
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0d930d03db31730800000000000000
+      internalID: 3968723713993068769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 392
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d7997b8badbf270800000000000000
+      internalID: 8285456426367286593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 392
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547f0bddef12c1f10800000000000000
+      internalID: 2241704093048436549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 392
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d243d158a4589940800000000000000
+      internalID: 5303081643132797656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 264
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 600e9a9b800335e20800000000000000
+      internalID: 3338064562844459014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 264
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb466229985f81d0800000000000000
+      internalID: -3346358583382619168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 264
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d578faf19e09030800000000000000
+      internalID: 3499553232765017455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 264
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10f33747ff693e80800000000000000
+      internalID: -8198398538809085925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 264
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274d1ef4a8b6c4250800000000000000
+      internalID: 5930233051129959538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 264
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a315eca1ada7a6b90800000000000000
+      internalID: -7247845573128203974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 264
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55156f081300fc350800000000000000
+      internalID: 6039045837944148309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 264
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05a1672b3240b520800000000000000
+      internalID: 2715743397135623435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 264
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e6f786b31419910800000000000000
+      internalID: 1842325445983301237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 136
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62f9a66abab4bb90800000000000000
+      internalID: -7226946192273706386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 136
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a45fa1d5f72a3190800000000000000
+      internalID: -7982023452822383454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 136
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ecbd10c5a0907f90800000000000000
+      internalID: -6957902382720238360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 136
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69750d3f68ee6b10800000000000000
+      internalID: 1976772850925009263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 136
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab96b87a85266d7d0800000000000000
+      internalID: -2894017577631389254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 136
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e02ee58c2cdff30800000000000000
+      internalID: 4611055759338376709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 136
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6463227239d1cb990800000000000000
+      internalID: -7368982372431022522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 136
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4191e9cb7fd3f30800000000000000
+      internalID: 4557070787447166151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 136
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 755ed947ceadaee00800000000000000
+      internalID: 1074912170184926551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 8
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232750dc4cd2e8210800000000000000
+      internalID: 1337056462652142130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 8
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06fa2836c97151d0800000000000000
+      internalID: -3363773554416224754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 8
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2d5340f68fe3b50800000000000000
+      internalID: 6574965661703197413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 8
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802d5c20cc2e62bf0800000000000000
+      internalID: -349342555226910200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 8
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed22ec2d7e928f9d0800000000000000
+      internalID: -2740394297604037922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 8
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf7c95879a3cac10800000000000000
+      internalID: 2066090751512313796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 8
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edfa068e7989f7f20800000000000000
+      internalID: 3422622020031000542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 8
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c800e60f6726580800000000000000
+      internalID: -8835368743937733523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ann-Jump-Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 8
+        width: 88
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a09e63c4fb338b0800000000000000
+      internalID: -5173581212858905976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
