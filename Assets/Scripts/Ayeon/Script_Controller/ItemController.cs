@@ -7,7 +7,9 @@ public class ItemController : MonoBehaviour
 {
 
     public Sprite[] ItemImage;
-    public GameObject item0, item1, item2;
+    public GameObject item0, item1, item2, useItemIMG;
+    RectTransform ItemSave;
+    public Text itemName;
     // item0, item1 => slot_item
     // item2 => twinkle
 
@@ -19,6 +21,7 @@ public class ItemController : MonoBehaviour
     {
         item_slot = new Slot();
         item_slot.slot_init();
+        useItemIMG.SetActive(false);
     }
     private void Update()
     {
@@ -30,7 +33,7 @@ public class ItemController : MonoBehaviour
             }
             return;
         }
-        if(item0.GetComponent<Image>().sprite == null)
+        if (item0.GetComponent<Image>().sprite == null)
         {
             item0.SetActive(false);
         }
@@ -72,44 +75,69 @@ public class ItemController : MonoBehaviour
 
     public void _use_item_in_the_slot()
     {
-        Item.item_type typetype = (Item.item_type)item_slot.stack.Pop();
+        if (!useItemIMG.activeSelf)
+        {
+            Item.item_type typetype = (Item.item_type)item_slot.stack.Pop();
+            if (item_slot.item_have() == 1)
+            {
+                // item1.Sprite
+                item1.SetActive(false);
+                item1.GetComponent<Image>().sprite = null;
+            }
+            else if (item_slot.item_have() == 0)
+            {
+                // item0.Sprite
+                item0.SetActive(false);
+                item0.GetComponent<Image>().sprite = null;
+            }
+            useItemIMG.GetComponent<Image>().sprite = ItemImage[(int)typetype];
+            StartCoroutine(showItem());
 
-        if (item_slot.item_have() == 1)
-        {
-            // item1.Sprite
-            item1.SetActive(false);
-            item1.GetComponent<Image>().sprite = null;
 
+            // ITEM USE FUNCTION 
+            if (typetype == Item.item_type.red_wig)
+            {
+
+                itemName.text = "빨간가발 사용";
+            }
+            else if (typetype == Item.item_type.slate)
+            {
+                itemName.text = "석판 사용";
+            }
+            else if (typetype == Item.item_type.hat)
+            {
+                itemName.text = "모자 사용";
+            }
+            else if (typetype == Item.item_type.snail)
+            {
+                itemName.text = "달팽이로 변신";
+            }
+            else if (typetype == Item.item_type.eraser)
+            {
+                itemName.text = "기억지우개 발동";
+            }
         }
-        else if (item_slot.item_have() == 0)
+        else
+            return;
+    }
+    IEnumerator showItem()
+    {
+        useItemIMG.SetActive(true);
+        itemName.gameObject.SetActive(true);
+        ItemSave = useItemIMG.GetComponent<RectTransform>();
+
+        useItemIMG.SetActive(true);
+        for (int i = 100; i <= 200; i += 20)
         {
-            // item0.Sprite
-            item0.SetActive(false);
-            item0.GetComponent<Image>().sprite = null;
+            ItemSave.sizeDelta = new Vector2(i, i);
+            yield return new WaitForSeconds(0.05f);
         }
 
-        // ITEM USE FUNCTION 
-        if (typetype == Item.item_type.red_wig)
-        {
-            Debug.Log("USE RED WIG");
-        }
-        else if (typetype == Item.item_type.slate)
-        {
-            Debug.Log("USE SLATE");
-        }
-        else if (typetype == Item.item_type.hat)
-        {
-            Debug.Log("USE HAT");
-        }
-        else if (typetype == Item.item_type.snail)
-        {
-            Debug.Log("USE SNAIL");
-        }
-        else if (typetype == Item.item_type.eraser)
-        {
-            Debug.Log("USE ERASER");
-        }
-
+        yield return new WaitForSeconds(1f);
+        itemName.gameObject.SetActive(false);
+        useItemIMG.SetActive(false);
+        
+        StopCoroutine(showItem());
     }
 }
 

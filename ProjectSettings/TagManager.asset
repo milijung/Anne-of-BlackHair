@@ -9,6 +9,8 @@ TagManager:
   - Color
   - Road1
   - Tal
+  - Berry
+  - BerryBox
   layers:
   - Default
   - TransparentFX
