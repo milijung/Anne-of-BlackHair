@@ -6,44 +6,41 @@ public class RoadBase : MonoBehaviour
 {
     int LineNum;
     float posX;
-    public static bool jump = false;
-    public Vector2 StartPosition;
+    bool jump = false;
 
+    private void Start()
+    {
+        StartCoroutine(Jump());
+    }
+    
     private void OnEnable() // ������Ʈ�� Ȱ��ȭ�Ǹ� ����
     {
-        if (gameObject.tag == "BerryBox")
+        if (SpawnManager.MobStartNum == 0)
         {
-            transform.position = StartPosition;
+            gameObject.SetActive(false); // SpawnManager ���� ���� Mob�� �����ϴ� �� ����
+
         }
         else
         {
-            if (SpawnManager.MobStartNum == 0)
-            {
-                gameObject.SetActive(false); // SpawnManager ���� ���� Mob�� �����ϴ� �� ����
-
-            }
-            else
-            {
-                gameObject.SetActive(true);
-            }
-            #region position X
-            LineNum = Random.Range(0, 3);
-            if (LineNum == 0)
-            {
-                posX = -1.4f;
-            }
-            if (LineNum == 1)
-            {
-                posX = 0;
-            }
-            if (LineNum == 2)
-            {
-                posX = 1.4f;
-            }
-            #endregion
-
-            transform.position = new Vector2(posX, 8);
+            gameObject.SetActive(true);
         }
+        #region position X
+        LineNum = Random.Range(0, 3);
+        if (LineNum == 0)
+        {
+            posX = -1.4f;
+        }
+        if (LineNum == 1)
+        {
+            posX = 0;
+        }
+        if(LineNum == 2)
+        {
+            posX = 1.4f;
+        }
+        #endregion
+
+        transform.position = new Vector2(posX, 8);
     }
 
     private void Update()
@@ -51,7 +48,7 @@ public class RoadBase : MonoBehaviour
         if (GameManager.isPlay)
         {
             transform.Translate(Vector2.down * Time.deltaTime * GameManager.instance.gameSpeed * 12);
-            if (transform.position.y < -8) 
+            if (transform.position.y < -8) // ȭ�� ������ Mob�� �̵��ϸ� �ش� Mob ��Ȱ��ȭ
             {
                 gameObject.SetActive(false);
             }
@@ -61,28 +58,28 @@ public class RoadBase : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            
-            if (gameObject.tag == "BerryBox") // 열매주머니 획득
-            {
-                gameObject.SetActive(false);
-                BerryController.getBerryBox = true;
-            }
-            else if(gameObject.tag == "Berry")
-            {
-                gameObject.SetActive(false);
-                BerryController.getBerry = true;
-            }
+            if (!jump)
+                Debug.Log("��ֹ� �浹");
+
             else
-            {
-                if (!jump) 
-                {
-                    BerryController.BumpOntheRoad = true;
-                }
-            }
+                Debug.Log("��ֹ� ����");
         }
         else
         {
             gameObject.SetActive(false);
+        }
+    }
+    IEnumerator Jump() // ���� �ִϸ��̼��� ������ �ִϸ��̼� ���·� ���� ������ ����
+    {
+        while (true)
+        {
+            if (SwipeManager.swipeUp == true)
+            {
+                jump = true;
+                yield return new WaitForSeconds(2); 
+                jump = false;
+            }
+            yield return null;
         }
     }
 }

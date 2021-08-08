@@ -29,22 +29,22 @@ public class ItemBase : MonoBehaviour
             gameObject.SetActive(true);
         }
         #region position X
-            LineNum = Random.Range(0, 3);
-            if (LineNum == 0)
-            {
-                posX = -1.4f;
-            }
-            if (LineNum == 1)
-            {
-                posX = 0;
-            }
-            if (LineNum == 2)
-            {
-                posX = 1.4f;
-            }
+        LineNum = Random.Range(0, 3);
+        if(LineNum == 0)
+        {
+            posX = -1.4f;
+        }
+        if (LineNum == 1)
+        {
+            posX = 0;
+        }
+        if(LineNum == 2)
+        {
+            posX = 1.4f;
+        }
         #endregion
-        transform.position = new Vector2(posX, 8);
-
+        
+        transform.position = new Vector2(posX,8);
     }
 
     private void Update()
@@ -84,7 +84,7 @@ public class ItemBase : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
-        else if(collision.tag == "Item")
+        else if(collision.tag == "Item") // Ż����/�������� �������ָӴ϶� ���ÿ� Ȱ��ȭ�Ǹ�, �������ָӴϸ� ��Ȱ��ȭ
         {
             collision.gameObject.SetActive(false);
         }

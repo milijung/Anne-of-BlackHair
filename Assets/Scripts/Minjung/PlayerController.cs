@@ -27,25 +27,28 @@ public class PlayerController : MonoBehaviour
         _animation_controller = GameObject.Find("Animation_Controller").GetComponent<AnimationController>();
     }
 
-    private void Update() { 
-
-        if (SwipeManager.swipeRight) 
+    private void Update()
+    {
+        //transform.Translate(Vector2.up* Time.deltaTime * GameManager.instance.gameSpeed);
+        // �Էµ� swipe�� ���� ���ι�ȣ ����
+        if (SwipeManager.swipeRight) // ���� ���������� ���������ߴٸ�
         {
-            desiredLane++;
-            if (desiredLane == 3) 
+            desiredLane++; // ���ι�ȣ++
+            if (desiredLane == 3) // ���ι�ȣ<=2
                 desiredLane = 2;        
         }
-        if (SwipeManager.swipeLeft) 
+        if (SwipeManager.swipeLeft) // ���� �������� ���������ߴٸ�
         {
-            desiredLane--;
-            if (desiredLane == -1) 
+            desiredLane--; // ���ι�ȣ--e;
+            if (desiredLane == -1) // ���ι�ȣ>=0
                 desiredLane = 0;
         }
-        if (SwipeManager.swipeUp) 
+        if (SwipeManager.swipeUp) // ���� �������� ���������ߴٸ�
         {
             _animation_controller._ann_jump();
         }
 
+        // ���ι�ȣ�� ���� object ��ǥ�� ���� 
         Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up; 
         if (desiredLane == 0)
             targetPosition += Vector3.left * laneDisance;
@@ -54,25 +57,25 @@ public class PlayerController : MonoBehaviour
         
         if (transform.position == targetPosition)
             return;
-        Vector3 diff = targetPosition - transform.position; 
-        Vector3 moveDir = diff.normalized * 25 * Time.deltaTime; 
+        Vector3 diff = targetPosition - transform.position; // �̵��ؾ��ϴ� ��ǥ�� - ���� ��ǥ��
+        Vector3 moveDir = diff.normalized * 25 * Time.deltaTime;  // diff�� �������� * 25 * Time.deltaTime
         if (moveDir.sqrMagnitude < diff.magnitude)
-            controller.Move(moveDir); 
+            controller.Move(moveDir); // moveDir�� object �̵�
         else
-            controller.Move(diff);
+            controller.Move(diff); // diff�� object �̵�
        
     }
     private void FixedUpdate()
     {
         controller.Move(direction * Time.fixedDeltaTime);
-
-        if (Input.GetKey(KeyCode.Escape))
+       
+        if (Input.GetKey(KeyCode.Escape)) // ����Ʈ�� �ڷΰ��� ��ư ������ ��
         {
             stepAudio.Pause();
             backmusic.Pause();
-            gamePanel.SetActive(true);
+            gamePanel.SetActive(true); // �г� ���̱�
             fadeSprite.SetActive(true);
-            Time.timeScale = 0;
+            Time.timeScale = 0; // �Ͻ�����
             GameManager.isPlay = false;
         }
     }

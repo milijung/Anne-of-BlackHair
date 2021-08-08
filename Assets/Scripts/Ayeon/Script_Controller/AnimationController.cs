@@ -17,17 +17,14 @@ public class AnimationController : MonoBehaviour
     }
 
     // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
     public void _ann_jump()
     {
         _ann_animator.SetTrigger("J");
-        StartCoroutine(isJump());
-    }
-    IEnumerator isJump()
-    {
-        RoadBase.jump = true;
-        yield return new WaitForSeconds(0.4f);
-        RoadBase.jump = false;
-        StopCoroutine(isJump());
     }
 
     public void _ann_get_bleach()

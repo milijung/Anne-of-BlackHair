@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class SwitchScene : MonoBehaviour // 씬 전환함수가 모여있는 class
 {
-
     public void PlayGame()
     {
         SpawnManager.MobStartNum = 0;

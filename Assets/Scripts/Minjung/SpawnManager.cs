@@ -13,7 +13,6 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] Tree;
     public GameObject[] House;
     public GameObject[] Road;
-    public GameObject[] BerryBox;
     public static int MobStartNum = 0; // SpawnManager 실행 전에 Mob이 등장하는 것 방지
     public int objCnt = 4;
     int x_Back;
@@ -45,7 +44,7 @@ public class SpawnManager : MonoBehaviour
             }
         }
     }
-    private void Start() 
+    private void Start()
     {
         x_Back = 0;
         StartCoroutine(CreateMob());
@@ -103,12 +102,7 @@ public class SpawnManager : MonoBehaviour
     }
     IEnumerator CreateMob() // 마을사람들 생성
     {
-        yield return new WaitForSeconds(2f); // 시작하고 3초 후부터 Mob 등장
-        for (int i = 0; i < 3; i++)
-        {
-            BerryBox[i].SetActive(true);
-        }
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(3f); // 시작하고 3초 후부터 Mob 등장
         while (true)
         {
             if (GameManager.isPlay)
@@ -135,8 +129,6 @@ public class SpawnManager : MonoBehaviour
             {
                 Item[0].SetActive(true); // 아이템주머니 활성화
                 yield return new WaitForSeconds(2); // 아이템이 생성된 후, 몇초 지나고 다음 아이템이 생성
-                BerryBox[3].SetActive(true);
-                yield return new WaitForSeconds(2);
             }
             else
             {
