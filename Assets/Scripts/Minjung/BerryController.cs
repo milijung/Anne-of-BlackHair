@@ -20,7 +20,10 @@ public class BerryController : MonoBehaviour
             Berry_slot.stack.Push(i);
             StartPosition.Add(Berry_play[i].transform.position);
         }
-        
+        getBerryBox = false;
+        getBerry = false;
+        BumpOntheRoad = false;
+        RoadBase.jump = false;
         StartCoroutine(BerryStart());
         StartCoroutine(BerryChange());
     }

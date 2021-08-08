@@ -104,7 +104,7 @@ public class SpawnManager : MonoBehaviour
     IEnumerator CreateMob() // 마을사람들 생성
     {
         yield return new WaitForSeconds(2f); // 시작하고 3초 후부터 Mob 등장
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < BerryBox.Length; i++)
         {
             BerryBox[i].SetActive(true);
         }
