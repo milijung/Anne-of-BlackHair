@@ -16,7 +16,6 @@ public class PlayerController : MonoBehaviour
     public GameObject stepSound;
     AudioSource stepAudio;
 
-    //HairController _hair_controller;
     AnimationController _animation_controller;
 
     private void Start()
@@ -25,7 +24,6 @@ public class PlayerController : MonoBehaviour
         backmusic = BackgroundMusic.GetComponent<AudioSource>();
         stepAudio = stepSound.GetComponent<AudioSource>();
 
-        //_hair_controller = GameObject.Find("Hair_Controller").GetComponent<HairController>();
         _animation_controller = GameObject.Find("Animation_Controller").GetComponent<AnimationController>();
     }
 
