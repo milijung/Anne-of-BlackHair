@@ -6,7 +6,6 @@ public class BerryController : MonoBehaviour
 {
     public GameObject[] Berry_play;
     public static bool getBerryBox, getBerry, BumpOntheRoad = false;
-    public List<Vector3> StartPosition;
     BerrySlot Berry_slot;
     // Start is called before the first frame update
     private void Start()
@@ -18,7 +17,6 @@ public class BerryController : MonoBehaviour
         {
             Berry_play[i].SetActive(false);
             Berry_slot.stack.Push(i);
-            StartPosition.Add(Berry_play[i].transform.position);
         }
         getBerryBox = false;
         getBerry = false;
@@ -59,7 +57,6 @@ public class BerryController : MonoBehaviour
                 if (Berry_slot.full()) yield return null;
                 else
                 {
-                    Berry_play[Berry_slot.berry_have()].transform.position = StartPosition[Berry_slot.berry_have()];
                     Berry_play[Berry_slot.berry_have()].SetActive(true);
                     Berry_slot.stack.Push(Berry_slot.berry_have());
                 }
@@ -71,22 +68,7 @@ public class BerryController : MonoBehaviour
                 if (Berry_slot.empty()) yield return null;
                 else
                 {
-                    Berry_slot.stack.Pop();
-                    while (true) 
-                    {
-                        if (Berry_play[Berry_slot.berry_have()].transform.position.y >= -8)
-                        {
-                            Berry_play[Berry_slot.berry_have()].transform.Translate(Vector2.down * 17 * Time.deltaTime);
-                        }
-                        else
-                        {
-                            Berry_play[Berry_slot.berry_have()].SetActive(false);
-                            break;
-                        }
-                        yield return null;
-                    }
-                    
-
+                    Berry_play[Berry_slot.stack.Pop()].SetActive(false);
                 }
                 yield return new WaitForSeconds(0.1f);
                 BumpOntheRoad = false;

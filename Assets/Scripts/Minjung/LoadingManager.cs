@@ -8,11 +8,12 @@ public class LoadingManager : MonoBehaviour
 {   
     public string nextScene; // 로딩하려는 씬의 이름
     
-    public Image progressBar;
+    public Slider progressBar;
     
 
     private void Start()
     {
+        progressBar.value = 0;
         StartCoroutine(LoadAsynScene());
     }
     IEnumerator LoadAsynScene()
@@ -28,17 +29,17 @@ public class LoadingManager : MonoBehaviour
             timer += Time.deltaTime;
             if (operation.progress >= 0.9f)
             {
-                progressBar.fillAmount = Mathf.Lerp(progressBar.fillAmount, 1.0f, timer);
+                progressBar.value = Mathf.Lerp(progressBar.value, 1.0f, timer);
 
-                if (progressBar.fillAmount == 1.0f)
+                if (progressBar.value == 1.0f)
                 {
                     operation.allowSceneActivation = true;
                 }
             }
             else
             {
-                progressBar.fillAmount = Mathf.Lerp(progressBar.fillAmount, operation.progress, timer);
-                if (progressBar.fillAmount >= operation.progress)
+                progressBar.value = Mathf.Lerp(progressBar.value, operation.progress, timer);
+                if (progressBar.value >= operation.progress)
                 {
                     timer = 0.0f;
                 }
