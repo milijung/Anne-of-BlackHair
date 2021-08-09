@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     public GameObject stepSound;
     AudioSource stepAudio;
 
-    AnimationController _animation_controller;
+    AnimationController Animation_Controller;
 
     private void Start()
     {
@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
         backmusic = BackgroundMusic.GetComponent<AudioSource>();
         stepAudio = stepSound.GetComponent<AudioSource>();
 
-        _animation_controller = GameObject.Find("Animation_Controller").GetComponent<AnimationController>();
+        Animation_Controller = GameObject.Find("Animation_Controller").GetComponent<AnimationController>();
     }
 
     private void Update()
@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
         }
         if (SwipeManager.swipeUp) // ���� �������� ���������ߴٸ�
         {
-            _animation_controller._ann_jump();
+            Animation_Controller._ann_jump();
         }
 
         // ���ι�ȣ�� ���� object ��ǥ�� ���� 

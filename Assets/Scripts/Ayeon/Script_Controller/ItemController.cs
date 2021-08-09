@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ItemController : MonoBehaviour
 {
-
+    public SomoonGauge somoon;
     public Sprite[] ItemImage;
     public GameObject item0, item1, item2;
     // item0, item1 => slot_item
@@ -108,6 +108,8 @@ public class ItemController : MonoBehaviour
         else if (typetype == Item.item_type.eraser)
         {
             Debug.Log("USE ERASER");
+            somoon.somoonGauge = somoon.somoonGauge * 0.8f;
+
         }
 
     }
