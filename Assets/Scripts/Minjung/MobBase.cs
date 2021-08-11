@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class MobBase : MonoBehaviour
 {
+    public Animator[] animator;
     public Vector2 StartPosition;
     public SomoonGauge somoon;
 
     private void OnEnable() // ������Ʈ�� Ȱ��ȭ�Ǹ� ����
     {
+
+        
         if (SpawnManager.MobStartNum == 0)
         {
             gameObject.SetActive(false); // SpawnManager ���� ���� Mob�� �����ϴ� �� ����
@@ -30,10 +33,33 @@ public class MobBase : MonoBehaviour
             }
         }
     }
+
+    private void SetAnimation()
+    {
+        for(int i = 0; i < animator.Length; i++)
+        {
+            animator[i].SetBool("isTouched", true);
+        }
+    }
+
+    private void UnsetAnimation()
+    {
+        for (int i = 0; i < animator.Length; i++)
+        {
+            animator[i].SetBool("isTouched", false);
+        }
+    }
+
+
+
+
+
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.tag == "Player")
         {
+            SetAnimation();
+            Invoke("UnsetAnimation", 1.0f);
             //�ε��� �� ����� �������� ����
             bool isAdult = gameObject.name.Contains("Adult");
             bool isChildren = gameObject.name.Contains("Children");

@@ -211,6 +211,7 @@ GameObject:
   - component: {fileID: 68687841}
   - component: {fileID: 68687840}
   - component: {fileID: 68687844}
+  - component: {fileID: 68687845}
   m_Layer: 0
   m_Name: MatthewSide-Adult_R1
   m_TagString: Radar
@@ -243,6 +244,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: 2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &68687842
@@ -326,6 +362,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &68687845
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68687839}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2371a442f2274544fb8193b11ff12aae, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &89262824
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,6 +394,7 @@ GameObject:
   - component: {fileID: 89262826}
   - component: {fileID: 89262825}
   - component: {fileID: 89262829}
+  - component: {fileID: 89262830}
   m_Layer: 0
   m_Name: LyndSide-Adult_R3
   m_TagString: Radar
@@ -371,6 +427,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: 1.2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &89262827
@@ -454,6 +545,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &89262830
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89262824}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 677ca9c65ee4b7e44a1c415f6b9a121e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &104141083
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,6 +704,88 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &108074539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 108074540}
+  - component: {fileID: 108074541}
+  m_Layer: 0
+  m_Name: emergency_car (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &108074540
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108074539}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -365, y: -108, z: -9599.999}
+  m_LocalScale: {x: 400, y: 400, z: 106.66666}
+  m_Children: []
+  m_Father: {fileID: 779943393}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &108074541
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108074539}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: 0d3e490c92e0bd24ca9b1422e979a9b3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.32, y: 0.32}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &122724142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,6 +1361,7 @@ GameObject:
   - component: {fileID: 263667206}
   - component: {fileID: 263667205}
   - component: {fileID: 263667209}
+  - component: {fileID: 263667210}
   m_Layer: 0
   m_Name: DianaSide-Children_L2
   m_TagString: Radar
@@ -1201,6 +1394,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: -2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &263667207
@@ -1284,6 +1512,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &263667210
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263667204}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a82a48ebcb6ba494da31fcd292020610, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &284670614
 GameObject:
   m_ObjectHideFlags: 0
@@ -1297,6 +1544,7 @@ GameObject:
   - component: {fileID: 284670616}
   - component: {fileID: 284670615}
   - component: {fileID: 284670619}
+  - component: {fileID: 284670620}
   m_Layer: 0
   m_Name: LyndSide-Adult_L1
   m_TagString: Radar
@@ -1329,6 +1577,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: -2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &284670617
@@ -1412,6 +1695,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &284670620
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284670614}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4db4d1ce240921b4b86bb7b3d56ea3d4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &306314631
 GameObject:
   m_ObjectHideFlags: 0
@@ -1724,6 +2026,7 @@ GameObject:
   - component: {fileID: 332294987}
   - component: {fileID: 332294986}
   - component: {fileID: 332294990}
+  - component: {fileID: 332294991}
   m_Layer: 0
   m_Name: DianaSide-Children_L3
   m_TagString: Radar
@@ -1756,6 +2059,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: -1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &332294988
@@ -1817,7 +2155,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 332294985}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.7999997, y: -8, z: 0}
+  m_LocalPosition: {x: -1.8, y: -8, z: 0}
   m_LocalScale: {x: 0.95, y: 0.95, z: 1}
   m_Children: []
   m_Father: {fileID: 1025676890}
@@ -1839,6 +2177,107 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &332294991
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332294985}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d484185e5f134dc4195a75e4bb91ad3a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &345977967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 345977968}
+  - component: {fileID: 345977969}
+  m_Layer: 0
+  m_Name: emergency_car
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &345977968
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345977967}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 358, y: -116, z: -9599.999}
+  m_LocalScale: {x: 400, y: 400, z: 106.66666}
+  m_Children: []
+  m_Father: {fileID: 779943393}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &345977969
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345977967}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: 0d3e490c92e0bd24ca9b1422e979a9b3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.32, y: 0.32}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &357496081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1852,6 +2291,7 @@ GameObject:
   - component: {fileID: 357496084}
   - component: {fileID: 357496083}
   - component: {fileID: 357496086}
+  - component: {fileID: 357496087}
   m_Layer: 0
   m_Name: MatthewSide-Adult_L4
   m_TagString: Radar
@@ -1885,6 +2325,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: -1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!65 &357496084
@@ -1967,6 +2442,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &357496087
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357496081}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 997774f32bfbac94d99dc98a8387d00a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &372108639
 GameObject:
   m_ObjectHideFlags: 0
@@ -2106,6 +2600,7 @@ GameObject:
   - component: {fileID: 417299332}
   - component: {fileID: 417299331}
   - component: {fileID: 417299335}
+  - component: {fileID: 417299336}
   m_Layer: 0
   m_Name: GilbertSide-Children_L1
   m_TagString: Radar
@@ -2138,6 +2633,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: -2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &417299333
@@ -2221,6 +2751,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &417299336
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417299330}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9b75716b5d90a8e44b5c5d351825a2bf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &429228395
 GameObject:
   m_ObjectHideFlags: 0
@@ -2309,6 +2858,7 @@ GameObject:
   - component: {fileID: 442684337}
   - component: {fileID: 442684336}
   - component: {fileID: 442684340}
+  - component: {fileID: 442684341}
   m_Layer: 0
   m_Name: MatthewSide-Adult_L2
   m_TagString: Radar
@@ -2341,6 +2891,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: -2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &442684338
@@ -2424,6 +3009,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &442684341
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442684335}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b8c560e85b01a51419cbad8d2c1931b9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &473135944
 GameObject:
   m_ObjectHideFlags: 0
@@ -2494,7 +3098,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &485285893
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2951,7 +3555,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &566456546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3158,6 +3762,7 @@ GameObject:
   - component: {fileID: 597714536}
   - component: {fileID: 597714535}
   - component: {fileID: 597714538}
+  - component: {fileID: 597714539}
   m_Layer: 0
   m_Name: LyndSide-Adult_L4
   m_TagString: Radar
@@ -3204,6 +3809,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: -1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &597714537
@@ -3273,6 +3913,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &597714539
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597714533}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: acc4a7533d9a09b48b8d7c4ad604a1fb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &606508615
 GameObject:
   m_ObjectHideFlags: 0
@@ -3736,6 +4395,7 @@ GameObject:
   - component: {fileID: 737256914}
   - component: {fileID: 737256913}
   - component: {fileID: 737256917}
+  - component: {fileID: 737256918}
   m_Layer: 0
   m_Name: GilbertSide-Children_R2
   m_TagString: Radar
@@ -3768,6 +4428,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: 2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &737256915
@@ -3851,6 +4546,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &737256918
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737256912}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 20f9dde0d9fc9f8439c9502f00e720db, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &759136984
 GameObject:
   m_ObjectHideFlags: 0
@@ -4050,12 +4764,16 @@ RectTransform:
   m_Children:
   - {fileID: 834395150}
   - {fileID: 306314632}
+  - {fileID: 345977968}
+  - {fileID: 1625846039}
+  - {fileID: 1193929173}
+  - {fileID: 108074540}
   m_Father: {fileID: 2092890278}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -808, y: 357}
+  m_AnchoredPosition: {x: 700, y: 303}
   m_SizeDelta: {x: 746.93, y: 129.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &779943394
@@ -4271,6 +4989,7 @@ GameObject:
   - component: {fileID: 820960058}
   - component: {fileID: 820960057}
   - component: {fileID: 820960060}
+  - component: {fileID: 820960061}
   m_Layer: 0
   m_Name: LyndSide-Adult_R4
   m_TagString: Radar
@@ -4317,6 +5036,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: 1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &820960059
@@ -4386,6 +5140,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &820960061
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820960055}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3c0b61b48baa55f40a6246e747ece760, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &834395149
 GameObject:
   m_ObjectHideFlags: 0
@@ -5182,6 +5955,7 @@ GameObject:
   - component: {fileID: 993501551}
   - component: {fileID: 993501550}
   - component: {fileID: 993501553}
+  - component: {fileID: 993501554}
   m_Layer: 0
   m_Name: MatthewSide-Adult_R3
   m_TagString: Radar
@@ -5215,6 +5989,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: 1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!65 &993501551
@@ -5297,6 +6106,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &993501554
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993501548}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2fe040b74f058764aaefbfeba6a9c5aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &994894086
 GameObject:
   m_ObjectHideFlags: 0
@@ -5490,6 +6318,7 @@ GameObject:
   - component: {fileID: 1002250995}
   - component: {fileID: 1002250994}
   - component: {fileID: 1002250998}
+  - component: {fileID: 1002250999}
   m_Layer: 0
   m_Name: GilbertSide-Children_R1
   m_TagString: Radar
@@ -5522,6 +6351,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: 2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1002250996
@@ -5605,6 +6469,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1002250999
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002250993}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b5479d753ceda034f9da41893a2ddfbd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1011398746
 GameObject:
   m_ObjectHideFlags: 0
@@ -5768,7 +6651,6 @@ Transform:
   - {fileID: 2063240094}
   - {fileID: 993501549}
   - {fileID: 1826049955}
-  - {fileID: 1794861109}
   m_Father: {fileID: 676892200}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5785,6 +6667,7 @@ GameObject:
   - component: {fileID: 1066608849}
   - component: {fileID: 1066608848}
   - component: {fileID: 1066608851}
+  - component: {fileID: 1066608852}
   m_Layer: 0
   m_Name: GilbertSide-Children_L4
   m_TagString: Radar
@@ -5800,7 +6683,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066608846}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.8, y: -8, z: 0}
+  m_LocalPosition: {x: -2, y: -8, z: 0}
   m_LocalScale: {x: 0.95, y: 0.95, z: 1}
   m_Children: []
   m_Father: {fileID: 1025676890}
@@ -5818,6 +6701,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: -2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!65 &1066608849
@@ -5900,6 +6818,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1066608852
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066608846}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 33bee9d8736f24a4aa78f4e3a4eb533e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1099819623
 GameObject:
   m_ObjectHideFlags: 0
@@ -5913,6 +6850,7 @@ GameObject:
   - component: {fileID: 1099819625}
   - component: {fileID: 1099819624}
   - component: {fileID: 1099819628}
+  - component: {fileID: 1099819629}
   m_Layer: 0
   m_Name: DianaSide-Children_R3
   m_TagString: Radar
@@ -5945,6 +6883,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: 1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1099819626
@@ -6028,6 +7001,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1099819629
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099819623}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6cef2ed71c45b42419884e6403a5312d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1118467701
 GameObject:
   m_ObjectHideFlags: 0
@@ -6041,6 +7033,7 @@ GameObject:
   - component: {fileID: 1118467703}
   - component: {fileID: 1118467702}
   - component: {fileID: 1118467706}
+  - component: {fileID: 1118467707}
   m_Layer: 0
   m_Name: DianaSide-Children_L4
   m_TagString: Radar
@@ -6073,6 +7066,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: -1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1118467704
@@ -6156,6 +7184,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1118467707
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118467701}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 71f7bc921bb69444980d15f6676d199e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1135384515
 GameObject:
   m_ObjectHideFlags: 0
@@ -6569,6 +7616,7 @@ GameObject:
   - component: {fileID: 1154958718}
   - component: {fileID: 1154958719}
   - component: {fileID: 1154958722}
+  - component: {fileID: 1154958723}
   m_Layer: 0
   m_Name: GilbertSide-Children_L2
   m_TagString: Radar
@@ -6601,6 +7649,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: -2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1154958720
@@ -6684,6 +7767,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1154958723
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154958717}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5120daeccced54e479e47f64b3499fe2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1170984079
 GameObject:
   m_ObjectHideFlags: 0
@@ -6697,6 +7799,7 @@ GameObject:
   - component: {fileID: 1170984081}
   - component: {fileID: 1170984080}
   - component: {fileID: 1170984084}
+  - component: {fileID: 1170984085}
   m_Layer: 0
   m_Name: LyndSide-Adult_R1
   m_TagString: Radar
@@ -6729,6 +7832,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: 2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1170984082
@@ -6812,6 +7950,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1170984085
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170984079}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 256f1558eb0edea41928dc41e707a639, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1187108256
 GameObject:
   m_ObjectHideFlags: 0
@@ -6908,6 +8065,88 @@ Transform:
   m_Father: {fileID: 262553568}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1193929172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1193929173}
+  - component: {fileID: 1193929174}
+  m_Layer: 0
+  m_Name: emergency_car (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1193929173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193929172}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -139, y: -108, z: -9599.999}
+  m_LocalScale: {x: 400, y: 400, z: 106.66666}
+  m_Children: []
+  m_Father: {fileID: 779943393}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1193929174
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193929172}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: 0d3e490c92e0bd24ca9b1422e979a9b3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.32, y: 0.32}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1202385151
 GameObject:
   m_ObjectHideFlags: 0
@@ -7021,7 +8260,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1248857128
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7096,6 +8335,7 @@ GameObject:
   - component: {fileID: 1256457616}
   - component: {fileID: 1256457615}
   - component: {fileID: 1256457619}
+  - component: {fileID: 1256457620}
   m_Layer: 0
   m_Name: DianaSide-Children_R4
   m_TagString: Radar
@@ -7128,6 +8368,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: 1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1256457617
@@ -7211,6 +8486,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1256457620
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256457614}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 999f902f632969d4e8af3a8d0d37f7bd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1271783028
 GameObject:
   m_ObjectHideFlags: 0
@@ -7224,6 +8518,7 @@ GameObject:
   - component: {fileID: 1271783030}
   - component: {fileID: 1271783029}
   - component: {fileID: 1271783033}
+  - component: {fileID: 1271783034}
   m_Layer: 0
   m_Name: LyndSide-Adult_L2
   m_TagString: Radar
@@ -7256,6 +8551,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: -2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1271783031
@@ -7339,6 +8669,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1271783034
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271783028}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 93016693b9fbdb94eb47cd376e1e464d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1271950594
 GameObject:
   m_ObjectHideFlags: 0
@@ -7655,6 +9004,7 @@ GameObject:
   - component: {fileID: 1344226645}
   - component: {fileID: 1344226644}
   - component: {fileID: 1344226647}
+  - component: {fileID: 1344226648}
   m_Layer: 0
   m_Name: MatthewSide-Adult_L3
   m_TagString: Radar
@@ -7688,6 +9038,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: -1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!65 &1344226645
@@ -7770,6 +9155,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1344226648
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344226642}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4088ba90421b93d42b2615378867bcc5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1347531517
 GameObject:
   m_ObjectHideFlags: 0
@@ -7879,6 +9283,7 @@ GameObject:
   - component: {fileID: 1392984835}
   - component: {fileID: 1392984834}
   - component: {fileID: 1392984838}
+  - component: {fileID: 1392984839}
   m_Layer: 0
   m_Name: LyndSide-Adult_R2
   m_TagString: Radar
@@ -7911,6 +9316,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: 2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1392984836
@@ -7994,6 +9434,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1392984839
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392984833}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e95212d6dd1068948a63e4f2e8a927b6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1396031142
 GameObject:
   m_ObjectHideFlags: 0
@@ -8199,6 +9658,7 @@ GameObject:
   - component: {fileID: 1428438621}
   - component: {fileID: 1428438620}
   - component: {fileID: 1428438623}
+  - component: {fileID: 1428438624}
   m_Layer: 0
   m_Name: GilbertSide-Children_R3
   m_TagString: Radar
@@ -8232,6 +9692,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: 1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!65 &1428438621
@@ -8314,6 +9809,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1428438624
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428438618}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 136047ab77cde08419b0c92d5de4af08, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1455731835
 GameObject:
   m_ObjectHideFlags: 0
@@ -8331,7 +9845,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1455731836
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8453,6 +9967,7 @@ GameObject:
   - component: {fileID: 1558708053}
   - component: {fileID: 1558708052}
   - component: {fileID: 1558708056}
+  - component: {fileID: 1558708057}
   m_Layer: 0
   m_Name: LyndSide-Adult_L3
   m_TagString: Radar
@@ -8485,6 +10000,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: -1.2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1558708054
@@ -8568,6 +10118,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1558708057
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558708051}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7848ce16299eef14ab83cdbef2b8a895, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1622547908
 GameObject:
   m_ObjectHideFlags: 0
@@ -8645,6 +10214,88 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622547908}
   m_CullTransparentMesh: 1
+--- !u!1 &1625846038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1625846039}
+  - component: {fileID: 1625846040}
+  m_Layer: 0
+  m_Name: emergency_car (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1625846039
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625846038}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 99, y: -116, z: -9599.999}
+  m_LocalScale: {x: 400, y: 400, z: 106.66666}
+  m_Children: []
+  m_Father: {fileID: 779943393}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1625846040
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625846038}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: 0d3e490c92e0bd24ca9b1422e979a9b3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.32, y: 0.32}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1631480456
 GameObject:
   m_ObjectHideFlags: 0
@@ -8658,6 +10309,7 @@ GameObject:
   - component: {fileID: 1631480459}
   - component: {fileID: 1631480458}
   - component: {fileID: 1631480461}
+  - component: {fileID: 1631480462}
   m_Layer: 0
   m_Name: LyndSide-Adult_R5
   m_TagString: Radar
@@ -8704,6 +10356,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: 1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1631480460
@@ -8773,6 +10460,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1631480462
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631480456}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f0bc003416f0cbd4ea7c75883d4470dc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1650385475
 GameObject:
   m_ObjectHideFlags: 0
@@ -9074,6 +10780,7 @@ GameObject:
   - component: {fileID: 1666714728}
   - component: {fileID: 1666714727}
   - component: {fileID: 1666714731}
+  - component: {fileID: 1666714732}
   m_Layer: 0
   m_Name: DianaSide-Children_R1
   m_TagString: Radar
@@ -9106,6 +10813,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: 2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1666714729
@@ -9189,6 +10931,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1666714732
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666714726}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 86328402ee123a04b9e290c525a16beb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1682050272
 GameObject:
   m_ObjectHideFlags: 0
@@ -9597,134 +11358,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1794861108
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1794861109}
-  - component: {fileID: 1794861113}
-  - component: {fileID: 1794861112}
-  - component: {fileID: 1794861111}
-  - component: {fileID: 1794861110}
-  m_Layer: 0
-  m_Name: DianaSide-Children_L1 (1)
-  m_TagString: Radar
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1794861109
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794861108}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.77, y: -7.04, z: 0}
-  m_LocalScale: {x: 0.95, y: 0.95, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1025676890}
-  m_RootOrder: 34
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1794861110
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794861108}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &1794861111
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794861108}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.6, z: 0.2}
-  m_Center: {x: 0.3, y: 0.1, z: 0}
---- !u!114 &1794861112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794861108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StartPosition: {x: -2, y: 8}
-  somoon: {fileID: 994894087}
---- !u!212 &1794861113
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1794861108}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -5551443442548890444, guid: 29db2fee6ddd3c341aefd12d14ef62d6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1.5}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1809833634
 GameObject:
   m_ObjectHideFlags: 0
@@ -9738,6 +11371,7 @@ GameObject:
   - component: {fileID: 1809833637}
   - component: {fileID: 1809833636}
   - component: {fileID: 1809833639}
+  - component: {fileID: 1809833640}
   m_Layer: 0
   m_Name: GilbertSide-Children_L3
   m_TagString: Radar
@@ -9771,6 +11405,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: -1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!65 &1809833637
@@ -9853,6 +11522,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1809833640
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809833634}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63096f378716c5d428c25b332c26e2e3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1817735420
 GameObject:
   m_ObjectHideFlags: 0
@@ -10037,6 +11725,7 @@ GameObject:
   - component: {fileID: 1818840856}
   - component: {fileID: 1818840855}
   - component: {fileID: 1818840859}
+  - component: {fileID: 1818840860}
   m_Layer: 0
   m_Name: MatthewSide-Adult_L1
   m_TagString: Radar
@@ -10069,6 +11758,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: -2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1818840857
@@ -10152,6 +11876,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1818840860
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818840854}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b8f0f0fe96fe3bb40922c566b4b6ce7b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1826049954
 GameObject:
   m_ObjectHideFlags: 0
@@ -10165,6 +11908,7 @@ GameObject:
   - component: {fileID: 1826049957}
   - component: {fileID: 1826049956}
   - component: {fileID: 1826049959}
+  - component: {fileID: 1826049960}
   m_Layer: 0
   m_Name: MatthewSide-Adult_R4
   m_TagString: Radar
@@ -10198,6 +11942,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: 1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!65 &1826049957
@@ -10280,6 +12059,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1826049960
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826049954}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7bcd72dd0c151f6408d8352aa50d5bde, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1832090818
 GameObject:
   m_ObjectHideFlags: 0
@@ -10611,6 +12409,7 @@ GameObject:
   - component: {fileID: 1869650202}
   - component: {fileID: 1869650203}
   - component: {fileID: 1869650206}
+  - component: {fileID: 1869650207}
   m_Layer: 0
   m_Name: DianaSide-Children_L1
   m_TagString: Radar
@@ -10630,6 +12429,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: -2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!65 &1869650203
@@ -10726,6 +12560,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1869650207
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869650201}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7ab0b4889815f44499f40a55d165c46c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1912259360
 GameObject:
   m_ObjectHideFlags: 0
@@ -10739,6 +12592,7 @@ GameObject:
   - component: {fileID: 1912259362}
   - component: {fileID: 1912259361}
   - component: {fileID: 1912259365}
+  - component: {fileID: 1912259366}
   m_Layer: 0
   m_Name: DianaSide-Children_R2
   m_TagString: Radar
@@ -10771,6 +12625,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: 2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1912259363
@@ -10854,6 +12743,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1912259366
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912259360}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 38d78d85eb3f7bc44afc894b658ab3aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1936272257
 GameObject:
   m_ObjectHideFlags: 0
@@ -10867,6 +12775,7 @@ GameObject:
   - component: {fileID: 1936272260}
   - component: {fileID: 1936272259}
   - component: {fileID: 1936272262}
+  - component: {fileID: 1936272263}
   m_Layer: 0
   m_Name: GilbertSide-Children_R4
   m_TagString: Radar
@@ -10900,6 +12809,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: 1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!65 &1936272260
@@ -10982,6 +12926,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1936272263
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936272257}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 687d7621c3ca9a040bfc276e98d59546, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1945042547
 GameObject:
   m_ObjectHideFlags: 0
@@ -11259,6 +13222,7 @@ GameObject:
   - component: {fileID: 1987337958}
   - component: {fileID: 1987337957}
   - component: {fileID: 1987337960}
+  - component: {fileID: 1987337961}
   m_Layer: 0
   m_Name: LyndSide-Adult_L5
   m_TagString: Radar
@@ -11305,6 +13269,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: -1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1987337959
@@ -11374,6 +13373,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1987337961
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987337955}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bee1ff04f37b6f84c937d5d72ae1bf7f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2003295302
 GameObject:
   m_ObjectHideFlags: 0
@@ -11483,6 +13501,7 @@ GameObject:
   - component: {fileID: 2063240092}
   - component: {fileID: 2063240091}
   - component: {fileID: 2063240095}
+  - component: {fileID: 2063240096}
   m_Layer: 0
   m_Name: MatthewSide-Adult_R2
   m_TagString: Radar
@@ -11515,6 +13534,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff4f0b793ff56e4db74e35688346cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1118467707}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 1256457620}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1066608852}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 1936272263}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1987337961}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1631480462}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 357496087}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  - {fileID: 1826049960}
   StartPosition: {x: 2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &2063240093
@@ -11598,6 +13652,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &2063240096
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063240090}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d579de4f3ff47d04d914f1673fcd7d46, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2092890275
 GameObject:
   m_ObjectHideFlags: 0
