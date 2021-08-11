@@ -9,7 +9,7 @@ public class BackgroundScroll : MonoBehaviour
 
     void Start()
     {
-        mat = GetComponent<SpriteRenderer>().material; 
+        mat = GetComponent<SpriteRenderer>().material;
     }
 
     void Update()

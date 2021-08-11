@@ -131,6 +131,7 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         isPlay = false;
+        BerryController.getBerryBox = false;
         StopCoroutine(AddScore()); // score++ 멈춤
         finalScore.text = score.ToString(); // 게임오버 화면 활성화
         GameOverPanel.SetActive(true);
