@@ -6,14 +6,15 @@ using UnityEngine.UI;
 public class BerryController : MonoBehaviour
 {
     public GameObject[] Berry_play;
+    public GameObject player;
     public Text BerryText;
     int BerryNum;
     public static bool getBerryBox, getBerry, BumpOntheRoad = false;
-    // Start is called before the first frame update
+
     private void Start()
     {
         BerryNum = 3;
-        
+
         for (int i = 0; i < Berry_play.Length; i++)
             Berry_play[i].SetActive(false);
         BerryText.gameObject.SetActive(false);
@@ -85,10 +86,31 @@ public class BerryController : MonoBehaviour
             if (BumpOntheRoad)
             {
                 BerryNum--;
+                Berry_play[3].transform.position = new Vector2(player.transform.position.x + 0.2f, -4.5f);
+                StartCoroutine(BerryDrop());
+                
                 yield return new WaitForSeconds(0.1f);
                 BumpOntheRoad = false;
             }
             yield return null;
         }
+    }
+    public IEnumerator BerryDrop()
+    {
+        Berry_play[3].SetActive(true);
+        while (true)
+        {
+            if (Berry_play[3].transform.position.y > -5.5f)
+            {
+                Berry_play[3].transform.Translate(Vector2.down * Time.deltaTime * GameManager.instance.gameSpeed * 7);
+            }
+            else
+            {
+                Berry_play[3].SetActive(false);
+                break;
+            }
+             yield return null;  
+        }
+        StopCoroutine(BerryDrop());
     }
 }
