@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Sun : MonoBehaviour
 {
+    public static bool sunRise;
     public GameObject[] SunIMG;
     void Start()
     {
@@ -18,19 +19,25 @@ public class Sun : MonoBehaviour
     {
         while (true)
         {
-            SunIMG[0].SetActive(true);
-            yield return new WaitForSeconds(10);
-            SunIMG[0].SetActive(false);
+            if (GameManager.isPlay)
+            {
+                SunIMG[0].SetActive(true);
+                sunRise = true;
+                yield return new WaitForSeconds(10);
+                SunIMG[0].SetActive(false);
 
-            yield return new WaitForSeconds(60);
+                yield return new WaitForSeconds(60);
+                sunRise = false;
 
-            SunIMG[1].SetActive(true);
-            yield return new WaitForSeconds(10);
-            SunIMG[1].SetActive(false);
+                SunIMG[1].SetActive(true);
+                yield return new WaitForSeconds(10);
+                SunIMG[1].SetActive(false);
 
-            SunIMG[2].SetActive(true);
-            yield return new WaitForSeconds(40);
-            SunIMG[2].SetActive(false);
+                SunIMG[2].SetActive(true);
+                yield return new WaitForSeconds(40);
+                SunIMG[2].SetActive(false);
+                
+            }
             yield return null;
         }
     }
