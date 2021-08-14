@@ -5,14 +5,24 @@ using UnityEngine.UI;
 
 public class ItemController : MonoBehaviour
 {
+    public GameManager gameManager;
     public SomoonGauge somoon;
     public Sprite[] ItemImage;
     public GameObject item0, item1, item2;
+    public float upSpeed = 1;
+
     // item0, item1 => slot_item
     // item2 => twinkle
 
     Slot item_slot;
     Item item;
+
+    private void ReturnSpeed()
+    {
+        gameManager.gameSpeed /= upSpeed;
+        upSpeed = 1;
+        somoon.somoonContinue = true;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -101,9 +111,13 @@ public class ItemController : MonoBehaviour
         {
             Debug.Log("USE HAT");
         }
-        else if (typetype == Item.item_type.snail)
+        else if (typetype == Item.item_type.boost)
         {
-            Debug.Log("USE SNAIL");
+            Debug.Log("USE BOOST");
+            upSpeed = 3f;
+            gameManager.gameSpeed *= upSpeed;
+            somoon.somoonContinue = false;
+            Invoke("ReturnSpeed", 3f);
         }
         else if (typetype == Item.item_type.eraser)
         {
@@ -122,14 +136,14 @@ public class Item
         red_wig,
         slate,
         hat,
-        snail,
+        boost,
         eraser
     }
 
     public item_type new_random_item(Slot slot)
     {
         item_type new_item;
-        new_item = (item_type)Random.Range(0, 4);
+        new_item = (item_type)Random.Range(0, 5);
 
         // store new item in slot
         slot.stack.Push((int)new_item);

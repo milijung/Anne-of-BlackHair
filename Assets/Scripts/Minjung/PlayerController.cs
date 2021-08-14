@@ -79,4 +79,6 @@ public class PlayerController : MonoBehaviour
             GameManager.isPlay = false;
         }
     }
+
+    
 }

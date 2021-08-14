@@ -13,10 +13,12 @@ public class GameManager : MonoBehaviour
     public GameObject GameOverPanel;
     public GameObject fadeSprite;
     public Text finalScore;
+    public Text bestScoreTxt;  //게임 종료 화면에서 최고 점수 text
     public GameObject player;
     public GameObject AnneCry;
     public Slider rumor;
     public GameObject itemSlot;
+    public ItemController itemController;
 
     public GameObject BackgroundMusic;
     AudioSource backmusic;
@@ -26,7 +28,7 @@ public class GameManager : MonoBehaviour
     public float gameSpeed;
     public GameObject[] Count;
 
-    
+
     
 
     #region instance
@@ -46,6 +48,10 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        if(!PlayerPrefs.HasKey("BestScore"))
+        {
+            PlayerPrefs.SetInt("BestScore", 0);
+        }
         GamePlay();
         gameSpeed = 0.3f;
     }
@@ -62,7 +68,7 @@ public class GameManager : MonoBehaviour
         {
             if(Time.timeScale == 1 && isPlay) { 
                 score++;
-                yield return new WaitForSeconds(0.3f); // 게임 속도 단위로 점수를 더함
+                yield return new WaitForSeconds(gameSpeed/Mathf.Pow(itemController.upSpeed, 2)); // 게임 속도 단위로 점수를 더함
             }
             yield return null;
         }
@@ -103,6 +109,14 @@ public class GameManager : MonoBehaviour
         yield return null;
     }
 
+    public void Save()
+    {
+        if(score >= PlayerPrefs.GetInt("BestScore"))
+        {
+            PlayerPrefs.SetInt("BestScore", score);
+        }
+    }
+
     public void GamePlay()
     {
         score = 0;
@@ -132,6 +146,9 @@ public class GameManager : MonoBehaviour
     {
         isPlay = false;
         StopCoroutine(AddScore()); // score++ 멈춤
+        Save(); //점수 데이터 저장
+
+        bestScoreTxt.text = PlayerPrefs.GetInt("BestScore").ToString();
         finalScore.text = score.ToString(); // 게임오버 화면 활성화
         GameOverPanel.SetActive(true);
         fadeSprite.SetActive(true);

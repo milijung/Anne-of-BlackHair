@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class MobBase : MonoBehaviour
 {
+    Animator my_ani;
     public Animator[] animator;
     public Vector2 StartPosition;
     public SomoonGauge somoon;
+    public float surprisedPosition;
 
     private void OnEnable() // ������Ʈ�� Ȱ��ȭ�Ǹ� ����
     {
-
-        
+        my_ani = GetComponent<Animator>();
         if (SpawnManager.MobStartNum == 0)
         {
             gameObject.SetActive(false); // SpawnManager ���� ���� Mob�� �����ϴ� �� ����
@@ -32,6 +33,16 @@ public class MobBase : MonoBehaviour
                 gameObject.SetActive(false);
             }
         }
+
+        if (my_ani.GetBool("isTouched"))
+        {
+            transform.position = new Vector2(surprisedPosition, transform.position.y);
+        }
+
+        else
+        {
+            transform.position = new Vector2(StartPosition.x, transform.position.y);
+        }
     }
 
     private void SetAnimation()
@@ -40,6 +51,7 @@ public class MobBase : MonoBehaviour
         {
             animator[i].SetBool("isTouched", true);
         }
+        
     }
 
     private void UnsetAnimation()
@@ -48,6 +60,7 @@ public class MobBase : MonoBehaviour
         {
             animator[i].SetBool("isTouched", false);
         }
+        
     }
 
 

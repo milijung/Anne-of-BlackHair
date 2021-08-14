@@ -5,43 +5,27 @@ using UnityEngine.UI;
 
 public class Flash_Image : MonoBehaviour
 {
-    public SomoonGauge Somoon;
     public GameObject FlashImage;
-    public bool setFlash;
-    void SetFlash(bool setFlash)
+    private void Start()
     {
-        if(setFlash == true)
+        StartCoroutine(Flash());
+    }
+
+    
+    IEnumerator Flash()
+    {
+        while (true)
         {
             FlashImage.SetActive(true);
-            Destroy(FlashImage, 2);
+            yield return new WaitForSeconds(0.2f);
+            FlashImage.SetActive(false);
+            yield return new WaitForSeconds(0.2f);
         }
-        else
-        {
-            FlashImage.SetActive(setFlash);
-        }
-        
-    }
-    void Start()
-    {
 
-        setFlash = true;
-        SetFlash(setFlash);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if(Somoon.somoonGauge >= 85 && Somoon.somoonGauge < 88)
-        {
-            setFlash = true;
-            SetFlash(setFlash);
-        }
-
-        else
-        {
-            setFlash = false;
-            SetFlash(setFlash);
-        }
         
     }
 }

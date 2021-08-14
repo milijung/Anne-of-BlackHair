@@ -6,9 +6,11 @@ public class SomoonGauge : MonoBehaviour
 {
     public GameManager gameManager;
     public GameObject Emergency;
+    
 
     public Animator animator;
     public bool somoonContinue;
+    public bool isEmergency;
 
     public float adultFirstTouchTime;
     public float childFirstTouchTime;
@@ -24,6 +26,7 @@ public class SomoonGauge : MonoBehaviour
         animator = GameObject.Find("Player").GetComponent<Animator>();
 
         somoonContinue = true;
+        isEmergency = false;
         Emergency.SetActive(false);
         
         startTime = Time.time;
@@ -69,11 +72,13 @@ public class SomoonGauge : MonoBehaviour
                     somoonGauge += 0.1f * (realTime - childFirstTouchTime);
                 }
 
-                if (somoonGauge > 85 && somoonGauge < 88)
+                if((somoonGauge > 70 && somoonGauge<100) && !isEmergency)
                 {
-                    Emergency.SetActive(true);
-
+                    OnEmergency();
+                    Invoke("OffEmergency", 2f);
                 }
+                else if(somoonGauge < 70)
+                    isEmergency = false;
             }
 
         }
@@ -83,5 +88,18 @@ public class SomoonGauge : MonoBehaviour
         
         
         }
+
+    private void OnEmergency()
+    {
+        
+        Emergency.SetActive(true);
+        isEmergency = true;
+    }
+
+    private void OffEmergency()
+    {
+        Emergency.SetActive(false);
+    }
+
     }
 
