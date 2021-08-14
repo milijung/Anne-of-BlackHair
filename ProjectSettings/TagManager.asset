@@ -7,8 +7,13 @@ TagManager:
   - Radar
   - Item
   - Color
-  - Road1
   - Tal
+  - Berry
+  - BerryBox
+  - catMove
+  - deer
+  - bridge
+  - river
   layers:
   - Default
   - TransparentFX
