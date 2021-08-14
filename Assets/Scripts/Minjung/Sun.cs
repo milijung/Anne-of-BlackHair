@@ -26,7 +26,7 @@ public class Sun : MonoBehaviour
                 yield return new WaitForSeconds(10);
                 SunIMG[0].SetActive(false);
 
-                yield return new WaitForSeconds(60);
+                yield return new WaitForSeconds(40);
                 sunRise = false;
 
                 SunIMG[1].SetActive(true);

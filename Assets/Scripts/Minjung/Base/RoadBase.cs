@@ -9,7 +9,8 @@ public class RoadBase : MonoBehaviour
     float posX, riverPosX;
     public static bool jump = false;
     public Vector2 StartPosition;
-    public GameObject river, bridge;
+    public GameObject river, bridge, catBerry;
+
 
     private void OnEnable() // ������Ʈ�� Ȱ��ȭ�Ǹ� ����
     {
@@ -22,54 +23,66 @@ public class RoadBase : MonoBehaviour
             if (SpawnManager.MobStartNum == 0)
             {
                 gameObject.SetActive(false); // SpawnManager ���� ���� Mob�� �����ϴ� �� ����
-
             }
             else
             {
-                #region position X
-                LineNum = UnityEngine.Random.Range(0, 3);
-                if (LineNum == 0)
-                {
-                    posX = -1.4f;
-                }
-                if (LineNum == 1)
-                {
-                    posX = 0;
-                }
-                if (LineNum == 2)
-                {
-                    posX = 1.4f;
-                }
-                #endregion
-                #region bridge position X
-                    LineNum = UnityEngine.Random.Range(0, 3);
-                    if (LineNum == 0)
-                    {
-                        riverPosX = -1.35f;
-                    }
-                    if (LineNum == 1)
-                    {
-                        riverPosX = 0;
-                    }
-                    if (LineNum == 2)
-                    {
-                        riverPosX = 1.35f;
-                    }
-                    #endregion
                 if (gameObject.tag == "catMove")
                 {
                     StartCoroutine(catRun());
                 }
-                else if(gameObject.tag == "bridge")
+                else if (gameObject.tag == "bridge")
                 {
-                    
+                    if (SpawnManager.isforest)
+                    {
+                        riverPosX = 0;
+                    }
+                    else
+                    {
+                        #region bridge position X
+                        LineNum = UnityEngine.Random.Range(0, 3);
+                        if (LineNum == 0)
+                        {
+                            riverPosX = -1.35f;
+                        }
+                        if (LineNum == 1)
+                        {
+                            riverPosX = 0;
+                        }
+                        if (LineNum == 2)
+                        {
+                            riverPosX = 1.35f;
+                        }
+                        #endregion
+                    }
                     gameObject.transform.position = new Vector2(riverPosX, 8);
                     gameObject.SetActive(true);
                     river.transform.position = new Vector2(0, 8);
                     river.SetActive(true);
                 }
-                else if(gameObject.tag == "river")
+                else if (gameObject.tag == "river")
                 {
+                    if (SpawnManager.isforest)
+                    {
+                        riverPosX = 0;
+                    }
+                    else
+                    {
+                        #region bridge position X
+                        LineNum = UnityEngine.Random.Range(0, 3);
+                        if (LineNum == 0)
+                        {
+                            riverPosX = -1.35f;
+                        }
+                        if (LineNum == 1)
+                        {
+                            riverPosX = 0;
+                        }
+                        if (LineNum == 2)
+                        {
+                            riverPosX = 1.35f;
+                        }
+                        #endregion
+                    }
                     gameObject.transform.position = new Vector2(0, 8);
                     gameObject.SetActive(true);
                     bridge.transform.position = new Vector2(riverPosX, 8);
@@ -77,10 +90,33 @@ public class RoadBase : MonoBehaviour
                 }
                 else
                 {
+                    if (SpawnManager.isforest)
+                    {
+                        posX = 0;
+                    }
+                    else
+                    {
+                        #region position X
+                        LineNum = UnityEngine.Random.Range(0, 3);
+                        if (LineNum == 0)
+                        {
+                            posX = -1.4f;
+                        }
+                        if (LineNum == 1)
+                        {
+                            posX = 0;
+                        }
+                        if (LineNum == 2)
+                        {
+                            posX = 1.4f;
+                        }
+                        #endregion
+                    }
                     gameObject.transform.position = new Vector2(posX, 8);
                     gameObject.SetActive(true);
-                }            
+                }
             }
+                   
         }
     }
 
@@ -115,6 +151,15 @@ public class RoadBase : MonoBehaviour
                 if (collision.transform.position.x * bridge.transform.position.x<=0 && collision.transform.position.x!= bridge.transform.position.x)
                     BerryController.BumpOntheRoad = true;
             }
+            else if(gameObject.tag == "catMove")
+            {
+                if (!jump)
+                {
+                    BerryController.BumpOntheRoad = true;
+                    BerryController.BumpWithCat = true;
+                    catBerry.SetActive(true);
+                }   
+            }
             else
             {
                 if (!jump) 
@@ -128,9 +173,14 @@ public class RoadBase : MonoBehaviour
             if (gameObject.tag != "catMove")
             {
                 if (gameObject.tag == "river")
+                {
                     bridge.SetActive(false);
-
-                gameObject.SetActive(false);
+                    gameObject.SetActive(false);
+                }
+                else if (gameObject.tag == "Berry")
+                    collision.gameObject.SetActive(false);
+                else
+                    gameObject.SetActive(false);
             }
         }
     }
@@ -160,6 +210,7 @@ public class RoadBase : MonoBehaviour
             else
             {
                 gameObject.SetActive(false);
+                catBerry.SetActive(false);
                 break;
             }     
             yield return null;

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,7 +10,7 @@ public class BerryController : MonoBehaviour
     public GameObject player;
     public TextMeshProUGUI BerryText;
     int BerryNum;
-    public static bool getBerryBox, getBerry, BumpOntheRoad = false;
+    public static bool getBerryBox, getBerry, BumpOntheRoad, BumpWithCat= false;
 
     private void Start()
     {
@@ -87,10 +88,11 @@ public class BerryController : MonoBehaviour
             {
                 BerryNum--;
                 Berry_play[3].transform.position = new Vector2(player.transform.position.x + 0.2f, -4.5f);
-                StartCoroutine(BerryDrop());
+                if (!BumpWithCat)
+                    StartCoroutine(BerryDrop());
                 
                 yield return new WaitForSeconds(0.1f);
-                BumpOntheRoad = false;
+                BumpOntheRoad = BumpWithCat = false;
             }
             yield return null;
         }

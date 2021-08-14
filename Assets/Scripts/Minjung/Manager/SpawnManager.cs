@@ -7,6 +7,7 @@ public class SpawnManager : MonoBehaviour
     List<GameObject> TreePool = new List<GameObject>();
     List<GameObject> HousePool = new List<GameObject>();
     List<GameObject> BackGround = new List<GameObject>();
+    List<GameObject> BerryPool = new List<GameObject>();
     List<int> StreetLightNum = new List<int>();
     public Sun sun;
     public GameObject[] SideMobs;
@@ -16,10 +17,11 @@ public class SpawnManager : MonoBehaviour
     GameObject[][] Road = new GameObject[4][];
     public GameObject[] RoadOne, RoadTwo, RoadThree, RoadFour;
     public GameObject[] BerryBox;
+    public GameObject[] BackgroundScrollImage;
     public static int MobStartNum = 0; // SpawnManager 실행 전에 Mob이 등장하는 것 방지
-    public static bool isforest;
+    public static bool isforest = false;
     public int objCnt = 4;
-    int x_Back;
+    int x_Back, x_forest, x_Berry;
 
     public float startNum_Create, finalNum_Create; // mob 등장간의 시간 간격. startNum: 최소 시간 간격, finalNum: 최대 시간 간격
     private void Awake()
@@ -52,15 +54,44 @@ public class SpawnManager : MonoBehaviour
                 StreetLightNum.Add(TreePool.Count + i);
             }
         }
+        for (int i = 0; i < 5; i++)
+            BerryPool.Add(CreateObj(BerryBox[3], transform));
     }
     private void Start() 
     {
-        x_Back = 0;
+        x_Back = x_forest = x_Berry = 0;
         StartCoroutine(CreateBack());
         StartCoroutine(CreateMob());
         StartCoroutine(CreateRoad());
         StartCoroutine(CreateItem());
         StartCoroutine(CreateColor());
+    }
+    private void Update()
+    {
+        if (isforest && x_forest==0)
+        {
+            StartCoroutine(BackgroundScroll());
+        }
+    }
+    IEnumerator BackgroundScroll()
+    {
+        x_forest++;
+        while (true)
+        {
+            if (GameManager.isPlay)
+            {   
+                BackgroundScrollImage[0].SetActive(true);
+                while (isforest)
+                {
+                    yield return null;
+                }
+                BackgroundScrollImage[1].SetActive(true);
+                break;   
+            }
+            yield return null;
+        }
+        StopCoroutine(BackgroundScroll());
+
     }
     IEnumerator CreateBack() // 풀,나무,집 생성
     {
@@ -69,7 +100,6 @@ public class SpawnManager : MonoBehaviour
         {
             if (GameManager.isPlay)
             {
-                
                 if (x_Back <= TreePool.Count)
                 {
                     isforest = true;
@@ -78,6 +108,7 @@ public class SpawnManager : MonoBehaviour
                     x_Back++;
                     if (x_Back == TreePool.Count)
                     {
+                        isforest = false;
                         yield return new WaitForSeconds(9.8f);
                     }
                 }
@@ -101,6 +132,7 @@ public class SpawnManager : MonoBehaviour
                     {
                         yield return new WaitForSeconds(9.3f);
                         x_Back = 0;
+                        x_forest = 0;
                     }
                 }
 
@@ -122,7 +154,7 @@ public class SpawnManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         while (true)
         {
-            if (GameManager.isPlay)
+            if (GameManager.isPlay && !isforest) 
             {
                 float time = Random.Range(startNum_Create, finalNum_Create); // 마을사람들이 등장하는 시간 간격
                 SideMobs[DeactiveMob()].SetActive(true); // 비활성화된 Mob들 중에서 1개를 활성화
@@ -144,10 +176,24 @@ public class SpawnManager : MonoBehaviour
         {
             if (GameManager.isPlay)
             {
-                Item[0].SetActive(true); // 아이템주머니 활성화
-                yield return new WaitForSeconds(2); // 아이템이 생성된 후, 몇초 지나고 다음 아이템이 생성
-                BerryBox[3].SetActive(true);
-                yield return new WaitForSeconds(2);
+                if (!isforest)
+                {
+                    x_Berry = 0;
+                    Item[0].SetActive(true); // 아이템주머니 활성화
+                    yield return new WaitForSeconds(4); // 아이템이 생성된 후, 몇초 지나고 다음 아이템이 생성
+                }
+                else
+                {
+                    if (x_Berry < 5)
+                    {
+                        BerryPool[x_Berry].SetActive(true);
+                        x_Berry++;
+                        yield return new WaitForSeconds(0.3f);
+                    }
+                    else
+                        yield return null;
+                }
+                
             }
             else
             {
@@ -194,7 +240,7 @@ public class SpawnManager : MonoBehaviour
                     else // 마을
                         Road[3][DeactiveRoad_night()].SetActive(true);
                 }
-                yield return new WaitForSeconds(Random.Range(1, 3));
+                yield return new WaitForSeconds(2);
             }
             else
             {

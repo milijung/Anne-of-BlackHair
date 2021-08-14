@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
     private Vector2 direction;
     public GameObject gamePanel, fadeSprite;
-
+    Sprite Background;
     private int desiredLane = 1; // 0: ���ʶ���, 1: �߰�����, 2: ������ ����
     public float laneDisance = 1.5f;// ���� ������ �Ÿ�
 
@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     AudioSource backmusic;
     public GameObject stepSound;
     AudioSource stepAudio;
+    public GameObject toForest, toTown;
 
     AnimationController _animation_controller;
 
@@ -23,27 +24,25 @@ public class PlayerController : MonoBehaviour
         controller = GetComponent<CharacterController>();
         backmusic = BackgroundMusic.GetComponent<AudioSource>();
         stepAudio = stepSound.GetComponent<AudioSource>();
-
         _animation_controller = GameObject.Find("Animation_Controller").GetComponent<AnimationController>();
     }
 
-    private void Update() { 
-
-        if (SwipeManager.swipeRight) 
+    private void Update() 
+    {
+        Background = GameObject.Find("Background").GetComponent<SpriteRenderer>().sprite;
+        if (Background.name == "threeWay") // 마을
         {
-            desiredLane++;
-            if (desiredLane == 3) 
-                desiredLane = 2;        
+            if (toTown.activeSelf && toTown.transform.position.y >= -2.8f)
+                OneWay();
+            else
+                ThreeWay();
         }
-        if (SwipeManager.swipeLeft) 
+        else if (Background.name == "oneWay") // 숲
         {
-            desiredLane--;
-            if (desiredLane == -1) 
-                desiredLane = 0;
-        }
-        if (SwipeManager.swipeUp) 
-        {
-            _animation_controller._ann_jump();
+            if (toForest.activeSelf && toForest.transform.position.y >= -5)
+                ThreeWay();
+            else
+                OneWay();
         }
 
         Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up; 
@@ -74,6 +73,39 @@ public class PlayerController : MonoBehaviour
             fadeSprite.SetActive(true);
             Time.timeScale = 0;
             GameManager.isPlay = false;
+        }
+    } 
+    void OneWay()
+    {
+        Debug.Log("숲");
+        desiredLane = 1;
+        if (SwipeManager.swipeRight || SwipeManager.swipeLeft)
+        {
+            BerryController.BumpOntheRoad = true;
+        }
+        if (SwipeManager.swipeUp)
+        {
+            _animation_controller._ann_jump();
+        }
+    }
+    void ThreeWay()
+    {
+        Debug.Log("마을");
+        if (SwipeManager.swipeRight)
+        {
+            desiredLane++;
+            if (desiredLane == 3)
+                desiredLane = 2;
+        }
+        if (SwipeManager.swipeLeft)
+        {
+            desiredLane--;
+            if (desiredLane == -1)
+                desiredLane = 0;
+        }
+        if (SwipeManager.swipeUp)
+        {
+            _animation_controller._ann_jump();
         }
     }
 }

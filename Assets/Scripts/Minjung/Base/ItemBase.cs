@@ -27,24 +27,29 @@ public class ItemBase : MonoBehaviour
         else
         {
             gameObject.SetActive(true);
-        }
-        #region position X
-            LineNum = Random.Range(0, 3);
-            if (LineNum == 0)
-            {
-                posX = -1.4f;
-            }
-            if (LineNum == 1)
-            {
+            if (SpawnManager.isforest)
                 posX = 0;
-            }
-            if (LineNum == 2)
+            else
             {
-                posX = 1.4f;
+                #region position X
+                LineNum = Random.Range(0, 3);
+                if (LineNum == 0)
+                {
+                    posX = -1.4f;
+                }
+                if (LineNum == 1)
+                {
+                    posX = 0;
+                }
+                if (LineNum == 2)
+                {
+                    posX = 1.4f;
+                }
+                #endregion
             }
-        #endregion
+            
+        }
         transform.position = new Vector2(posX, 8);
-
     }
 
     private void Update()

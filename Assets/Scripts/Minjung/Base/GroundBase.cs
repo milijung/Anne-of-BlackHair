@@ -10,13 +10,17 @@ public class GroundBase : MonoBehaviour
         if (SpawnManager.MobStartNum ==0)
         {
             gameObject.SetActive(false); // SpawnManager 실행 전에 Mob이 등장하는 것 방지
-
         }
         else
         {
             gameObject.SetActive(true);
         }
         transform.position = StartPosition;
+    }
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.tag != "Player")
+            collision.gameObject.SetActive(false);
     }
 
     private void Update()
