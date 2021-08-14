@@ -8,8 +8,8 @@ public class PlayerController : MonoBehaviour
     private Vector2 direction;
     public GameObject gamePanel, fadeSprite;
 
-    private int desiredLane = 1; // 0: ¿ÞÂÊ¶óÀÎ, 1: Áß°£¶óÀÎ, 2: ¿À¸¥ÂÊ ¶óÀÎ
-    public float laneDisance = 1.5f;// ¶óÀÎ »çÀÌÀÇ °Å¸®
+    private int desiredLane = 1; // 0: ï¿½ï¿½ï¿½Ê¶ï¿½ï¿½ï¿½, 1: ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½, 2: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+    public float laneDisance = 1.5f;// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Å¸ï¿½
 
     public GameObject stepSound;
     AudioSource stepAudio;
@@ -29,11 +29,6 @@ public class PlayerController : MonoBehaviour
 
     void OnControllerColliderHit(ControllerColliderHit hit) {
         Debug.Log("Collision!!");
-<<<<<<< HEAD
-        
-=======
-
->>>>>>> parent of a89b197 (ì´ˆê¸°í™” -merge ì „)
         if(hit.gameObject.tag == "ItemBox")
             Debug.Log("ItemBox");
         if(hit.gameObject.tag == "Dye")
@@ -43,27 +38,19 @@ public class PlayerController : MonoBehaviour
         
     }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of a89b197 (ì´ˆê¸°í™” -merge ì „)
     private void FixedUpdate()
     {
         controller.Move(direction * Time.fixedDeltaTime);
-        if (Input.GetKey(KeyCode.Escape)) // ½º¸¶Æ®Æù µÚ·Î°¡±â ¹öÆ° ´­·¶À» ¶§
+        if (Input.GetKey(KeyCode.Escape)) // ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Ú·Î°ï¿½ï¿½ï¿½ ï¿½ï¿½Æ° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
         {
             stepAudio.Pause();
-            gamePanel.SetActive(true); // ÆÐ³Î º¸ÀÌ±â
+            gamePanel.SetActive(true); // ï¿½Ð³ï¿½ ï¿½ï¿½ï¿½Ì±ï¿½
             fadeSprite.SetActive(true);
-            Time.timeScale = 0; // ÀÏ½ÃÁ¤Áö
+            Time.timeScale = 0; // ï¿½Ï½ï¿½ï¿½ï¿½ï¿½ï¿½
         }
     }
 
-<<<<<<< HEAD
-    private void step_audio_play()
-=======
     private void step_audio_play() 
->>>>>>> parent of a89b197 (ì´ˆê¸°í™” -merge ì „)
     {
         if (MainMenu.AudioPlay)
         {
@@ -78,21 +65,21 @@ public class PlayerController : MonoBehaviour
     private void move_swipe()
     {
         transform.Translate(Vector2.up* Time.deltaTime * GameManager.instance.gameSpeed);
-        // ÀÔ·ÂµÈ swipe¿¡ µû¶ó ¶óÀÎ¹øÈ£ °áÁ¤
-        if (SwipeManager.swipeRight) // ¸¸¾à ¿À¸¥ÂÊÀ¸·Î ½º¿ÍÀÌÇÁÇß´Ù¸é
+        // ï¿½Ô·Âµï¿½ swipeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Î¹ï¿½È£ ï¿½ï¿½ï¿½ï¿½
+        if (SwipeManager.swipeRight) // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß´Ù¸ï¿½
         {
-            desiredLane++; // ¶óÀÎ¹øÈ£++
-            if (desiredLane == 3) // ¶óÀÎ¹øÈ£<=2
+            desiredLane++; // ï¿½ï¿½ï¿½Î¹ï¿½È£++
+            if (desiredLane == 3) // ï¿½ï¿½ï¿½Î¹ï¿½È£<=2
                 desiredLane = 2;
         }
-        if (SwipeManager.swipeLeft) // ¸¸¾à ¿ÞÂÊÀ¸·Î ½º¿ÍÀÌÇÁÇß´Ù¸é
+        if (SwipeManager.swipeLeft) // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß´Ù¸ï¿½
         {
-            desiredLane--; // ¶óÀÎ¹øÈ£--
-            if (desiredLane == -1) // ¶óÀÎ¹øÈ£>=0
+            desiredLane--; // ï¿½ï¿½ï¿½Î¹ï¿½È£--
+            if (desiredLane == -1) // ï¿½ï¿½ï¿½Î¹ï¿½È£>=0
                 desiredLane = 0;
         }
 
-        // ¶óÀÎ¹øÈ£¿¡ µû¸¥ object ÁÂÇ¥°ª ¼³Á¤ 
+        // ï¿½ï¿½ï¿½Î¹ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ object ï¿½ï¿½Ç¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 
         Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up; 
         if (desiredLane == 0)
             targetPosition += Vector3.left * laneDisance;
@@ -101,12 +88,12 @@ public class PlayerController : MonoBehaviour
         
         if (transform.position == targetPosition)
             return;
-        Vector3 diff = targetPosition - transform.position; // ÀÌµ¿ÇØ¾ßÇÏ´Â ÁÂÇ¥°ª - ÇöÀç ÁÂÇ¥°ª
-        Vector3 moveDir = diff.normalized * 25 * Time.deltaTime;  // diffÀÇ ´ÜÀ§º¤ÅÍ * 25 * Time.deltaTime
+        Vector3 diff = targetPosition - transform.position; // ï¿½Ìµï¿½ï¿½Ø¾ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½Ç¥ï¿½ï¿½ - ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½ï¿½
+        Vector3 moveDir = diff.normalized * 25 * Time.deltaTime;  // diffï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ * 25 * Time.deltaTime
         if (moveDir.sqrMagnitude < diff.magnitude)
-            controller.Move(moveDir); // moveDir·Î object ÀÌµ¿
+            controller.Move(moveDir); // moveDirï¿½ï¿½ object ï¿½Ìµï¿½
         else
-            controller.Move(diff); // diff·Î object ÀÌµ¿
+            controller.Move(diff); // diffï¿½ï¿½ object ï¿½Ìµï¿½
     }
     
 
