@@ -199,20 +199,23 @@ public class RoadBase : MonoBehaviour
         }
         while (true)
         {
-            if (Math.Abs(gameObject.transform.position.x) <= 3.5f)
-            {  
-                if (dir == 0)
-                    gameObject.transform.Translate(Vector2.right * Time.deltaTime * GameManager.instance.gameSpeed * 12);
-
-                else if (dir == 1)
-                    gameObject.transform.Translate(Vector2.left * Time.deltaTime * GameManager.instance.gameSpeed * 12);
-            }
-            else
+            if (GameManager.isPlay)
             {
-                gameObject.SetActive(false);
-                catBerry.SetActive(false);
-                break;
-            }     
+                if (Math.Abs(gameObject.transform.position.x) <= 3.5f)
+                {
+                    if (dir == 0)
+                        gameObject.transform.Translate(Vector2.right * Time.deltaTime * GameManager.instance.gameSpeed * 12);
+
+                    else if (dir == 1)
+                        gameObject.transform.Translate(Vector2.left * Time.deltaTime * GameManager.instance.gameSpeed * 12);
+                }
+                else
+                {
+                    gameObject.SetActive(false);
+                    catBerry.SetActive(false);
+                    break;
+                }
+            }
             yield return null;
         }
         StopCoroutine(catRun());

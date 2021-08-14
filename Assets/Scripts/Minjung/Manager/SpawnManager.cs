@@ -240,7 +240,7 @@ public class SpawnManager : MonoBehaviour
                     else // ¸¶À»
                         Road[3][DeactiveRoad_night()].SetActive(true);
                 }
-                yield return new WaitForSeconds(2);
+                yield return new WaitForSeconds(1);
             }
             else
             {

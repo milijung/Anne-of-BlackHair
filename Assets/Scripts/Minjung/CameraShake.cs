@@ -12,9 +12,10 @@ public class CameraShake : MonoBehaviour
 
     private void Update()
     {
-        if (BerryController.BumpOntheRoad)
+        if (GameManager.isPlay)
         {
-            Shake();
+            if (BerryController.BumpOntheRoad)
+                Shake();
         }
     }
     public void Shake()

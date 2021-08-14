@@ -17,11 +17,6 @@ public class GroundBase : MonoBehaviour
         }
         transform.position = StartPosition;
     }
-    private void OnTriggerEnter(Collider collision)
-    {
-        if (collision.tag != "Player")
-            collision.gameObject.SetActive(false);
-    }
 
     private void Update()
     {

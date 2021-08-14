@@ -43,17 +43,17 @@ public class MobBase : MonoBehaviour
                 somoon.adultFirstTouchTime = somoon.realTime;
             }
 
-           
+
             else if (isAdult && somoon.adultTouch_Num != 0)
             {
                 somoon.adultTouch_Num++;
             }
 
-           
+
             else if (isChildren && somoon.childTouch_Num == 0)
             {
                 somoon.childTouch_Num++;
-                somoon.childFirstTouchTime = somoon.realTime;  
+                somoon.childFirstTouchTime = somoon.realTime;
 
             }
 
@@ -64,5 +64,7 @@ public class MobBase : MonoBehaviour
             }
 
         }
+        else
+            gameObject.SetActive(false);
     }
 }
