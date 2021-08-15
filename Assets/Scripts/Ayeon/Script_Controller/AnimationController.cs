@@ -48,4 +48,9 @@ public class AnimationController : MonoBehaviour
         _ann_animator.SetBool("D",true);
         _twinkle_controller.twinkle_on();
     }
+
+    public void _twinkle_off()
+    {
+        _twinkle.SetActive(false);
+    }
 }
