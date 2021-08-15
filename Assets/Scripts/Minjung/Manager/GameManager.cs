@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public static bool isPlay;
 
-    public TextMeshProUGUI scoreTxt; // Á¡¼ö Text
+    public TextMeshProUGUI scoreTxt; // ï¿½ï¿½ï¿½ï¿½ Text
     public static int score = 0;
 
     public GameObject GameOverPanel;
@@ -47,12 +47,13 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        GamePlay();
+        player.SetActive(true);
+        Invoke("GamePlay",1.75f);
         gameSpeed = 0.3f;
     }
     private void Update()
     {
-        scoreTxt.text = score.ToString(); // score °ªÀ» Text ³»¿ëÀ¸·Î     
+        scoreTxt.text = score.ToString(); // score ï¿½ï¿½ï¿½ï¿½ Text ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     
     }
 
     public IEnumerator AddScore()
@@ -61,7 +62,7 @@ public class GameManager : MonoBehaviour
         {
             if(Time.timeScale == 1 && isPlay) { 
                 score++;
-                yield return new WaitForSeconds(0.3f); // °ÔÀÓ ¼Óµµ ´ÜÀ§·Î Á¡¼ö¸¦ ´õÇÔ
+                yield return new WaitForSeconds(0.3f); // ï¿½ï¿½ï¿½ï¿½ ï¿½Óµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             }
             yield return null;
         }
@@ -108,12 +109,12 @@ public class GameManager : MonoBehaviour
         isPlay = true;
         scoreTxt.text = string.Empty;
         scoreTxt.gameObject.SetActive(true);
-        player.SetActive(true);
+        
         rumor.gameObject.SetActive(true);
         itemSlot.SetActive(true);
 
         SpawnManager.MobStartNum = 0;
-        StartCoroutine(AddScore()); // score++ ½ÇÇà
+        StartCoroutine(AddScore()); // score++ ï¿½ï¿½ï¿½ï¿½
 
         if (MainMenu.AudioPlay == true)
         {
@@ -131,8 +132,8 @@ public class GameManager : MonoBehaviour
     {
         isPlay = false;
         BerryController.getBerryBox = false;
-        StopCoroutine(AddScore()); // score++ ¸ØÃã
-        finalScore.text = score.ToString(); // °ÔÀÓ¿À¹ö È­¸é È°¼ºÈ­
+        StopCoroutine(AddScore()); // score++ ï¿½ï¿½ï¿½ï¿½
+        finalScore.text = score.ToString(); // ï¿½ï¿½ï¿½Ó¿ï¿½ï¿½ï¿½ È­ï¿½ï¿½ È°ï¿½ï¿½È­
         GameOverPanel.SetActive(true);
         fadeSprite.SetActive(true);
         AnneCry.SetActive(true);
