@@ -7,12 +7,11 @@ public class MobBase : MonoBehaviour
     public Vector2 StartPosition;
     public SomoonGauge somoon;
 
-    private void OnEnable() // ¿ÀºêÁ§Æ®°¡ È°¼ºÈ­µÇ¸é ½ÇÇà
+    private void OnEnable() // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ È°ï¿½ï¿½È­ï¿½Ç¸ï¿½ ï¿½ï¿½ï¿½ï¿½
     {
         if (SpawnManager.MobStartNum == 0)
         {
-            gameObject.SetActive(false); // SpawnManager ½ÇÇà Àü¿¡ MobÀÌ µîÀåÇÏ´Â °Í ¹æÁö
-
+            gameObject.SetActive(false); // SpawnManager ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Mobï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         }
         else
         {
@@ -25,7 +24,7 @@ public class MobBase : MonoBehaviour
         if (GameManager.isPlay)
         {
             transform.Translate(Vector2.down * Time.deltaTime * GameManager.instance.gameSpeed * 12);
-            if (transform.position.y < -8) // È­¸é ³¡±îÁö MobÀÌ ÀÌµ¿ÇÏ¸é ÇØ´ç Mob ºñÈ°¼ºÈ­
+            if (transform.position.y < -8) 
             {
                 gameObject.SetActive(false);
             }
@@ -35,36 +34,37 @@ public class MobBase : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            //ºÎµúÈù °Ô ¾î¸¥ÀÎÁö ¾ÆÀÌÀÎÁö ±¸º°
             bool isAdult = gameObject.name.Contains("Adult");
             bool isChildren = gameObject.name.Contains("Children");
-            //¾î¸¥°ú Ã³À½ ºÎµúÃÆÀ» °æ¿ì
+
             if (isAdult && somoon.adultTouch_Num == 0)
             {
                 somoon.adultTouch_Num++;
-                somoon.adultFirstTouchTime = somoon.realTime;  //Ã³À½ ºÎµúÈù ½Ã°£ ÀúÀå
+                somoon.adultFirstTouchTime = somoon.realTime;
             }
 
-            //¾î¸¥°ú n¹øÂ° ºÎµúÄ£ °æ¿ì
+
             else if (isAdult && somoon.adultTouch_Num != 0)
             {
                 somoon.adultTouch_Num++;
             }
 
-            //¾ÆÀÌ¿Í Ã³À½ ºÎµúÃÆÀ» °æ¿ì
+
             else if (isChildren && somoon.childTouch_Num == 0)
             {
                 somoon.childTouch_Num++;
-                somoon.childFirstTouchTime = somoon.realTime;  //Ã³À½ ºÎµúÈù ½Ã°£ ÀúÀå
+                somoon.childFirstTouchTime = somoon.realTime;
 
             }
 
-            //¾ÆÀÌ¿Í n ¹øÂ° ºÎµúÈù °æ¿ì
+
             else if (isChildren && somoon.childTouch_Num != 0)
             {
                 somoon.childTouch_Num++;
             }
 
         }
+        else
+            gameObject.SetActive(false);
     }
 }
