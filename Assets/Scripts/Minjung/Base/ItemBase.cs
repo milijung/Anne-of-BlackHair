@@ -8,11 +8,13 @@ public class ItemBase : MonoBehaviour
     public int LineNum;
     float posX;
 
+    GameObject _player;
     ItemController _item_controller;
     AnimationController _animation_controller;
 
     void Start()
     {
+        _player = GameObject.Find("Player");
         _item_controller = GameObject.Find("Item_Controller").GetComponent<ItemController>();
         _animation_controller = GameObject.Find("Animation_Controller").GetComponent<AnimationController>();
     }
@@ -72,12 +74,13 @@ public class ItemBase : MonoBehaviour
             else if (this.type == 1)
             {
                 // ann_get_bleach
-                _animation_controller._ann_get_bleach();
+                if ( _player.GetComponent<Animator>().GetInteger("State") <= 5 ) _player.GetComponent<Animator>().SetInteger("State",5);
             }
             else if (this.type == 2)
             {
                 // ann_get_dye
-                _animation_controller._ann_get_dye();
+                _player.GetComponent<Animator>().SetInteger("State",9);
+                
             }
         }
         else if (collision.tag == "Radar")

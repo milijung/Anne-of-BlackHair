@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         player.SetActive(true);
+        player.GetComponent<Animator>().SetBool("START",true);
         Invoke("GamePlay",1.75f);
         gameSpeed = 0.3f;
     }

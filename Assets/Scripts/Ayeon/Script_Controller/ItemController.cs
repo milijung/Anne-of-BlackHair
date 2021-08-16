@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ItemController : MonoBehaviour
 {
-
+    GameObject _player;
     public Sprite[] ItemImage;
     public GameObject item0, item1, item2, useItemIMG;
     RectTransform ItemSave;
@@ -19,6 +19,7 @@ public class ItemController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _player = GameObject.Find("Player");
         item_slot = new Slot();
         item_slot.slot_init();
         useItemIMG.SetActive(false);
@@ -95,26 +96,29 @@ public class ItemController : MonoBehaviour
 
 
             // ITEM USE FUNCTION 
-            if (typetype == Item.item_type.red_wig)
+            if (typetype == Item.item_type.wig)
             {
-
-                itemName.text = "빨간가발 사용";
-            }
-            else if (typetype == Item.item_type.slate)
-            {
-                itemName.text = "석판 사용";
+                itemName.text = "wig";
+                _player.GetComponent<Animator>().SetBool("W",true);
             }
             else if (typetype == Item.item_type.hat)
             {
-                itemName.text = "모자 사용";
+                itemName.text = "hat";
+                _player.GetComponent<Animator>().SetBool("H",true);
             }
-            else if (typetype == Item.item_type.snail)
+            else if (typetype == Item.item_type.death_berry)
             {
-                itemName.text = "달팽이로 변신";
+                itemName.text = "death_berry";
             }
-            else if (typetype == Item.item_type.eraser)
+            else if (typetype == Item.item_type.booster)
             {
-                itemName.text = "기억지우개 발동";
+                itemName.text = "booster";
+                _player.GetComponent<Animator>().SetBool("B",true);
+            }
+            else if (typetype == Item.item_type.green_dye)
+            {
+                itemName.text = "green_dye";
+                _player.GetComponent<Animator>().SetBool("G",true);
             }
         }
         else
@@ -145,17 +149,17 @@ public class Item
 {
     public enum item_type
     {
-        red_wig,
-        slate,
+        wig,
         hat,
-        snail,
-        eraser
+        death_berry,
+        booster,
+        green_dye
     }
 
     public item_type new_random_item(Slot slot)
     {
         item_type new_item;
-        new_item = (item_type)Random.Range(0, 4);
+        new_item = (item_type)Random.Range(0, 5);
 
         // store new item in slot
         slot.stack.Push((int)new_item);
