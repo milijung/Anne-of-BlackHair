@@ -5,16 +5,27 @@ using UnityEngine.UI;
 
 public class ItemController : MonoBehaviour
 {
-
+    public GameManager gameManager;
+    public Booster_Controller booster_Controller;
+    public SideMob_Controller Mob_motion;
+    public SomoonGauge somoon;
     public Sprite[] ItemImage;
     public GameObject item0, item1, item2, useItemIMG;
     RectTransform ItemSave;
     public Text itemName;
+    public float upSpeed = 1;
     // item0, item1 => slot_item
     // item2 => twinkle
 
     Slot item_slot;
     Item item;
+
+    private void ReturnSpeed()
+    {
+        gameManager.gameSpeed /= upSpeed;
+        upSpeed = 1;
+        somoon.somoonContinue = true;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -108,13 +119,21 @@ public class ItemController : MonoBehaviour
             {
                 itemName.text = "모자 사용";
             }
-            else if (typetype == Item.item_type.snail)
+            else if (typetype == Item.item_type.boost)
             {
-                itemName.text = "달팽이로 변신";
+                itemName.text = "부스터 사용";
+                upSpeed = 3f;
+                gameManager.gameSpeed *= upSpeed;
+                somoon.somoonContinue = false;
+                booster_Controller.Collider_UnEnable();
+                Invoke("ReturnSpeed", 3f);
+
             }
             else if (typetype == Item.item_type.eraser)
             {
-                itemName.text = "기억지우개 발동";
+                itemName.text = "마녀의 열매 발동";
+                somoon.LowerSomoon();
+                Mob_motion.Set();
             }
         }
         else
@@ -148,14 +167,14 @@ public class Item
         red_wig,
         slate,
         hat,
-        snail,
+        boost,
         eraser
     }
 
     public item_type new_random_item(Slot slot)
     {
         item_type new_item;
-        new_item = (item_type)Random.Range(0, 4);
+        new_item = (item_type)Random.Range(0, 5);
 
         // store new item in slot
         slot.stack.Push((int)new_item);

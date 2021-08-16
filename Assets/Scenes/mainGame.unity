@@ -211,6 +211,7 @@ GameObject:
   - component: {fileID: 68687841}
   - component: {fileID: 68687840}
   - component: {fileID: 68687844}
+  - component: {fileID: 68687845}
   m_Layer: 0
   m_Name: MatthewSide-Adult_R1
   m_TagString: Radar
@@ -244,9 +245,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 4198872177794780732, guid: fa91141b79e9beb4aab3a69c0cf0751e, type: 3}
   - {fileID: 3589830444860564045, guid: fa91141b79e9beb4aab3a69c0cf0751e, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: 2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &68687842
@@ -330,6 +401,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &68687845
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68687839}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9e50cb2fd6d42574099d21fc4cc6dd9d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &89262824
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,6 +433,7 @@ GameObject:
   - component: {fileID: 89262826}
   - component: {fileID: 89262825}
   - component: {fileID: 89262829}
+  - component: {fileID: 89262830}
   m_Layer: 0
   m_Name: LyndSide-Adult_R3
   m_TagString: Radar
@@ -376,9 +467,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 5082105290470789895, guid: 85b7947dc0ff12546afe6caeb206ef02, type: 3}
   - {fileID: -7635063228860896951, guid: 85b7947dc0ff12546afe6caeb206ef02, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: 1.2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &89262827
@@ -440,7 +601,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89262824}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2, y: -8, z: 0}
+  m_LocalPosition: {x: 2.421, y: -8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1025676890}
@@ -462,6 +623,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &89262830
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89262824}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 574ce714adb38ac4faec9ff07e36efdc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &104141083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,6 +1445,7 @@ GameObject:
   - component: {fileID: 263667206}
   - component: {fileID: 263667205}
   - component: {fileID: 263667209}
+  - component: {fileID: 263667210}
   m_Layer: 0
   m_Name: DianaSide-Children_L2
   m_TagString: Radar
@@ -1298,9 +1479,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 4714110143269937255, guid: 29db2fee6ddd3c341aefd12d14ef62d6, type: 3}
   - {fileID: 5448598689171968729, guid: 29db2fee6ddd3c341aefd12d14ef62d6, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: -2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &263667207
@@ -1384,6 +1635,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &263667210
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263667204}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: de70673d124008b4ea5acb5bf1d3aa06, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &284670614
 GameObject:
   m_ObjectHideFlags: 0
@@ -1397,6 +1667,7 @@ GameObject:
   - component: {fileID: 284670616}
   - component: {fileID: 284670615}
   - component: {fileID: 284670619}
+  - component: {fileID: 284670620}
   m_Layer: 0
   m_Name: LyndSide-Adult_L1
   m_TagString: Radar
@@ -1430,9 +1701,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: -1003780971725221259, guid: 85b7947dc0ff12546afe6caeb206ef02, type: 3}
   - {fileID: -591251699383788941, guid: 85b7947dc0ff12546afe6caeb206ef02, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: -2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &284670617
@@ -1516,6 +1857,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &284670620
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284670614}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1e64a857758d9034a9d89d07d679b7f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &294504112
 GameObject:
   m_ObjectHideFlags: 0
@@ -1979,6 +2339,7 @@ GameObject:
   - component: {fileID: 332294987}
   - component: {fileID: 332294986}
   - component: {fileID: 332294990}
+  - component: {fileID: 332294991}
   m_Layer: 0
   m_Name: DianaSide-Children_L3
   m_TagString: Radar
@@ -2012,9 +2373,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 5388194488606433972, guid: 29db2fee6ddd3c341aefd12d14ef62d6, type: 3}
   - {fileID: 3238745402282874994, guid: 29db2fee6ddd3c341aefd12d14ef62d6, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: -1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &332294988
@@ -2098,6 +2529,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &332294991
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 332294985}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eebcb81ae250e934a92ddc3eab039ae8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &357496081
 GameObject:
   m_ObjectHideFlags: 0
@@ -2145,9 +2595,80 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: -7690145622849261972, guid: fa91141b79e9beb4aab3a69c0cf0751e, type: 3}
   - {fileID: -4347634178838475056, guid: fa91141b79e9beb4aab3a69c0cf0751e, type: 3}
+  - {fileID: -39087296976945773, guid: 71eaf4cb75a2fdb4dba2231b8ba2e60d, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: -1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!65 &357496084
@@ -2561,6 +3082,7 @@ GameObject:
   - component: {fileID: 417299332}
   - component: {fileID: 417299331}
   - component: {fileID: 417299335}
+  - component: {fileID: 417299336}
   m_Layer: 0
   m_Name: GilbertSide-Children_L1
   m_TagString: Radar
@@ -2594,9 +3116,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 7746025879202245365, guid: 67aa786a33de0b34491db654fc6b5a53, type: 3}
   - {fileID: -5712348393228522350, guid: 67aa786a33de0b34491db654fc6b5a53, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: -2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &417299333
@@ -2680,6 +3272,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &417299336
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417299330}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dbd1a748b899997448881e733e151d3d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &429228395
 GameObject:
   m_ObjectHideFlags: 0
@@ -2768,6 +3379,7 @@ GameObject:
   - component: {fileID: 442684337}
   - component: {fileID: 442684336}
   - component: {fileID: 442684340}
+  - component: {fileID: 442684341}
   m_Layer: 0
   m_Name: MatthewSide-Adult_L2
   m_TagString: Radar
@@ -2801,9 +3413,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 6250414620319506830, guid: fa91141b79e9beb4aab3a69c0cf0751e, type: 3}
   - {fileID: -6411921267021054999, guid: fa91141b79e9beb4aab3a69c0cf0751e, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: -2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &442684338
@@ -2887,6 +3569,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &442684341
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442684335}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0e14f65e4c2ef2c43aa8d229239efd99, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &473135944
 GameObject:
   m_ObjectHideFlags: 0
@@ -2930,17 +3631,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48de6f8b0a19634e8a3d993c66fa419, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 1960746220}
+  booster_Controller: {fileID: 1224442466}
+  Mob_motion: {fileID: 1224442465}
+  somoon: {fileID: 994894087}
   ItemImage:
   - {fileID: 6910042003115432476, guid: b8bcc895d3fe06447a9cad2b7ac82fb3, type: 3}
   - {fileID: -2593516898835043115, guid: b8bcc895d3fe06447a9cad2b7ac82fb3, type: 3}
   - {fileID: 6291011919758860086, guid: b8bcc895d3fe06447a9cad2b7ac82fb3, type: 3}
-  - {fileID: -5195538162078977787, guid: b8bcc895d3fe06447a9cad2b7ac82fb3, type: 3}
-  - {fileID: 2873660405995735944, guid: b8bcc895d3fe06447a9cad2b7ac82fb3, type: 3}
+  - {fileID: 21300000, guid: 8f575de4a6c519d45918f38873729111, type: 3}
+  - {fileID: 21300000, guid: abb998cb98487bb449feffa8d567d06c, type: 3}
   item0: {fileID: 1682050272}
   item1: {fileID: 1271950594}
   item2: {fileID: 1832090818}
   useItemIMG: {fileID: 1533833317}
   itemName: {fileID: 1698495407}
+  upSpeed: 1
 --- !u!1 &485285892
 GameObject:
   m_ObjectHideFlags: 0
@@ -2973,6 +3679,7 @@ RectTransform:
   - {fileID: 1308191199}
   - {fileID: 1135384516}
   - {fileID: 1958780222}
+  - {fileID: 1339174560}
   m_Father: {fileID: 485988662}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3734,6 +4441,7 @@ GameObject:
   - component: {fileID: 597714536}
   - component: {fileID: 597714535}
   - component: {fileID: 597714538}
+  - component: {fileID: 597714539}
   m_Layer: 0
   m_Name: LyndSide-Adult_L4
   m_TagString: Radar
@@ -3781,9 +4489,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 3618309954362625363, guid: 85b7947dc0ff12546afe6caeb206ef02, type: 3}
   - {fileID: -591251699383788941, guid: 85b7947dc0ff12546afe6caeb206ef02, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: -1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &597714537
@@ -3853,6 +4631,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &597714539
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597714533}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 22f750cfed471ae4390ded30cb2e3331, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &606508615
 GameObject:
   m_ObjectHideFlags: 0
@@ -3959,7 +4756,7 @@ PrefabInstance:
     - target: {fileID: 1278962375649610277, guid: d95da88540d2d6e44a0c4c40c581b24a, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 737171873}
+      objectReference: {fileID: 787066815}
     - target: {fileID: 1278962375649610280, guid: d95da88540d2d6e44a0c4c40c581b24a, type: 3}
       propertyPath: m_Name
       value: Light2D
@@ -4906,170 +5703,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.84, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!43 &737171873
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 12
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 5
-    localAABB:
-      m_Center: {x: -0.00000011920929, y: 0.0000005066395, z: 0}
-      m_Extent: {x: 0.6434297, y: 0.5823109, z: 0}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000001000200000002000300000003000400000004000100
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 5
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 160
-    _typelessdata: a2e308b440620835000000000000000000000000ffff7fbf0000003f0000003fcdb7243f4b1215bf000000000000000000000000ffff7fbf0000803f00000034d1b724bf4b1215bf000000000000000000000000ffff7fbf000080b300000034d1b724bf5c12153f000000000000000000000000ffff7fbf000080b3feff7f3fcdb7243f5c12153f000000000000000000000000ffff7fbf0000803ffeff7f3f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: -0.00000011920929, y: 0.0000005066395, z: 0}
-    m_Extent: {x: 0.6434297, y: 0.5823109, z: 0}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
 --- !u!1 &737256912
 GameObject:
   m_ObjectHideFlags: 0
@@ -5083,6 +5716,7 @@ GameObject:
   - component: {fileID: 737256914}
   - component: {fileID: 737256913}
   - component: {fileID: 737256917}
+  - component: {fileID: 737256918}
   m_Layer: 0
   m_Name: GilbertSide-Children_R2
   m_TagString: Radar
@@ -5116,9 +5750,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: -4000802668606193267, guid: 67aa786a33de0b34491db654fc6b5a53, type: 3}
   - {fileID: 1500939128692256757, guid: 67aa786a33de0b34491db654fc6b5a53, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: 2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &737256915
@@ -5202,6 +5906,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &737256918
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737256912}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ab679c07834432a4aaddbe907f141e20, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &759136984
 GameObject:
   m_ObjectHideFlags: 0
@@ -5371,6 +6094,170 @@ Transform:
   m_Father: {fileID: 676892200}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!43 &787066815
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 12
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 5
+    localAABB:
+      m_Center: {x: -0.00000011920929, y: 0.0000005066395, z: 0}
+      m_Extent: {x: 0.6434297, y: 0.5823109, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200000002000300000003000400000004000100
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 5
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 160
+    _typelessdata: a2e308b440620835000000000000000000000000ffff7fbf0000003f0000003fcdb7243f4b1215bf000000000000000000000000ffff7fbf0000803f00000034d1b724bf4b1215bf000000000000000000000000ffff7fbf000080b300000034d1b724bf5c12153f000000000000000000000000ffff7fbf000080b3feff7f3fcdb7243f5c12153f000000000000000000000000ffff7fbf0000803ffeff7f3f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: -0.00000011920929, y: 0.0000005066395, z: 0}
+    m_Extent: {x: 0.6434297, y: 0.5823109, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &793376679
 GameObject:
   m_ObjectHideFlags: 0
@@ -5669,6 +6556,7 @@ GameObject:
   - component: {fileID: 820960058}
   - component: {fileID: 820960057}
   - component: {fileID: 820960060}
+  - component: {fileID: 820960061}
   m_Layer: 0
   m_Name: LyndSide-Adult_R4
   m_TagString: Radar
@@ -5684,7 +6572,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 820960055}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.8, y: -8, z: 0}
+  m_LocalPosition: {x: 1.8, y: -7.907, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1025676890}
@@ -5716,9 +6604,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 2885554346056577425, guid: 85b7947dc0ff12546afe6caeb206ef02, type: 3}
   - {fileID: -4051888648128868466, guid: 85b7947dc0ff12546afe6caeb206ef02, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: 1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &820960059
@@ -5788,6 +6746,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &820960061
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820960055}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 654f75233d6ac4d4ca24ab8979a2769e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &855681491
 GameObject:
   m_ObjectHideFlags: 0
@@ -6627,6 +7604,7 @@ GameObject:
   - component: {fileID: 993501551}
   - component: {fileID: 993501550}
   - component: {fileID: 993501553}
+  - component: {fileID: 993501554}
   m_Layer: 0
   m_Name: MatthewSide-Adult_R3
   m_TagString: Radar
@@ -6661,9 +7639,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: -5919781810300293763, guid: fa91141b79e9beb4aab3a69c0cf0751e, type: 3}
   - {fileID: 3589830444860564045, guid: fa91141b79e9beb4aab3a69c0cf0751e, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: 1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!65 &993501551
@@ -6746,6 +7794,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &993501554
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993501548}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d6c49add3a07f684e9d20aa1029a1fc6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &994894086
 GameObject:
   m_ObjectHideFlags: 0
@@ -6777,7 +7844,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1960746220}
   Emergency: {fileID: 15976788}
-  EmergencyCar: {fileID: 1763848157}
+  animator: {fileID: 0}
+  somoonContinue: 0
+  isEmergency: 0
   adultFirstTouchTime: 0
   childFirstTouchTime: 0
   realTime: 0
@@ -6938,6 +8007,7 @@ GameObject:
   - component: {fileID: 1002250995}
   - component: {fileID: 1002250994}
   - component: {fileID: 1002250998}
+  - component: {fileID: 1002250999}
   m_Layer: 0
   m_Name: GilbertSide-Children_R1
   m_TagString: Radar
@@ -6971,9 +8041,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 2428830401179397054, guid: 67aa786a33de0b34491db654fc6b5a53, type: 3}
   - {fileID: 1119349908020163141, guid: 67aa786a33de0b34491db654fc6b5a53, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: 2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1002250996
@@ -7057,6 +8197,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1002250999
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002250993}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8afe3ac3206783d40abbe4053802a905, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1011398746
 GameObject:
   m_ObjectHideFlags: 0
@@ -7157,7 +8316,7 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1025676889
 GameObject:
@@ -7270,9 +8429,80 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 8181008982626094443, guid: 67aa786a33de0b34491db654fc6b5a53, type: 3}
   - {fileID: -5712348393228522350, guid: 67aa786a33de0b34491db654fc6b5a53, type: 3}
+  - {fileID: -7463122603221199411, guid: a74134575078245409fe107a60aa8dc5, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: -2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!65 &1066608849
@@ -7489,170 +8719,6 @@ RectTransform:
   m_AnchoredPosition: {x: -70, y: -150}
   m_SizeDelta: {x: 90, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!43 &1094597395
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 12
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 5
-    localAABB:
-      m_Center: {x: -0.000000059604645, y: 0, z: 0}
-      m_Extent: {x: 0.5833333, y: 0.6999998, z: 0}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000001000200000002000300000003000400000004000100
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 5
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 160
-    _typelessdata: d0b0abb300000000000000000000000000000000000080bf0000003f0000003f5455153f303333bf000000000000000000000000000080bf0000803f00000034565515bf303333bf000000000000000000000000000080bf000080b300000034565515bf3033333f000000000000000000000000000080bf000080b3feff7f3f5455153f3033333f000000000000000000000000000080bf0000803ffeff7f3f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: -0.000000059604645, y: 0, z: 0}
-    m_Extent: {x: 0.5833333, y: 0.6999998, z: 0}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
 --- !u!1 &1099819623
 GameObject:
   m_ObjectHideFlags: 0
@@ -7666,6 +8732,7 @@ GameObject:
   - component: {fileID: 1099819625}
   - component: {fileID: 1099819624}
   - component: {fileID: 1099819628}
+  - component: {fileID: 1099819629}
   m_Layer: 0
   m_Name: DianaSide-Children_R3
   m_TagString: Radar
@@ -7699,9 +8766,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 6211624889381828199, guid: 29db2fee6ddd3c341aefd12d14ef62d6, type: 3}
   - {fileID: 8186251299356084486, guid: 29db2fee6ddd3c341aefd12d14ef62d6, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: 1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1099819626
@@ -7785,6 +8922,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1099819629
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099819623}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eee6f4e703c34ce4e90de13092ea793d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1118467701
 GameObject:
   m_ObjectHideFlags: 0
@@ -7831,9 +8987,80 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 5624291422230174986, guid: 29db2fee6ddd3c341aefd12d14ef62d6, type: 3}
   - {fileID: 3238745402282874994, guid: 29db2fee6ddd3c341aefd12d14ef62d6, type: 3}
+  - {fileID: -3182175811963120550, guid: 06b8ee9946d2c86489c7879e8e42b334, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: -1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1118467704
@@ -8444,6 +9671,7 @@ GameObject:
   - component: {fileID: 1154958718}
   - component: {fileID: 1154958719}
   - component: {fileID: 1154958722}
+  - component: {fileID: 1154958723}
   m_Layer: 0
   m_Name: GilbertSide-Children_L2
   m_TagString: Radar
@@ -8477,9 +9705,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 4105968615538028874, guid: 67aa786a33de0b34491db654fc6b5a53, type: 3}
   - {fileID: 6489459407462194540, guid: 67aa786a33de0b34491db654fc6b5a53, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: -2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1154958720
@@ -8563,6 +9861,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1154958723
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154958717}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a9cfdc9a852c3fa40a8bfe45c9f6e8aa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1170984079
 GameObject:
   m_ObjectHideFlags: 0
@@ -8576,6 +9893,7 @@ GameObject:
   - component: {fileID: 1170984081}
   - component: {fileID: 1170984080}
   - component: {fileID: 1170984084}
+  - component: {fileID: 1170984085}
   m_Layer: 0
   m_Name: LyndSide-Adult_R1
   m_TagString: Radar
@@ -8609,9 +9927,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 1979014556206216714, guid: 85b7947dc0ff12546afe6caeb206ef02, type: 3}
   - {fileID: -4051888648128868466, guid: 85b7947dc0ff12546afe6caeb206ef02, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: 2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1170984082
@@ -8673,7 +10061,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170984079}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: -8, z: 0}
+  m_LocalPosition: {x: 1.913, y: -8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1025676890}
@@ -8695,6 +10083,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1170984085
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170984079}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e274043e7fd3b064084602cfdbc4e120, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1174077185
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8705,7 +10112,7 @@ PrefabInstance:
     - target: {fileID: 1278962375649610277, guid: d95da88540d2d6e44a0c4c40c581b24a, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1094597395}
+      objectReference: {fileID: 1886490491}
     - target: {fileID: 1278962375649610280, guid: d95da88540d2d6e44a0c4c40c581b24a, type: 3}
       propertyPath: m_Name
       value: Light2D
@@ -8994,6 +10401,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1224442464}
   - component: {fileID: 1224442465}
+  - component: {fileID: 1224442466}
   m_Layer: 0
   m_Name: SideMob_Controller
   m_TagString: Untagged
@@ -9028,6 +10436,110 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSurprise: 0
+  mob_ani:
+  - {fileID: 1869650207}
+  - {fileID: 263667210}
+  - {fileID: 332294991}
+  - {fileID: 1666714732}
+  - {fileID: 1912259366}
+  - {fileID: 1099819629}
+  - {fileID: 417299336}
+  - {fileID: 1154958723}
+  - {fileID: 1809833640}
+  - {fileID: 1002250999}
+  - {fileID: 737256918}
+  - {fileID: 1428438624}
+  - {fileID: 284670620}
+  - {fileID: 1271783034}
+  - {fileID: 1558708057}
+  - {fileID: 597714539}
+  - {fileID: 1170984085}
+  - {fileID: 1392984839}
+  - {fileID: 89262830}
+  - {fileID: 820960061}
+  - {fileID: 1818840860}
+  - {fileID: 442684341}
+  - {fileID: 1344226648}
+  - {fileID: 68687845}
+  - {fileID: 2063240096}
+  - {fileID: 993501554}
+  spriteRenderers:
+  - {fileID: 1118467704}
+  - {fileID: 1256457617}
+  - {fileID: 1066608850}
+  - {fileID: 1936272261}
+  - {fileID: 1987337959}
+  - {fileID: 1631480460}
+  - {fileID: 357496085}
+  - {fileID: 1826049958}
+  mobs:
+  - {fileID: 1118467701}
+  - {fileID: 1256457614}
+  - {fileID: 1066608846}
+  - {fileID: 1936272257}
+  - {fileID: 1987337955}
+  - {fileID: 1631480456}
+  - {fileID: 357496081}
+  - {fileID: 1826049954}
+--- !u!114 &1224442466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224442463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdec1460eda2f734f925f2e0c0357a7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacles:
+  - {fileID: 1869650203}
+  - {fileID: 263667205}
+  - {fileID: 332294986}
+  - {fileID: 1118467702}
+  - {fileID: 1666714727}
+  - {fileID: 1912259361}
+  - {fileID: 1099819624}
+  - {fileID: 1256457615}
+  - {fileID: 417299331}
+  - {fileID: 1154958718}
+  - {fileID: 1809833637}
+  - {fileID: 1066608849}
+  - {fileID: 1002250994}
+  - {fileID: 737256913}
+  - {fileID: 1428438621}
+  - {fileID: 1936272260}
+  - {fileID: 284670615}
+  - {fileID: 1271783029}
+  - {fileID: 1558708052}
+  - {fileID: 597714535}
+  - {fileID: 1987337957}
+  - {fileID: 1170984080}
+  - {fileID: 1392984834}
+  - {fileID: 89262825}
+  - {fileID: 820960057}
+  - {fileID: 1631480458}
+  - {fileID: 1818840855}
+  - {fileID: 442684336}
+  - {fileID: 1344226645}
+  - {fileID: 357496084}
+  - {fileID: 68687840}
+  - {fileID: 2063240091}
+  - {fileID: 993501551}
+  - {fileID: 1826049957}
+  - {fileID: 122724145}
+  - {fileID: 855681494}
+  - {fileID: 372108642}
+  - {fileID: 698530542}
+  - {fileID: 1840718837}
+  - {fileID: 722312016}
+  - {fileID: 294504118}
+  - {fileID: 1310108273}
+  - {fileID: 1287744578}
+  - {fileID: 1314747645}
+  - {fileID: 2124617015}
+  - {fileID: 1577998413}
 --- !u!4 &1243253795 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1278962375649610283, guid: d95da88540d2d6e44a0c4c40c581b24a, type: 3}
@@ -9288,9 +10800,80 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: -1710708500833157066, guid: 29db2fee6ddd3c341aefd12d14ef62d6, type: 3}
   - {fileID: 8186251299356084486, guid: 29db2fee6ddd3c341aefd12d14ef62d6, type: 3}
+  - {fileID: 3118086571387582113, guid: 06b8ee9946d2c86489c7879e8e42b334, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: 1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1256457617
@@ -9488,6 +11071,7 @@ GameObject:
   - component: {fileID: 1271783030}
   - component: {fileID: 1271783029}
   - component: {fileID: 1271783033}
+  - component: {fileID: 1271783034}
   m_Layer: 0
   m_Name: LyndSide-Adult_L2
   m_TagString: Radar
@@ -9521,9 +11105,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 8327814461594263053, guid: 85b7947dc0ff12546afe6caeb206ef02, type: 3}
   - {fileID: 4193168517752667965, guid: 85b7947dc0ff12546afe6caeb206ef02, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: -2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1271783031
@@ -9607,6 +11261,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1271783034
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271783028}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6b01c24b47889f14ea6e61bac30abcc7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1271950594
 GameObject:
   m_ObjectHideFlags: 0
@@ -10375,6 +12048,140 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartPosition: {x: -3, y: 8}
+--- !u!1 &1339174559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1339174560}
+  - component: {fileID: 1339174562}
+  - component: {fileID: 1339174561}
+  m_Layer: 5
+  m_Name: BestScore
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1339174560
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339174559}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 485285893}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -411}
+  m_SizeDelta: {x: 300, y: 130}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1339174561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339174559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 0
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 100
+  m_fontSizeBase: 0
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 70
+  m_fontSizeMax: 100
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1339174562
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339174559}
+  m_CullTransparentMesh: 1
 --- !u!1 &1344226642
 GameObject:
   m_ObjectHideFlags: 0
@@ -10388,6 +12195,7 @@ GameObject:
   - component: {fileID: 1344226645}
   - component: {fileID: 1344226644}
   - component: {fileID: 1344226647}
+  - component: {fileID: 1344226648}
   m_Layer: 0
   m_Name: MatthewSide-Adult_L3
   m_TagString: Radar
@@ -10422,9 +12230,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: -6686642755059118624, guid: fa91141b79e9beb4aab3a69c0cf0751e, type: 3}
   - {fileID: -4347634178838475056, guid: fa91141b79e9beb4aab3a69c0cf0751e, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: -1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!65 &1344226645
@@ -10507,6 +12385,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1344226648
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344226642}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: be3af6270ece5c54387d2311db1c9159, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1347531517
 GameObject:
   m_ObjectHideFlags: 0
@@ -10691,6 +12588,7 @@ GameObject:
   - component: {fileID: 1392984835}
   - component: {fileID: 1392984834}
   - component: {fileID: 1392984838}
+  - component: {fileID: 1392984839}
   m_Layer: 0
   m_Name: LyndSide-Adult_R2
   m_TagString: Radar
@@ -10724,9 +12622,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 4392862613915881648, guid: 85b7947dc0ff12546afe6caeb206ef02, type: 3}
   - {fileID: -7635063228860896951, guid: 85b7947dc0ff12546afe6caeb206ef02, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: 2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1392984836
@@ -10788,7 +12756,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392984833}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: -8, z: 0}
+  m_LocalPosition: {x: 3.134, y: -8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1025676890}
@@ -10810,6 +12778,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1392984839
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392984833}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a365475e89d8fae4b8e51b742c790f8b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1396031142
 GameObject:
   m_ObjectHideFlags: 0
@@ -11059,6 +13046,7 @@ GameObject:
   - component: {fileID: 1428438621}
   - component: {fileID: 1428438620}
   - component: {fileID: 1428438623}
+  - component: {fileID: 1428438624}
   m_Layer: 0
   m_Name: GilbertSide-Children_R3
   m_TagString: Radar
@@ -11093,9 +13081,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: -4070386546957250524, guid: 67aa786a33de0b34491db654fc6b5a53, type: 3}
   - {fileID: 1119349908020163141, guid: 67aa786a33de0b34491db654fc6b5a53, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: 1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!65 &1428438621
@@ -11178,6 +13236,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1428438624
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428438618}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cfa6e5b0fb943c14a84c1a34c8d766f4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1428619716
 GameObject:
   m_ObjectHideFlags: 0
@@ -11488,7 +13565,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1533833317
 GameObject:
@@ -11629,6 +13706,7 @@ GameObject:
   - component: {fileID: 1558708053}
   - component: {fileID: 1558708052}
   - component: {fileID: 1558708056}
+  - component: {fileID: 1558708057}
   m_Layer: 0
   m_Name: LyndSide-Adult_L3
   m_TagString: Radar
@@ -11662,9 +13740,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 8439734162409365953, guid: 85b7947dc0ff12546afe6caeb206ef02, type: 3}
   - {fileID: 4193168517752667965, guid: 85b7947dc0ff12546afe6caeb206ef02, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: -1.2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1558708054
@@ -11748,6 +13896,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1558708057
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558708051}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5653f25a3da822a42b0a8227c0963339, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1577998408
 GameObject:
   m_ObjectHideFlags: 0
@@ -12096,7 +14263,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631480456}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.8, y: -8, z: 0}
+  m_LocalPosition: {x: 1.8, y: -7.782, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1025676890}
@@ -12128,9 +14295,80 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: -7277470643340558129, guid: 85b7947dc0ff12546afe6caeb206ef02, type: 3}
   - {fileID: -4051888648128868466, guid: 85b7947dc0ff12546afe6caeb206ef02, type: 3}
+  - {fileID: -4650958527144809860, guid: 69b3992b79cd54646adc898dce33d5ca, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: 1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1631480460
@@ -12501,6 +14739,7 @@ GameObject:
   - component: {fileID: 1666714728}
   - component: {fileID: 1666714727}
   - component: {fileID: 1666714731}
+  - component: {fileID: 1666714732}
   m_Layer: 0
   m_Name: DianaSide-Children_R1
   m_TagString: Radar
@@ -12534,9 +14773,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 6691767417568818730, guid: 29db2fee6ddd3c341aefd12d14ef62d6, type: 3}
   - {fileID: 8186251299356084486, guid: 29db2fee6ddd3c341aefd12d14ef62d6, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: 2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1666714729
@@ -12620,6 +14929,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1666714732
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666714726}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aac68b18d9b5e0c4da418d929f882434, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1682050272
 GameObject:
   m_ObjectHideFlags: 0
@@ -13041,124 +15369,6 @@ Transform:
   m_Father: {fileID: 262553568}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1763848157
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1763848161}
-  - component: {fileID: 1763848160}
-  - component: {fileID: 1763848159}
-  - component: {fileID: 1763848158}
-  m_Layer: 0
-  m_Name: emergency_car
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!50 &1763848158
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1763848157}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &1763848159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1763848157}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cdc8d1f926e66943bc3ceeac24f3653, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  car_speed: 2
---- !u!212 &1763848160
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1763848157}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0d3e490c92e0bd24ca9b1422e979a9b3, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.32}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1763848161
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1763848157}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.27, y: 3.1, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1763852924
 GameObject:
   m_ObjectHideFlags: 0
@@ -13366,6 +15576,7 @@ GameObject:
   - component: {fileID: 1809833637}
   - component: {fileID: 1809833636}
   - component: {fileID: 1809833639}
+  - component: {fileID: 1809833640}
   m_Layer: 0
   m_Name: GilbertSide-Children_L3
   m_TagString: Radar
@@ -13400,9 +15611,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 2675799763202903182, guid: 67aa786a33de0b34491db654fc6b5a53, type: 3}
   - {fileID: -5712348393228522350, guid: 67aa786a33de0b34491db654fc6b5a53, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: -1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!65 &1809833637
@@ -13485,6 +15766,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1809833640
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809833634}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 192995cb479037242b2ffad992a5b6e1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1817735420
 GameObject:
   m_ObjectHideFlags: 0
@@ -13669,6 +15969,7 @@ GameObject:
   - component: {fileID: 1818840856}
   - component: {fileID: 1818840855}
   - component: {fileID: 1818840859}
+  - component: {fileID: 1818840860}
   m_Layer: 0
   m_Name: MatthewSide-Adult_L1
   m_TagString: Radar
@@ -13702,9 +16003,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: -5817043576887048542, guid: fa91141b79e9beb4aab3a69c0cf0751e, type: 3}
   - {fileID: -4347634178838475056, guid: fa91141b79e9beb4aab3a69c0cf0751e, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: -2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1818840857
@@ -13788,6 +16159,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1818840860
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818840854}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e01fb15276ae14a479296084ccf20c6c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1826049954
 GameObject:
   m_ObjectHideFlags: 0
@@ -13835,9 +16225,80 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: -1998954740400644287, guid: fa91141b79e9beb4aab3a69c0cf0751e, type: 3}
   - {fileID: 3589830444860564045, guid: fa91141b79e9beb4aab3a69c0cf0751e, type: 3}
+  - {fileID: 4329996058181291396, guid: 71eaf4cb75a2fdb4dba2231b8ba2e60d, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: 1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!65 &1826049957
@@ -14255,6 +16716,7 @@ GameObject:
   - component: {fileID: 1869650202}
   - component: {fileID: 1869650203}
   - component: {fileID: 1869650206}
+  - component: {fileID: 1869650207}
   m_Layer: 0
   m_Name: DianaSide-Children_L1
   m_TagString: Radar
@@ -14275,9 +16737,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: -5551443442548890444, guid: 29db2fee6ddd3c341aefd12d14ef62d6, type: 3}
   - {fileID: 3238745402282874994, guid: 29db2fee6ddd3c341aefd12d14ef62d6, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: -2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!65 &1869650203
@@ -14374,6 +16906,189 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1869650207
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869650201}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 07644d31bf680f34998273bd80f583ca, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!43 &1886490491
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 12
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 5
+    localAABB:
+      m_Center: {x: -0.000000059604645, y: 0, z: 0}
+      m_Extent: {x: 0.5833333, y: 0.6999998, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200000002000300000003000400000004000100
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 5
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 160
+    _typelessdata: d0b0abb300000000000000000000000000000000000080bf0000003f0000003f5455153f303333bf000000000000000000000000000080bf0000803f00000034565515bf303333bf000000000000000000000000000080bf000080b300000034565515bf3033333f000000000000000000000000000080bf000080b3feff7f3f5455153f3033333f000000000000000000000000000080bf0000803ffeff7f3f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: -0.000000059604645, y: 0, z: 0}
+    m_Extent: {x: 0.5833333, y: 0.6999998, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &1912259360
 GameObject:
   m_ObjectHideFlags: 0
@@ -14387,6 +17102,7 @@ GameObject:
   - component: {fileID: 1912259362}
   - component: {fileID: 1912259361}
   - component: {fileID: 1912259365}
+  - component: {fileID: 1912259366}
   m_Layer: 0
   m_Name: DianaSide-Children_R2
   m_TagString: Radar
@@ -14420,9 +17136,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 150365202305694199, guid: 29db2fee6ddd3c341aefd12d14ef62d6, type: 3}
   - {fileID: 7487782984594756350, guid: 29db2fee6ddd3c341aefd12d14ef62d6, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: 2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1912259363
@@ -14506,6 +17292,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1912259366
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912259360}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 078019bdf6b64ab4c94b4c205498e0c5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1934036935
 GameObject:
   m_ObjectHideFlags: 0
@@ -14608,9 +17413,80 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 4634736334316046276, guid: 67aa786a33de0b34491db654fc6b5a53, type: 3}
   - {fileID: 1119349908020163141, guid: 67aa786a33de0b34491db654fc6b5a53, type: 3}
+  - {fileID: -5058473593167392391, guid: a74134575078245409fe107a60aa8dc5, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: 1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!65 &1936272260
@@ -14725,7 +17601,7 @@ Transform:
   - {fileID: 1784769732}
   - {fileID: 1224442464}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1958780221
 GameObject:
@@ -14894,10 +17770,12 @@ MonoBehaviour:
   GameOverPanel: {fileID: 485285892}
   fadeSprite: {fileID: 1455731835}
   finalScore: {fileID: 1958780223}
+  bestScore: {fileID: 1339174561}
   player: {fileID: 104141083}
   AnneCry: {fileID: 1011398746}
   rumor: {fileID: 326959770}
   itemSlot: {fileID: 1861992976}
+  itemController: {fileID: 473135946}
   BackgroundMusic: {fileID: 330983559}
   stepSound: {fileID: 998696760}
   gameSpeed: 0.3
@@ -15074,9 +17952,80 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 8836569685669604607, guid: 85b7947dc0ff12546afe6caeb206ef02, type: 3}
   - {fileID: -591251699383788941, guid: 85b7947dc0ff12546afe6caeb206ef02, type: 3}
+  - {fileID: 3743699282592476666, guid: 69b3992b79cd54646adc898dce33d5ca, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: -1.8, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &1987337959
@@ -15255,6 +18204,7 @@ GameObject:
   - component: {fileID: 2063240092}
   - component: {fileID: 2063240091}
   - component: {fileID: 2063240095}
+  - component: {fileID: 2063240096}
   m_Layer: 0
   m_Name: MatthewSide-Adult_R2
   m_TagString: Radar
@@ -15288,9 +18238,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageController: {fileID: 1224442465}
+  sideMobs:
+  - {fileID: 1869650202}
+  - {fileID: 263667206}
+  - {fileID: 332294987}
+  - {fileID: 1118467703}
+  - {fileID: 1666714728}
+  - {fileID: 1912259362}
+  - {fileID: 1099819625}
+  - {fileID: 1256457616}
+  - {fileID: 417299332}
+  - {fileID: 1154958719}
+  - {fileID: 1809833636}
+  - {fileID: 1066608848}
+  - {fileID: 1002250995}
+  - {fileID: 737256914}
+  - {fileID: 1428438620}
+  - {fileID: 1936272259}
+  - {fileID: 284670616}
+  - {fileID: 1271783030}
+  - {fileID: 1558708053}
+  - {fileID: 597714536}
+  - {fileID: 1987337958}
+  - {fileID: 1170984081}
+  - {fileID: 1392984835}
+  - {fileID: 89262826}
+  - {fileID: 820960058}
+  - {fileID: 1631480459}
+  - {fileID: 1818840856}
+  - {fileID: 442684337}
+  - {fileID: 1344226644}
+  - {fileID: 357496083}
+  - {fileID: 68687841}
+  - {fileID: 2063240092}
+  - {fileID: 993501550}
+  - {fileID: 1826049956}
   sprites:
   - {fileID: 8748046843012791127, guid: fa91141b79e9beb4aab3a69c0cf0751e, type: 3}
   - {fileID: 3990001399704679372, guid: fa91141b79e9beb4aab3a69c0cf0751e, type: 3}
+  spriteRenderers:
+  - {fileID: 1869650204}
+  - {fileID: 263667207}
+  - {fileID: 332294988}
+  - {fileID: 1118467704}
+  - {fileID: 1666714729}
+  - {fileID: 1912259363}
+  - {fileID: 1099819626}
+  - {fileID: 1256457617}
+  - {fileID: 417299333}
+  - {fileID: 1154958720}
+  - {fileID: 1809833638}
+  - {fileID: 1066608850}
+  - {fileID: 1002250996}
+  - {fileID: 737256915}
+  - {fileID: 1428438622}
+  - {fileID: 1936272261}
+  - {fileID: 284670617}
+  - {fileID: 1271783031}
+  - {fileID: 1558708054}
+  - {fileID: 597714537}
+  - {fileID: 1987337959}
+  - {fileID: 1170984082}
+  - {fileID: 1392984836}
+  - {fileID: 89262827}
+  - {fileID: 820960059}
+  - {fileID: 1631480460}
+  - {fileID: 1818840857}
+  - {fileID: 442684338}
+  - {fileID: 1344226646}
+  - {fileID: 357496085}
+  - {fileID: 68687842}
+  - {fileID: 2063240093}
+  - {fileID: 993501552}
+  - {fileID: 1826049958}
   StartPosition: {x: 2, y: 8}
   somoon: {fileID: 994894087}
 --- !u!212 &2063240093
@@ -15374,6 +18394,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &2063240096
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063240090}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9fb4ccce40c41bd449fb16e0407fe452, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2092890275
 GameObject:
   m_ObjectHideFlags: 0

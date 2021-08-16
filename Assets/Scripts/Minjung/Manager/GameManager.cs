@@ -14,10 +14,12 @@ public class GameManager : MonoBehaviour
     public GameObject GameOverPanel;
     public GameObject fadeSprite;
     public TextMeshProUGUI finalScore;
+    public TextMeshProUGUI bestScore;
     public GameObject player;
     public GameObject AnneCry;
     public Slider rumor;
     public GameObject itemSlot;
+    public ItemController itemController;
 
     public GameObject BackgroundMusic;
     AudioSource backmusic;
@@ -47,6 +49,16 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        if (!PlayerPrefs.HasKey("BestScore"))
+        {
+            PlayerPrefs.SetInt("BestScore", 0);
+        }
+        if(!PlayerPrefs.HasKey("SecondScore"))
+            PlayerPrefs.SetInt("SecondScore", 0);
+
+        if (!PlayerPrefs.HasKey("ThirdScore"))
+            PlayerPrefs.SetInt("ThirdScore", 0);
+
         GamePlay();
         gameSpeed = 0.3f;
     }
@@ -61,15 +73,15 @@ public class GameManager : MonoBehaviour
         {
             if(Time.timeScale == 1 && isPlay) { 
                 score++;
-                yield return new WaitForSeconds(0.3f); // 게임 속도 단위로 점수를 더함
+                yield return new WaitForSeconds(gameSpeed / Mathf.Pow(itemController.upSpeed, 2)); // 게임 속도 단위로 점수를 더함
             }
             yield return null;
         }
-        
+
     }
     public IEnumerator CountDown()
     {
-        for(int i = 0;i<Count.Length;i++)
+        for (int i = 0; i < Count.Length; i++)
         {
             Count[i].transform.position = new Vector2(-5.5f, 0);
             Count[i].SetActive(true);
@@ -95,11 +107,34 @@ public class GameManager : MonoBehaviour
             }
             Count[i].SetActive(false);
             yield return new WaitForSeconds(0.5f);
-            yield return null;   
+            yield return null;
         }
         isPlay = true;
         StopCoroutine(CountDown());
         yield return null;
+    }
+    public void Save()
+    {
+        if(score < PlayerPrefs.GetInt("BestScore"))
+        {
+            if(score < PlayerPrefs.GetInt("SecondScore"))
+            {
+                if (score < PlayerPrefs.GetInt("ThirdScore"))
+                    return;
+                PlayerPrefs.SetInt("ThirdScore", score);
+            }
+            PlayerPrefs.SetInt("ThirdScore", PlayerPrefs.GetInt("SecondScore"));
+            PlayerPrefs.SetInt("SecondScore", score);
+            return;
+        }
+
+
+
+        if (score == PlayerPrefs.GetInt("BestScore"))
+            return;
+        PlayerPrefs.SetInt("ThirdScore", PlayerPrefs.GetInt("SecondScore"));
+        PlayerPrefs.SetInt("SecondScore", PlayerPrefs.GetInt("BestScore"));
+        PlayerPrefs.SetInt("BestScore", score);
     }
 
     public void GamePlay()
@@ -132,6 +167,8 @@ public class GameManager : MonoBehaviour
         isPlay = false;
         BerryController.getBerryBox = false;
         StopCoroutine(AddScore()); // score++ 멈춤
+        Save();
+        bestScore.text = PlayerPrefs.GetInt("BestScore").ToString();
         finalScore.text = score.ToString(); // 게임오버 화면 활성화
         GameOverPanel.SetActive(true);
         fadeSprite.SetActive(true);
