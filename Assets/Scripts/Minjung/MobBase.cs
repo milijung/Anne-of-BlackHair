@@ -6,7 +6,13 @@ public class MobBase : MonoBehaviour
 {
     public Vector2 StartPosition;
     public SomoonGauge somoon;
+    public GameObject RadarSound;
+    AudioSource radarSound;
 
+    private void Awake()
+    {
+        radarSound = RadarSound.GetComponent<AudioSource>();
+    }
     private void OnEnable() // ������Ʈ�� Ȱ��ȭ�Ǹ� ����
     {
         if (SpawnManager.MobStartNum == 0)
@@ -34,6 +40,8 @@ public class MobBase : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            if(MainMenu.AudioPlay)
+                radarSound.Play();
             bool isAdult = gameObject.name.Contains("Adult");
             bool isChildren = gameObject.name.Contains("Children");
 
@@ -44,13 +52,13 @@ public class MobBase : MonoBehaviour
             }
 
 
-            else if (isAdult && somoon.adultTouch_Num != 0)
+            if (isAdult && somoon.adultTouch_Num != 0)
             {
                 somoon.adultTouch_Num++;
             }
 
 
-            else if (isChildren && somoon.childTouch_Num == 0)
+            if (isChildren && somoon.childTouch_Num == 0)
             {
                 somoon.childTouch_Num++;
                 somoon.childFirstTouchTime = somoon.realTime;
@@ -58,13 +66,15 @@ public class MobBase : MonoBehaviour
             }
 
 
-            else if (isChildren && somoon.childTouch_Num != 0)
+            if (isChildren && somoon.childTouch_Num != 0)
             {
                 somoon.childTouch_Num++;
             }
 
         }
-        else
+        else if (collision.tag != "catMove")
             gameObject.SetActive(false);
+        else
+            return;
     }
 }

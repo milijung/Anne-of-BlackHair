@@ -14,8 +14,13 @@ TagManager:
   - deer
   - bridge
   - river
-  - Forest
   - catBerry
+  - collider
+  - puddle
+  - way
+  - toTown
+  - toForest
+  - catSleep
   layers:
   - Default
   - TransparentFX
@@ -52,4 +57,40 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: river
+    uniqueID: 1218738255
+    locked: 0
+  - name: bridge
+    uniqueID: 3634277753
+    locked: 0
+  - name: BackGround
+    uniqueID: 1886240299
+    locked: 0
+  - name: Road
+    uniqueID: 2815652465
+    locked: 0
+  - name: dropBerry
+    uniqueID: 2235824781
+    locked: 0
+  - name: cat
+    uniqueID: 3357212319
+    locked: 0
+  - name: catBerry
+    uniqueID: 1397070879
+    locked: 0
+  - name: Player
+    uniqueID: 2111978017
+    locked: 0
+  - name: SideMob
+    uniqueID: 2867960535
+    locked: 0
+  - name: UI
+    uniqueID: 3360927219
+    locked: 0
+  - name: lip
+    uniqueID: 3315718227
+    locked: 0
+  - name: GameOver
+    uniqueID: 3246838115
     locked: 0

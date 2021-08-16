@@ -32,17 +32,27 @@ public class PlayerController : MonoBehaviour
         Background = GameObject.Find("Background").GetComponent<SpriteRenderer>().sprite;
         if (Background.name == "threeWay") // 마을
         {
-            if (toTown.activeSelf && toTown.transform.position.y >= -2.8f)
+            if (toTown.activeSelf && toTown.transform.position.y >= -4)
                 OneWay();
             else
                 ThreeWay();
         }
         else if (Background.name == "oneWay") // 숲
         {
-            if (toForest.activeSelf && toForest.transform.position.y >= -5)
+            if (toForest.activeSelf && toForest.transform.position.y >= -4)
                 ThreeWay();
             else
-                OneWay();
+            {
+                if (desiredLane != 1)
+                {
+                    BerryController.BumpOntheRoad = true;
+                    OneWay();
+                }
+                else
+                    OneWay();
+
+            }
+                
         }
 
         Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up; 
@@ -77,12 +87,7 @@ public class PlayerController : MonoBehaviour
     } 
     void OneWay()
     {
-        Debug.Log("숲");
         desiredLane = 1;
-        if (SwipeManager.swipeRight || SwipeManager.swipeLeft)
-        {
-            BerryController.BumpOntheRoad = true;
-        }
         if (SwipeManager.swipeUp)
         {
             _animation_controller._ann_jump();
@@ -90,7 +95,6 @@ public class PlayerController : MonoBehaviour
     }
     void ThreeWay()
     {
-        Debug.Log("마을");
         if (SwipeManager.swipeRight)
         {
             desiredLane++;

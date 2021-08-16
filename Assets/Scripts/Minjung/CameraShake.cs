@@ -23,6 +23,7 @@ public class CameraShake : MonoBehaviour
         cameraPos = mainCamera.transform.position;
         InvokeRepeating("StartShake", 0f, 0.05f);
         Invoke("StopShake", duration);
+        mainCamera.transform.position = new Vector3(0, 0, -10);
     }
     void StartShake()
     {

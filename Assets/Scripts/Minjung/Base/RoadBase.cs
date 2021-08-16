@@ -10,6 +10,7 @@ public class RoadBase : MonoBehaviour
     public static bool jump = false;
     public Vector2 StartPosition;
     public GameObject river, bridge, catBerry;
+    public Sprite catWakeUp, catSleepIMG;
 
 
     private void OnEnable() // ������Ʈ�� Ȱ��ȭ�Ǹ� ����
@@ -127,6 +128,8 @@ public class RoadBase : MonoBehaviour
             transform.Translate(Vector2.down * Time.deltaTime * GameManager.instance.gameSpeed * 12);
             if (transform.position.y < -8) 
             {
+                if (gameObject.tag == "catSleep")
+                    gameObject.GetComponent<SpriteRenderer>().sprite = catSleepIMG;
                 gameObject.SetActive(false);
             }
         }
@@ -138,18 +141,22 @@ public class RoadBase : MonoBehaviour
             
             if (gameObject.tag == "BerryBox") // 열매주머니 획득
             {
+                if (MainMenu.AudioPlay)
+                    AudioManager.ButtonAudio.Play();
                 gameObject.SetActive(false);
+                BerryController.BerryNum += 3;
                 BerryController.getBerryBox = true;
             }
             else if(gameObject.tag == "Berry")
             {
+                if (MainMenu.AudioPlay)
+                    AudioManager.ButtonAudio.Play();
                 gameObject.SetActive(false);
                 BerryController.getBerry = true;
             }
             else if(gameObject.tag == "river")
             {
-                if (collision.transform.position.x * bridge.transform.position.x<=0 && collision.transform.position.x!= bridge.transform.position.x)
-                    BerryController.BumpOntheRoad = true;
+                StartCoroutine(BumpWithRiver(collision, bridge));
             }
             else if(gameObject.tag == "catMove")
             {
@@ -160,11 +167,28 @@ public class RoadBase : MonoBehaviour
                     catBerry.SetActive(true);
                 }   
             }
+            else if(gameObject.tag == "catSleep")
+            {
+                if (!jump)
+                {
+                    SpriteRenderer catSleep = gameObject.GetComponent<SpriteRenderer>();
+
+                    catSleep.sprite = catWakeUp;
+                    if(MainMenu.AudioPlay)
+                        gameObject.GetComponent<AudioSource>().Play();
+                    BerryController.BumpOntheRoad = true;
+                }
+            }
             else
             {
                 if (!jump) 
                 {
                     BerryController.BumpOntheRoad = true;
+                    if (gameObject.tag == "puddle")
+                    {
+                        if (MainMenu.AudioPlay)
+                            AudioManager.river.Play();
+                    }
                 }
             }
         }
@@ -219,5 +243,25 @@ public class RoadBase : MonoBehaviour
             yield return null;
         }
         StopCoroutine(catRun());
+    }
+    IEnumerator BumpWithRiver(Collider collision, GameObject bridge)
+    {
+        while (true)
+        {
+            if (GameManager.isPlay)
+            {
+                if (collision.transform.position.x * bridge.transform.position.x <= 0 && collision.transform.position.x != bridge.transform.position.x)
+                {
+                    BerryController.BumpOntheRoad = true;
+                    if (MainMenu.AudioPlay)
+                        AudioManager.river.Play();
+                    break;
+                }
+                if (bridge.transform.position.y < -5)
+                    break;
+            }
+            yield return null;
+        }
+        StopCoroutine(BumpWithRiver(collision, bridge));
     }
 }

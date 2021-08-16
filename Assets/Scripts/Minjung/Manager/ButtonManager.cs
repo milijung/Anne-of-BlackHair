@@ -21,7 +21,9 @@ public class ButtonManager : MonoBehaviour
 
 
     public void Stop() // 일시정지 버튼 눌렀을 때
-    { 
+    {
+        if (MainMenu.AudioPlay)
+            AudioManager.ButtonAudio.Play();
         gamePanel.SetActive(true);
         fadeSprite.SetActive(true);
         Time.timeScale = 0;
@@ -35,6 +37,8 @@ public class ButtonManager : MonoBehaviour
     }
     public void Continue() // 다시 게임 시작 버튼 눌렀을 때
     {
+        if (MainMenu.AudioPlay)
+            AudioManager.ButtonAudio.Play();
         SwipeManager.touchNum = 0;
         gamePanel.SetActive(false);
         fadeSprite.SetActive(false);
@@ -53,11 +57,15 @@ public class ButtonManager : MonoBehaviour
     }
     public void Setting()
     {
+        if (MainMenu.AudioPlay)
+            AudioManager.ButtonAudio.Play();
         gamePanel.SetActive(true);
         fadeSprite.SetActive(true);
     }
     public void Home() // MainMenu Panel의 home 버튼
     {
+        if (MainMenu.AudioPlay)
+            AudioManager.ButtonAudio.Play();
         gamePanel.SetActive(false);
         exitPanel.SetActive(false);
         fadeSprite.SetActive(false);
@@ -65,6 +73,9 @@ public class ButtonManager : MonoBehaviour
 
     public void BGM()
     {
+        if (MainMenu.AudioPlay)
+            AudioManager.ButtonAudio.Play();
+
         backmusic = BackgroundMusic.GetComponent<AudioSource>();
         buttonImage = audioButton.GetComponent<Image>();
         if (backmusic.isPlaying)

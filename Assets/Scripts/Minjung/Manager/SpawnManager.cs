@@ -60,6 +60,7 @@ public class SpawnManager : MonoBehaviour
     private void Start() 
     {
         x_Back = x_forest = x_Berry = 0;
+        isforest = false;
         StartCoroutine(CreateBack());
         StartCoroutine(CreateMob());
         StartCoroutine(CreateRoad());
@@ -100,6 +101,7 @@ public class SpawnManager : MonoBehaviour
         {
             if (GameManager.isPlay)
             {
+                
                 if (x_Back <= TreePool.Count)
                 {
                     isforest = true;
@@ -108,7 +110,7 @@ public class SpawnManager : MonoBehaviour
                     x_Back++;
                     if (x_Back == TreePool.Count)
                     {
-                        isforest = false;
+                        isforest =  false;
                         yield return new WaitForSeconds(9.8f);
                     }
                 }

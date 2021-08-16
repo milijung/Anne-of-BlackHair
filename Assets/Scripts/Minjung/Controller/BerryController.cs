@@ -9,12 +9,12 @@ public class BerryController : MonoBehaviour
     public GameObject[] Berry_play;
     public GameObject player;
     public TextMeshProUGUI BerryText;
-    int BerryNum;
+    public static int BerryNum;
     public static bool getBerryBox, getBerry, BumpOntheRoad, BumpWithCat= false;
 
     private void Start()
     {
-        BerryNum = 3;
+        BerryNum = 0;
 
         for (int i = 0; i < Berry_play.Length; i++)
             Berry_play[i].SetActive(false);

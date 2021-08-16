@@ -7,6 +7,7 @@ public class SomoonGauge : MonoBehaviour
     public GameManager gameManager;
     public GameObject Emergency;
     public GameObject EmergencyCar;
+    public GameObject Lip;
 
     public float adultFirstTouchTime;
     public float childFirstTouchTime;
@@ -30,6 +31,10 @@ public class SomoonGauge : MonoBehaviour
     {
         //게임진행시간 업데이트
         realTime = Time.time - startTime;
+        if ((adultTouch_Num == 0 && childTouch_Num == 0)|| !GameManager.isPlay)
+            Lip.SetActive(false);
+        else
+            Lip.SetActive(true);
         SomoonCtrl();
     }
 

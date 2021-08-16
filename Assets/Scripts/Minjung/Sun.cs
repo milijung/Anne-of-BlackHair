@@ -8,10 +8,12 @@ public class Sun : MonoBehaviour
     public GameObject[] SunIMG;
     void Start()
     {
-        for(int i = 0; i < SunIMG.Length; i++)
+        for(int i = 1; i < SunIMG.Length; i++)
         {
             SunIMG[i].SetActive(false);
         }
+        SunIMG[0].SetActive(true);
+        sunRise = true;
         StartCoroutine(sunMove());
     }
 

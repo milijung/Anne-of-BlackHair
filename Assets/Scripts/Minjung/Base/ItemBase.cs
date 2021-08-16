@@ -7,12 +7,15 @@ public class ItemBase : MonoBehaviour
     public int type; // 0 = item_box , 1 = bleach , 2 = dye
     public int LineNum;
     float posX;
+    public GameObject ItemAudio;
+    AudioSource itemAudio;
 
     ItemController _item_controller;
     AnimationController _animation_controller;
 
     void Start()
     {
+        itemAudio = ItemAudio.GetComponent<AudioSource>();
         _item_controller = GameObject.Find("Item_Controller").GetComponent<ItemController>();
         _animation_controller = GameObject.Find("Animation_Controller").GetComponent<AnimationController>();
     }
@@ -69,17 +72,21 @@ public class ItemBase : MonoBehaviour
         if (collision.tag == "Player")
         {
             gameObject.SetActive(false);
+            if (MainMenu.AudioPlay)
+            {
+                itemAudio.Play();
+            }
             if (this.type == 0)
             {
                 // ann_get_item_box
                 _item_controller._get_new_item_on_the_road();
             }
-            else if (this.type == 1)
+            if (this.type == 1)
             {
                 // ann_get_bleach
                 _animation_controller._ann_get_bleach();
             }
-            else if (this.type == 2)
+            if (this.type == 2)
             {
                 // ann_get_dye
                 _animation_controller._ann_get_dye();
