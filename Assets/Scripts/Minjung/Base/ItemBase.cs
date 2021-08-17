@@ -10,14 +10,18 @@ public class ItemBase : MonoBehaviour
     public GameObject ItemAudio;
     AudioSource itemAudio;
 
+    GameObject _player;
+    GameObject _twinkle;
+
     ItemController _item_controller;
-    AnimationController _animation_controller;
 
     void Start()
     {
+        _player = GameObject.Find("Player");
+        _twinkle = GameObject.Find("Twinkle");
+
         itemAudio = ItemAudio.GetComponent<AudioSource>();
-        _item_controller = GameObject.Find("Item_Controller").GetComponent<ItemController>();
-        _animation_controller = GameObject.Find("Animation_Controller").GetComponent<AnimationController>();
+        _item_controller = GameObject.Find("Item_Controller").GetComponent<ItemController>();   
     }
 
     private void OnEnable() // ������Ʈ�� Ȱ��ȭ�Ǹ� ����
@@ -69,13 +73,14 @@ public class ItemBase : MonoBehaviour
     }
     private void OnTriggerEnter(Collider collision)
     {
+        Animator _player_animator = _player.GetComponent<Animator>();
+
         if (collision.tag == "Player")
         {
             gameObject.SetActive(false);
-            if (MainMenu.AudioPlay)
-            {
-                itemAudio.Play();
-            }
+            
+            if (MainMenu.AudioPlay)     itemAudio.Play();
+
             if (this.type == 0)
             {
                 // ann_get_item_box
@@ -84,12 +89,16 @@ public class ItemBase : MonoBehaviour
             if (this.type == 1)
             {
                 // ann_get_bleach
-                _animation_controller._ann_get_bleach();
+                if (_player_animator.GetInteger("State") <= 5 ) _player_animator.SetInteger("State",5);
             }
             if (this.type == 2)
             {
                 // ann_get_dye
-                _animation_controller._ann_get_dye();
+                _player_animator.SetInteger("State",9);
+                if (_player_animator.GetInteger("State") >= 5 ) _player_animator.SetBool("RED",true);
+
+                // twinkle on
+                _twinkle.GetComponent<Animator>().SetBool("T",true);
             }
         }
         else if (collision.tag == "Radar")

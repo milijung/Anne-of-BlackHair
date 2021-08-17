@@ -4103,9 +4103,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 904912eccac771e40ba7df2bddacb480, type: 3}
   - {fileID: 21300000, guid: 830781c24ae05684f92c8b1872975d3c, type: 3}
   - {fileID: 21300000, guid: aa3d4acfe8829fa479f4be650ab6c942, type: 3}
-  item0: {fileID: 1682050272}
-  item1: {fileID: 1271950594}
-  item2: {fileID: 1832090818}
+  GameObject_item0: {fileID: 1682050272}
+  GameObject_item1: {fileID: 1271950594}
   useItemIMG: {fileID: 1533833317}
   itemName: {fileID: 1698495407}
   upSpeed: 1

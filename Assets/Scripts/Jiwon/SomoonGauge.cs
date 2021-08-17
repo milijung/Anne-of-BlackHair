@@ -6,7 +6,6 @@ public class SomoonGauge : MonoBehaviour
 {
     public GameManager gameManager;
     public GameObject Emergency;
-    public GameObject Lip;
 
     public Animator animator;
     public bool somoonContinue;
@@ -36,20 +35,17 @@ public class SomoonGauge : MonoBehaviour
 
     void Update()
     {
-        //°ÔÀÓÁøÇà½Ã°£ ¾÷µ¥ÀÌÆ®
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
         realTime = Time.time - startTime;
-        if ((adultTouch_Num == 0 && childTouch_Num == 0)|| !GameManager.isPlay)
-            Lip.SetActive(false);
-        else
-            Lip.SetActive(true);
+
         SomoonCtrl();
     }
 
 
     public void SomoonCtrl()
     {
-        //Æ®À®Å¬ »óÅÂÀÏ ¶§ somoonContinue false ¸¸µë
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.RED") || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.DEEP_RED"))
+        //Æ®ï¿½ï¿½Å¬ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ somoonContinue false ï¿½ï¿½ï¿½ï¿½
+        if (animator.GetInteger("State") >= 8 )
         {
             somoonContinue = false;
         }

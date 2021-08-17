@@ -12,9 +12,11 @@ public class BerryController : MonoBehaviour
     public static int BerryNum;
     public static bool getBerryBox, getBerry, BumpOntheRoad, BumpWithCat= false;
 
+    Animator _lip_move_animator;
+
     private void Start()
     {
-        BerryNum = 0;
+        BerryNum = 0; 
 
         for (int i = 0; i < Berry_play.Length; i++)
             Berry_play[i].SetActive(false);
@@ -25,6 +27,8 @@ public class BerryController : MonoBehaviour
         RoadBase.jump = false;
         StartCoroutine(BerryStart());
         StartCoroutine(BerryChange());
+
+        
     }
     private void Update()
     {

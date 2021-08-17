@@ -9,6 +9,8 @@ public class MobBase : MonoBehaviour
     public GameObject RadarSound;
     AudioSource radarSound;
 
+    GameObject lip_move;
+
     private void Awake()
     {
         radarSound = RadarSound.GetComponent<AudioSource>();
@@ -24,6 +26,8 @@ public class MobBase : MonoBehaviour
             gameObject.SetActive(true);
         }
         transform.position = StartPosition;
+        
+        lip_move = GameObject.Find("lip_move");
     }
     private void Update()
     {
@@ -51,25 +55,24 @@ public class MobBase : MonoBehaviour
                 somoon.adultFirstTouchTime = somoon.realTime;
             }
 
-
             if (isAdult && somoon.adultTouch_Num != 0)
             {
                 somoon.adultTouch_Num++;
             }
 
-
             if (isChildren && somoon.childTouch_Num == 0)
             {
                 somoon.childTouch_Num++;
                 somoon.childFirstTouchTime = somoon.realTime;
-
             }
-
 
             if (isChildren && somoon.childTouch_Num != 0)
             {
                 somoon.childTouch_Num++;
             }
+
+            // lip move animation
+            lip_move.GetComponent<Animator>().SetBool("L",true);
 
         }
         else if (collision.tag != "catMove")
