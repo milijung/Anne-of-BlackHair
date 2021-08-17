@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static bool isPlay;
 
     public TextMeshProUGUI scoreTxt; // 점수 Text
+    public ItemController itemController;
     public static int score = 0;
 
     public GameObject GameOverPanel;
@@ -72,7 +73,7 @@ public class GameManager : MonoBehaviour
         {
             if(Time.timeScale == 1 && isPlay) { 
                 score++;
-                yield return new WaitForSeconds(gameSpeed/Mathf.Pow(ItemController.upSpeed,2)); // 게임 속도 단위로 점수를 더함
+                yield return new WaitForSeconds(gameSpeed/Mathf.Pow(itemController.upSpeed, 2)); // 게임 속도 단위로 점수를 더함
             }
             yield return null;
         }

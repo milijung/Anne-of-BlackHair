@@ -1,0 +1,612 @@
+fileFormatVersion: 2
+guid: 71eaf4cb75a2fdb4dba2231b8ba2e60d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8725107570885781230
+    second: Matthew-era-Sheet_0
+  - first:
+      213: -5199383495477925267
+    second: Matthew-era-Sheet_1
+  - first:
+      213: 4498244058467651366
+    second: Matthew-era-Sheet_2
+  - first:
+      213: 3541943623731093535
+    second: Matthew-era-Sheet_3
+  - first:
+      213: 3646250673391106040
+    second: Matthew-era-Sheet_4
+  - first:
+      213: -2481089345629404822
+    second: Matthew-era-Sheet_5
+  - first:
+      213: 3528940253345618044
+    second: Matthew-era-Sheet_6
+  - first:
+      213: -2124607116782633118
+    second: Matthew-era-Sheet_7
+  - first:
+      213: -878560096748220740
+    second: Matthew-era-Sheet_8
+  - first:
+      213: 2524412273530305403
+    second: Matthew-era-Sheet_9
+  - first:
+      213: -7383235067473397371
+    second: Matthew-era-Sheet_10
+  - first:
+      213: 7997367070063356667
+    second: Matthew-era-Sheet_11
+  - first:
+      213: -3506333212937115840
+    second: Matthew-era-Sheet_12
+  - first:
+      213: 107236841516506203
+    second: Matthew-era-Sheet_13
+  - first:
+      213: -7303792246120264576
+    second: Matthew-era-Sheet_14
+  - first:
+      213: -7655379977369397707
+    second: Matthew-era-Sheet_15
+  - first:
+      213: 8433595757545416093
+    second: Matthew-era-Sheet_16
+  - first:
+      213: -6833268021324410022
+    second: Matthew-era-Sheet_17
+  - first:
+      213: -39087296976945773
+    second: Matthew-era-Sheet_18
+  - first:
+      213: 4329996058181291396
+    second: Matthew-era-Sheet_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 108
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Matthew-era-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 11
+        width: 65
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219184254e03ae680800000000000000
+      internalID: -8725107570885781230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Matthew-era-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 11
+        width: 65
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a6205224418d7b0800000000000000
+      internalID: -5199383495477925267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Matthew-era-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 11
+        width: 65
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62fc9f17329fc6e30800000000000000
+      internalID: 4498244058467651366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Matthew-era-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 11
+        width: 65
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f10a3f2b5f2872130800000000000000
+      internalID: 3541943623731093535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Matthew-era-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 11
+        width: 65
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f771853ba51a9230800000000000000
+      internalID: 3646250673391106040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Matthew-era-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 11
+        width: 65
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61c0c1b266619dd0800000000000000
+      internalID: -2481089345629404822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Matthew-era-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 11
+        width: 65
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c781e3a967059f030800000000000000
+      internalID: 3528940253345618044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Matthew-era-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1822
+        y: 11
+        width: 65
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f77ec7511e382e0800000000000000
+      internalID: -2124607116782633118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Matthew-era-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 11
+        width: 65
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe4d7f2f3abec3f0800000000000000
+      internalID: -878560096748220740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Matthew-era-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2462
+        y: 11
+        width: 65
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7bf86e7693880320800000000000000
+      internalID: 2524412273530305403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Matthew-era-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 11
+        width: 65
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5897a0ef2da798990800000000000000
+      internalID: -7383235067473397371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Matthew-era-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2975
+        y: 11
+        width: 65
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa68857afa5cfe60800000000000000
+      internalID: 7997367070063356667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Matthew-era-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 3102
+        y: 11
+        width: 65
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047aaba2580075fc0800000000000000
+      internalID: -3506333212937115840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Matthew-era-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 3359
+        y: 11
+        width: 65
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c1d65d65bfc7100800000000000000
+      internalID: 107236841516506203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Matthew-era-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 3615
+        y: 11
+        width: 65
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ccfb836a7b3aa90800000000000000
+      internalID: -7303792246120264576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Matthew-era-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 3999
+        y: 11
+        width: 65
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53652447870a2c590800000000000000
+      internalID: -7655379977369397707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Matthew-era-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 4255
+        y: 11
+        width: 65
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d956cbb88a62a0570800000000000000
+      internalID: 8433595757545416093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Matthew-era-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 4511
+        y: 11
+        width: 65
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a531ce550fa5b21a0800000000000000
+      internalID: -6833268021324410022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Matthew-era-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 4639
+        y: 11
+        width: 65
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d757c7f42257ff0800000000000000
+      internalID: -39087296976945773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Matthew-era-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 5022
+        y: 11
+        width: 65
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48dccbe397c371c30800000000000000
+      internalID: 4329996058181291396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,756 @@
+fileFormatVersion: 2
+guid: 69b3992b79cd54646adc898dce33d5ca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8720260048696609021
+    second: Lynd-era-Sheet_0
+  - first:
+      213: -1647546563849977109
+    second: Lynd-era-Sheet_1
+  - first:
+      213: -2314370464417953852
+    second: Lynd-era-Sheet_2
+  - first:
+      213: 4909077973389001376
+    second: Lynd-era-Sheet_3
+  - first:
+      213: -5584867990773519118
+    second: Lynd-era-Sheet_4
+  - first:
+      213: 2407106972963750268
+    second: Lynd-era-Sheet_5
+  - first:
+      213: -4479572189814268540
+    second: Lynd-era-Sheet_6
+  - first:
+      213: 569491925475304505
+    second: Lynd-era-Sheet_7
+  - first:
+      213: 6142364951890134010
+    second: Lynd-era-Sheet_8
+  - first:
+      213: 5736026181082560372
+    second: Lynd-era-Sheet_9
+  - first:
+      213: -8524852093620537674
+    second: Lynd-era-Sheet_10
+  - first:
+      213: -9064487371476463193
+    second: Lynd-era-Sheet_11
+  - first:
+      213: -3735295773374515618
+    second: Lynd-era-Sheet_12
+  - first:
+      213: -1168818232336198711
+    second: Lynd-era-Sheet_13
+  - first:
+      213: -2408781816668737021
+    second: Lynd-era-Sheet_14
+  - first:
+      213: -3403114431579984824
+    second: Lynd-era-Sheet_15
+  - first:
+      213: -4776166011469733819
+    second: Lynd-era-Sheet_16
+  - first:
+      213: -7961348346460928716
+    second: Lynd-era-Sheet_17
+  - first:
+      213: -5529208044006289782
+    second: Lynd-era-Sheet_18
+  - first:
+      213: 5697464424552137415
+    second: Lynd-era-Sheet_19
+  - first:
+      213: -7006484752251483993
+    second: Lynd-era-Sheet_20
+  - first:
+      213: -7748361016570460317
+    second: Lynd-era-Sheet_21
+  - first:
+      213: -4263673106541057929
+    second: Lynd-era-Sheet_22
+  - first:
+      213: -4990541509227805389
+    second: Lynd-era-Sheet_23
+  - first:
+      213: 3743699282592476666
+    second: Lynd-era-Sheet_24
+  - first:
+      213: -4650958527144809860
+    second: Lynd-era-Sheet_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 108
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 11
+        width: 70
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307786800b96bf680800000000000000
+      internalID: -8720260048696609021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 11
+        width: 70
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be28ec6112db229e0800000000000000
+      internalID: -1647546563849977109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 11
+        width: 70
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c746bd1354b1efd0800000000000000
+      internalID: -2314370464417953852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 11
+        width: 70
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2cb8a486c802440800000000000000
+      internalID: 4909077973389001376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 11
+        width: 70
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fcae7cf6209e72b0800000000000000
+      internalID: -5584867990773519118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 11
+        width: 70
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71cedbd903c76120800000000000000
+      internalID: 2407106972963750268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 11
+        width: 70
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48dd660c3dc55d1c0800000000000000
+      internalID: -4479572189814268540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 11
+        width: 70
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934a86093ed37e700800000000000000
+      internalID: 569491925475304505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 11
+        width: 70
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3883e41601e3550800000000000000
+      internalID: 6142364951890134010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2459
+        y: 11
+        width: 70
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47734c1cb657a9f40800000000000000
+      internalID: 5736026181082560372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2715
+        y: 11
+        width: 70
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b6b00dff24a1b980800000000000000
+      internalID: -8524852093620537674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 11
+        width: 70
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a19128e2c8743280800000000000000
+      internalID: -9064487371476463193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 3102
+        y: 15
+        width: 83
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e567ef8d840992cc0800000000000000
+      internalID: -3735295773374515618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 3359
+        y: 15
+        width: 83
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3d996a20687cfe0800000000000000
+      internalID: -1168818232336198711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 3614
+        y: 15
+        width: 83
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3023a0433b9429ed0800000000000000
+      internalID: -2408781816668737021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 3983
+        y: 15
+        width: 83
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c6ba77475b5c0d0800000000000000
+      internalID: -3403114431579984824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 4238
+        y: 15
+        width: 83
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5406d0a5156a7bdb0800000000000000
+      internalID: -4776166011469733819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 4495
+        y: 15
+        width: 83
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4358d042cdb938190800000000000000
+      internalID: -7961348346460928716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 4639
+        y: 11
+        width: 70
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ec5c7349e4443b0800000000000000
+      internalID: -5529208044006289782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 4894
+        y: 11
+        width: 70
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c20bd925b5711f40800000000000000
+      internalID: 5697464424552137415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 5151
+        y: 11
+        width: 70
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a80cd16d37f3ce90800000000000000
+      internalID: -7006484752251483993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 5531
+        y: 11
+        width: 70
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36745df35ba487490800000000000000
+      internalID: -7748361016570460317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 5787
+        y: 11
+        width: 70
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778eb3646e364d4c0800000000000000
+      internalID: -4263673106541057929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 6043
+        y: 11
+        width: 70
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33582a930f80ebab0800000000000000
+      internalID: -4990541509227805389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 6175
+        y: 11
+        width: 70
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd2fcc99aa44f330800000000000000
+      internalID: 3743699282592476666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lynd-era-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 6555
+        y: 11
+        width: 70
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7aa5748cd9747fb0800000000000000
+      internalID: -4650958527144809860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
