@@ -162,6 +162,8 @@ public class RoadBase : MonoBehaviour
             {
                 if (!jump)
                 {
+                    if (MainMenu.AudioPlay)
+                        gameObject.GetComponent<AudioSource>().Play();
                     BerryController.BumpOntheRoad = true;
                     BerryController.BumpWithCat = true;
                     catBerry.SetActive(true);

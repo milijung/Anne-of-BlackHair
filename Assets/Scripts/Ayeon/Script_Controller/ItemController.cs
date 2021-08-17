@@ -153,6 +153,7 @@ public class ItemController : MonoBehaviour
             if (typetype == Item.item_type.wig)
             {
                 itemName.text = "wig";
+                AudioManager.wigHatAudio.Play();
                 _player.GetComponent<Animator>().SetBool("W",true);
                 // twinkle on
                 _twinkle.GetComponent<Animator>().SetBool("T",true);
@@ -160,6 +161,7 @@ public class ItemController : MonoBehaviour
             else if (typetype == Item.item_type.hat)
             {
                 itemName.text = "hat";
+                AudioManager.wigHatAudio.Play();
                  _player.GetComponent<Animator>().SetBool("H",true);
                 // twinkle on
                 _twinkle.GetComponent<Animator>().SetBool("T",true);
@@ -167,6 +169,7 @@ public class ItemController : MonoBehaviour
             else if (typetype == Item.item_type.death_berry)
             {
                 itemName.text = "death_berry";
+                AudioManager.deathBerryAudio.Play();
                 _player.GetComponent<Animator>().SetBool("G",true);
             }
             else if (typetype == Item.item_type.basket)
@@ -180,6 +183,7 @@ public class ItemController : MonoBehaviour
             else if (typetype == Item.item_type.eraser)
             {
                 itemName.text = "eraser";
+                AudioManager.eraserAudio.Play();
                 somoon.LowerSomoon();
                 Mob_motion.Set();
             }

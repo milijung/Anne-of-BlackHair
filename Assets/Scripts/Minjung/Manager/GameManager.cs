@@ -12,12 +12,9 @@ public class GameManager : MonoBehaviour
     public ItemController itemController;
     public static int score = 0;
 
-    public GameObject GameOverPanel;
     public GameObject fadeSprite;
     public TextMeshProUGUI finalScore;
-    public TextMeshProUGUI bestScore;
     public GameObject player;
-    public GameObject AnneCry;
     public Slider rumor;
     public GameObject itemSlot;
 
@@ -160,21 +157,21 @@ public class GameManager : MonoBehaviour
         BerryController.getBerryBox = false;
         StopCoroutine(AddScore()); // score++ ����
         Save();
-        bestScore.text = PlayerPrefs.GetInt("BestScore").ToString();
-        finalScore.text = score.ToString(); // ���ӿ��� ȭ�� Ȱ��ȭ
-        GameOverPanel.SetActive(true);
-        fadeSprite.SetActive(true);
-        AnneCry.SetActive(true);
-
-        scoreTxt.gameObject.SetActive(false);
-        player.SetActive(false);
-        rumor.gameObject.SetActive(false);
-        itemSlot.SetActive(false);
 
         if (MainMenu.AudioPlay == true)
         {
             backmusic.Pause();
             stepAudio.Pause();
+        }
+        if (GameObject.Find("SomoonGauge").GetComponent<SomoonGauge>().somoonGauge >= 100)
+        {
+            // Anne ending animation is here
+            GameObject.Find("SwitchScene").GetComponent<SwitchScene>().SomoonGameOver();
+        }
+        if (BerryController.BerryNum <= 0)
+        {
+            // Anne ending animation is here
+            GameObject.Find("SwitchScene").GetComponent<SwitchScene>().BerryGameOver();
         }
 
     }
