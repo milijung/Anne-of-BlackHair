@@ -12,7 +12,7 @@ public class AnimationController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _twinkle_controller = _twinkle.GetComponent<TwinkleController>();
+        //_twinkle_controller = _twinkle.GetComponent<TwinkleController>();
         _ann_animator = GameObject.Find("Player").GetComponent<Animator>();
     }
 
@@ -46,7 +46,7 @@ public class AnimationController : MonoBehaviour
             return;
 
         _ann_animator.SetBool("D",true);
-        _twinkle_controller.twinkle_on();
+        //w_twinkle_controller.twinkle_on();
     }
 
     public void _twinkle_off()

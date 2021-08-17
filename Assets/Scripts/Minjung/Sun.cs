@@ -12,6 +12,8 @@ public class Sun : MonoBehaviour
         {
             SunIMG[i].SetActive(false);
         }
+        SunIMG[0].SetActive(true);
+        sunRise=true;
         StartCoroutine(sunMove());
     }
 

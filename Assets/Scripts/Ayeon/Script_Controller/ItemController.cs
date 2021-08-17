@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class ItemController : MonoBehaviour
 {
     GameObject _player;
+    GameObject _twinkle;
+
     public Sprite[] ItemImage;
     public GameObject item0, item1, item2, useItemIMG;
     RectTransform ItemSave;
@@ -20,6 +22,8 @@ public class ItemController : MonoBehaviour
     void Start()
     {
         _player = GameObject.Find("Player");
+        _twinkle = GameObject.Find("Twinkle");
+
         item_slot = new Slot();
         item_slot.slot_init();
         useItemIMG.SetActive(false);
@@ -100,11 +104,15 @@ public class ItemController : MonoBehaviour
             {
                 itemName.text = "wig";
                 _player.GetComponent<Animator>().SetBool("W",true);
+                // twinkle on
+                _twinkle.GetComponent<Animator>().SetBool("T",true);
             }
             else if (typetype == Item.item_type.hat)
             {
                 itemName.text = "hat";
                 _player.GetComponent<Animator>().SetBool("H",true);
+                // twinkle on
+                _twinkle.GetComponent<Animator>().SetBool("T",true);
             }
             else if (typetype == Item.item_type.death_berry)
             {
@@ -114,6 +122,8 @@ public class ItemController : MonoBehaviour
             {
                 itemName.text = "booster";
                 _player.GetComponent<Animator>().SetBool("B",true);
+                // twinkle on
+                _twinkle.GetComponent<Animator>().SetBool("T",true);
             }
             else if (typetype == Item.item_type.green_dye)
             {

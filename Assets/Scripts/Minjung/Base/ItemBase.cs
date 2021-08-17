@@ -9,14 +9,18 @@ public class ItemBase : MonoBehaviour
     float posX;
 
     GameObject _player;
+    GameObject _twinkle;
+
     ItemController _item_controller;
-    AnimationController _animation_controller;
+    //AnimationController _animation_controller;
 
     void Start()
     {
         _player = GameObject.Find("Player");
+        _twinkle = GameObject.Find("Twinkle");
+        
         _item_controller = GameObject.Find("Item_Controller").GetComponent<ItemController>();
-        _animation_controller = GameObject.Find("Animation_Controller").GetComponent<AnimationController>();
+        //_animation_controller = GameObject.Find("Animation_Controller").GetComponent<AnimationController>();
     }
 
     private void OnEnable() // ������Ʈ�� Ȱ��ȭ�Ǹ� ����
@@ -80,7 +84,8 @@ public class ItemBase : MonoBehaviour
             {
                 // ann_get_dye
                 _player.GetComponent<Animator>().SetInteger("State",9);
-                
+                // twinkle on
+                _twinkle.GetComponent<Animator>().SetBool("T",true);
             }
         }
         else if (collision.tag == "Radar")
