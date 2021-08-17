@@ -4,19 +4,33 @@ using UnityEngine;
 
 public class Emergency_Text : MonoBehaviour
 {
-    public int textSpeed;
-    //private RectTransform rectTransform;
-
-    private void Awake()
+    /*
+     private void OnEnable()
     {
+        StartCoroutine("Move");
+    }
+    IEnumerator Move()
+    {
+        while (true)
+        {
+            transform.Translate(Vector2.left * 6f * Time.deltaTime);
+            
+            if (transform.localPosition.x < -687)
+                transform.localPosition = new Vector2(725, 314);
+            
+    yield return null;
+        }
 
-        //rectTransform = GetComponent<RectTransform>();
+    }
+     
+     
+     */
+
+    private void FixedUpdate()
+    {
+        transform.Translate(Vector2.left * 6f * Time.deltaTime);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        transform.Translate(-textSpeed, 0, 0);
-        //rectTransform.position = new Vector2(textSpeed*(-1), rectTransform.position.y);
-    }
+
+
 }
