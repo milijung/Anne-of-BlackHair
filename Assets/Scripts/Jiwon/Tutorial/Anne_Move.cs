@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Anne_Move : MonoBehaviour
 {
-    Vector2 startPosition = new Vector2(0, 1.09f);
+    Vector2 startPosition = new Vector2(0, 1.43f);
     private void Awake()
     {
         transform.position = startPosition;
@@ -21,8 +21,8 @@ public class Anne_Move : MonoBehaviour
         {
             yield return new WaitForSeconds(1f);
             transform.Translate(Vector2.right * 7);
-            if (transform.position.x > 0.98f)
-                transform.position = new Vector2(0.98f, transform.position.y);
+            if (transform.position.x > 0.82f)
+                transform.position = new Vector2(0.82f, transform.position.y);
             yield return new WaitForSeconds(1f);
 
             transform.Translate(Vector2.left * 7);
@@ -31,8 +31,8 @@ public class Anne_Move : MonoBehaviour
             yield return new WaitForSeconds(1f);
 
             transform.Translate(Vector2.left * 7);
-            if (transform.position.x < -0.94f)
-                transform.position = new Vector2(-0.94f, transform.position.y);
+            if (transform.position.x < -0.82f)
+                transform.position = new Vector2(-0.82f, transform.position.y);
             yield return new WaitForSeconds(1f);
 
             transform.Translate(Vector2.right * 7);

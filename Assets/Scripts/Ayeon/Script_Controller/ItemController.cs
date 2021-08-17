@@ -19,9 +19,24 @@ public class ItemController : MonoBehaviour
 
     Slot item_slot;
     Item item;
+    bool isBasket;
+
+    private void UpSpeed()
+    {
+        if (!isBasket)
+        {
+            isBasket = true;
+            upSpeed = 2f;
+            gameManager.gameSpeed *= upSpeed;
+            somoon.somoonContinue = false;
+            booster_Controller.Collider_UnEnable();
+            Invoke("ReturnSpeed", 3f);
+        }
+    }
 
     private void ReturnSpeed()
     {
+        isBasket = false;
         gameManager.gameSpeed /= upSpeed;
         upSpeed = 1;
         somoon.somoonContinue = true;
@@ -33,6 +48,7 @@ public class ItemController : MonoBehaviour
         item_slot = new Slot();
         item_slot.slot_init();
         useItemIMG.SetActive(false);
+        isBasket = false;
     }
     private void Update()
     {
@@ -121,13 +137,8 @@ public class ItemController : MonoBehaviour
             }
             else if (typetype == Item.item_type.boost)
             {
-                itemName.text = "부스터 사용";
-                upSpeed = 3f;
-                gameManager.gameSpeed *= upSpeed;
-                somoon.somoonContinue = false;
-                booster_Controller.Collider_UnEnable();
-                Invoke("ReturnSpeed", 3f);
-
+                itemName.text = "바구니 사용";
+                UpSpeed();
             }
             else if (typetype == Item.item_type.eraser)
             {

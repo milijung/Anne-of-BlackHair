@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Emergency_Text : MonoBehaviour
 {
-    private void OnEnable()
+    /*
+     private void OnEnable()
     {
         StartCoroutine("Move");
     }
@@ -12,13 +13,24 @@ public class Emergency_Text : MonoBehaviour
     {
         while (true)
         {
-            transform.Translate(Vector2.left * 8.3f * Time.deltaTime);
-
+            transform.Translate(Vector2.left * 6f * Time.deltaTime);
+            
             if (transform.localPosition.x < -687)
                 transform.localPosition = new Vector2(725, 314);
-
-            yield return null;
+            
+    yield return null;
         }
 
     }
+     
+     
+     */
+
+    private void FixedUpdate()
+    {
+        transform.Translate(Vector2.left * 6f * Time.deltaTime);
+    }
+
+
+
 }

@@ -4,54 +4,42 @@ using UnityEngine;
 
 public class Finger_Move : MonoBehaviour
 {
-    /*
-    Vector2 startPosition = new Vector2(-1.56f, 2.34f);
-    private void Awake()
-    {
-        transform.position = startPosition;
-    }
-
     private void OnEnable()
     {
-        StartCoroutine(Finger_Move_1());
+        StartCoroutine(Control());
+    }
+    private void Move_Right()
+    {
+        transform.Translate(Vector2.right * 0.5f);
     }
 
-    IEnumerator Finger_Move_1()
+    private void Move_Left()
+    {
+        transform.Translate(Vector2.left * 0.5f);
+    }
+    IEnumerator Control()
     {
         while (true)
         {
-            transform.Translate(Vector2.right * 4);
-            if (transform.position.x > 1.56f)
+            Move_Right();
+            if (transform.position.x > 1.56)
                 transform.position = new Vector2(1.56f, transform.position.y);
-            
-            yield return new WaitForSeconds(0.9f);
-
-            
-            transform.Translate(Vector2.left * 4);
-            if (transform.position.x < -1.56f)
-            
-            yield return new WaitForSeconds(0.9f);
-
-            
-            transform.position = new Vector2(1.56f, transform.position.y);
-            transform.Translate(Vector2.left * 4);
-            if (transform.position.x < -1.56f)
+            yield return new WaitForSeconds(1f);
+            Move_Left();
+            if (transform.position.x < -1.56)
                 transform.position = new Vector2(-1.56f, transform.position.y);
-            
-            yield return new WaitForSeconds(0.9f);
-
-            
-            transform.Translate(Vector2.right * 4);
-            if (transform.position.x > 1.56f)
+            yield return new WaitForSeconds(0.5f);
+            transform.position = new Vector2(1.56f, transform.position.y);
+            yield return new WaitForSeconds(0.5f);
+            Move_Left();
+            if (transform.position.x < -1.56)
+                transform.position = new Vector2(-1.56f, transform.position.y);
+            yield return new WaitForSeconds(1f);
+            Move_Right();
+            if (transform.position.x > 1.56)
                 transform.position = new Vector2(1.56f, transform.position.y);
-
-            yield return new WaitForSeconds(0.9f);
+            yield return new WaitForSeconds(1f);
             transform.position = new Vector2(-1.56f, transform.position.y);
         }
-    }
-    */
-    private void FixedUpdate()
-    {
-        transform.Translate(Vector2.right * 0.2f);
     }
 }
