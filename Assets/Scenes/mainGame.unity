@@ -4093,16 +4093,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f48de6f8b0a19634e8a3d993c66fa419, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
-  booster_Controller: {fileID: 0}
-  Mob_motion: {fileID: 0}
-  somoon: {fileID: 0}
+  gameManager: {fileID: 1960746220}
+  booster_Controller: {fileID: 355926970}
+  Mob_motion: {fileID: 355926971}
+  somoon: {fileID: 994894087}
   ItemImage:
   - {fileID: 6910042003115432476, guid: b8bcc895d3fe06447a9cad2b7ac82fb3, type: 3}
-  - {fileID: -2593516898835043115, guid: b8bcc895d3fe06447a9cad2b7ac82fb3, type: 3}
   - {fileID: 6291011919758860086, guid: b8bcc895d3fe06447a9cad2b7ac82fb3, type: 3}
-  - {fileID: -5195538162078977787, guid: b8bcc895d3fe06447a9cad2b7ac82fb3, type: 3}
-  - {fileID: 2873660405995735944, guid: b8bcc895d3fe06447a9cad2b7ac82fb3, type: 3}
+  - {fileID: 21300000, guid: 904912eccac771e40ba7df2bddacb480, type: 3}
+  - {fileID: 21300000, guid: 830781c24ae05684f92c8b1872975d3c, type: 3}
+  - {fileID: 21300000, guid: aa3d4acfe8829fa479f4be650ab6c942, type: 3}
   item0: {fileID: 1682050272}
   item1: {fileID: 1271950594}
   item2: {fileID: 1832090818}
@@ -8530,6 +8530,7 @@ GameObject:
   - component: {fileID: 983332890}
   - component: {fileID: 983332889}
   - component: {fileID: 983332893}
+  - component: {fileID: 983332894}
   m_Layer: 0
   m_Name: Item-box_0
   m_TagString: Item
@@ -8646,6 +8647,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &983332894
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983332888}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d69127a27e6e5d741b356fcb0b09f254, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &993501548
 GameObject:
   m_ObjectHideFlags: 0
@@ -16724,7 +16744,7 @@ GameObject:
   - component: {fileID: 1818756945}
   - component: {fileID: 1818756944}
   m_Layer: 5
-  m_Name: lip
+  m_Name: lip_move
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16767,7 +16787,7 @@ Animator:
   m_GameObject: {fileID: 1818756940}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2e59b40a302fb8e49aa6d33bc7b95bd1, type: 2}
+  m_Controller: {fileID: 9100000, guid: e63c4dc4bded8a14ebee164dd6c56644, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -17158,7 +17178,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7365555634742772332, guid: 482bb79d8a0a18e46878b255392e476a, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -17166,7 +17186,7 @@ SpriteRenderer:
   m_Size: {x: 1.28, y: 1.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1832090821
@@ -17179,7 +17199,7 @@ Animator:
   m_GameObject: {fileID: 1832090818}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 44ab84c1306fca844b9ac3f083de6997, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4362644f3eb597c4dbb8e3eb253f3e3f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
