@@ -579,7 +579,7 @@ SpriteRenderer:
   m_Size: {x: 0.6666667, y: 0.8888889}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &77491846
@@ -807,11 +807,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2681cc25ea1ae3478010e2ee0dc4f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: -2359638610136418311, guid: 641b5aa961bb95f4bb04e6e2ad99faef, type: 3}
-  - {fileID: 8903766432266672828, guid: 7a72a4b2d92c02346831c4d88daf029d, type: 3}
-  - {fileID: 8245074977905487612, guid: 03d1bd0a391d5fe42b89730ea1efa7f3, type: 3}
-  waitSeconds: 0.2
 --- !u!1 &134044223
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,11 +1339,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 207093857}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a9e21eeb208da408a5c300d5c9e2d7, type: 3}
+  m_Script: {fileID: 11500000, guid: 663bbde7106dea3488f27705e9d27ee3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowest: -162
-  highst: 161
+  lowest: 0
+  highst: 0
 --- !u!1 &217238998
 GameObject:
   m_ObjectHideFlags: 0
@@ -4708,7 +4703,7 @@ SpriteRenderer:
   m_Size: {x: 0.6666667, y: 0.8888889}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &941502122
@@ -5134,10 +5129,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2681cc25ea1ae3478010e2ee0dc4f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: -5551443442548890444, guid: 29db2fee6ddd3c341aefd12d14ef62d6, type: 3}
-  - {fileID: 7746025879202245365, guid: 67aa786a33de0b34491db654fc6b5a53, type: 3}
-  waitSeconds: 0.8
 --- !u!1 &1000090327
 GameObject:
   m_ObjectHideFlags: 0
@@ -5305,7 +5296,7 @@ SpriteRenderer:
   m_Size: {x: 0.6666667, y: 0.8888889}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1026047201
@@ -6908,10 +6899,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2681cc25ea1ae3478010e2ee0dc4f69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 4198872177794780732, guid: fa91141b79e9beb4aab3a69c0cf0751e, type: 3}
-  - {fileID: 1979014556206216714, guid: 85b7947dc0ff12546afe6caeb206ef02, type: 3}
-  waitSeconds: 0.8
 --- !u!1 &1332779889
 GameObject:
   m_ObjectHideFlags: 0
@@ -7957,11 +7944,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1497792043}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9a9e21eeb208da408a5c300d5c9e2d7, type: 3}
+  m_Script: {fileID: 11500000, guid: 663bbde7106dea3488f27705e9d27ee3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowest: -164
-  highst: 163
+  lowest: 0
+  highst: 0
 --- !u!114 &1497792046
 MonoBehaviour:
   m_ObjectHideFlags: 0
