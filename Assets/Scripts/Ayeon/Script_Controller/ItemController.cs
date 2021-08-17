@@ -9,11 +9,10 @@ public class ItemController : MonoBehaviour
     GameObject _twinkle;
 
     public Sprite[] ItemImage;
-    public GameObject item0, item1, item2, useItemIMG;
+    public GameObject item0, item1, useItemIMG;
     RectTransform ItemSave;
     public Text itemName;
     // item0, item1 => slot_item
-    // item2 => twinkle
 
     Slot item_slot;
     Item item;
