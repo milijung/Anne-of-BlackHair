@@ -6,8 +6,11 @@ public class SomoonGauge : MonoBehaviour
 {
     public GameManager gameManager;
     public GameObject Emergency;
-    public GameObject EmergencyCar;
     public GameObject Lip;
+
+    public Animator animator;
+    public bool somoonContinue;
+    public bool isEmergency;
 
     public float adultFirstTouchTime;
     public float childFirstTouchTime;
@@ -15,13 +18,17 @@ public class SomoonGauge : MonoBehaviour
     public float realTime;
 
     public float somoonGauge;
-    public int adultTouch_Num;
-    public int childTouch_Num;
+    public float adultTouch_Num;
+    public float childTouch_Num;
 
     private void Awake()
     {
+        animator = GameObject.Find("Player").GetComponent<Animator>();
+
+        somoonContinue = true;
+        isEmergency = false;
         Emergency.SetActive(false);
-        EmergencyCar.SetActive(false);
+
         startTime = Time.time;
         somoonGauge = 0;
 
@@ -41,29 +48,65 @@ public class SomoonGauge : MonoBehaviour
 
     public void SomoonCtrl()
     {
-        if(somoonGauge >= 100.0f)
+        //Æ®À®Å¬ »óÅÂÀÏ ¶§ somoonContinue false ¸¸µë
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.RED") || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.DEEP_RED"))
         {
-            gameManager.GameOver();
+            somoonContinue = false;
         }
+
         else
         {
-            somoonGauge = 10f * (adultTouch_Num + childTouch_Num * 2);
+            somoonContinue = true;
 
-            if(adultTouch_Num != 0)
+            if (somoonGauge >= 100.0f)
             {
-                somoonGauge += 0.1f * (realTime - adultFirstTouchTime);
+                gameManager.GameOver();
             }
 
-            if(childTouch_Num != 0)
+            else if (somoonGauge < 100.0f && somoonContinue == true)
             {
-                somoonGauge += 0.1f * (realTime - childFirstTouchTime);
+                somoonGauge = 10f * (adultTouch_Num + childTouch_Num * 2);
+
+                if (adultTouch_Num != 0)
+                {
+                    somoonGauge += 0.1f * (realTime - adultFirstTouchTime);
+                }
+
+                if (childTouch_Num != 0)
+                {
+                    somoonGauge += 0.1f * (realTime - childFirstTouchTime);
+                }
+
+                if ((somoonGauge > 70 && somoonGauge < 100) && !isEmergency)
+                {
+                    OnEmergency();
+                    Invoke("OffEmergency", 3.2f);
+                }
+                else if (somoonGauge < 70)
+                    isEmergency = false;
             }
 
-            if (somoonGauge > 85 && somoonGauge < 88)
-            {
-                Emergency.SetActive(true);
-                EmergencyCar.SetActive(true);
-            }
         }
+    }
+    private void OnEmergency()
+    {
+
+        Emergency.SetActive(true);
+        isEmergency = true;
+    }
+
+    private void OffEmergency()
+    {
+        Emergency.SetActive(false);
+    }
+
+    public void LowerSomoon()
+    {
+        realTime *= 0.8f;
+        adultFirstTouchTime *= 0.8f;
+        childFirstTouchTime *= 0.8f;
+        adultTouch_Num *= 0.8f;
+        childTouch_Num *= 0.8f;
+
     }
 }
