@@ -44,6 +44,7 @@ public class SomoonGauge : MonoBehaviour
 
     public void SomoonCtrl()
     {
+        //∆Æ¿Æ≈¨ ªÛ≈¬¿œ ∂ß somoonContinue false ∏∏µÎ
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.RED") || animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.DEEP_RED"))
         {
             somoonContinue = false;
