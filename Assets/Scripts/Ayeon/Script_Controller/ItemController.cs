@@ -9,7 +9,7 @@ public class ItemController : MonoBehaviour
     GameObject _twinkle;
 
     public Sprite[] ItemImage;
-    public GameObject item0, item1, useItemIMG;
+    public GameObject GameObject_item0, GameObject_item1, useItemIMG;
     RectTransform ItemSave;
     public Text itemName;
     // item0, item1 => slot_item
@@ -37,43 +37,63 @@ public class ItemController : MonoBehaviour
             }
             return;
         }
-        if (item0.GetComponent<Image>().sprite == null)
+        if (GameObject_item0.GetComponent<Image>().sprite == null)
         {
-            item0.SetActive(false);
+            GameObject_item0.SetActive(false);
         }
-        if (item0.GetComponent<Image>().sprite != null)
+        if (GameObject_item0.GetComponent<Image>().sprite != null)
         {
-            item0.SetActive(true);
+            GameObject_item0.SetActive(true);
         }
-        if (item1.GetComponent<Image>().sprite == null)
+        if (GameObject_item1.GetComponent<Image>().sprite == null)
         {
-            item1.SetActive(false);
+            GameObject_item1.SetActive(false);
         }
-        if (item1.GetComponent<Image>().sprite != null)
+        if (GameObject_item1.GetComponent<Image>().sprite != null)
         {
-            item1.SetActive(true);
+            GameObject_item1.SetActive(true);
         }
     }
 
     public void _get_new_item_on_the_road()
     {
-        // Check the slot 
-        if (item_slot.full()) return;
-
         item = new Item();
-        Item.item_type typetype = item.new_random_item(item_slot);
+
+        int new_item_type;
+        new_item_type = (int)item.new_random_item();
+        
+        int item1_type;
+
+        // Update the slot item
+        if (item_slot.full())
+        {
+            // slot_full()
+            item1_type = item_slot.stack.Pop();
+            item_slot.stack.Clear();
+            // before : stack ( item0 - item1 )
+            // after : stack ( item1 - new_item )
+
+            item_slot.stack.Push(item1_type);
+            item_slot.stack.Push(new_item_type);
+
+            // item0 <- item1
+            GameObject_item0.GetComponent<Image>().sprite = ItemImage[item1_type];
+
+            // item1 <- new item
+            GameObject_item1.GetComponent<Image>().sprite = ItemImage[new_item_type];
+            
+            return;
+        }
+
+        item_slot.stack.Push(new_item_type);
 
         if (item_slot.item_have() == 1)
-        {
             // item0.Sprite
-            item0.GetComponent<Image>().sprite = ItemImage[(int)typetype];
+            GameObject_item0.GetComponent<Image>().sprite = ItemImage[new_item_type];
 
-        }
         else if (item_slot.item_have() == 2)
-        {
             // item1.Sprite
-            item1.GetComponent<Image>().sprite = ItemImage[(int)typetype];
-        }
+            GameObject_item1.GetComponent<Image>().sprite = ItemImage[new_item_type];
 
     }
 
@@ -85,14 +105,14 @@ public class ItemController : MonoBehaviour
             if (item_slot.item_have() == 1)
             {
                 // item1.Sprite
-                item1.SetActive(false);
-                item1.GetComponent<Image>().sprite = null;
+                GameObject_item1.SetActive(false);
+                GameObject_item1.GetComponent<Image>().sprite = null;
             }
             else if (item_slot.item_have() == 0)
             {
                 // item0.Sprite
-                item0.SetActive(false);
-                item0.GetComponent<Image>().sprite = null;
+                GameObject_item0.SetActive(false);
+                GameObject_item0.GetComponent<Image>().sprite = null;
             }
             useItemIMG.GetComponent<Image>().sprite = ItemImage[(int)typetype];
             StartCoroutine(showItem());
@@ -165,13 +185,10 @@ public class Item
         green_dye
     }
 
-    public item_type new_random_item(Slot slot)
+    public item_type new_random_item()
     {
         item_type new_item;
         new_item = (item_type)Random.Range(0, 5);
-
-        // store new item in slot
-        slot.stack.Push((int)new_item);
 
         return new_item;
     }
