@@ -6,7 +6,7 @@ public class MobBase : MonoBehaviour
 {
     public Vector2 StartPosition;
     public SomoonGauge somoon;
-    public GameObject _lip;
+    GameObject lip_move;
 
     private void OnEnable() // ������Ʈ�� Ȱ��ȭ�Ǹ� ����
     {
@@ -19,6 +19,8 @@ public class MobBase : MonoBehaviour
             gameObject.SetActive(true);
         }
         transform.position = StartPosition;
+
+        lip_move = GameObject.Find("lip_move");
     }
     private void Update()
     {
@@ -58,7 +60,7 @@ public class MobBase : MonoBehaviour
             }
             
             // lip move animation
-            _lip.GetComponent<Animator>().SetBool("L",true);
+            lip_move.GetComponent<Animator>().SetBool("L",true);
         }
     }
 }
