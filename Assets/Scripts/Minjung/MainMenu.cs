@@ -7,6 +7,7 @@ public class MainMenu: MonoBehaviour
 {
     public GameObject exitPanel;
     public GameObject settingPanel;
+    public GameObject scorePanel;
     public GameObject fadeSprite;
 
     public GameObject BackgroundMusic;
@@ -42,6 +43,7 @@ public class MainMenu: MonoBehaviour
         exitPanel.SetActive(false); // ÆÐ³Î ¼û±â±â
         fadeSprite.SetActive(false);
         settingPanel.SetActive(false);
+        scorePanel.SetActive(false);
     }
     private void FixedUpdate()
     {

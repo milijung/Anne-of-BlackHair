@@ -6202,7 +6202,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 421567190}
         m_TargetAssemblyTypeName: SwitchScene, Assembly-CSharp
-        m_MethodName: MainMenu
+        m_MethodName: toMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
