@@ -73,11 +73,15 @@ public class ButtonManager : MonoBehaviour
     }
     public void Score()
     {
+        if (MainMenu.AudioPlay)
+            AudioManager.ButtonAudio.Play();
         scorePanel.SetActive(true);
         fadeSprite.SetActive(true);
     }
     public void Score_Home()
     {
+        if (MainMenu.AudioPlay)
+            AudioManager.ButtonAudio.Play();
         scorePanel.SetActive(false);
         fadeSprite.SetActive(false);
     }

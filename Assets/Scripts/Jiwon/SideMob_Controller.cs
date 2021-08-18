@@ -7,7 +7,6 @@ public class SideMob_Controller : MonoBehaviour
     public Animator[] mob_ani;
     public SpriteRenderer[] spriteRenderers;
     public GameObject[] mobs;
-    public bool isSurprise;
 
     //마녀의 열매 사용시 빙글빙글 애니메이션 ON
     public void Set()

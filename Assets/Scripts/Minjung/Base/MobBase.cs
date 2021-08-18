@@ -9,19 +9,17 @@ public class MobBase : MonoBehaviour
     public GameObject RadarSound;
     public bool isSurprise;
     public Sprite[] sprites;
-    SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
     AudioSource radarSound;
 
     GameObject lip_move;
 
     private void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
         radarSound = RadarSound.GetComponent<AudioSource>();
     }
     private void OnEnable() // ������Ʈ�� Ȱ��ȭ�Ǹ� ����
     {
-
         if (SpawnManager.MobStartNum == 0)
         {
             gameObject.SetActive(false); // SpawnManager ���� ���� Mob�� �����ϴ� �� ����
@@ -33,6 +31,8 @@ public class MobBase : MonoBehaviour
         transform.position = StartPosition;
         
         lip_move = GameObject.Find("lip_move");
+
+        
     }
     private void Update()
     {
@@ -49,8 +49,9 @@ public class MobBase : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Set_img();
-            if(MainMenu.AudioPlay)
+            isSurprise = true;
+            StartCoroutine(Set_img());
+            if (MainMenu.AudioPlay)
                 radarSound.Play();
             bool isAdult = gameObject.name.Contains("Adult");
             bool isChildren = gameObject.name.Contains("Children");
@@ -87,14 +88,20 @@ public class MobBase : MonoBehaviour
             return;
     }
 
-    private void Set_img()
+    //change sprite when player touch radar
+    IEnumerator Set_img()
     {
-        spriteRenderer.sprite = sprites[1];
-        Invoke("UnSet_img", 2f);
-    }
-
-    private void UnSet_img()
-    {
-        spriteRenderer.sprite = sprites[0];
+        while (true)
+        {
+            if (isSurprise)
+            {
+                spriteRenderer.sprite = this.sprites[1];
+                yield return new WaitForSeconds(1.5f);
+                spriteRenderer.sprite = this.sprites[0];
+                isSurprise = false;
+            }
+   
+        }
+        
     }
 }

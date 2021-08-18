@@ -48,4 +48,11 @@ public class SwitchScene : MonoBehaviour // 씬 전환함수가 모여있는 class
     {
         SceneManager.LoadScene("Ending_Berry");
     }
+
+    public void tutorial_toMainMenu()
+    {
+        AudioManager.SwitchSceneAudio.Play();
+        SceneManager.LoadScene("Title");
+        Time.timeScale = 1;
+    }
 }

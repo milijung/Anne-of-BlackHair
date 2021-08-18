@@ -21,6 +21,7 @@ public class Tutorial_Change : MonoBehaviour
     {
         if (pageIndex < Pages.Length - 1)
         {
+            AudioManager.ButtonAudio.Play();
             Pages[pageIndex].SetActive(false);
             pageIndex++;
             Pages[pageIndex].SetActive(true);
@@ -35,6 +36,7 @@ public class Tutorial_Change : MonoBehaviour
     {
         if (pageIndex > 0)
         {
+            AudioManager.ButtonAudio.Play();
             Pages[pageIndex].SetActive(false);
             pageIndex--;
             Pages[pageIndex].SetActive(true);

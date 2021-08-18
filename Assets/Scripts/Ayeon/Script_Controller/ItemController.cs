@@ -170,6 +170,8 @@ public class ItemController : MonoBehaviour
                 itemName.text = "death_berry";
                 AudioManager.deathBerryAudio.Play();
                 _player.GetComponent<Animator>().SetBool("G",true);
+                somoon.LowerSomoon();
+                Mob_motion.Set();
             }
             else if (typetype == Item.item_type.basket)
             {
@@ -177,14 +179,13 @@ public class ItemController : MonoBehaviour
                 _player.GetComponent<Animator>().SetBool("B",true);
                 // twinkle on
                 _twinkle.GetComponent<Animator>().SetBool("T",true);
+                booster_Controller.Collider_UnEnable();
                 UpSpeed();
             }
-            else if (typetype == Item.item_type.eraser)
+            else if (typetype == Item.item_type.green_yum)
             {
-                itemName.text = "eraser";
+                itemName.text = "green";
                 AudioManager.eraserAudio.Play();
-                somoon.LowerSomoon();
-                Mob_motion.Set();
             }
         }
         else
@@ -207,7 +208,7 @@ public class Item
         hat,
         death_berry,
         basket,
-        eraser
+        green_yum
     }
 
     public item_type new_random_item()
