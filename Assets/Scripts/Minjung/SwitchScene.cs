@@ -8,11 +8,12 @@ public class SwitchScene : MonoBehaviour // 씬 전환함수가 모여있는 class
 {
 
     public void PlayGame()
-    {
+    {   
+        SpawnManager.MobStartNum = 0;
         if (MainMenu.AudioPlay)
             AudioManager.SwitchSceneAudio.Play();
-        SpawnManager.MobStartNum = 0;
         SceneManager.LoadScene("mainGame");
+ 
     }
     public void QuitGame()
     {
@@ -38,5 +39,13 @@ public class SwitchScene : MonoBehaviour // 씬 전환함수가 모여있는 class
         if (MainMenu.AudioPlay)
             AudioManager.SwitchSceneAudio.Play();
         SceneManager.LoadScene("Loading");
+    }
+    public void SomoonGameOver()
+    {
+        SceneManager.LoadScene("Ending_Somoon");
+    }
+    public void BerryGameOver()
+    {
+        SceneManager.LoadScene("Ending_Berry");
     }
 }
