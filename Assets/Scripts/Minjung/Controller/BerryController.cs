@@ -108,7 +108,7 @@ public class BerryController : MonoBehaviour
         {
             if (Berry_play[3].transform.position.y > -5.5f)
             {
-                Berry_play[3].transform.Translate(Vector2.down * Time.deltaTime * GameManager.gameSpeed * 7);
+                Berry_play[3].transform.Translate(Vector2.down * Time.deltaTime * GameManager.instance.gameSpeed * 7);
             }
             else
             {

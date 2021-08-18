@@ -63,7 +63,7 @@ public class ItemBase : MonoBehaviour
     {
         if (GameManager.isPlay)
         {
-            transform.Translate(Vector2.down * Time.deltaTime * GameManager.gameSpeed * 12);
+            transform.Translate(Vector2.down * Time.deltaTime * GameManager.instance.gameSpeed * 12);
             
             if (transform.position.y < -8) // ȭ�� ������ Mob�� �̵��ϸ� �ش� Mob ��Ȱ��ȭ
             {

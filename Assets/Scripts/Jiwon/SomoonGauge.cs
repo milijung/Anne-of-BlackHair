@@ -56,7 +56,7 @@ public class SomoonGauge : MonoBehaviour
 
             if (somoonGauge >= 100.0f)
             {
-                GameManager.instance.GameOver();
+                gameManager.GameOver();
             }
 
             else if (somoonGauge < 100.0f && somoonContinue == true)

@@ -20,7 +20,7 @@ public class BackgroundScroll : MonoBehaviour
     {
         if (GameManager.isPlay)
         {
-            current_Y += GameManager.gameSpeed * Time.deltaTime;
+            current_Y += GameManager.instance.gameSpeed * Time.deltaTime;
             mat.mainTextureOffset = new Vector2(0, current_Y);
         }
     }

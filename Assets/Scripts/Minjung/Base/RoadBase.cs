@@ -12,7 +12,7 @@ public class RoadBase : MonoBehaviour
     public GameObject river, bridge, catBerry;
     public Sprite catWakeUp, catSleepIMG;
 
-    float[] cat = { 4, 10, 15 };
+
     private void OnEnable() // ������Ʈ�� Ȱ��ȭ�Ǹ� ����
     {
         if (gameObject.tag == "BerryBox")
@@ -125,7 +125,7 @@ public class RoadBase : MonoBehaviour
     {    
         if (GameManager.isPlay)
         {
-            transform.Translate(Vector2.down * Time.deltaTime * GameManager.gameSpeed * 12);
+            transform.Translate(Vector2.down * Time.deltaTime * GameManager.instance.gameSpeed * 12);
             if (transform.position.y < -8) 
             {
                 if (gameObject.tag == "catSleep")
@@ -162,8 +162,6 @@ public class RoadBase : MonoBehaviour
             {
                 if (!jump)
                 {
-                    if (MainMenu.AudioPlay)
-                        gameObject.GetComponent<AudioSource>().Play();
                     BerryController.BumpOntheRoad = true;
                     BerryController.BumpWithCat = true;
                     catBerry.SetActive(true);
@@ -230,16 +228,15 @@ public class RoadBase : MonoBehaviour
                 if (Math.Abs(gameObject.transform.position.x) <= 3.5f)
                 {
                     if (dir == 0)
-                        gameObject.transform.Translate(Vector2.right * Time.deltaTime * GameManager.gameSpeed * 12);
+                        gameObject.transform.Translate(Vector2.right * Time.deltaTime * GameManager.instance.gameSpeed * 12);
 
                     else if (dir == 1)
-                        gameObject.transform.Translate(Vector2.left * Time.deltaTime * GameManager.gameSpeed * 12);
+                        gameObject.transform.Translate(Vector2.left * Time.deltaTime * GameManager.instance.gameSpeed * 12);
                 }
                 else
                 {
                     gameObject.SetActive(false);
                     catBerry.SetActive(false);
-                    yield return new WaitForSeconds(cat[GameManager.speedIndex]);
                     break;
                 }
             }
@@ -253,7 +250,7 @@ public class RoadBase : MonoBehaviour
         {
             if (GameManager.isPlay)
             {
-                if (Math.Abs(collision.transform.position.x - bridge.transform.position.x) > 0.07f)
+                if (collision.transform.position.x * bridge.transform.position.x <= 0 && collision.transform.position.x != bridge.transform.position.x)
                 {
                     BerryController.BumpOntheRoad = true;
                     if (MainMenu.AudioPlay)

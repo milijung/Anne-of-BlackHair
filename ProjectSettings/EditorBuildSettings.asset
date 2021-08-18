@@ -17,10 +17,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/mainGame.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Ending_Berry.unity
-    guid: 4b254b138d6207f499041e6206fd02b3
-  - enabled: 1
-    path: Assets/Scenes/Ending_Somoon.unity
-    guid: 00e559e13fe912744959fb66bd6073be
   m_configObjects: {}

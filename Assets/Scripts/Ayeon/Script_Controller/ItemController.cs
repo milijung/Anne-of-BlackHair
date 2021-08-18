@@ -2,27 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class ItemController : MonoBehaviour
 {
     GameObject _player;
     GameObject _twinkle;
 
+    public GameManager gameManager;
     public Booster_Controller booster_Controller;
     public SideMob_Controller Mob_motion;
     public SomoonGauge somoon;
     public Sprite[] ItemImage;
 
-    public GameObject GameObject_item0, GameObject_item1;
-    public TextMeshProUGUI itemName;
+    public GameObject GameObject_item0, GameObject_item1, useItemIMG;
+    RectTransform ItemSave;
+    public Text itemName;
     public float upSpeed = 1;
     // item0, item1 => slot_item
 
 
     Slot item_slot;
     Item item;
-    public static bool isBasket, usingItem;
+    bool isBasket;
 
     // Start is called before the first frame update
     private void UpSpeed()
@@ -31,7 +32,7 @@ public class ItemController : MonoBehaviour
         {
             isBasket = true;
             upSpeed = 2f;
-            GameManager.gameSpeed *= upSpeed;
+            gameManager.gameSpeed *= upSpeed;
             somoon.somoonContinue = false;
             booster_Controller.Collider_UnEnable();
             Invoke("ReturnSpeed", 3f);
@@ -41,7 +42,7 @@ public class ItemController : MonoBehaviour
     private void ReturnSpeed()
     {
         isBasket = false;
-        GameManager.gameSpeed /= upSpeed;
+        gameManager.gameSpeed /= upSpeed;
         upSpeed = 1;
         somoon.somoonContinue = true;
     }
@@ -53,8 +54,7 @@ public class ItemController : MonoBehaviour
 
         item_slot = new Slot();
         item_slot.slot_init();
-        isBasket = usingItem = false;
-
+        useItemIMG.SetActive(false);
     }
 
     private void Update()
@@ -130,7 +130,7 @@ public class ItemController : MonoBehaviour
 
     public void _use_item_in_the_slot()
     {
-        if (!usingItem) // While one item is being used, the other cannot be used.
+        if (!useItemIMG.activeSelf)
         {
             Item.item_type typetype = (Item.item_type)item_slot.stack.Pop();
             if (item_slot.item_have() == 1)
@@ -145,6 +145,7 @@ public class ItemController : MonoBehaviour
                 GameObject_item0.SetActive(false);
                 GameObject_item0.GetComponent<Image>().sprite = null;
             }
+            useItemIMG.GetComponent<Image>().sprite = ItemImage[(int)typetype];
             StartCoroutine(showItem());
 
 
@@ -152,7 +153,6 @@ public class ItemController : MonoBehaviour
             if (typetype == Item.item_type.wig)
             {
                 itemName.text = "wig";
-                AudioManager.wigHatAudio.Play();
                 _player.GetComponent<Animator>().SetBool("W",true);
                 // twinkle on
                 _twinkle.GetComponent<Animator>().SetBool("T",true);
@@ -160,7 +160,6 @@ public class ItemController : MonoBehaviour
             else if (typetype == Item.item_type.hat)
             {
                 itemName.text = "hat";
-                AudioManager.wigHatAudio.Play();
                  _player.GetComponent<Animator>().SetBool("H",true);
                 // twinkle on
                 _twinkle.GetComponent<Animator>().SetBool("T",true);
@@ -168,7 +167,6 @@ public class ItemController : MonoBehaviour
             else if (typetype == Item.item_type.death_berry)
             {
                 itemName.text = "death_berry";
-                AudioManager.deathBerryAudio.Play();
                 _player.GetComponent<Animator>().SetBool("G",true);
             }
             else if (typetype == Item.item_type.basket)
@@ -182,7 +180,6 @@ public class ItemController : MonoBehaviour
             else if (typetype == Item.item_type.eraser)
             {
                 itemName.text = "eraser";
-                AudioManager.eraserAudio.Play();
                 somoon.LowerSomoon();
                 Mob_motion.Set();
             }
@@ -192,9 +189,21 @@ public class ItemController : MonoBehaviour
     }
     IEnumerator showItem()
     {
+        useItemIMG.SetActive(true);
         itemName.gameObject.SetActive(true);
-        yield return new WaitForSeconds(2f);
-        itemName.gameObject.SetActive(false);    
+        ItemSave = useItemIMG.GetComponent<RectTransform>();
+
+        useItemIMG.SetActive(true);
+        for (int i = 100; i <= 200; i += 20)
+        {
+            ItemSave.sizeDelta = new Vector2(i, i);
+            yield return new WaitForSeconds(0.05f);
+        }
+
+        yield return new WaitForSeconds(1f);
+        itemName.gameObject.SetActive(false);
+        useItemIMG.SetActive(false);
+        
         StopCoroutine(showItem());
     }
 }
