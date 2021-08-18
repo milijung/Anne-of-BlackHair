@@ -20,7 +20,9 @@ public class PlayerController : MonoBehaviour
     AnimationController _animation_controller;
 
     private void Start()
-    {
+    {   
+        Vector3 Startposition =new Vector3(0,-4,0);
+        transform.position = Startposition;
         controller = GetComponent<CharacterController>();
         backmusic = BackgroundMusic.GetComponent<AudioSource>();
         stepAudio = stepSound.GetComponent<AudioSource>();
@@ -54,6 +56,7 @@ public class PlayerController : MonoBehaviour
             }
                 
         }
+        
 
         Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up; 
         if (desiredLane == 0)
