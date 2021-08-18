@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public static int score = 0;
 
     public GameObject fadeSprite;
+    public GameObject SpeedUpTxt;
     public GameObject player;
     public Slider rumor;
     public GameObject itemSlot;
@@ -24,7 +25,7 @@ public class GameManager : MonoBehaviour
 
     public static float gameSpeed;
     public static int speedIndex = 0;
-    public float[] speed = { 0.3f, 0.5f, 0.7f };
+    float[] speed = { 0.3f, 0.5f, 0.7f };
     float[] scoreTerm = { 0.5f, 0.3f, 0.1f };
     public GameObject[] Count;
 
@@ -56,11 +57,52 @@ public class GameManager : MonoBehaviour
         player.SetActive(true);
         player.GetComponent<Animator>().SetBool("START",true);
         Invoke("GamePlay",1.75f);
+        StartCoroutine(ChangeSpeed());
     }
     private void Update()
     {
         if (!ItemController.isBasket) { gameSpeed = speed[speedIndex]; }
         scoreTxt.text = score.ToString(); // score ���� Text ��������     
+    }
+    public IEnumerator ChangeSpeed()
+    {
+        while (true)
+        {
+            if (isPlay)
+            {
+                if (!ItemController.isBasket)
+                {
+                    if (SpawnManager.Speed_Num == 1)
+                    {
+                        SpeedUpTxt.SetActive(true);
+                        yield return new WaitForSeconds(0.5f);
+                        SpeedUpTxt.SetActive(false);
+                        yield return new WaitForSeconds(0.2f);
+                        SpeedUpTxt.SetActive(true);
+                        yield return new WaitForSeconds(0.5f);
+                        SpeedUpTxt.SetActive(false);
+                        yield return new WaitForSeconds(0.2f);
+                        GameManager.speedIndex++;
+                        while (SpawnManager.Speed_Num == 1) yield return null;
+                    }
+                    else if(SpawnManager.Speed_Num == 5)
+                    {
+                        SpeedUpTxt.SetActive(true);
+                        yield return new WaitForSeconds(0.5f);
+                        SpeedUpTxt.SetActive(false);
+                        yield return new WaitForSeconds(0.2f);
+                        SpeedUpTxt.SetActive(true);
+                        yield return new WaitForSeconds(0.5f);
+                        SpeedUpTxt.SetActive(false);
+                        yield return new WaitForSeconds(0.2f);
+                        GameManager.speedIndex++;
+                        break;
+                    }
+                }
+            }
+            yield return null;
+        }
+        StopCoroutine(ChangeSpeed());
     }
 
     public IEnumerator AddScore()

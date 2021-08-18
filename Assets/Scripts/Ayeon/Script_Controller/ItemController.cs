@@ -59,6 +59,7 @@ public class ItemController : MonoBehaviour
 
     private void Update()
     {
+        itemName.transform.position = new Vector2(_player.transform.position.x, _player.transform.position.y + 1f);
         if (SwipeManager.doubleTap)
         {
             if (item_slot.item_have() != 0)
@@ -151,7 +152,7 @@ public class ItemController : MonoBehaviour
             // ITEM USE FUNCTION 
             if (typetype == Item.item_type.wig)
             {
-                itemName.text = "wig";
+                itemName.text = "빨간가발" + System.Environment.NewLine + "착용중";
                 AudioManager.wigHatAudio.Play();
                 _player.GetComponent<Animator>().SetBool("W",true);
                 // twinkle on
@@ -159,7 +160,7 @@ public class ItemController : MonoBehaviour
             }
             else if (typetype == Item.item_type.hat)
             {
-                itemName.text = "hat";
+                itemName.text = "모자" + System.Environment.NewLine + "착용중";
                 AudioManager.wigHatAudio.Play();
                  _player.GetComponent<Animator>().SetBool("H",true);
                 // twinkle on
@@ -167,7 +168,7 @@ public class ItemController : MonoBehaviour
             }
             else if (typetype == Item.item_type.death_berry)
             {
-                itemName.text = "death_berry";
+                itemName.text = "마을 사람들에게"+System.Environment.NewLine+"마녀의 열매 먹이기 성공";
                 AudioManager.deathBerryAudio.Play();
                 _player.GetComponent<Animator>().SetBool("G",true);
                 somoon.LowerSomoon();
@@ -175,7 +176,7 @@ public class ItemController : MonoBehaviour
             }
             else if (typetype == Item.item_type.basket)
             {
-                itemName.text = "basket";
+                itemName.text = "바구니타고" + System.Environment.NewLine + "날아가는 중";
                 _player.GetComponent<Animator>().SetBool("B",true);
                 // twinkle on
                 _twinkle.GetComponent<Animator>().SetBool("T",true);
@@ -184,7 +185,7 @@ public class ItemController : MonoBehaviour
             }
             else if (typetype == Item.item_type.green_yum)
             {
-                itemName.text = "green";
+                itemName.text = "쓸데없는"+System.Environment.NewLine+"초록색 염색약이군..";
                 AudioManager.eraserAudio.Play();
             }
         }

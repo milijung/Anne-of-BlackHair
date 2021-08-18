@@ -21,7 +21,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] BackgroundScrollImage;
     public static int MobStartNum = 0; // SpawnManager 실행 전에 Mob이 등장하는 것 방지
     public static bool isforest = false;
-    int Speed_forest;
+    public static int Speed_Num;
 
     public int objCnt = 4;
     int x_Back, x_forest, x_Berry;
@@ -29,7 +29,8 @@ public class SpawnManager : MonoBehaviour
     float[][] Back = new float[3][];
     float[][] Mob = new float[3][];
     float[] Obstacle;
-    float[][] ItemTerm = new float[3][]; // Item Berry color 순
+    float[][] ItemTerm = new float[3][]; // order: Item Berry color
+    float[] cat = { 2, 3, 5 }; // cat_run create Term
 
     private void Awake()
     {
@@ -38,7 +39,7 @@ public class SpawnManager : MonoBehaviour
         Road[2] = RoadThree;
         Road[3] = RoadFour;
 
-        Back[0] = new float[] {0.2f,9.8f,0.7f,9.3f};
+        Back[0] = new float[] { 0.2f, 9.8f, 0.7f, 9.3f };
         Back[1] = new float[] { 0.13f, 9.95f, 0.4f, 9.6f };
         Back[2] = new float[] { 0.09f, 9.91f, 0.28f, 9.72f };
 
@@ -55,16 +56,16 @@ public class SpawnManager : MonoBehaviour
 
         for (int q = 0; q < objCnt; q++)
         {
-            for(int i = 0; i < Tree.Length; i++)
+            for (int i = 0; i < Tree.Length; i++)
             {
                 TreePool.Add(CreateObj(Tree[i], transform));
             }
-            for(int i=0; i < House.Length; i++)
+            for (int i = 0; i < House.Length; i++)
             {
                 HousePool.Add(CreateObj(House[i], transform));
             }
         }
-        for(int i = 0; i < TreePool.Count; i++)
+        for (int i = 0; i < TreePool.Count; i++)
         {
             BackGround.Add(TreePool[i]);
         }
@@ -79,9 +80,9 @@ public class SpawnManager : MonoBehaviour
         for (int i = 0; i < 5; i++)
             BerryPool.Add(CreateObj(BerryBox[3], transform));
     }
-    private void Start() 
+    private void Start()
     {
-        x_Back = x_forest = x_Berry = Speed_forest = 0;
+        x_Back = x_forest = x_Berry = Speed_Num = 0;
         isforest = false;
         StartCoroutine(CreateBack());
         StartCoroutine(CreateMob());
@@ -91,14 +92,10 @@ public class SpawnManager : MonoBehaviour
     }
     private void Update()
     {
-        if (isforest && x_forest==0)
+        if (isforest && x_forest == 0)
         {
             StartCoroutine(BackgroundScroll());
         }
-        if (Speed_forest>=1 && Speed_forest<5)
-            GameManager.speedIndex = 1;
-        if (Speed_forest == 5)
-            GameManager.speedIndex = 2;
     }
     IEnumerator BackgroundScroll()
     {
@@ -106,14 +103,14 @@ public class SpawnManager : MonoBehaviour
         while (true)
         {
             if (GameManager.isPlay)
-            {   
+            {
                 BackgroundScrollImage[0].SetActive(true);
                 while (isforest)
                 {
                     yield return null;
                 }
                 BackgroundScrollImage[1].SetActive(true);
-                break;   
+                break;
             }
             yield return null;
         }
@@ -127,7 +124,7 @@ public class SpawnManager : MonoBehaviour
         {
             if (GameManager.isPlay)
             {
-                
+
                 if (x_Back <= TreePool.Count)
                 {
                     isforest = true;
@@ -136,7 +133,7 @@ public class SpawnManager : MonoBehaviour
                     x_Back++;
                     if (x_Back == TreePool.Count)
                     {
-                        isforest =  false;
+                        isforest = false;
                         yield return new WaitForSeconds(Back[GameManager.speedIndex][1]);
                     }
                 }
@@ -155,12 +152,12 @@ public class SpawnManager : MonoBehaviour
                         x_Back++;
                     }
                     yield return new WaitForSeconds(Back[GameManager.speedIndex][2]);
-                    
+
                     if (x_Back == BackGround.Count)
                     {
                         yield return new WaitForSeconds(Back[GameManager.speedIndex][3]);
                         x_Back = 0;
-                        if (Speed_forest<5) { Speed_forest++; }
+                        if (Speed_Num < 5) { Speed_Num++; }
                         x_forest = 0;
                     }
                 }
@@ -183,13 +180,13 @@ public class SpawnManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         while (true)
         {
-            if (GameManager.isPlay && !isforest) 
+            if (GameManager.isPlay && !isforest&& !BackgroundScrollImage[0].activeSelf)
             {
                 float time = Random.Range(Mob[GameManager.speedIndex][0], Mob[GameManager.speedIndex][1]); // 마을사람들이 등장하는 시간 간격
                 SideMobs[DeactiveMob()].SetActive(true); // 비활성화된 Mob들 중에서 1개를 활성화
                 yield return new WaitForSeconds(time);
-                
-                if (MobStartNum ==0)
+
+                if (MobStartNum == 0)
                     MobStartNum++;
             }
             else
@@ -222,7 +219,7 @@ public class SpawnManager : MonoBehaviour
                     else
                         yield return null;
                 }
-                
+
             }
             else
             {
@@ -237,7 +234,7 @@ public class SpawnManager : MonoBehaviour
         {
             if (GameManager.isPlay)
             {
-                Item[Random.Range(1,3)].SetActive(true); 
+                Item[Random.Range(1, 3)].SetActive(true);
                 yield return new WaitForSeconds(ItemTerm[GameManager.speedIndex][2]);
             }
             else
@@ -265,21 +262,23 @@ public class SpawnManager : MonoBehaviour
                         if (BackgroundScrollImage[1].transform.position.y < -4)
                             Road[1][DeactiveRoad_afternoon()].SetActive(true);
                     }
+                    yield return new WaitForSeconds(Obstacle[GameManager.speedIndex]);
                 }
                 else // 밤
                 {
                     if (isforest)// 숲
-                    { 
-                        if(BackgroundScrollImage[0].transform.position.y<-4)
-                            Road[2][DeactiveRoad_night()].SetActive(true); 
+                    {
+                        if (BackgroundScrollImage[0].transform.position.y < -4)
+                            Road[2][DeactiveRoad_night()].SetActive(true);
+                        yield return new WaitForSeconds(Obstacle[GameManager.speedIndex]);
                     }
                     else // 마을
                     {
                         if (BackgroundScrollImage[1].transform.position.y < -4)
                             Road[3][DeactiveRoad_night()].SetActive(true);
+                        yield return new WaitForSeconds(cat[GameManager.speedIndex]);
                     }
                 }
-                yield return new WaitForSeconds(Obstacle[GameManager.speedIndex]);
             }
             else
             {
@@ -288,11 +287,10 @@ public class SpawnManager : MonoBehaviour
             yield return null;
         }
     }
-
     int DeactiveMob() // 비활성화된 Mob중에서 선택하는 함수
     {
         List<int> num = new List<int>();
-        for(int i = 0; i < SideMobs.Length; i++)
+        for (int i = 0; i < SideMobs.Length; i++)
         {
             if (!SideMobs[i].activeSelf) // 비활성화된 Mob의 인덱스를 List에 추가
             {
@@ -302,11 +300,11 @@ public class SpawnManager : MonoBehaviour
         int x = 0;
         if (num.Count > 0)
         {
-            x = num[Random.Range(0, num.Count)]; 
+            x = num[Random.Range(0, num.Count)];
         }
         return x; // 비활성화된 Mob의 인덱스중 1개를 반환
     }
-    
+
     int DeactiveRoad_afternoon() // 비활성화된 장애물중에서 선택하는 함수
     {
         List<int> num = new List<int>();
@@ -331,7 +329,7 @@ public class SpawnManager : MonoBehaviour
             }
         }
         int x = 0;
-        if(num.Count > 0)
+        if (num.Count > 0)
         {
             x = num[Random.Range(0, num.Count)];
         }
@@ -375,3 +373,4 @@ public class SpawnManager : MonoBehaviour
         return copy;
     }
 }
+

@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: -553817549, guid: a18d607b5ef4c264aab6c335019691c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Range: 5
-  Color: {r: 1, g: 1, b: 1, a: 1}
+  Range: 0.15
+  Color: {r: 1, g: 0.9607844, b: 0.22352943, a: 1}
   Intensity: 1
   SortingLayer: Default
   SortingOrder: 0
@@ -60,7 +60,7 @@ MonoBehaviour:
     OptimizedRaycasting: 1
     CameraCulling: {fileID: 0}
     ChooseMainCamera: 0
-  position: {x: -2.994, y: 0.6}
+  position: {x: -4.97, y: 7.21}
   TransformIsDirty: 0
   needUpdate: 0
   ContactFilter:

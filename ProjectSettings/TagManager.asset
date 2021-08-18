@@ -7,7 +7,6 @@ TagManager:
   - Radar
   - Item
   - Color
-  - Tal
   - Berry
   - BerryBox
   - catMove
@@ -21,6 +20,7 @@ TagManager:
   - toTown
   - toForest
   - catSleep
+  - Road
   layers:
   - Default
   - TransparentFX
@@ -66,6 +66,9 @@ TagManager:
     locked: 0
   - name: BackGround
     uniqueID: 1886240299
+    locked: 0
+  - name: FireFlies
+    uniqueID: 2388129937
     locked: 0
   - name: Road
     uniqueID: 2815652465
