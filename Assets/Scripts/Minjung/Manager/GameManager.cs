@@ -23,7 +23,10 @@ public class GameManager : MonoBehaviour
     public GameObject stepSound;
     AudioSource stepAudio;
 
-    public float gameSpeed;
+    public static float gameSpeed;
+    public static int speedIndex = 0;
+    public float[] speed = { 0.3f, 0.5f, 0.7f };
+    float[] scoreTerm = { 0.5f, 0.3f, 0.1f };
     public GameObject[] Count;
 
     
@@ -46,6 +49,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        speedIndex = 0;
         if (!PlayerPrefs.HasKey("BestScore"))       PlayerPrefs.SetInt("BestScore", 0);
         if (!PlayerPrefs.HasKey("SecondScore"))     PlayerPrefs.SetInt("SecondScore", 0);
         if (!PlayerPrefs.HasKey("ThirdScore"))      PlayerPrefs.SetInt("ThirdScore", 0);
@@ -53,10 +57,10 @@ public class GameManager : MonoBehaviour
         player.SetActive(true);
         player.GetComponent<Animator>().SetBool("START",true);
         Invoke("GamePlay",1.75f);
-        gameSpeed = 0.3f;
     }
     private void Update()
     {
+        if (!ItemController.isBasket) { gameSpeed = speed[speedIndex]; }
         scoreTxt.text = score.ToString(); // score ���� Text ��������     
     }
 
@@ -66,7 +70,7 @@ public class GameManager : MonoBehaviour
         {
             if(Time.timeScale == 1 && isPlay) { 
                 score++;
-                yield return new WaitForSeconds(gameSpeed/Mathf.Pow(itemController.upSpeed, 2)); // ���� �ӵ� ������ ������ ����
+                yield return new WaitForSeconds(scoreTerm[speedIndex]/Mathf.Pow(itemController.upSpeed, 2)); // ���� �ӵ� ������ ������ ����
             }
             yield return null;
         }
@@ -165,12 +169,10 @@ public class GameManager : MonoBehaviour
         }
         if (GameObject.Find("SomoonGauge").GetComponent<SomoonGauge>().somoonGauge >= 100)
         {
-            // Anne ending animation is here
             GameObject.Find("SwitchScene").GetComponent<SwitchScene>().SomoonGameOver();
         }
         if (BerryController.BerryNum <= 0)
         {
-            // Anne ending animation is here
             GameObject.Find("SwitchScene").GetComponent<SwitchScene>().BerryGameOver();
         }
 
