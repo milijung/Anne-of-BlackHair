@@ -31,8 +31,6 @@ public class MobBase : MonoBehaviour
         transform.position = StartPosition;
         
         lip_move = GameObject.Find("lip_move");
-
-        
     }
     private void Update()
     {
@@ -43,6 +41,7 @@ public class MobBase : MonoBehaviour
             {
                 gameObject.SetActive(false);
             }
+            
         }
     }
     private void OnTriggerEnter(Collider collision)
@@ -50,7 +49,6 @@ public class MobBase : MonoBehaviour
         if (collision.tag == "Player")
         {
             isSurprise = true;
-            StartCoroutine(Set_img());
             if (MainMenu.AudioPlay)
                 radarSound.Play();
             bool isAdult = gameObject.name.Contains("Adult");
@@ -89,19 +87,15 @@ public class MobBase : MonoBehaviour
     }
 
     //change sprite when player touch radar
-    IEnumerator Set_img()
+    private void Set_img()
     {
-        while (true)
-        {
-            if (isSurprise)
-            {
-                spriteRenderer.sprite = this.sprites[1];
-                yield return new WaitForSeconds(1.5f);
-                spriteRenderer.sprite = this.sprites[0];
-                isSurprise = false;
-            }
-   
-        }
-        
+        spriteRenderer.sprite = sprites[1];
+        Invoke("Unset_img", 1.5f);
+    }
+
+    private void Unset_img()
+    {
+        spriteRenderer.sprite = sprites[0];
+        isSurprise = false;
     }
 }
