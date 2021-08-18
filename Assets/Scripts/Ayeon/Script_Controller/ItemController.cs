@@ -7,7 +7,7 @@ using TMPro;
 public class ItemController : MonoBehaviour
 {
     GameObject _player;
-    GameObject _twinkle;
+    GameObject _twinkle_;
 
     public Booster_Controller booster_Controller;
     public SideMob_Controller Mob_motion;
@@ -49,7 +49,7 @@ public class ItemController : MonoBehaviour
     void Start()
     {
         _player = GameObject.Find("Player");
-        _twinkle = GameObject.Find("Twinkle");
+        _twinkle_ = GameObject.Find("Twinkle");
 
         item_slot = new Slot();
         item_slot.slot_init();
@@ -155,7 +155,7 @@ public class ItemController : MonoBehaviour
                 AudioManager.wigHatAudio.Play();
                 _player.GetComponent<Animator>().SetBool("W",true);
                 // twinkle on
-                _twinkle.GetComponent<Animator>().SetBool("T",true);
+                _twinkle_.GetComponent<Animator>().SetBool("T",true);
             }
             else if (typetype == Item.item_type.hat)
             {
@@ -163,7 +163,7 @@ public class ItemController : MonoBehaviour
                 AudioManager.wigHatAudio.Play();
                  _player.GetComponent<Animator>().SetBool("H",true);
                 // twinkle on
-                _twinkle.GetComponent<Animator>().SetBool("T",true);
+                _twinkle_.GetComponent<Animator>().SetBool("T",true);
             }
             else if (typetype == Item.item_type.death_berry)
             {
@@ -178,7 +178,7 @@ public class ItemController : MonoBehaviour
                 itemName.text = "basket";
                 _player.GetComponent<Animator>().SetBool("B",true);
                 // twinkle on
-                _twinkle.GetComponent<Animator>().SetBool("T",true);
+                _twinkle_.GetComponent<Animator>().SetBool("T",true);
                 booster_Controller.Collider_UnEnable();
                 UpSpeed();
             }

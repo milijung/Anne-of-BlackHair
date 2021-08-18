@@ -17,14 +17,13 @@ public class PlayerController : MonoBehaviour
     AudioSource stepAudio;
     public GameObject toForest, toTown;
 
-    AnimationController _animation_controller;
-
+    Animator _player_animator;
     private void Start()
     {   
         controller = GetComponent<CharacterController>();
         backmusic = BackgroundMusic.GetComponent<AudioSource>();
         stepAudio = stepSound.GetComponent<AudioSource>();
-        _animation_controller = GameObject.Find("Animation_Controller").GetComponent<AnimationController>();
+        _player_animator = gameObject.GetComponent<Animator>();
     }
 
     private void Update() 
@@ -50,12 +49,9 @@ public class PlayerController : MonoBehaviour
                 }
                 else
                     OneWay();
-
             }
-                
         }
         
-
         Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up; 
         if (desiredLane == 0)
             targetPosition += Vector3.left * laneDisance;
@@ -91,7 +87,9 @@ public class PlayerController : MonoBehaviour
         desiredLane = 1;
         if (SwipeManager.swipeUp)
         {
-            _animation_controller._ann_jump();
+            // jump
+            _player_animator.SetBool("J",true);
+            StartCoroutine(isJump());
         }
     }
     void ThreeWay()
@@ -110,7 +108,18 @@ public class PlayerController : MonoBehaviour
         }
         if (SwipeManager.swipeUp)
         {
-            _animation_controller._ann_jump();
+            // jump
+            _player_animator.SetBool("J",true);
+            StartCoroutine(isJump());
         }
     }
+
+     IEnumerator isJump()
+    {
+        RoadBase.jump = true;
+        yield return new WaitForSeconds(0.4f);
+        RoadBase.jump = false;
+        StopCoroutine(isJump());
+    }
+
 }
