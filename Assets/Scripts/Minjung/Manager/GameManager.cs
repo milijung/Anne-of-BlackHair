@@ -13,7 +13,6 @@ public class GameManager : MonoBehaviour
     public static int score = 0;
 
     public GameObject fadeSprite;
-    public TextMeshProUGUI finalScore;
     public GameObject player;
     public Slider rumor;
     public GameObject itemSlot;
