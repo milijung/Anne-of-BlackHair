@@ -7,16 +7,21 @@ public class MobBase : MonoBehaviour
     public Vector2 StartPosition;
     public SomoonGauge somoon;
     public GameObject RadarSound;
+    public bool isSurprise;
+    public Sprite[] sprites;
+    SpriteRenderer spriteRenderer;
     AudioSource radarSound;
 
     GameObject lip_move;
 
     private void Awake()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
         radarSound = RadarSound.GetComponent<AudioSource>();
     }
     private void OnEnable() // ������Ʈ�� Ȱ��ȭ�Ǹ� ����
     {
+
         if (SpawnManager.MobStartNum == 0)
         {
             gameObject.SetActive(false); // SpawnManager ���� ���� Mob�� �����ϴ� �� ����
@@ -44,6 +49,7 @@ public class MobBase : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            Set_img();
             if(MainMenu.AudioPlay)
                 radarSound.Play();
             bool isAdult = gameObject.name.Contains("Adult");
@@ -79,5 +85,16 @@ public class MobBase : MonoBehaviour
             gameObject.SetActive(false);
         else
             return;
+    }
+
+    private void Set_img()
+    {
+        spriteRenderer.sprite = sprites[1];
+        Invoke("UnSet_img", 2f);
+    }
+
+    private void UnSet_img()
+    {
+        spriteRenderer.sprite = sprites[0];
     }
 }
