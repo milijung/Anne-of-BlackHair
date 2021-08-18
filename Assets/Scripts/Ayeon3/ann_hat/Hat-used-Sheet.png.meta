@@ -1,0 +1,3480 @@
+fileFormatVersion: 2
+guid: 966518bc3b7101140a58a79fc3e3d11c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3954529978055672995
+    second: Hat-used-Sheet_0
+  - first:
+      213: 2344656929907424271
+    second: Hat-used-Sheet_1
+  - first:
+      213: -3748958094648550240
+    second: Hat-used-Sheet_2
+  - first:
+      213: -6897616154012167828
+    second: Hat-used-Sheet_3
+  - first:
+      213: 2800289288023337403
+    second: Hat-used-Sheet_4
+  - first:
+      213: 11489491404255122
+    second: Hat-used-Sheet_5
+  - first:
+      213: -9043568398886728674
+    second: Hat-used-Sheet_6
+  - first:
+      213: -3005986372209514292
+    second: Hat-used-Sheet_7
+  - first:
+      213: 6455742134868755461
+    second: Hat-used-Sheet_8
+  - first:
+      213: 4351929693904752081
+    second: Hat-used-Sheet_9
+  - first:
+      213: -9199835495512240510
+    second: Hat-used-Sheet_10
+  - first:
+      213: 5568823978381085658
+    second: Hat-used-Sheet_11
+  - first:
+      213: 7584337793388438343
+    second: Hat-used-Sheet_12
+  - first:
+      213: -6095370713201006940
+    second: Hat-used-Sheet_13
+  - first:
+      213: -6616169962606298200
+    second: Hat-used-Sheet_14
+  - first:
+      213: -1178278630851940539
+    second: Hat-used-Sheet_15
+  - first:
+      213: -5028728418399447328
+    second: Hat-used-Sheet_16
+  - first:
+      213: 3347493813569448247
+    second: Hat-used-Sheet_17
+  - first:
+      213: -4968479894782536281
+    second: Hat-used-Sheet_18
+  - first:
+      213: 747786318598162106
+    second: Hat-used-Sheet_19
+  - first:
+      213: -1868168014131907590
+    second: Hat-used-Sheet_20
+  - first:
+      213: -1317340067290148536
+    second: Hat-used-Sheet_21
+  - first:
+      213: -5876895674990252692
+    second: Hat-used-Sheet_22
+  - first:
+      213: -7735068768485942411
+    second: Hat-used-Sheet_23
+  - first:
+      213: -7837521183371461041
+    second: Hat-used-Sheet_24
+  - first:
+      213: 8019534024333274244
+    second: Hat-used-Sheet_25
+  - first:
+      213: -1108949465296104428
+    second: Hat-used-Sheet_26
+  - first:
+      213: -4775689983499010052
+    second: Hat-used-Sheet_27
+  - first:
+      213: -2329724606182141425
+    second: Hat-used-Sheet_28
+  - first:
+      213: 5059777012256197417
+    second: Hat-used-Sheet_29
+  - first:
+      213: -301658585239461546
+    second: Hat-used-Sheet_30
+  - first:
+      213: -819872153394609995
+    second: Hat-used-Sheet_31
+  - first:
+      213: 7531266530259461668
+    second: Hat-used-Sheet_32
+  - first:
+      213: -4378863732526224108
+    second: Hat-used-Sheet_33
+  - first:
+      213: 7556090683294312089
+    second: Hat-used-Sheet_34
+  - first:
+      213: 8611346538675392064
+    second: Hat-used-Sheet_35
+  - first:
+      213: -3408786331278706708
+    second: Hat-used-Sheet_36
+  - first:
+      213: 9098689132061044815
+    second: Hat-used-Sheet_37
+  - first:
+      213: 5754435748434095414
+    second: Hat-used-Sheet_38
+  - first:
+      213: -6224046412661505089
+    second: Hat-used-Sheet_39
+  - first:
+      213: -391249610810676740
+    second: Hat-used-Sheet_40
+  - first:
+      213: -5614647608533100714
+    second: Hat-used-Sheet_41
+  - first:
+      213: 2837561687007145537
+    second: Hat-used-Sheet_42
+  - first:
+      213: 4289417458857830615
+    second: Hat-used-Sheet_43
+  - first:
+      213: -4545128344489631772
+    second: Hat-used-Sheet_44
+  - first:
+      213: 278843534880315774
+    second: Hat-used-Sheet_45
+  - first:
+      213: -5833895669962810082
+    second: Hat-used-Sheet_46
+  - first:
+      213: -3508443255783895512
+    second: Hat-used-Sheet_47
+  - first:
+      213: -5802917360914687443
+    second: Hat-used-Sheet_48
+  - first:
+      213: -7513220928448703659
+    second: Hat-used-Sheet_49
+  - first:
+      213: -6120026394126628592
+    second: Hat-used-Sheet_50
+  - first:
+      213: -2865675443684370130
+    second: Hat-used-Sheet_51
+  - first:
+      213: -6130271555055211730
+    second: Hat-used-Sheet_52
+  - first:
+      213: 2615339813534351133
+    second: Hat-used-Sheet_53
+  - first:
+      213: -4354071437804239753
+    second: Hat-used-Sheet_54
+  - first:
+      213: 20987465199717969
+    second: Hat-used-Sheet_55
+  - first:
+      213: -5361500768578349677
+    second: Hat-used-Sheet_56
+  - first:
+      213: 6845206156767469823
+    second: Hat-used-Sheet_57
+  - first:
+      213: -7263087576847972537
+    second: Hat-used-Sheet_58
+  - first:
+      213: 8807306350400216800
+    second: Hat-used-Sheet_59
+  - first:
+      213: -6737619698738798102
+    second: Hat-used-Sheet_60
+  - first:
+      213: -3581169691910260450
+    second: Hat-used-Sheet_61
+  - first:
+      213: -7317525654241414615
+    second: Hat-used-Sheet_62
+  - first:
+      213: 2335398909603652205
+    second: Hat-used-Sheet_63
+  - first:
+      213: -5478382935966004929
+    second: Hat-used-Sheet_64
+  - first:
+      213: 891113762997027782
+    second: Hat-used-Sheet_65
+  - first:
+      213: 2567491604635920495
+    second: Hat-used-Sheet_66
+  - first:
+      213: 2938689684380783741
+    second: Hat-used-Sheet_67
+  - first:
+      213: 5233362798293665359
+    second: Hat-used-Sheet_68
+  - first:
+      213: -6295728463320107928
+    second: Hat-used-Sheet_69
+  - first:
+      213: -5941096611150604857
+    second: Hat-used-Sheet_70
+  - first:
+      213: -3580546679950489729
+    second: Hat-used-Sheet_71
+  - first:
+      213: -9064954782477872843
+    second: Hat-used-Sheet_72
+  - first:
+      213: -921330921208788498
+    second: Hat-used-Sheet_73
+  - first:
+      213: 4720715319445116186
+    second: Hat-used-Sheet_74
+  - first:
+      213: 5052005782520768635
+    second: Hat-used-Sheet_75
+  - first:
+      213: -7064456177977018341
+    second: Hat-used-Sheet_76
+  - first:
+      213: -8751284655231817583
+    second: Hat-used-Sheet_77
+  - first:
+      213: 9036165185526915165
+    second: Hat-used-Sheet_78
+  - first:
+      213: 4324015427992584431
+    second: Hat-used-Sheet_79
+  - first:
+      213: -6791653560103500108
+    second: Hat-used-Sheet_80
+  - first:
+      213: 8082243664590830083
+    second: Hat-used-Sheet_81
+  - first:
+      213: 4173278292561465717
+    second: Hat-used-Sheet_82
+  - first:
+      213: 1922533781261486528
+    second: Hat-used-Sheet_83
+  - first:
+      213: 2861894896060121201
+    second: Hat-used-Sheet_84
+  - first:
+      213: -5055928078853335763
+    second: Hat-used-Sheet_85
+  - first:
+      213: -8823820285186534760
+    second: Hat-used-Sheet_86
+  - first:
+      213: 4791216218191228365
+    second: Hat-used-Sheet_87
+  - first:
+      213: 2266506860955129578
+    second: Hat-used-Sheet_88
+  - first:
+      213: 4985608437587425611
+    second: Hat-used-Sheet_89
+  - first:
+      213: -3815753979754307274
+    second: Hat-used-Sheet_90
+  - first:
+      213: -5875379626969514063
+    second: Hat-used-Sheet_91
+  - first:
+      213: -8243769908668212082
+    second: Hat-used-Sheet_92
+  - first:
+      213: -2261804859850585270
+    second: Hat-used-Sheet_93
+  - first:
+      213: 6023856188219138788
+    second: Hat-used-Sheet_94
+  - first:
+      213: 7541688174037712296
+    second: Hat-used-Sheet_95
+  - first:
+      213: -809297343487858662
+    second: Hat-used-Sheet_96
+  - first:
+      213: 1632150881861992624
+    second: Hat-used-Sheet_97
+  - first:
+      213: 7431849916000245007
+    second: Hat-used-Sheet_98
+  - first:
+      213: -1370266163866677908
+    second: Hat-used-Sheet_99
+  - first:
+      213: 4914893408684372880
+    second: Hat-used-Sheet_100
+  - first:
+      213: -2089969585172504841
+    second: Hat-used-Sheet_101
+  - first:
+      213: -5144942306430226543
+    second: Hat-used-Sheet_102
+  - first:
+      213: -4920303733106545092
+    second: Hat-used-Sheet_103
+  - first:
+      213: 1217890129131173989
+    second: Hat-used-Sheet_104
+  - first:
+      213: 7177177872426877800
+    second: Hat-used-Sheet_105
+  - first:
+      213: -4348572518574961277
+    second: Hat-used-Sheet_106
+  - first:
+      213: 6134215177156294048
+    second: Hat-used-Sheet_107
+  - first:
+      213: -7446737866762037927
+    second: Hat-used-Sheet_108
+  - first:
+      213: 8966228771709079520
+    second: Hat-used-Sheet_109
+  - first:
+      213: 8580218468209929688
+    second: Hat-used-Sheet_110
+  - first:
+      213: -7476067503214891
+    second: Hat-used-Sheet_111
+  - first:
+      213: 3763708263536756938
+    second: Hat-used-Sheet_112
+  - first:
+      213: -3842257231209689182
+    second: Hat-used-Sheet_113
+  - first:
+      213: -2163620469906490061
+    second: Hat-used-Sheet_114
+  - first:
+      213: 1915939398425093859
+    second: Hat-used-Sheet_115
+  - first:
+      213: 7558969891790730362
+    second: Hat-used-Sheet_116
+  - first:
+      213: -4989040919103833520
+    second: Hat-used-Sheet_117
+  - first:
+      213: 4950582119342725031
+    second: Hat-used-Sheet_118
+  - first:
+      213: -7788316519759015118
+    second: Hat-used-Sheet_119
+  - first:
+      213: -1143465702682504401
+    second: Hat-used-Sheet_120
+  - first:
+      213: -4811742890906521405
+    second: Hat-used-Sheet_121
+  - first:
+      213: 8949179365251141249
+    second: Hat-used-Sheet_122
+  - first:
+      213: 3311393756233697940
+    second: Hat-used-Sheet_123
+  - first:
+      213: -2796409878360340108
+    second: Hat-used-Sheet_124
+  - first:
+      213: 2459415676133040331
+    second: Hat-used-Sheet_125
+  - first:
+      213: -4715404403155880405
+    second: Hat-used-Sheet_126
+  - first:
+      213: -6090045049389674295
+    second: Hat-used-Sheet_127
+  - first:
+      213: -9191139050050385871
+    second: Hat-used-Sheet_128
+  - first:
+      213: 8582945884836897100
+    second: Hat-used-Sheet_129
+  - first:
+      213: -7273186904642551036
+    second: Hat-used-Sheet_130
+  - first:
+      213: 514672826662876750
+    second: Hat-used-Sheet_131
+  - first:
+      213: -8552127533942017267
+    second: Hat-used-Sheet_132
+  - first:
+      213: -2520378208664210597
+    second: Hat-used-Sheet_133
+  - first:
+      213: -5907082832370647479
+    second: Hat-used-Sheet_134
+  - first:
+      213: 918997362326675024
+    second: Hat-used-Sheet_135
+  - first:
+      213: -8792682783006484476
+    second: Hat-used-Sheet_136
+  - first:
+      213: 976929761345728292
+    second: Hat-used-Sheet_137
+  - first:
+      213: -6603471803390395214
+    second: Hat-used-Sheet_138
+  - first:
+      213: -1481426396574555850
+    second: Hat-used-Sheet_139
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hat-used-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1164
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a444a3201051e630800000000000000
+      internalID: 3954529978055672995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1164
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c3a432e05e98020800000000000000
+      internalID: 2344656929907424271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1160
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0acd5aac97609fbc0800000000000000
+      internalID: -3748958094648550240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1164
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61db1f27aeb640a0800000000000000
+      internalID: -6897616154012167828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1160
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb966f85540acd620800000000000000
+      internalID: 2800289288023337403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1164
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29feccda1a1d82000800000000000000
+      internalID: 11489491404255122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 1164
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c8862c47ace7280800000000000000
+      internalID: -9043568398886728674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1164
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc869c422579846d0800000000000000
+      internalID: -3005986372209514292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1164
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 504cf568447679950800000000000000
+      internalID: 6455742134868755461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1160
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ddcaa4cff8256c30800000000000000
+      internalID: 4351929693904752081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1164
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e86f11c5e935080800000000000000
+      internalID: -9199835495512240510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 1160
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb051847ef684d40800000000000000
+      internalID: 5568823978381085658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 1164
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743ec7f1a0bf04960800000000000000
+      internalID: 7584337793388438343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1164
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6a55981a4e86ba0800000000000000
+      internalID: -6095370713201006940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1036
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8abfd351974ae24a0800000000000000
+      internalID: -6616169962606298200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1036
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54fe2a9f3d9e5afe0800000000000000
+      internalID: -1178278630851940539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1032
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e69365952e563ab0800000000000000
+      internalID: -5028728418399447328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1036
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739ef9d33efa47e20800000000000000
+      internalID: 3347493813569448247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1032
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a511dd1cd96c0bb0800000000000000
+      internalID: -4968479894782536281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1036
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6c0ffd1bba06a00800000000000000
+      internalID: 747786318598162106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 1036
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3bbe0d61fe216e0800000000000000
+      internalID: -1868168014131907590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1036
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84118c8303ed7bde0800000000000000
+      internalID: -1317340067290148536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 1036
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d2d2e4582117ea0800000000000000
+      internalID: -5876895674990252692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1032
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b5d2defe387a490800000000000000
+      internalID: -7735068768485942411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1036
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e7b8932088b3390800000000000000
+      internalID: -7837521183371461041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 1032
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c2b80b4bb1b4f60800000000000000
+      internalID: 8019534024333274244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 1036
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4149a2736583c90f0800000000000000
+      internalID: -1108949465296104428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1036
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff7620434759bdb0800000000000000
+      internalID: -4775689983499010052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 908
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f02d60860d72bafd0800000000000000
+      internalID: -2329724606182141425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 908
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92bc7328260f73640800000000000000
+      internalID: 5059777012256197417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 904
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651ea5f6d1b40dbf0800000000000000
+      internalID: -301658585239461546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 908
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b00eafce9a3f94f0800000000000000
+      internalID: -819872153394609995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 904
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42667e4c10f648860800000000000000
+      internalID: 7531266530259461668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 908
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41deeeea2a62b33c0800000000000000
+      internalID: -4378863732526224108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 908
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996656c4170acd860800000000000000
+      internalID: 7556090683294312089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 908
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e49835d06a18770800000000000000
+      internalID: 8611346538675392064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 908
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7fce864ee81b0d0800000000000000
+      internalID: -3408786331278706708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 904
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f40b4360f89054e70800000000000000
+      internalID: 9098689132061044815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 908
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d293c23dcdbdf40800000000000000
+      internalID: 5754435748434095414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 904
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb344cb93cebf99a0800000000000000
+      internalID: -6224046412661505089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 908
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9ae194d80029af0800000000000000
+      internalID: -391249610810676740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 908
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 657536a6fb3c412b0800000000000000
+      internalID: -5614647608533100714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 780
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ea15ef15b016720800000000000000
+      internalID: 2837561687007145537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 780
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d86498d372178b30800000000000000
+      internalID: 4289417458857830615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 776
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4efd2201ad57ce0c0800000000000000
+      internalID: -4545128344489631772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 780
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e799474b7b6aed300800000000000000
+      internalID: 278843534880315774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 776
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d5d272cc6d90fa0800000000000000
+      internalID: -5833895669962810082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 780
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ec26882718f4fc0800000000000000
+      internalID: -3508443255783895512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 780
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a9bb9c765e77fa0800000000000000
+      internalID: -5802917360914687443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 780
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 553d8c05f5dabb790800000000000000
+      internalID: -7513220928448703659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 780
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019411a7b6c411ba0800000000000000
+      internalID: -6120026394126628592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 776
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2912a1fd531b38d0800000000000000
+      internalID: -2865675443684370130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 780
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ba0401086eceaa0800000000000000
+      internalID: -6130271555055211730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 776
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1fb6a824bd8b4420800000000000000
+      internalID: 2615339813534351133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 780
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774010f981b3393c0800000000000000
+      internalID: -4354071437804239753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 780
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e07f70dff8a4000800000000000000
+      internalID: 20987465199717969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 652
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39557e9157f1895b0800000000000000
+      internalID: -5361500768578349677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 652
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0217c6bbe0ffe50800000000000000
+      internalID: 6845206156767469823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 648
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7478c619454543b90800000000000000
+      internalID: -7263087576847972537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 652
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee95ab6676d93a70800000000000000
+      internalID: 8807306350400216800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 648
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1eff8d49a2f72a0800000000000000
+      internalID: -6737619698738798102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 652
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e193b4993212d4ec0800000000000000
+      internalID: -3581169691910260450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 652
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922f128ff2de27a90800000000000000
+      internalID: -7317525654241414615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 652
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62a2cf4fe0096020800000000000000
+      internalID: 2335398909603652205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 652
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f394f26debfd8f3b0800000000000000
+      internalID: -5478382935966004929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 648
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c346e10f3fdd5c00800000000000000
+      internalID: 891113762997027782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 652
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f682f12e20091a320800000000000000
+      internalID: 2567491604635920495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 648
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d741f96b2b258c820800000000000000
+      internalID: 2938689684380783741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 652
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46c90dccb3a0a840800000000000000
+      internalID: 5233362798293665359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 652
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8643d7d915411a8a0800000000000000
+      internalID: -6295728463320107928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 524
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c557140c1cfc8da0800000000000000
+      internalID: -5941096611150604857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 524
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77c8dfd3c75f4ec0800000000000000
+      internalID: -3580546679950489729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 520
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5319d6d47afc23280800000000000000
+      internalID: -9064954782477872843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 524
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee944c89866c633f0800000000000000
+      internalID: -921330921208788498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 520
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1555455299538140800000000000000
+      internalID: 4720715319445116186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 524
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78ae561e745c1640800000000000000
+      internalID: 5052005782520768635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 524
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18bd54098206fd90800000000000000
+      internalID: -7064456177977018341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 524
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198a49ce8f03d8680800000000000000
+      internalID: -8751284655231817583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 524
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d50651f4c58e66d70800000000000000
+      internalID: 9036165185526915165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 520
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe08ec44f1df10c30800000000000000
+      internalID: 4324015427992584431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 524
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6838022133fb1a0800000000000000
+      internalID: -6791653560103500108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 520
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a76189ac5e92070800000000000000
+      internalID: 8082243664590830083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 524
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57199f00f767ae930800000000000000
+      internalID: 4173278292561465717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 524
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c987ccb9463eaa10800000000000000
+      internalID: 1922533781261486528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 396
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170ca28be3e77b720800000000000000
+      internalID: 2861894896060121201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 396
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d251602233cb5d9b0800000000000000
+      internalID: -5055928078853335763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_86
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 392
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8921293833e7b8580800000000000000
+      internalID: -8823820285186534760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_87
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 396
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcde067f3c1dd7240800000000000000
+      internalID: 4791216218191228365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_88
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 392
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae657384bff347f10800000000000000
+      internalID: 2266506860955129578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_89
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 396
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b49b6978570703540800000000000000
+      internalID: 4985608437587425611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_90
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 396
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631267ed8f7bb0bc0800000000000000
+      internalID: -3815753979754307274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_91
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 396
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf3aedbb55767ea0800000000000000
+      internalID: -5875379626969514063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_92
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 396
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8cd6c702fe389d80800000000000000
+      internalID: -8243769908668212082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_93
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 392
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b8a59a6747c90e0800000000000000
+      internalID: -2261804859850585270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_94
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 396
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e227d49949099350800000000000000
+      internalID: 6023856188219138788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_95
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 392
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad384ccf6579a860800000000000000
+      internalID: 7541688174037712296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_96
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 396
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a182dbb9a5cc4c4f0800000000000000
+      internalID: -809297343487858662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_97
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 396
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0893d549096a610800000000000000
+      internalID: 1632150881861992624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_98
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 268
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05163b7f1c332760800000000000000
+      internalID: 7431849916000245007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_99
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 268
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d4df61f26dbfce0800000000000000
+      internalID: -1370266163866677908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_100
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 264
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0937a85d385353440800000000000000
+      internalID: 4914893408684372880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_101
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 268
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe1c644cbfeef2e0800000000000000
+      internalID: -2089969585172504841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_102
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 264
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fe85b3b3e7998b0800000000000000
+      internalID: -5144942306430226543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_103
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 268
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ee729d2d197bbb0800000000000000
+      internalID: -4920303733106545092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_104
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 268
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568715aae90d6e010800000000000000
+      internalID: 1217890129131173989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_105
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 268
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8634cc7af357a9360800000000000000
+      internalID: 7177177872426877800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_106
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 268
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d40568554c6a3c0800000000000000
+      internalID: -4348572518574961277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_107
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 264
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5f532043c112550800000000000000
+      internalID: 6134215177156294048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_108
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 268
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955d23c5d5fd7a890800000000000000
+      internalID: -7446737866762037927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_109
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 264
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef4b9010917e6c70800000000000000
+      internalID: 8966228771709079520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_110
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 268
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd26e4ac3f031770800000000000000
+      internalID: 8580218468209929688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_111
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 268
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de67246e8075eff0800000000000000
+      internalID: -7476067503214891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_112
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 140
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac88f4689b06b3430800000000000000
+      internalID: 3763708263536756938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_113
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 140
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af0216c76f8daac0800000000000000
+      internalID: -3842257231209689182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_114
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 136
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33db57e55a649f1e0800000000000000
+      internalID: -2163620469906490061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_115
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 140
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6ad465bb8c69a10800000000000000
+      internalID: 1915939398425093859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_116
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 136
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a743f04411bd6e860800000000000000
+      internalID: 7558969891790730362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_117
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 140
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a7de697bd53cab0800000000000000
+      internalID: -4989040919103833520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_118
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 140
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7d2de453004b440800000000000000
+      internalID: 4950582119342725031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_119
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 140
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2331579b3675ae390800000000000000
+      internalID: -7788316519759015118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_120
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 140
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2354c270089120f0800000000000000
+      internalID: -1143465702682504401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_121
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 136
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0710d9551493db0800000000000000
+      internalID: -4811742890906521405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_122
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 140
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ecc09c73fd13c70800000000000000
+      internalID: 8949179365251141249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_123
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 136
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a81c7a31f64fd20800000000000000
+      internalID: 3311393756233697940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_124
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 140
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47940f918082139d0800000000000000
+      internalID: -2796409878360340108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_125
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 140
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0efe2e689912220800000000000000
+      internalID: 2459415676133040331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_126
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 12
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26b499bda48f8eb0800000000000000
+      internalID: -4715404403155880405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_127
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 12
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c090054b40db7ba0800000000000000
+      internalID: -6090045049389674295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_128
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 8
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13886801bb3827080800000000000000
+      internalID: -9191139050050385871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_129
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 12
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41aa10decfbc1770800000000000000
+      internalID: 8582945884836897100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_130
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 8
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40302c39b03701b90800000000000000
+      internalID: -7273186904642551036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_131
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 12
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4679c0853c742700800000000000000
+      internalID: 514672826662876750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_132
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 12
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d037c89a15db05980800000000000000
+      internalID: -8552127533942017267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_133
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 12
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b533fec6f51d50dd0800000000000000
+      internalID: -2520378208664210597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_134
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 12
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e3db50673d50ea0800000000000000
+      internalID: -5907082832370647479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_135
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 8
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e90036b3fe0cc00800000000000000
+      internalID: 918997362326675024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_136
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 12
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4089430389d1af580800000000000000
+      internalID: -8792682783006484476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_137
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 8
+        width: 96
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42fe4832170ce8d00800000000000000
+      internalID: 976929761345728292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_138
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 12
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc7b9aa161cb54a0800000000000000
+      internalID: -6603471803390395214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hat-used-Sheet_139
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 12
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631694f8a8ae07be0800000000000000
+      internalID: -1481426396574555850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
