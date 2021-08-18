@@ -21,8 +21,6 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {   
-        Vector3 Startposition =new Vector3(0,-4,0);
-        transform.position = Startposition;
         controller = GetComponent<CharacterController>();
         backmusic = BackgroundMusic.GetComponent<AudioSource>();
         stepAudio = stepSound.GetComponent<AudioSource>();
