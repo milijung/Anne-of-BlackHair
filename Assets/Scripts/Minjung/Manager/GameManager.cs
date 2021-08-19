@@ -29,9 +29,6 @@ public class GameManager : MonoBehaviour
     float[] scoreTerm = { 0.5f, 0.3f, 0.1f };
     public GameObject[] Count;
 
-    
-    
-
     #region instance
     public static GameManager instance;
     private void Awake()
@@ -156,6 +153,9 @@ public class GameManager : MonoBehaviour
     {
         // Save the Now SCORE
         PlayerPrefs.SetInt("Score", score);
+
+        // Save the Berry Num
+        PlayerPrefs.SetInt("Berry", BerryController.BerryNum);
 
         // Save the SCORE BOARD
         if (score < PlayerPrefs.GetInt("BestScore"))
