@@ -24,29 +24,28 @@ public class endingScene : MonoBehaviour
         _ending_score.GetComponent<TextMeshProUGUI>().text = _ending_score_.ToString();
 
 
-        _berry_number = GameObject.Find("BerryNumber");
-        _berry_number_ =  PlayerPrefs.GetInt("Berry_BE");
+        _berry_number = GameObject.Find("BerryNumber2");
+        _berry_number_ =  8;//PlayerPrefs.GetInt("Berry_BE");
         _berry_number.GetComponent<TextMeshProUGUI>().text = _berry_number_.ToString();
 
     }
 
     void Update()
     {
-        if( _berry_number_ == 0 ) return;
-
         while(_berry_number_>0)
         {
             StartCoroutine(BerryScoreUP());
-            _berry_number_--;
         }
         SaveScoreBoard();
     }
     
     IEnumerator BerryScoreUP() {
+        yield return new WaitForSeconds(1f);
+        _berry_number_--;
         _berry_number.GetComponent<TextMeshProUGUI>().text = _berry_number_.ToString();
         _ending_score_+=20;
         _ending_score.GetComponent<TextMeshProUGUI>().text = _ending_score_.ToString();
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(1f);
     }
 
     public void SaveScoreBoard()
