@@ -12,8 +12,9 @@ public class SwitchScene : MonoBehaviour // 씬 전환함수가 모여있는 class
         SpawnManager.MobStartNum = 0;
         if (MainMenu.AudioPlay)
             AudioManager.SwitchSceneAudio.Play();
-        SceneManager.LoadScene("mainGame");
- 
+        //SceneManager.LoadScene("mainGame");
+        LoadingScene_Manager.LoadScene("mainGame");
+
     }
     public void QuitGame()
     {
@@ -24,7 +25,8 @@ public class SwitchScene : MonoBehaviour // 씬 전환함수가 모여있는 class
     {
         if (MainMenu.AudioPlay)
             AudioManager.SwitchSceneAudio.Play();
-        SceneManager.LoadScene("Title");
+        //SceneManager.LoadScene("Title");
+        LoadingScene_Manager.LoadScene("Title");
         Time.timeScale = 1;
     }
 
@@ -32,7 +34,7 @@ public class SwitchScene : MonoBehaviour // 씬 전환함수가 모여있는 class
     {
         if (MainMenu.AudioPlay)
             AudioManager.ButtonAudio.Play();
-        SceneManager.LoadScene("Tutorial");
+        LoadingScene_Manager.LoadScene("Tutorial");
     }
     public void LoadScene()
     {
@@ -42,17 +44,19 @@ public class SwitchScene : MonoBehaviour // 씬 전환함수가 모여있는 class
     }
     public void SomoonGameOver()
     {
-        SceneManager.LoadScene("Ending_Somoon");
+        //SceneManager.LoadScene("Ending_Somoon");
+        LoadingScene_Manager.LoadScene("Ending_Somoon");
     }
     public void BerryGameOver()
     {
-        SceneManager.LoadScene("Ending_Berry");
+        //SceneManager.LoadScene("Ending_Berry");
+        LoadingScene_Manager.LoadScene("Ending_Berry");
     }
 
     public void tutorial_toMainMenu()
     {
         AudioManager.SwitchSceneAudio.Play();
-        SceneManager.LoadScene("Title");
+        LoadingScene_Manager.LoadScene("Title");
         Time.timeScale = 1;
     }
 }

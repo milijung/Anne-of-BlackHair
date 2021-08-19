@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Start_Cartoon.unity
+    guid: 19747185e04d3094c9a0547e9d086674
+  - enabled: 1
     path: Assets/Scenes/Loading.unity
     guid: a52f159eeaa8d8c43ac3859ec19176da
   - enabled: 1
