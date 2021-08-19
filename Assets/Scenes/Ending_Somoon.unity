@@ -1483,7 +1483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1197311315776041513, guid: f47b996400446d246932f0b7f77d7d0e, type: 3}
       propertyPath: m_Name
-      value: BerryNumber2
+      value: BerryNumber
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f47b996400446d246932f0b7f77d7d0e, type: 3}
@@ -2283,7 +2283,7 @@ GameObject:
   - component: {fileID: 1291613033}
   - component: {fileID: 1291613032}
   m_Layer: 5
-  m_Name: Score2
+  m_Name: Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -73,12 +73,12 @@ public class SomoonGauge : MonoBehaviour
                     somoonGauge += 0.1f * (realTime - childFirstTouchTime);
                 }
 
-                if ((somoonGauge > 60 && somoonGauge < 100) && !isEmergency)
+                if ((somoonGauge > 70 && somoonGauge < 100) && !isEmergency)
                 {
                     OnEmergency();
                     Invoke("OffEmergency", 3.2f);
                 }
-                else if (somoonGauge < 60)
+                else if (somoonGauge < 70)
                     isEmergency = false;
             }
 

@@ -19,12 +19,12 @@ public class endingScene : MonoBehaviour
         if (MainMenu.AudioPlay)
             AudioManager.BackgroundAudio.Play();
 
-        _ending_score = GameObject.Find("Score2");
+        _ending_score = GameObject.Find("Score");
         _ending_score_ = PlayerPrefs.GetInt("Score_BE");
         _ending_score.GetComponent<TextMeshProUGUI>().text = _ending_score_.ToString();
 
 
-        _berry_number = GameObject.Find("BerryNumber2");
+        _berry_number = GameObject.Find("BerryNumber");
         _berry_number_ =  PlayerPrefs.GetInt("Berry_BE");
         _berry_number.GetComponent<TextMeshProUGUI>().text = _berry_number_.ToString();
 

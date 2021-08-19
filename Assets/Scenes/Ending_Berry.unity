@@ -419,8 +419,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 399670203}
-  - component: {fileID: 399670202}
   - component: {fileID: 399670204}
+  - component: {fileID: 399670202}
   m_Layer: 0
   m_Name: endingScene
   m_TagString: Untagged
@@ -437,7 +437,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 399670201}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80b07724756ad0d429e364b610a52317, type: 3}
+  m_Script: {fileID: 11500000, guid: dcdcc8066dd2d1348a8f7b7006b2b971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &399670203
@@ -461,7 +461,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 399670201}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2770fab2a189262468ce907045ee67b2, type: 3}
   m_Name: 
@@ -3035,7 +3035,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1819774180}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2770fab2a189262468ce907045ee67b2, type: 3}
   m_Name: 

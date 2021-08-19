@@ -196,6 +196,9 @@ public class GameManager : MonoBehaviour
             // Save the Now SCORE
             PlayerPrefs.SetInt("Score_SE", score);
 
+            // Save the Berry Num
+            PlayerPrefs.SetInt("Berry_BE", BerryController.BerryNum);
+
             GameObject.Find("SwitchScene").GetComponent<SwitchScene>().SomoonGameOver();
         }
         if (BerryController.BerryNum <= 0)
