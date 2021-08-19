@@ -131,6 +131,10 @@ public class ItemController : MonoBehaviour
 
     public void _use_item_in_the_slot()
     {
+        Animator _player_animator = _player.GetComponent<Animator>();
+        
+        usingItem = _player.GetComponent<Animator>().GetBool("ITEM");
+
         if (!usingItem) // While one item is being used, the other cannot be used.
         {
             Item.item_type typetype = (Item.item_type)item_slot.stack.Pop();
@@ -152,32 +156,32 @@ public class ItemController : MonoBehaviour
             // ITEM USE FUNCTION 
             if (typetype == Item.item_type.wig)
             {
-                itemName.text = "»¡°£°¡¹ß" + System.Environment.NewLine + "Âø¿ëÁß";
+                itemName.text = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" + System.Environment.NewLine + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
                 AudioManager.wigHatAudio.Play();
-                _player.GetComponent<Animator>().SetBool("W",true);
+                _player_animator.SetBool("W",true);
                 // twinkle on
                 _twinkle_.GetComponent<Animator>().SetBool("T",true);
             }
             else if (typetype == Item.item_type.hat)
             {
-                itemName.text = "¸ðÀÚ" + System.Environment.NewLine + "Âø¿ëÁß";
+                itemName.text = "ï¿½ï¿½ï¿½ï¿½" + System.Environment.NewLine + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
                 AudioManager.wigHatAudio.Play();
-                 _player.GetComponent<Animator>().SetBool("H",true);
+                _player_animator.SetBool("H",true);
                 // twinkle on
                 _twinkle_.GetComponent<Animator>().SetBool("T",true);
             }
             else if (typetype == Item.item_type.death_berry)
             {
-                itemName.text = "¸¶À» »ç¶÷µé¿¡°Ô"+System.Environment.NewLine+"¸¶³àÀÇ ¿­¸Å ¸ÔÀÌ±â ¼º°ø";
+                itemName.text = "ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½é¿¡ï¿½ï¿½"+System.Environment.NewLine+"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì±ï¿½ ï¿½ï¿½ï¿½ï¿½";
                 AudioManager.deathBerryAudio.Play();
-                _player.GetComponent<Animator>().SetBool("G",true);
                 somoon.LowerSomoon();
                 Mob_motion.Set();
             }
             else if (typetype == Item.item_type.basket)
             {
-                itemName.text = "¹Ù±¸´ÏÅ¸°í" + System.Environment.NewLine + "³¯¾Æ°¡´Â Áß";
-                _player.GetComponent<Animator>().SetBool("B",true);
+                _player_animator.SetBool("B",true);
+                itemName.text = "ï¿½Ù±ï¿½ï¿½ï¿½Å¸ï¿½ï¿½" + System.Environment.NewLine + "ï¿½ï¿½ï¿½Æ°ï¿½ï¿½ï¿½ ï¿½ï¿½";
+
                 // twinkle on
                 _twinkle_.GetComponent<Animator>().SetBool("T",true);
                 booster_Controller.Collider_UnEnable();
@@ -185,7 +189,9 @@ public class ItemController : MonoBehaviour
             }
             else if (typetype == Item.item_type.green_yum)
             {
-                itemName.text = "¾µµ¥¾ø´Â"+System.Environment.NewLine+"ÃÊ·Ï»ö ¿°»ö¾àÀÌ±º..";
+               _player_animator.SetBool("G",true);
+                itemName.text = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"+System.Environment.NewLine+"ï¿½Ê·Ï»ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì±ï¿½..";
+
                 AudioManager.eraserAudio.Play();
             }
         }
