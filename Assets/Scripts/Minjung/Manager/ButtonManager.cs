@@ -9,6 +9,7 @@ public class ButtonManager : MonoBehaviour
     public GameObject scorePanel;
     public GameObject exitPanel;
     public GameObject fadeSprite; // 패널 제외한 화면부분 어두워지게 하는 역할
+    public GameObject infoPanel;
 
     public GameObject BackgroundMusic;
     AudioSource backmusic;
@@ -86,6 +87,23 @@ public class ButtonManager : MonoBehaviour
         fadeSprite.SetActive(false);
     }
 
+    public void Info()
+    {
+        if (MainMenu.AudioPlay)
+            AudioManager.ButtonAudio.Play();
+        infoPanel.SetActive(true);
+        fadeSprite.SetActive(true);
+    }
+
+    public void Info_Home()
+    {
+        if (MainMenu.AudioPlay)
+            AudioManager.ButtonAudio.Play();
+        infoPanel.SetActive(false);
+        fadeSprite.SetActive(false);
+        scorePanel.SetActive(false);
+        gamePanel.SetActive(false);
+    }
     public void BGM()
     {
         if (MainMenu.AudioPlay)
