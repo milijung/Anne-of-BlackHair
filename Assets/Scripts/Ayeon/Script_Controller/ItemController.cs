@@ -156,7 +156,7 @@ public class ItemController : MonoBehaviour
             // ITEM USE FUNCTION 
             if (typetype == Item.item_type.wig)
             {
-                itemName.text = "��������" + System.Environment.NewLine + "������";
+                itemName.text = "빨간 가발" + System.Environment.NewLine + "착용중";
                 AudioManager.wigHatAudio.Play();
                 _player_animator.SetBool("W",true);
                 // twinkle on
@@ -164,7 +164,7 @@ public class ItemController : MonoBehaviour
             }
             else if (typetype == Item.item_type.hat)
             {
-                itemName.text = "����" + System.Environment.NewLine + "������";
+                itemName.text = "모자" + System.Environment.NewLine + "착용중";
                 AudioManager.wigHatAudio.Play();
                 _player_animator.SetBool("H",true);
                 // twinkle on
@@ -172,7 +172,7 @@ public class ItemController : MonoBehaviour
             }
             else if (typetype == Item.item_type.death_berry)
             {
-                itemName.text = "���� ����鿡��"+System.Environment.NewLine+"������ ���� ���̱� ����";
+                itemName.text = "마녀의 열매"+System.Environment.NewLine+"마을 사람들에게 먹이기 성공";
                 AudioManager.deathBerryAudio.Play();
                 somoon.LowerSomoon();
                 Mob_motion.Set();
@@ -180,7 +180,7 @@ public class ItemController : MonoBehaviour
             else if (typetype == Item.item_type.basket)
             {
                 _player_animator.SetBool("B",true);
-                itemName.text = "�ٱ���Ÿ��" + System.Environment.NewLine + "���ư��� ��";
+                itemName.text = "바구니 타고" + System.Environment.NewLine + "날아가는 중";
 
                 // twinkle on
                 _twinkle_.GetComponent<Animator>().SetBool("T",true);
@@ -190,7 +190,7 @@ public class ItemController : MonoBehaviour
             else if (typetype == Item.item_type.green_yum)
             {
                _player_animator.SetBool("G",true);
-                itemName.text = "��������"+System.Environment.NewLine+"�ʷϻ� �������̱�..";
+                itemName.text = "쓸데없는"+System.Environment.NewLine+"초록색 염색약이군..";
 
                 AudioManager.eraserAudio.Play();
             }
