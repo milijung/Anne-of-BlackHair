@@ -40,7 +40,6 @@ public class endingScene : MonoBehaviour
     }
     
     IEnumerator BerryScoreUP() {
-        yield return new WaitForSeconds(1f);
         _berry_number_--;
         _berry_number.GetComponent<TextMeshProUGUI>().text = _berry_number_.ToString();
         _ending_score_+=20;
