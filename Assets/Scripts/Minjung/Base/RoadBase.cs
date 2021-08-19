@@ -14,9 +14,13 @@ public class RoadBase : MonoBehaviour
     public Sprite deerStand, deerSitDown;
     public bool deerSit;
     public Camera getCamera;
+    
+    Animator _player_animator;
 
     private void OnEnable() // ������Ʈ�� Ȱ��ȭ�Ǹ� ����
     {
+        _player_animator = GameObject.Find("Player").GetComponent<Animator>();
+
         if (gameObject.tag == "BerryBox")
         {
             transform.position = StartPosition;
@@ -164,10 +168,14 @@ public class RoadBase : MonoBehaviour
             }
             else if (gameObject.tag == "river")
             {
+                if(_player_animator.GetBool("BST")) return;
+
                 StartCoroutine(BumpWithRiver(collision, bridge));
             }
             else if (gameObject.tag == "catMove")
             {
+                if(_player_animator.GetBool("BST")) return;
+
                 if (!jump && !ItemController.isBasket)
                 {
                     if (MainMenu.AudioPlay)
@@ -179,6 +187,8 @@ public class RoadBase : MonoBehaviour
             }
             else if (gameObject.tag == "catSleep")
             {
+                if(_player_animator.GetBool("BST")) return;
+
                 if (!jump)
                 {
                     SpriteRenderer catSleep = gameObject.GetComponent<SpriteRenderer>();
@@ -191,6 +201,8 @@ public class RoadBase : MonoBehaviour
             }
             else if(gameObject.tag == "deer")
             {
+                if(_player_animator.GetBool("BST")) return;
+
                 if (!jump || !deerSit)
                 {
                     if (MainMenu.AudioPlay)
@@ -200,6 +212,8 @@ public class RoadBase : MonoBehaviour
             }
             else
             {
+                if(_player_animator.GetBool("BST")) return;
+
                 if (!jump)
                 {
                     BerryController.BumpOntheRoad = true;
