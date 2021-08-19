@@ -19,7 +19,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] RoadOne, RoadTwo, RoadThree, RoadFour;
     public GameObject[] BerryBox;
     public GameObject[] BackgroundScrollImage;
-    public static int MobStartNum = 0; // SpawnManager ½ÇÇà Àü¿¡ MobÀÌ µîÀåÇÏ´Â °Í ¹æÁö
+    public static int MobStartNum = 0; // SpawnManager ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Mobï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     public static bool isforest = false;
     public static int Speed_Num;
 
@@ -80,6 +80,7 @@ public class SpawnManager : MonoBehaviour
         for (int i = 0; i < 5; i++)
             BerryPool.Add(CreateObj(BerryBox[3], transform));
     }
+    
     private void Start()
     {
         x_Back = x_forest = x_Berry = Speed_Num = 0;
@@ -117,7 +118,7 @@ public class SpawnManager : MonoBehaviour
         StopCoroutine(BackgroundScroll());
 
     }
-    IEnumerator CreateBack() // Ç®,³ª¹«,Áý »ý¼º
+    IEnumerator CreateBack() // Ç®,ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     {
         yield return new WaitForSeconds(5f);
         while (true)
@@ -170,9 +171,9 @@ public class SpawnManager : MonoBehaviour
             yield return null;
         }
     }
-    IEnumerator CreateMob() // ¸¶À»»ç¶÷µé »ý¼º
+    IEnumerator CreateMob() // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
     {
-        yield return new WaitForSeconds(2f); // ½ÃÀÛÇÏ°í 3ÃÊ ÈÄºÎÅÍ Mob µîÀå
+        yield return new WaitForSeconds(2f); // ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ 3ï¿½ï¿½ ï¿½Äºï¿½ï¿½ï¿½ Mob ï¿½ï¿½ï¿½ï¿½
         for (int i = 0; i < BerryBox.Length; i++)
         {
             BerryBox[i].SetActive(true);
@@ -182,8 +183,8 @@ public class SpawnManager : MonoBehaviour
         {
             if (GameManager.isPlay && !isforest&& !BackgroundScrollImage[0].activeSelf)
             {
-                float time = Random.Range(Mob[GameManager.speedIndex][0], Mob[GameManager.speedIndex][1]); // ¸¶À»»ç¶÷µéÀÌ µîÀåÇÏ´Â ½Ã°£ °£°Ý
-                SideMobs[DeactiveMob()].SetActive(true); // ºñÈ°¼ºÈ­µÈ Mobµé Áß¿¡¼­ 1°³¸¦ È°¼ºÈ­
+                float time = Random.Range(Mob[GameManager.speedIndex][0], Mob[GameManager.speedIndex][1]); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ï¿½
+                SideMobs[DeactiveMob()].SetActive(true); // ï¿½ï¿½È°ï¿½ï¿½È­ï¿½ï¿½ Mobï¿½ï¿½ ï¿½ß¿ï¿½ï¿½ï¿½ 1ï¿½ï¿½ï¿½ï¿½ È°ï¿½ï¿½È­
                 yield return new WaitForSeconds(time);
 
                 if (MobStartNum == 0)
@@ -196,7 +197,7 @@ public class SpawnManager : MonoBehaviour
             yield return null;
         }
     }
-    IEnumerator CreateItem() // ¾ÆÀÌÅÛ ÁÖ¸Ó´Ï
+    IEnumerator CreateItem() // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¸Ó´ï¿½
     {
         while (true)
         {
@@ -205,8 +206,8 @@ public class SpawnManager : MonoBehaviour
                 if (!isforest)
                 {
                     x_Berry = 0;
-                    Item[0].SetActive(true); // ¾ÆÀÌÅÛÁÖ¸Ó´Ï È°¼ºÈ­
-                    yield return new WaitForSeconds(ItemTerm[GameManager.speedIndex][0]); // ¾ÆÀÌÅÛÀÌ »ý¼ºµÈ ÈÄ, ¸îÃÊ Áö³ª°í ´ÙÀ½ ¾ÆÀÌÅÛÀÌ »ý¼º
+                    Item[0].SetActive(true); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸Ó´ï¿½ È°ï¿½ï¿½È­
+                    yield return new WaitForSeconds(ItemTerm[GameManager.speedIndex][0]); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
                 }
                 else
                 {
@@ -244,35 +245,35 @@ public class SpawnManager : MonoBehaviour
             yield return null;
         }
     }
-    IEnumerator CreateRoad() // Àå¾Ö¹° »ý¼º
+    IEnumerator CreateRoad() // ï¿½ï¿½Ö¹ï¿½ ï¿½ï¿½ï¿½ï¿½
     {
         while (true)
         {
             if (GameManager.isPlay)
             {
-                if (Sun.sunRise) // ³·
+                if (Sun.sunRise) // ï¿½ï¿½
                 {
-                    if (isforest)// ½£
+                    if (isforest)// ï¿½ï¿½
                     {
                         if (BackgroundScrollImage[0].transform.position.y < -4)
                             Road[0][DeactiveRoad_afternoon()].SetActive(true);
                     }
-                    else // ¸¶À»
+                    else // ï¿½ï¿½ï¿½ï¿½
                     {
                         if (BackgroundScrollImage[1].transform.position.y < -4)
                             Road[1][DeactiveRoad_afternoon()].SetActive(true);
                     }
                     yield return new WaitForSeconds(Obstacle[GameManager.speedIndex]);
                 }
-                else // ¹ã
+                else // ï¿½ï¿½
                 {
-                    if (isforest)// ½£
+                    if (isforest)// ï¿½ï¿½
                     {
                         if (BackgroundScrollImage[0].transform.position.y < -4)
                             Road[2][DeactiveRoad_night()].SetActive(true);
                         yield return new WaitForSeconds(Obstacle[GameManager.speedIndex]);
                     }
-                    else // ¸¶À»
+                    else // ï¿½ï¿½ï¿½ï¿½
                     {
                         if (BackgroundScrollImage[1].transform.position.y < -4)
                             Road[3][DeactiveRoad_night()].SetActive(true);
@@ -287,12 +288,12 @@ public class SpawnManager : MonoBehaviour
             yield return null;
         }
     }
-    int DeactiveMob() // ºñÈ°¼ºÈ­µÈ MobÁß¿¡¼­ ¼±ÅÃÇÏ´Â ÇÔ¼ö
+    int DeactiveMob() // ï¿½ï¿½È°ï¿½ï¿½È­ï¿½ï¿½ Mobï¿½ß¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ô¼ï¿½
     {
         List<int> num = new List<int>();
         for (int i = 0; i < SideMobs.Length; i++)
         {
-            if (!SideMobs[i].activeSelf) // ºñÈ°¼ºÈ­µÈ MobÀÇ ÀÎµ¦½º¸¦ List¿¡ Ãß°¡
+            if (!SideMobs[i].activeSelf) // ï¿½ï¿½È°ï¿½ï¿½È­ï¿½ï¿½ Mobï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½ Listï¿½ï¿½ ï¿½ß°ï¿½
             {
                 num.Add(i);
             }
@@ -302,10 +303,10 @@ public class SpawnManager : MonoBehaviour
         {
             x = num[Random.Range(0, num.Count)];
         }
-        return x; // ºñÈ°¼ºÈ­µÈ MobÀÇ ÀÎµ¦½ºÁß 1°³¸¦ ¹ÝÈ¯
+        return x; // ï¿½ï¿½È°ï¿½ï¿½È­ï¿½ï¿½ Mobï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½ 1ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
     }
 
-    int DeactiveRoad_afternoon() // ºñÈ°¼ºÈ­µÈ Àå¾Ö¹°Áß¿¡¼­ ¼±ÅÃÇÏ´Â ÇÔ¼ö
+    int DeactiveRoad_afternoon() // ï¿½ï¿½È°ï¿½ï¿½È­ï¿½ï¿½ ï¿½ï¿½Ö¹ï¿½ï¿½ß¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ô¼ï¿½
     {
         List<int> num = new List<int>();
         if (isforest)
@@ -335,7 +336,7 @@ public class SpawnManager : MonoBehaviour
         }
         return x;
     }
-    int DeactiveRoad_night() // ºñÈ°¼ºÈ­µÈ Àå¾Ö¹°Áß¿¡¼­ ¼±ÅÃÇÏ´Â ÇÔ¼ö
+    int DeactiveRoad_night() // ï¿½ï¿½È°ï¿½ï¿½È­ï¿½ï¿½ ï¿½ï¿½Ö¹ï¿½ï¿½ß¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Ô¼ï¿½
     {
         List<int> num = new List<int>();
         if (isforest)

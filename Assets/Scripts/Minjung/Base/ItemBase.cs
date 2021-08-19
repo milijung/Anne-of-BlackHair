@@ -94,7 +94,7 @@ public class ItemBase : MonoBehaviour
             if (this.type == 2)
             {
                 // ann_get_dye
-                if (_player_animator.GetInteger("State") >= 5) {
+                if (_player_animator.GetInteger("State") >= 4) {
                     _player_animator.SetBool("RED", true);
                     _player_animator.SetInteger("State", 9);
 
