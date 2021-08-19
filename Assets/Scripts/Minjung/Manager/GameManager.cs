@@ -156,25 +156,6 @@ public class GameManager : MonoBehaviour
 
         // Save the Berry Num
         PlayerPrefs.SetInt("Berry", BerryController.BerryNum);
-
-        // Save the SCORE BOARD
-        if (score < PlayerPrefs.GetInt("BestScore"))
-        {
-            if (score < PlayerPrefs.GetInt("SecondScore"))
-            {
-                if (score < PlayerPrefs.GetInt("ThirdScore"))
-                    return;
-                PlayerPrefs.SetInt("ThirdScore", score);
-            }
-            PlayerPrefs.SetInt("ThirdScore", PlayerPrefs.GetInt("SecondScore"));
-            PlayerPrefs.SetInt("SecondScore", score);
-            return;
-        }
-        if (score == PlayerPrefs.GetInt("BestScore"))
-            return;
-        PlayerPrefs.SetInt("ThirdScore", PlayerPrefs.GetInt("SecondScore"));
-        PlayerPrefs.SetInt("SecondScore", PlayerPrefs.GetInt("BestScore"));
-        PlayerPrefs.SetInt("BestScore", score);
     }
     public void GamePlay()
     {

@@ -94,8 +94,10 @@ public class ItemBase : MonoBehaviour
             if (this.type == 2)
             {
                 // ann_get_dye
-                _player_animator.SetInteger("State", 9);
-                if (_player_animator.GetInteger("State") >= 5) _player_animator.SetBool("RED", true);
+                if (_player_animator.GetInteger("State") >= 5) {
+                    _player_animator.SetBool("RED", true);
+                    _player_animator.SetInteger("State", 9);
+                }
 
                 // twinkle on
                 _twinkle.GetComponent<Animator>().SetBool("T", true);
