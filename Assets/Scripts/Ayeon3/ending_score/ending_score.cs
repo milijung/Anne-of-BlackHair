@@ -17,8 +17,8 @@ public class ending_score : MonoBehaviour
     void Start()
     {
         _ending_score = GameObject.Find("Score");
-        _ending_score.GetComponent<TextMeshProUGUI>().text = _ending_score_.ToString();
         _ending_score_ = PlayerPrefs.GetInt("Score_SE");
+        _ending_score.GetComponent<TextMeshProUGUI>().text = _ending_score_.ToString();
 
         _berry_number = GameObject.Find("BerryNumber");
         _berry_number_ = 0;

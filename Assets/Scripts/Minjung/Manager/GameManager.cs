@@ -195,7 +195,8 @@ public class GameManager : MonoBehaviour
         {
             // Save the Now SCORE
             PlayerPrefs.SetInt("Score_SE", score);
-
+            PlayerPrefs.SetInt("Score_BE", score);
+            
             // Save the Berry Num
             PlayerPrefs.SetInt("Berry_BE", BerryController.BerryNum);
 
@@ -204,6 +205,7 @@ public class GameManager : MonoBehaviour
         if (BerryController.BerryNum <= 0)
         {
             // Save the Now SCORE
+            PlayerPrefs.SetInt("Score_SE", score);
             PlayerPrefs.SetInt("Score_BE", score);
 
             // Save the Berry Num
