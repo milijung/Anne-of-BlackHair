@@ -13,11 +13,13 @@ public class MobBase : MonoBehaviour
     AudioSource radarSound;
 
     GameObject lip_move;
+    Animator _player_animator;
 
     private void Awake()
     {
         radarSound = RadarSound.GetComponent<AudioSource>();
         RadarIMG = gameObject.GetComponent<SpriteRenderer>().sprite;
+        _player_animator = GameObject.Find("Player").GetComponent<Animator>();
     }
     private void OnEnable() // ������Ʈ�� Ȱ��ȭ�Ǹ� ����
     {
@@ -50,6 +52,15 @@ public class MobBase : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            if(_player_animator.GetBool("MJ")) // IF MOO JUCK STATE
+                return;
+            
+            else if(_player_animator.GetBool("SMJ"))
+            {
+                // SMALL MOO JUCK STATE
+                return;
+            } 
+
             SpriteRenderer SideMob = gameObject.GetComponent<SpriteRenderer>();
             SideMob.sprite = Surprise;
             if (MainMenu.AudioPlay)
