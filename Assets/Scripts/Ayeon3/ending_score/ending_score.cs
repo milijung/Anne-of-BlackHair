@@ -16,15 +16,17 @@ public class ending_score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (MainMenu.AudioPlay)
+            AudioManager.BackgroundAudio.Play();
+
         _ending_score = GameObject.Find("Score");
-        _ending_score.GetComponent<TextMeshProUGUI>().text = _ending_score_.ToString();
         _ending_score_ = PlayerPrefs.GetInt("Score_SE");
+        _ending_score.GetComponent<TextMeshProUGUI>().text = _ending_score_.ToString();
 
         _berry_number = GameObject.Find("BerryNumber");
         _berry_number_ = 0;
         _berry_number.GetComponent<TextMeshProUGUI>().text = _berry_number_.ToString();
         
-
         SaveScoreBoard();
     }
 

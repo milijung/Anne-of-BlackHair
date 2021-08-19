@@ -420,7 +420,6 @@ GameObject:
   m_Component:
   - component: {fileID: 399670203}
   - component: {fileID: 399670204}
-  - component: {fileID: 399670202}
   m_Layer: 0
   m_Name: endingScene
   m_TagString: Untagged
@@ -428,18 +427,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &399670202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 399670201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcdcc8066dd2d1348a8f7b7006b2b971, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &399670203
 Transform:
   m_ObjectHideFlags: 0
@@ -461,7 +448,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 399670201}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2770fab2a189262468ce907045ee67b2, type: 3}
   m_Name: 
@@ -3777,6 +3764,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1341906486050307365, guid: 5c1c46674916b2446b6f4a06d943d24e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341906486050307386, guid: 5c1c46674916b2446b6f4a06d943d24e, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
