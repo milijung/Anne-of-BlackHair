@@ -21,8 +21,9 @@ public class ending_score : MonoBehaviour
         _ending_score_ = PlayerPrefs.GetInt("Score_SE");
 
         _berry_number = GameObject.Find("BerryNumber");
-        _berry_number.GetComponent<TextMeshProUGUI>().text = "0";
         _berry_number_ = 0;
+        _berry_number.GetComponent<TextMeshProUGUI>().text = _berry_number_.ToString();
+        
 
         SaveScoreBoard();
     }
