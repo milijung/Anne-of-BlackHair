@@ -8,11 +8,13 @@ public class PanelManager : MonoBehaviour
     public GameObject fadeSprite;
     public GameObject[] Count;
     public GameObject[] Berry;
+    public GameObject SpeedUpTxt;
 
     void Start()
     {
         stopPanel.SetActive(false); // ÆÐ³Î ¼û±â±â
         fadeSprite.SetActive(false);
+        SpeedUpTxt.SetActive(false);
 
         for(int i = 0; i < Count.Length; i++)
         {

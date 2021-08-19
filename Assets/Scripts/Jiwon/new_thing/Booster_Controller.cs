@@ -12,7 +12,7 @@ public class Booster_Controller : MonoBehaviour
         {
             obstacles[i].enabled = false;
         }
-        Invoke("Collider_Enable", 3f);
+        Invoke("Collider_Enable", 4f);
     }
 
     private void Collider_Enable()

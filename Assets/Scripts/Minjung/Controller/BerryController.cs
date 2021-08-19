@@ -103,6 +103,7 @@ public class BerryController : MonoBehaviour
     }
     public IEnumerator BerryDrop()
     {
+        GameObject.Find("BerryDropAudio").GetComponent<AudioSource>().Play();
         Berry_play[3].SetActive(true);
         while (true)
         {

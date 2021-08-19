@@ -11,8 +11,10 @@ public class RoadBase : MonoBehaviour
     public Vector2 StartPosition;
     public GameObject river, bridge, catBerry;
     public Sprite catWakeUp, catSleepIMG;
+    public Sprite deerStand, deerSitDown;
+    public bool deerSit;
+    public Camera getCamera;
 
-    float[] cat = { 4, 10, 15 };
     private void OnEnable() // ������Ʈ�� Ȱ��ȭ�Ǹ� ����
     {
         if (gameObject.tag == "BerryBox")
@@ -89,6 +91,11 @@ public class RoadBase : MonoBehaviour
                     bridge.transform.position = new Vector2(riverPosX, 8);
                     bridge.SetActive(true);
                 }
+                else if(gameObject.tag == "deer")
+                {
+                    deerSit = false;
+                    StartCoroutine(deer());
+                }
                 else
                 {
                     if (SpawnManager.isforest)
@@ -133,12 +140,13 @@ public class RoadBase : MonoBehaviour
                 gameObject.SetActive(false);
             }
         }
+
     }
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.tag == "Player")
         {
-            
+
             if (gameObject.tag == "BerryBox") // 열매주머니 획득
             {
                 if (MainMenu.AudioPlay)
@@ -147,43 +155,52 @@ public class RoadBase : MonoBehaviour
                 BerryController.BerryNum += 3;
                 BerryController.getBerryBox = true;
             }
-            else if(gameObject.tag == "Berry")
+            else if (gameObject.tag == "Berry")
             {
                 if (MainMenu.AudioPlay)
                     AudioManager.ButtonAudio.Play();
                 gameObject.SetActive(false);
                 BerryController.getBerry = true;
             }
-            else if(gameObject.tag == "river")
+            else if (gameObject.tag == "river")
             {
                 StartCoroutine(BumpWithRiver(collision, bridge));
             }
-            else if(gameObject.tag == "catMove")
+            else if (gameObject.tag == "catMove")
             {
-                if (!jump)
+                if (!jump && !ItemController.isBasket)
                 {
                     if (MainMenu.AudioPlay)
                         gameObject.GetComponent<AudioSource>().Play();
                     BerryController.BumpOntheRoad = true;
                     BerryController.BumpWithCat = true;
                     catBerry.SetActive(true);
-                }   
+                }
             }
-            else if(gameObject.tag == "catSleep")
+            else if (gameObject.tag == "catSleep")
             {
                 if (!jump)
                 {
                     SpriteRenderer catSleep = gameObject.GetComponent<SpriteRenderer>();
-
                     catSleep.sprite = catWakeUp;
-                    if(MainMenu.AudioPlay)
+
+                    if (MainMenu.AudioPlay)
+                        gameObject.GetComponent<AudioSource>().Play();
+                    BerryController.BumpOntheRoad = true;
+                }
+            }
+            else if(gameObject.tag == "deer")
+            {
+                if (!jump || !deerSit)
+                {
+                    if (MainMenu.AudioPlay)
                         gameObject.GetComponent<AudioSource>().Play();
                     BerryController.BumpOntheRoad = true;
                 }
             }
             else
             {
-                if (!jump) 
+                if (!jump)
                 {
                     BerryController.BumpOntheRoad = true;
                     if (gameObject.tag == "puddle")
@@ -194,20 +211,46 @@ public class RoadBase : MonoBehaviour
                 }
             }
         }
-        else
+        else if (gameObject.tag != "catMove")
         {
-            if (gameObject.tag != "catMove")
+            if (collision.gameObject.tag != "Radar")
             {
-                if (gameObject.tag == "river")
-                {
-                    bridge.SetActive(false);
-                    gameObject.SetActive(false);
-                }
-                else if (gameObject.tag == "Berry")
-                    collision.gameObject.SetActive(false);
-                else
-                    gameObject.SetActive(false);
+                if (gameObject.tag == "river") { bridge.SetActive(false); gameObject.SetActive(false); }
+                else if (gameObject.tag == "Berry") { collision.gameObject.SetActive(false); }
+                else { gameObject.SetActive(false); }
             }
+        }
+        else if (gameObject.tag == "catMove")
+            return;
+    }
+    IEnumerator deer()
+    {
+        while (true)
+        {
+            
+            if (GameManager.isPlay)
+            {   GameObject target;
+                if (Input.GetMouseButtonDown(0))
+                {
+                    Ray ray = getCamera.ScreenPointToRay(Input.mousePosition);
+                    RaycastHit hit;
+                    if (Physics.Raycast(ray, out hit))
+                    {
+                        target = hit.collider.gameObject;
+                        if (target.Equals(gameObject))
+                        {
+                            gameObject.GetComponent<SpriteRenderer>().sprite = deerSitDown;
+                            deerSit = true;
+                        }
+                    }
+                }
+                if (transform.position.y < -8)
+                {
+                    gameObject.GetComponent<SpriteRenderer>().sprite = deerStand;
+                    StopCoroutine(deer());
+                }
+            }
+            yield return null;
         }
     }
     IEnumerator catRun()
@@ -239,7 +282,7 @@ public class RoadBase : MonoBehaviour
                 {
                     gameObject.SetActive(false);
                     catBerry.SetActive(false);
-                    yield return new WaitForSeconds(cat[GameManager.speedIndex]);
+                    yield return new WaitForSeconds(2f);
                     break;
                 }
             }
@@ -253,7 +296,8 @@ public class RoadBase : MonoBehaviour
         {
             if (GameManager.isPlay)
             {
-                if (Math.Abs(collision.transform.position.x - bridge.transform.position.x) > 0.07f)
+                if (jump) break;
+                if (Math.Abs(collision.transform.position.x - bridge.transform.position.x) > 1f)
                 {
                     BerryController.BumpOntheRoad = true;
                     if (MainMenu.AudioPlay)

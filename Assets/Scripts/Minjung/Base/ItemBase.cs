@@ -78,8 +78,8 @@ public class ItemBase : MonoBehaviour
         if (collision.tag == "Player")
         {
             gameObject.SetActive(false);
-            
-            if (MainMenu.AudioPlay)     itemAudio.Play();
+
+            if (MainMenu.AudioPlay) itemAudio.Play();
 
             if (this.type == 0)
             {
@@ -89,26 +89,22 @@ public class ItemBase : MonoBehaviour
             if (this.type == 1)
             {
                 // ann_get_bleach
-                if (_player_animator.GetInteger("State") <= 5 ) _player_animator.SetInteger("State",5);
+                if (_player_animator.GetInteger("State") <= 5) _player_animator.SetInteger("State", 5);
             }
             if (this.type == 2)
             {
                 // ann_get_dye
-                _player_animator.SetInteger("State",9);
-                if (_player_animator.GetInteger("State") >= 5 ) _player_animator.SetBool("RED",true);
+                _player_animator.SetInteger("State", 9);
+                if (_player_animator.GetInteger("State") >= 5) _player_animator.SetBool("RED", true);
 
                 // twinkle on
-                _twinkle.GetComponent<Animator>().SetBool("T",true);
+                _twinkle.GetComponent<Animator>().SetBool("T", true);
             }
         }
-        else if (collision.tag == "Radar")
+        else
         {
-            collision.gameObject.SetActive(false);
-        }
-        else if(collision.tag == "Item")
-        {
-            if (gameObject.tag != "Item")
-                collision.gameObject.SetActive(false);
+            if (collision.tag == "Color" || collision.tag== "Road") { collision.gameObject.SetActive(false);}
+            if(collision.tag == "Berry") { gameObject.SetActive(false); }
         }
     }
 }

@@ -59,6 +59,7 @@ public class ItemController : MonoBehaviour
 
     private void Update()
     {
+        itemName.transform.position = new Vector2(_player.transform.position.x, _player.transform.position.y + 1f);
         if (SwipeManager.doubleTap)
         {
             if (item_slot.item_have() != 0)
@@ -155,7 +156,7 @@ public class ItemController : MonoBehaviour
             // ITEM USE FUNCTION 
             if (typetype == Item.item_type.wig)
             {
-                itemName.text = "wig";
+                itemName.text = "��������" + System.Environment.NewLine + "������";
                 AudioManager.wigHatAudio.Play();
                 _player_animator.SetBool("W",true);
                 // twinkle on
@@ -163,7 +164,7 @@ public class ItemController : MonoBehaviour
             }
             else if (typetype == Item.item_type.hat)
             {
-                itemName.text = "hat";
+                itemName.text = "����" + System.Environment.NewLine + "������";
                 AudioManager.wigHatAudio.Play();
                 _player_animator.SetBool("H",true);
                 // twinkle on
@@ -171,15 +172,16 @@ public class ItemController : MonoBehaviour
             }
             else if (typetype == Item.item_type.death_berry)
             {
-                itemName.text = "death_berry";
+                itemName.text = "���� ����鿡��"+System.Environment.NewLine+"������ ���� ���̱� ����";
                 AudioManager.deathBerryAudio.Play();
                 somoon.LowerSomoon();
                 Mob_motion.Set();
             }
             else if (typetype == Item.item_type.basket)
             {
-                itemName.text = "basket";
                 _player_animator.SetBool("B",true);
+                itemName.text = "�ٱ���Ÿ��" + System.Environment.NewLine + "���ư��� ��";
+
                 // twinkle on
                 _twinkle_.GetComponent<Animator>().SetBool("T",true);
                 booster_Controller.Collider_UnEnable();
@@ -187,8 +189,9 @@ public class ItemController : MonoBehaviour
             }
             else if (typetype == Item.item_type.green_yum)
             {
-                itemName.text = "green";
-                _player_animator.SetBool("G",true);
+               _player_animator.SetBool("G",true);
+                itemName.text = "��������"+System.Environment.NewLine+"�ʷϻ� �������̱�..";
+
                 AudioManager.eraserAudio.Play();
             }
         }

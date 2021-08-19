@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
     private void Update() 
     {
         Background = GameObject.Find("Background").GetComponent<SpriteRenderer>().sprite;
+        
         if (Background.name == "threeWay") // 마을
         {
             if (toTown.activeSelf && toTown.transform.position.y >= -4)

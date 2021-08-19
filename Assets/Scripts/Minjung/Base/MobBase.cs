@@ -7,9 +7,9 @@ public class MobBase : MonoBehaviour
     public Vector2 StartPosition;
     public SomoonGauge somoon;
     public GameObject RadarSound;
-    public bool isSurprise;
+    public Sprite Surprise;
+    public Sprite RadarIMG;
     public Sprite[] sprites;
-    public SpriteRenderer spriteRenderer;
     AudioSource radarSound;
 
     GameObject lip_move;
@@ -17,6 +17,7 @@ public class MobBase : MonoBehaviour
     private void Awake()
     {
         radarSound = RadarSound.GetComponent<AudioSource>();
+        RadarIMG = gameObject.GetComponent<SpriteRenderer>().sprite;
     }
     private void OnEnable() // ������Ʈ�� Ȱ��ȭ�Ǹ� ����
     {
@@ -39,6 +40,7 @@ public class MobBase : MonoBehaviour
             transform.Translate(Vector2.down * Time.deltaTime * GameManager.gameSpeed * 12);
             if (transform.position.y < -8) 
             {
+                gameObject.GetComponent<SpriteRenderer>().sprite = RadarIMG;
                 gameObject.SetActive(false);
             }
             
@@ -48,7 +50,8 @@ public class MobBase : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            isSurprise = true;
+            SpriteRenderer SideMob = gameObject.GetComponent<SpriteRenderer>();
+            SideMob.sprite = Surprise;
             if (MainMenu.AudioPlay)
                 radarSound.Play();
             bool isAdult = gameObject.name.Contains("Adult");
@@ -81,21 +84,6 @@ public class MobBase : MonoBehaviour
 
         }
         else if (collision.tag != "catMove")
-            gameObject.SetActive(false);
-        else
-            return;
-    }
-
-    //change sprite when player touch radar
-    private void Set_img()
-    {
-        spriteRenderer.sprite = sprites[1];
-        Invoke("Unset_img", 1.5f);
-    }
-
-    private void Unset_img()
-    {
-        spriteRenderer.sprite = sprites[0];
-        isSurprise = false;
+            gameObject.SetActive(false); 
     }
 }
