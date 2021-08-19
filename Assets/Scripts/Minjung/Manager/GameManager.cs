@@ -53,6 +53,7 @@ public class GameManager : MonoBehaviour
         if (!PlayerPrefs.HasKey("BestScore"))       PlayerPrefs.SetInt("BestScore", 0);
         if (!PlayerPrefs.HasKey("SecondScore"))     PlayerPrefs.SetInt("SecondScore", 0);
         if (!PlayerPrefs.HasKey("ThirdScore"))      PlayerPrefs.SetInt("ThirdScore", 0);
+        if (!PlayerPrefs.HasKey("Score"))      PlayerPrefs.SetInt("Score", 0);
 
         player.SetActive(true);
         player.GetComponent<Animator>().SetBool("START",true);
@@ -153,6 +154,10 @@ public class GameManager : MonoBehaviour
     }
     public void Save()
     {
+        // Save the Now SCORE
+        PlayerPrefs.SetInt("Score", score);
+
+        // Save the SCORE BOARD
         if (score < PlayerPrefs.GetInt("BestScore"))
         {
             if (score < PlayerPrefs.GetInt("SecondScore"))
