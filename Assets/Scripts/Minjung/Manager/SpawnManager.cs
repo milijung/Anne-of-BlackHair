@@ -48,9 +48,9 @@ public class SpawnManager : MonoBehaviour
         Mob[2] = new float[] { 0.5f, 0.8f };
 
         Obstacle = new float[] { 1, 0.7f, 0.5f };
-        ItemTerm[0] = new float[] { 10, 0.3f, 7 };
-        ItemTerm[1] = new float[] { 9, 0.15f, 6.5f };
-        ItemTerm[2] = new float[] { 8, 0.1f, 6 };
+        ItemTerm[0] = new float[] { 10, 0.3f, 5f };
+        ItemTerm[1] = new float[] { 9, 0.15f, 4.5f };
+        ItemTerm[2] = new float[] { 8, 0.1f, 4f };
 
 
 
