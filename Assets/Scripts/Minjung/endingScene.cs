@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+// Berry Count Ending //
+
 public class endingScene : MonoBehaviour
 {
     GameObject _ending_score;
@@ -14,16 +16,18 @@ public class endingScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //if (MainMenu.AudioPlay)
-        //    AudioManager.BackgroundAudio.Play();
+        if (MainMenu.AudioPlay)
+            AudioManager.BackgroundAudio.Play();
 
         _ending_score = GameObject.Find("Score2");
-        _ending_score.GetComponent<TextMeshProUGUI>().text = "100";
-        _ending_score_ = PlayerPrefs.GetInt("Score");
+        _ending_score_ = PlayerPrefs.GetInt("Score_BE");
+        _ending_score.GetComponent<TextMeshProUGUI>().text = _ending_score_.ToString();
+
 
         _berry_number = GameObject.Find("BerryNumber2");
-        _berry_number.GetComponent<TextMeshProUGUI>().text = "5";//PlayerPrefs.GetInt("Berry").ToString();
-        _berry_number_ = 5;//PlayerPrefs.GetInt("Berry");
+        _berry_number_ =  PlayerPrefs.GetInt("Berry_BE");
+        _berry_number.GetComponent<TextMeshProUGUI>().text = _berry_number_.ToString();
+
     }
 
     void Update()

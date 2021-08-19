@@ -50,7 +50,12 @@ public class GameManager : MonoBehaviour
         if (!PlayerPrefs.HasKey("BestScore"))       PlayerPrefs.SetInt("BestScore", 0);
         if (!PlayerPrefs.HasKey("SecondScore"))     PlayerPrefs.SetInt("SecondScore", 0);
         if (!PlayerPrefs.HasKey("ThirdScore"))      PlayerPrefs.SetInt("ThirdScore", 0);
-        if (!PlayerPrefs.HasKey("Score"))      PlayerPrefs.SetInt("Score", 0);
+
+
+        if (!PlayerPrefs.HasKey("Score_BE"))      PlayerPrefs.SetInt("Score_SE", 0);
+        if (!PlayerPrefs.HasKey("Berry_BE"))      PlayerPrefs.SetInt("Score_SE", 0);
+
+        if (!PlayerPrefs.HasKey("Score_SE"))      PlayerPrefs.SetInt("Score_SE", 0);
 
         player.SetActive(true);
         player.GetComponent<Animator>().SetBool("START",true);
@@ -149,14 +154,7 @@ public class GameManager : MonoBehaviour
         StopCoroutine(CountDown());
         yield return null;
     }
-    public void Save()
-    {
-        // Save the Now SCORE
-        PlayerPrefs.SetInt("Score", score);
 
-        // Save the Berry Num
-        PlayerPrefs.SetInt("Berry", BerryController.BerryNum);
-    }
     public void GamePlay()
     {
         score = 0;
@@ -187,7 +185,6 @@ public class GameManager : MonoBehaviour
         isPlay = false;
         BerryController.getBerryBox = false;
         StopCoroutine(AddScore()); // score++ ����
-        Save();
 
         if (MainMenu.AudioPlay == true)
         {
@@ -196,11 +193,21 @@ public class GameManager : MonoBehaviour
         }
         if (GameObject.Find("SomoonGauge").GetComponent<SomoonGauge>().somoonGauge >= 100)
         {
+            // Save the Now SCORE
+            PlayerPrefs.SetInt("Score_SE", score);
+
             GameObject.Find("SwitchScene").GetComponent<SwitchScene>().SomoonGameOver();
         }
         if (BerryController.BerryNum <= 0)
         {
+            // Save the Now SCORE
+            PlayerPrefs.SetInt("Score_BE", score);
+
+            // Save the Berry Num
+            PlayerPrefs.SetInt("Berry_BE", BerryController.BerryNum);
+
             GameObject.Find("SwitchScene").GetComponent<SwitchScene>().BerryGameOver();
+
         }
 
     }
