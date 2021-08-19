@@ -130,6 +130,10 @@ public class ItemController : MonoBehaviour
 
     public void _use_item_in_the_slot()
     {
+        Animator _player_animator = _player.GetComponent<Animator>();
+        
+        usingItem = _player.GetComponent<Animator>().GetBool("ITEM");
+
         if (!usingItem) // While one item is being used, the other cannot be used.
         {
             Item.item_type typetype = (Item.item_type)item_slot.stack.Pop();
@@ -153,7 +157,7 @@ public class ItemController : MonoBehaviour
             {
                 itemName.text = "wig";
                 AudioManager.wigHatAudio.Play();
-                _player.GetComponent<Animator>().SetBool("W",true);
+                _player_animator.SetBool("W",true);
                 // twinkle on
                 _twinkle_.GetComponent<Animator>().SetBool("T",true);
             }
@@ -161,7 +165,7 @@ public class ItemController : MonoBehaviour
             {
                 itemName.text = "hat";
                 AudioManager.wigHatAudio.Play();
-                 _player.GetComponent<Animator>().SetBool("H",true);
+                _player_animator.SetBool("H",true);
                 // twinkle on
                 _twinkle_.GetComponent<Animator>().SetBool("T",true);
             }
@@ -169,14 +173,13 @@ public class ItemController : MonoBehaviour
             {
                 itemName.text = "death_berry";
                 AudioManager.deathBerryAudio.Play();
-                _player.GetComponent<Animator>().SetBool("G",true);
                 somoon.LowerSomoon();
                 Mob_motion.Set();
             }
             else if (typetype == Item.item_type.basket)
             {
                 itemName.text = "basket";
-                _player.GetComponent<Animator>().SetBool("B",true);
+                _player_animator.SetBool("B",true);
                 // twinkle on
                 _twinkle_.GetComponent<Animator>().SetBool("T",true);
                 booster_Controller.Collider_UnEnable();
@@ -185,6 +188,7 @@ public class ItemController : MonoBehaviour
             else if (typetype == Item.item_type.green_yum)
             {
                 itemName.text = "green";
+                _player_animator.SetBool("G",true);
                 AudioManager.eraserAudio.Play();
             }
         }
