@@ -24,7 +24,7 @@ public class SpawnManager : MonoBehaviour
     public static int Speed_Num;
 
     public int objCnt = 4;
-    int x_Back, x_forest, x_Berry;
+    int x_Back, x_forest;
 
     float[][] Back = new float[3][];
     float[][] Mob = new float[3][];
@@ -78,12 +78,12 @@ public class SpawnManager : MonoBehaviour
             }
         }
         for (int i = 0; i < 5; i++)
-            BerryPool.Add(CreateObj(BerryBox[3], transform));
+            BerryPool.Add(CreateObj(BerryBox[3],transform));
     }
     
     private void Start()
     {
-        x_Back = x_forest = x_Berry = Speed_Num = 0;
+        x_Back = x_forest = Speed_Num = 0;
         isforest = false;
         StartCoroutine(CreateBack());
         StartCoroutine(CreateMob());
@@ -96,7 +96,25 @@ public class SpawnManager : MonoBehaviour
         if (isforest && x_forest == 0)
         {
             StartCoroutine(BackgroundScroll());
+            StartCoroutine(CreateBerry());
         }
+    }
+    IEnumerator CreateBerry()
+    {
+        while (true)
+        {
+            if (GameManager.isPlay)
+            {
+                for(int i=0;i<5;i++)
+                {
+                    BerryPool[i].SetActive(true);
+                    yield return new WaitForSeconds(ItemTerm[GameManager.speedIndex][1]);
+                }
+                break;
+            }
+            yield return null;
+        }
+        StopCoroutine(CreateBerry());
     }
     IEnumerator BackgroundScroll()
     {
@@ -181,7 +199,7 @@ public class SpawnManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         while (true)
         {
-            if (GameManager.isPlay && !isforest&& !BackgroundScrollImage[0].activeSelf)
+            if (GameManager.isPlay && !isforest)
             {
                 float time = Random.Range(Mob[GameManager.speedIndex][0], Mob[GameManager.speedIndex][1]); // ����������� �����ϴ� �ð� ����
                 SideMobs[DeactiveMob()].SetActive(true); // ��Ȱ��ȭ�� Mob�� �߿��� 1���� Ȱ��ȭ
@@ -203,24 +221,14 @@ public class SpawnManager : MonoBehaviour
         {
             if (GameManager.isPlay)
             {
-                if (!isforest)
+                if (BackgroundScrollImage[1].activeSelf)
                 {
-                    x_Berry = 0;
-                    Item[0].SetActive(true); // �������ָӴ� Ȱ��ȭ
-                    yield return new WaitForSeconds(ItemTerm[GameManager.speedIndex][0]); // �������� ������ ��, ���� ������ ���� �������� ����
-                }
-                else
-                {
-                    if (x_Berry < 5)
+                    while (!BackgroundScrollImage[0].activeSelf)
                     {
-                        BerryPool[x_Berry].SetActive(true);
-                        x_Berry++;
-                        yield return new WaitForSeconds(ItemTerm[GameManager.speedIndex][1]);
+                        Item[0].SetActive(true); // �������ָӴ� Ȱ��ȭ
+                        yield return new WaitForSeconds(ItemTerm[GameManager.speedIndex][0]); // �������� ������ ��, ���� ������ ���� �������� ����
                     }
-                    else
-                        yield return null;
                 }
-
             }
             else
             {

@@ -102,7 +102,7 @@ public class RoadBase : MonoBehaviour
                 }
                 else
                 {
-                    if (SpawnManager.isforest)
+                    if (SpawnManager.isforest || gameObject.tag == "Berry")
                     {
                         posX = 0;
                     }
@@ -137,7 +137,7 @@ public class RoadBase : MonoBehaviour
         if (GameManager.isPlay)
         {
             transform.Translate(Vector2.down * Time.deltaTime * GameManager.gameSpeed * 12);
-            if (transform.position.y < -8) 
+            if (transform.position.y < -8)
             {
                 if (gameObject.tag == "catSleep")
                     gameObject.GetComponent<SpriteRenderer>().sprite = catSleepIMG;
@@ -168,13 +168,13 @@ public class RoadBase : MonoBehaviour
             }
             else if (gameObject.tag == "river")
             {
-                if(_player_animator.GetBool("BST")) return;
+                if (_player_animator.GetBool("BST")) return;
 
                 StartCoroutine(BumpWithRiver(collision, bridge));
             }
             else if (gameObject.tag == "catMove")
             {
-                if(_player_animator.GetBool("BST")) return;
+                if (_player_animator.GetBool("BST")) return;
 
                 if (!jump && !ItemController.isBasket)
                 {
@@ -187,7 +187,7 @@ public class RoadBase : MonoBehaviour
             }
             else if (gameObject.tag == "catSleep")
             {
-                if(_player_animator.GetBool("BST")) return;
+                if (_player_animator.GetBool("BST")) return;
 
                 if (!jump)
                 {
@@ -199,9 +199,9 @@ public class RoadBase : MonoBehaviour
                     BerryController.BumpOntheRoad = true;
                 }
             }
-            else if(gameObject.tag == "deer")
+            else if (gameObject.tag == "deer")
             {
-                if(_player_animator.GetBool("BST")) return;
+                if (_player_animator.GetBool("BST")) return;
 
                 if (!jump || !deerSit)
                 {
@@ -212,7 +212,7 @@ public class RoadBase : MonoBehaviour
             }
             else
             {
-                if(_player_animator.GetBool("BST")) return;
+                if (_player_animator.GetBool("BST")) return;
 
                 if (!jump)
                 {
