@@ -460,8 +460,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 358d04ff63661994ab3cf1c508329045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fin: 0
   LoadingBar: {fileID: 1093017886}
-  LoadingAudio: {fileID: 1275559084}
+  LoadingAudio: {fileID: 1275559083}
 --- !u!1 &1093017883
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,7 +474,6 @@ GameObject:
   - component: {fileID: 1093017884}
   - component: {fileID: 1093017886}
   - component: {fileID: 1093017885}
-  - component: {fileID: 1093017887}
   m_Layer: 5
   m_Name: LoadingBar
   m_TagString: Untagged
@@ -562,20 +562,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1093017887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1093017883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46e8e37073932394a8d6c5105ab45e42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextScene: Title
-  progressBar: {fileID: 1093017886}
 --- !u!1 &1133041223
 GameObject:
   m_ObjectHideFlags: 0

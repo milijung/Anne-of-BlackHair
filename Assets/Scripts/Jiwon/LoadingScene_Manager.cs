@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadingScene_Manager : MonoBehaviour
 {
-    public static string nextScene;
+    static string nextScene;
     [SerializeField]
     public bool fin;
     public Slider LoadingBar;
@@ -21,13 +21,15 @@ public class LoadingScene_Manager : MonoBehaviour
     {
         StartCoroutine(LoadSceneProcess());
     }
+
+    
     void Update()
     {
         if (fin)
             LoadingBar.value = 1;
         
     }
-
+    
     IEnumerator LoadSceneProcess()
     {
         LoadingAudio = GameObject.Find("LoadingAudio");
