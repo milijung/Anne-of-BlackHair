@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Anne_Move : MonoBehaviour
 {
-    Vector2 startPosition = new Vector2(0, 1.43f);
+    Vector2 startPosition = new Vector2(0, 1.62f);
     private void Awake()
     {
         transform.position = startPosition;
