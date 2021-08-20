@@ -13,7 +13,7 @@ public class ItemController : MonoBehaviour
     public SideMob_Controller Mob_motion;
     public SomoonGauge somoon;
     public Sprite[] ItemImage;
-
+    int saveIndex;
     public GameObject GameObject_item0, GameObject_item1;
     public TextMeshProUGUI itemName;
     public float upSpeed = 1;
@@ -30,8 +30,8 @@ public class ItemController : MonoBehaviour
         if (!isBasket)
         {
             isBasket = true;
-            upSpeed = 2f;
-            GameManager.gameSpeed *= upSpeed;
+            saveIndex = GameManager.speedIndex;
+            GameManager.speedIndex = 3;
             somoon.somoonContinue = false;
             booster_Controller.Collider_UnEnable();
             Invoke("ReturnSpeed", 3f);
@@ -41,7 +41,7 @@ public class ItemController : MonoBehaviour
     private void ReturnSpeed()
     {
         isBasket = false;
-        GameManager.gameSpeed /= upSpeed;
+        GameManager.speedIndex = saveIndex;
         upSpeed = 1;
         somoon.somoonContinue = true;
     }

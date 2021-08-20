@@ -240,8 +240,7 @@ public class RoadBase : MonoBehaviour
     IEnumerator deer()
     {
         while (true)
-        {
-            
+        {           
             if (GameManager.isPlay)
             {   GameObject target;
                 if (Input.GetMouseButtonDown(0))
@@ -261,6 +260,7 @@ public class RoadBase : MonoBehaviour
                 if (transform.position.y < -8)
                 {
                     gameObject.GetComponent<SpriteRenderer>().sprite = deerStand;
+                    gameObject.SetActive(false);
                     StopCoroutine(deer());
                 }
             }
