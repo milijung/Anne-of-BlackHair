@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Anne_Move : MonoBehaviour
 {
-    Vector2 startPosition = new Vector2(0, 1.62f);
+    //Vector2 startPosition = new Vector2(0, 183);
     private void Awake()
     {
-        transform.position = startPosition;
+        //transform.position = startPosition;
     }
 
     private void OnEnable()
@@ -20,22 +20,22 @@ public class Anne_Move : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(1f);
-            transform.Translate(Vector2.right * 7);
-            if (transform.position.x > 0.82f)
-                transform.position = new Vector2(0.82f, transform.position.y);
+            transform.Translate(Vector2.right * 5);
+            if (transform.position.x > 10)
+                transform.position = new Vector2(10, transform.position.y);
             yield return new WaitForSeconds(1f);
 
-            transform.Translate(Vector2.left * 7);
+            transform.Translate(Vector2.left * 5);
             if (transform.position.x < 0)
                 transform.position = new Vector2(0, transform.position.y);
             yield return new WaitForSeconds(1f);
 
-            transform.Translate(Vector2.left * 7);
-            if (transform.position.x < -0.82f)
-                transform.position = new Vector2(-0.82f, transform.position.y);
+            transform.Translate(Vector2.left * 5);
+            if (transform.position.x < -93)
+                transform.position = new Vector2(-93, transform.position.y);
             yield return new WaitForSeconds(1f);
 
-            transform.Translate(Vector2.right * 7);
+            transform.Translate(Vector2.right * 5);
             if (transform.position.x > 0)
                 transform.position = new Vector2(0, transform.position.y);
             
