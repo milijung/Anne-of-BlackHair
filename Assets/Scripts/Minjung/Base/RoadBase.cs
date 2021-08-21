@@ -98,6 +98,8 @@ public class RoadBase : MonoBehaviour
                 else if(gameObject.tag == "deer")
                 {
                     deerSit = false;
+                    transform.position = StartPosition;
+                    gameObject.GetComponent<SpriteRenderer>().sprite = deerStand;
                     StartCoroutine(deer());
                 }
                 else
@@ -259,7 +261,6 @@ public class RoadBase : MonoBehaviour
                 }
                 if (transform.position.y < -8)
                 {
-                    gameObject.GetComponent<SpriteRenderer>().sprite = deerStand;
                     gameObject.SetActive(false);
                     StopCoroutine(deer());
                 }

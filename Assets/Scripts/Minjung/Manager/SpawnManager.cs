@@ -114,8 +114,11 @@ public class SpawnManager : MonoBehaviour
                     BerryPool[i].SetActive(true);
                     yield return new WaitForSeconds(ItemTerm[GameManager.speedIndex][1]);
                 }
-                yield return new WaitForSeconds(ItemTerm[GameManager.speedIndex][1]);
-                Road[2][0].SetActive(true);
+                if (!Sun.sunRise)
+                {
+                    yield return new WaitForSeconds(ItemTerm[GameManager.speedIndex][1]);
+                    Road[2][0].SetActive(true);
+                }
                 break;
             }
             yield return null;
