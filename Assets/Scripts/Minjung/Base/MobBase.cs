@@ -11,6 +11,7 @@ public class MobBase : MonoBehaviour
     public Sprite RadarIMG;
     public Sprite[] sprites;
     AudioSource radarSound;
+    public Animator animator;
 
     GameObject lip_move;
     Animator _player_animator;
@@ -30,6 +31,10 @@ public class MobBase : MonoBehaviour
         else
         {
             gameObject.SetActive(true);
+            if (animator.GetBool("isErase"))
+            {
+                StartCoroutine(RadarOff());
+            }
         }
         transform.position = StartPosition;
         
@@ -40,6 +45,7 @@ public class MobBase : MonoBehaviour
         if (GameManager.isPlay)
         {
             transform.Translate(Vector2.down * Time.deltaTime * GameManager.gameSpeed * 12);
+            
             if (transform.position.y < -8) 
             {
                 gameObject.GetComponent<SpriteRenderer>().sprite = RadarIMG;
@@ -96,5 +102,13 @@ public class MobBase : MonoBehaviour
         }
         else if (collision.tag != "catMove")
             gameObject.SetActive(false); 
+    }
+    IEnumerator RadarOff()
+    {
+        BoxCollider collider = gameObject.GetComponent<BoxCollider>();
+        collider.enabled = false;
+        yield return new WaitForSeconds(1f);
+        collider.enabled = true;
+        StopCoroutine(RadarOff());
     }
 }

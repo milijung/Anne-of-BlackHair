@@ -40,9 +40,9 @@ public class SpawnManager : MonoBehaviour
         Road[3] = RoadFour;
 
         Back[0] = new float[] { 0.2f, 9.8f, 0.7f, 9.3f };
-        Back[1] = new float[] { 0.09f, 9.91f, 0.4f, 9.6f };
-        Back[2] = new float[] { 0.065f, 9.935f, 0.25f, 9.75f };
-        Back[3] = new float[] { 0.02f, 10f, 0.13f, 10f };
+        Back[1] = new float[] { 0.12f, 9.88f, 0.4f, 9.6f };
+        Back[2] = new float[] { 0.08f, 9.92f, 0.28f, 9.75f };
+        Back[3] = new float[] { 0.035f, 9f, 0.17f, 9f };
 
         Mob[0] = new float[] { 1, 2 };
         Mob[1] = new float[] { 0.6f, 0.8f };
@@ -51,9 +51,9 @@ public class SpawnManager : MonoBehaviour
 
         Obstacle = new float[] { 1, 0.7f, 0.5f, 0.2f };
         ItemTerm[0] = new float[] { 10, 0.3f, 6f };
-        ItemTerm[1] = new float[] { 9, 0.18f, 5.5f };
-        ItemTerm[2] = new float[] { 8, 0.12f, 5f };
-        ItemTerm[3] = new float[] { 4, 0.04f, 2f };
+        ItemTerm[1] = new float[] { 9, 0.2f, 5.5f };
+        ItemTerm[2] = new float[] { 8, 0.15f, 5f };
+        ItemTerm[3] = new float[] { 4, 0.06f, 2f };
 
 
 

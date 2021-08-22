@@ -45,14 +45,10 @@ public class SomoonGauge : MonoBehaviour
     public void SomoonCtrl()
     {
         //Ʈ��Ŭ ������ �� somoonContinue false ����
-        if (animator.GetInteger("State") >= 8 )
-        {
+        if (animator.GetInteger("State") >= 8)
             somoonContinue = false;
-        }
-
         else
         {
-            somoonContinue = true;
 
             if (somoonGauge >= 100.0f)
             {
