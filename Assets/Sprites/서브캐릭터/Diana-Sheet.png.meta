@@ -142,12 +142,12 @@ TextureImporter:
       name: Diana-Sheet_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 11
-        width: 162
-        height: 97
+        x: 32
+        y: 12
+        width: 160
+        height: 96
       alignment: 9
-      pivot: {x: 0.21200967, y: 0.5}
+      pivot: {x: 0.20023794, y: 0.54148525}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -163,12 +163,12 @@ TextureImporter:
       name: Diana-Sheet_1
       rect:
         serializedVersion: 2
-        x: 319
-        y: 11
-        width: 162
-        height: 97
+        x: 320
+        y: 12
+        width: 160
+        height: 96
       alignment: 9
-      pivot: {x: 0.78831464, y: 0.5}
+      pivot: {x: 0.80008334, y: 0.54148763}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -184,12 +184,12 @@ TextureImporter:
       name: Diana-Sheet_2
       rect:
         serializedVersion: 2
-        x: 543
-        y: 11
-        width: 162
-        height: 90
+        x: 544
+        y: 12
+        width: 160
+        height: 88
       alignment: 9
-      pivot: {x: 0.25, y: 0.5}
+      pivot: {x: 0.20018235, y: 0.49976757}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -205,12 +205,12 @@ TextureImporter:
       name: Diana-Sheet_3
       rect:
         serializedVersion: 2
-        x: 831
-        y: 11
-        width: 162
-        height: 90
+        x: 832
+        y: 12
+        width: 160
+        height: 88
       alignment: 9
-      pivot: {x: 0.76, y: 0.5}
+      pivot: {x: 0.7999962, y: 0.4997241}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -226,12 +226,12 @@ TextureImporter:
       name: Diana-Sheet_4
       rect:
         serializedVersion: 2
-        x: 1054
-        y: 3
-        width: 123
-        height: 105
+        x: 1056
+        y: 4
+        width: 120
+        height: 104
       alignment: 9
-      pivot: {x: 0.28, y: 0.5}
+      pivot: {x: 0.2671234, y: 0.57683766}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -247,12 +247,12 @@ TextureImporter:
       name: Diana-Sheet_5
       rect:
         serializedVersion: 2
-        x: 1383
-        y: 3
-        width: 121
-        height: 105
+        x: 1384
+        y: 4
+        width: 120
+        height: 104
       alignment: 9
-      pivot: {x: 0.72, y: 0.5}
+      pivot: {x: 0.73324484, y: 0.5770146}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -268,12 +268,12 @@ TextureImporter:
       name: Diana-Sheet_6
       rect:
         serializedVersion: 2
-        x: 1567
-        y: 11
-        width: 110
-        height: 109
+        x: 1568
+        y: 12
+        width: 108
+        height: 108
       alignment: 9
-      pivot: {x: 0.3, y: 0.5}
+      pivot: {x: 0.37042123, y: 0.5179294}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -289,12 +289,12 @@ TextureImporter:
       name: Diana-Sheet_7
       rect:
         serializedVersion: 2
-        x: 1906
-        y: 11
-        width: 111
-        height: 109
+        x: 1908
+        y: 12
+        width: 108
+        height: 108
       alignment: 9
-      pivot: {x: 0.73, y: 0.5}
+      pivot: {x: 0.629676, y: 0.51801056}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -310,12 +310,12 @@ TextureImporter:
       name: Diana-Sheet_8
       rect:
         serializedVersion: 2
-        x: 2079
-        y: 11
-        width: 66
-        height: 97
+        x: 2080
+        y: 12
+        width: 64
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -331,12 +331,12 @@ TextureImporter:
       name: Diana-Sheet_9
       rect:
         serializedVersion: 2
-        x: 2463
-        y: 11
-        width: 66
-        height: 97
+        x: 2464
+        y: 12
+        width: 64
+        height: 96
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -352,12 +352,12 @@ TextureImporter:
       name: Diana-Sheet_10
       rect:
         serializedVersion: 2
-        x: 2595
-        y: 11
-        width: 66
-        height: 90
+        x: 2596
+        y: 12
+        width: 64
+        height: 88
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -373,12 +373,12 @@ TextureImporter:
       name: Diana-Sheet_11
       rect:
         serializedVersion: 2
-        x: 2971
-        y: 11
-        width: 66
-        height: 90
+        x: 2972
+        y: 12
+        width: 64
+        height: 88
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
