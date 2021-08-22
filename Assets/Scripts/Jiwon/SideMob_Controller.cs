@@ -6,6 +6,7 @@ public class SideMob_Controller : MonoBehaviour
 {
     public Animator[] mob_ani;
     public SpriteRenderer[] spriteRenderers;
+    public BoxCollider[] mob_collider;
     public GameObject[] mobs;
 
     //마녀의 열매 사용시 빙글빙글 애니메이션 ON
@@ -22,6 +23,8 @@ public class SideMob_Controller : MonoBehaviour
         {
             spriteRenderers[i].sprite = mobs[i].GetComponent<MobBase>().sprites[2];
         }
+        for(int i=0;i<mob_collider.Length;i++)
+            mob_collider[i].enabled = false;
 
         Invoke("UnSet", 2f);    //마녀의 열매 효과 2초동안 지속
     }
@@ -38,5 +41,7 @@ public class SideMob_Controller : MonoBehaviour
         {
             spriteRenderers[i].sprite = mobs[i].GetComponent<MobBase>().sprites[0];
         }
+        for (int i = 0; i < mob_collider.Length; i++)
+            mob_collider[i].enabled = true;
     }
 }

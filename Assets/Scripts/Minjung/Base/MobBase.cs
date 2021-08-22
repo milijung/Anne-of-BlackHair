@@ -7,8 +7,6 @@ public class MobBase : MonoBehaviour
     public Vector2 StartPosition;
     public SomoonGauge somoon;
     public GameObject RadarSound;
-    public Sprite Surprise;
-    public Sprite RadarIMG;
     public Sprite[] sprites;
     AudioSource radarSound;
     public Animator animator;
@@ -19,8 +17,8 @@ public class MobBase : MonoBehaviour
     private void Awake()
     {
         radarSound = RadarSound.GetComponent<AudioSource>();
-        RadarIMG = gameObject.GetComponent<SpriteRenderer>().sprite;
         _player_animator = GameObject.Find("Player").GetComponent<Animator>();
+        if(gameObject.GetComponent<Animator>() != null) animator = gameObject.GetComponent<Animator>();
     }
     private void OnEnable() // ������Ʈ�� Ȱ��ȭ�Ǹ� ����
     {
@@ -31,10 +29,6 @@ public class MobBase : MonoBehaviour
         else
         {
             gameObject.SetActive(true);
-            if (animator.GetBool("isErase"))
-            {
-                StartCoroutine(RadarOff());
-            }
         }
         transform.position = StartPosition;
         
@@ -48,7 +42,6 @@ public class MobBase : MonoBehaviour
             
             if (transform.position.y < -8) 
             {
-                gameObject.GetComponent<SpriteRenderer>().sprite = RadarIMG;
                 gameObject.SetActive(false);
             }
             
@@ -66,9 +59,6 @@ public class MobBase : MonoBehaviour
                 // SMALL MOO JUCK STATE
                 return;
             } 
-
-            SpriteRenderer SideMob = gameObject.GetComponent<SpriteRenderer>();
-            SideMob.sprite = Surprise;
             if (MainMenu.AudioPlay)
                 radarSound.Play();
             bool isAdult = gameObject.name.Contains("Adult");
@@ -102,13 +92,5 @@ public class MobBase : MonoBehaviour
         }
         else if (collision.tag != "catMove")
             gameObject.SetActive(false); 
-    }
-    IEnumerator RadarOff()
-    {
-        BoxCollider collider = gameObject.GetComponent<BoxCollider>();
-        collider.enabled = false;
-        yield return new WaitForSeconds(1f);
-        collider.enabled = true;
-        StopCoroutine(RadarOff());
     }
 }
