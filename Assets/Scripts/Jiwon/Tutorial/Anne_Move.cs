@@ -21,8 +21,8 @@ public class Anne_Move : MonoBehaviour
         {
             yield return new WaitForSeconds(1f);
             transform.Translate(Vector2.right * 5);
-            if (transform.position.x > 0.7)
-                transform.position = new Vector2(0.7f, transform.position.y);
+            if (transform.position.x > 10)
+                transform.position = new Vector2(10, transform.position.y);
             yield return new WaitForSeconds(1f);
 
             transform.Translate(Vector2.left * 5);
@@ -31,8 +31,8 @@ public class Anne_Move : MonoBehaviour
             yield return new WaitForSeconds(1f);
 
             transform.Translate(Vector2.left * 5);
-            if (transform.position.x < -0.7)
-                transform.position = new Vector2(-0.7f, transform.position.y);
+            if (transform.position.x < -93)
+                transform.position = new Vector2(-93, transform.position.y);
             yield return new WaitForSeconds(1f);
 
             transform.Translate(Vector2.right * 5);

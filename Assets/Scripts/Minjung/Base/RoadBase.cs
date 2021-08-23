@@ -231,9 +231,9 @@ public class RoadBase : MonoBehaviour
         {
             if (collision.gameObject.tag != "Radar")
             {
-                if (gameObject.tag == "river") { bridge.SetActive(false); gameObject.SetActive(false); }
+                if (gameObject.tag == "river" && gameObject.transform.position.y>6) { bridge.SetActive(false); gameObject.SetActive(false); }
                 else if (gameObject.tag == "Berry") { collision.gameObject.SetActive(false); }
-                else { gameObject.SetActive(false); }
+                else { if (gameObject.transform.position.y > 6) gameObject.SetActive(false); }
             }
         }
         else if (gameObject.tag == "catMove")

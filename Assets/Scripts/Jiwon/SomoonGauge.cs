@@ -8,7 +8,7 @@ public class SomoonGauge : MonoBehaviour
     public GameObject Emergency;
 
     public Animator animator;
-    public bool somoonContinue;
+    public static bool somoonContinue;
     public bool isEmergency;
 
     public float adultFirstTouchTime;
@@ -45,7 +45,7 @@ public class SomoonGauge : MonoBehaviour
     public void SomoonCtrl()
     {
         //Ʈ��Ŭ ������ �� somoonContinue false ����
-        if (animator.GetInteger("State") >= 8)
+        if (animator.GetInteger("State") >= 8 && !animator.GetBool("G"))
             somoonContinue = false;
         else
         {

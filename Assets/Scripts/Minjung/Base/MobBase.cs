@@ -28,6 +28,7 @@ public class MobBase : MonoBehaviour
         }
         else
         {
+            gameObject.GetComponent<SpriteRenderer>().sprite = sprites[0];
             gameObject.SetActive(true);
         }
         transform.position = StartPosition;
@@ -51,14 +52,14 @@ public class MobBase : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            if(_player_animator.GetBool("MJ")) // IF MOO JUCK STATE
+            if (_player_animator.GetBool("MJ")) // IF MOO JUCK STATE
                 return;
-            
-            else if(_player_animator.GetBool("SMJ"))
+
+            else if (_player_animator.GetBool("SMJ"))
             {
                 // SMALL MOO JUCK STATE
                 return;
-            } 
+            }
             if (MainMenu.AudioPlay)
                 radarSound.Play();
             bool isAdult = gameObject.name.Contains("Adult");
@@ -87,10 +88,10 @@ public class MobBase : MonoBehaviour
             }
 
             // lip move animation
-            lip_move.GetComponent<Animator>().SetBool("L",true);
+            lip_move.GetComponent<Animator>().SetBool("L", true);
 
         }
-        else if (collision.tag != "catMove")
-            gameObject.SetActive(false); 
+        else if (collision.tag != "catMove" && gameObject.transform.position.y > 6)
+            gameObject.SetActive(false);
     }
 }

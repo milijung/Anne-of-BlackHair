@@ -10,6 +10,7 @@ public class SpawnManager : MonoBehaviour
     List<GameObject> BerryPool = new List<GameObject>();
     List<int> StreetLightNum = new List<int>();
 
+    public Animator player_animator;
     public Sun sun;
     public GameObject[] SideMobs;
     public GameObject[] Item;
@@ -50,9 +51,9 @@ public class SpawnManager : MonoBehaviour
         Mob[3] = new float[] { 0.2f, 0.5f };
 
         Obstacle = new float[] { 1, 0.7f, 0.5f, 0.2f };
-        ItemTerm[0] = new float[] { 10, 0.3f, 6f };
-        ItemTerm[1] = new float[] { 9, 0.2f, 5.5f };
-        ItemTerm[2] = new float[] { 8, 0.15f, 5f };
+        ItemTerm[0] = new float[] { 10, 0.3f, 6.5f };
+        ItemTerm[1] = new float[] { 9, 0.2f, 6f };
+        ItemTerm[2] = new float[] { 8, 0.15f, 5.5f };
         ItemTerm[3] = new float[] { 4, 0.06f, 2f };
 
 
@@ -255,8 +256,16 @@ public class SpawnManager : MonoBehaviour
         {
             if (GameManager.isPlay)
             {
-                Item[Random.Range(1, 3)].SetActive(true);
-                yield return new WaitForSeconds(ItemTerm[GameManager.speedIndex][2]);
+                if (player_animator.GetInteger("State") >= 4)
+                {
+                    Item[2].SetActive(true);
+                    yield return new WaitForSeconds(ItemTerm[GameManager.speedIndex][2]+1f);
+                }
+                else
+                {
+                    Item[1].SetActive(true);
+                    yield return new WaitForSeconds(ItemTerm[GameManager.speedIndex][2]);
+                }
             }
             else
             {

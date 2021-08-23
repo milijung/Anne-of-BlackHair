@@ -32,7 +32,7 @@ public class ItemController : MonoBehaviour
             isBasket = true;
             saveIndex = GameManager.speedIndex;
             GameManager.speedIndex = 3;
-            somoon.somoonContinue = false;
+            SomoonGauge.somoonContinue = false;
             booster_Controller.Collider_UnEnable();
             Invoke("ReturnSpeed", 3f);
         }
@@ -43,7 +43,7 @@ public class ItemController : MonoBehaviour
         isBasket = false;
         GameManager.speedIndex = saveIndex;
         upSpeed = 1;
-        somoon.somoonContinue = true;
+        SomoonGauge.somoonContinue = true;
     }
 
     void Start()
@@ -191,7 +191,8 @@ public class ItemController : MonoBehaviour
             {
                _player_animator.SetBool("G",true);
                 itemName.text = "쓸데없는"+System.Environment.NewLine+"초록색 염색약이군..";
-
+                _player_animator.SetBool("MJ", false);
+                SomoonGauge.somoonContinue = true;
                 AudioManager.eraserAudio.Play();
             }
         }
