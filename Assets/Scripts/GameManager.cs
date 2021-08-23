@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public Text scoreTxt; // ï¿½ï¿½ï¿½ï¿½ Text
+    public Text scoreTxt; // Á¡¼ö Text
     public static int score = -1;
 
     public float gameSpeed;
@@ -29,15 +29,15 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        scoreTxt.text = score.ToString(); // score ï¿½ï¿½ï¿½ï¿½ Text ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        scoreTxt.text = score.ToString(); // score °ªÀ» Text ³»¿ëÀ¸·Î
     }
 
     public IEnumerator AddScore()
     {
-        while (Time.timeScale == 1) // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½
+        while (Time.timeScale == 1) // °ÔÀÓÀÌ ÁøÇàÁßÀÌ¸é
         {
             score++;
-            yield return new WaitForSeconds(gameSpeed); // ï¿½ï¿½ï¿½ï¿½ ï¿½Óµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+            yield return new WaitForSeconds(gameSpeed); // °ÔÀÓ ¼Óµµ ´ÜÀ§·Î Á¡¼ö¸¦ ´õÇÔ
         }
     }
 
@@ -45,12 +45,15 @@ public class GameManager : MonoBehaviour
     {
         score = -1;
         SpawnManager.MobStartNum = 0;
-        StartCoroutine(AddScore()); // score++ ï¿½ï¿½ï¿½ï¿½
+        StartCoroutine(AddScore()); // score++ ½ÇÇà
     }
     public void GameOver()
     {
-        StopCoroutine(AddScore()); // score++ ï¿½ï¿½ï¿½ï¿½
+        StopCoroutine(AddScore()); // score++ ¸ØÃã
         Debug.Log("Game Over!");
 
     }
+
+
+
 }
