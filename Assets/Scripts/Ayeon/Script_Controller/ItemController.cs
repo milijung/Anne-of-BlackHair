@@ -13,7 +13,7 @@ public class ItemController : MonoBehaviour
     public SideMob_Controller Mob_motion;
     public SomoonGauge somoon;
     public Sprite[] ItemImage;
-
+    int saveIndex;
     public GameObject GameObject_item0, GameObject_item1;
     public TextMeshProUGUI itemName;
     public float upSpeed = 1;
@@ -30,9 +30,9 @@ public class ItemController : MonoBehaviour
         if (!isBasket)
         {
             isBasket = true;
-            upSpeed = 2f;
-            GameManager.gameSpeed *= upSpeed;
-            somoon.somoonContinue = false;
+            saveIndex = GameManager.speedIndex;
+            GameManager.speedIndex = 3;
+            SomoonGauge.somoonContinue = false;
             booster_Controller.Collider_UnEnable();
             Invoke("ReturnSpeed", 3f);
         }
@@ -41,9 +41,9 @@ public class ItemController : MonoBehaviour
     private void ReturnSpeed()
     {
         isBasket = false;
-        GameManager.gameSpeed /= upSpeed;
+        GameManager.speedIndex = saveIndex;
         upSpeed = 1;
-        somoon.somoonContinue = true;
+        SomoonGauge.somoonContinue = true;
     }
 
     void Start()
@@ -191,7 +191,8 @@ public class ItemController : MonoBehaviour
             {
                _player_animator.SetBool("G",true);
                 itemName.text = "쓸데없는"+System.Environment.NewLine+"초록색 염색약이군..";
-
+                _player_animator.SetBool("MJ", false);
+                SomoonGauge.somoonContinue = true;
                 AudioManager.eraserAudio.Play();
             }
         }

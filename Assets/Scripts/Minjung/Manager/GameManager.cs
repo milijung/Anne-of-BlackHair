@@ -7,7 +7,6 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public static bool isPlay;
-
     public TextMeshProUGUI scoreTxt; // ���� Text
     public ItemController itemController;
     public static int score = 0;
@@ -25,8 +24,8 @@ public class GameManager : MonoBehaviour
 
     public static float gameSpeed;
     public static int speedIndex = 0;
-    float[] speed = { 0.3f, 0.5f, 0.7f };
-    float[] scoreTerm = { 0.5f, 0.3f, 0.1f };
+    float[] speed = { 0.3f, 0.5f, 0.7f, 1.5f };
+    float[] scoreTerm = { 0.5f, 0.3f, 0.1f, 0.03f };
     public GameObject[] Count;
 
     #region instance
@@ -64,7 +63,7 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        if (!ItemController.isBasket) { gameSpeed = speed[speedIndex]; }
+        gameSpeed = speed[speedIndex];
         scoreTxt.text = score.ToString(); // score ���� Text ��������     
     }
     public IEnumerator ChangeSpeed()

@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (desiredLane != 1)
                 {
-                    BerryController.BumpOntheRoad = true;
+                    if(!ItemController.isBasket)BerryController.BumpOntheRoad = true;
                     OneWay();
                 }
                 else

@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class LoadingScene_Manager : MonoBehaviour
 {
-    public static string nextScene;
+    static string nextScene;
     [SerializeField]
+    public bool fin;
     public Slider LoadingBar;
+    public GameObject LoadingAudio;
 
     public static void LoadScene(string sceneName)
     {
@@ -20,10 +22,20 @@ public class LoadingScene_Manager : MonoBehaviour
         StartCoroutine(LoadSceneProcess());
     }
 
+    
+    void Update()
+    {
+        if (fin)
+            LoadingBar.value = 1;
+        
+    }
+    
     IEnumerator LoadSceneProcess()
     {
+        LoadingAudio = GameObject.Find("LoadingAudio");
+        if (MainMenu.AudioPlay) LoadingAudio.GetComponent<AudioSource>().Play();
         AsyncOperation op = SceneManager.LoadSceneAsync(nextScene);
-        op.allowSceneActivation = false;
+        op.allowSceneActivation = fin = false;
 
         float timer = 0f;
         while (!op.isDone)
@@ -40,11 +52,15 @@ public class LoadingScene_Manager : MonoBehaviour
                 LoadingBar.value = Mathf.Lerp(0.9f, 1f, timer);
                 if(LoadingBar.value >= 1f)
                 {
+                    fin = true;
+                    yield return new WaitForSeconds(1f);
                     op.allowSceneActivation = true;
                     yield break;
                 }
             }
         }
+        yield return new WaitForSeconds(1f);
+        op.allowSceneActivation = true;
     }
 
 }
