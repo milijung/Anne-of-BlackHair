@@ -31,7 +31,7 @@ public class BackgroundScroll : MonoBehaviour
 
             if (GameManager.isPlay)
             {
-                if (SpawnManager.isforest )
+                if (SpawnManager.isforest && toForest.transform.position.y <= 0.2f)
                 {
                     gameObject.GetComponent<SpriteRenderer>().sprite = BackgroundImage[0]; // 한줄
                     while (SpawnManager.isforest)
@@ -39,7 +39,7 @@ public class BackgroundScroll : MonoBehaviour
                         yield return null;
                     }
                 }
-                else if(!SpawnManager.isforest)
+                else if(!SpawnManager.isforest && toTown.transform.position.y<=-0.1f)
                 {
                     gameObject.GetComponent<SpriteRenderer>().sprite = BackgroundImage[1]; // 세줄
                     while (!SpawnManager.isforest)

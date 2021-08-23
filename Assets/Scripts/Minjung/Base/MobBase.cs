@@ -7,9 +7,10 @@ public class MobBase : MonoBehaviour
     public Vector2 StartPosition;
     public SomoonGauge somoon;
     public GameObject RadarSound;
+    public Sprite Surprise;
+    public Sprite RadarIMG;
     public Sprite[] sprites;
     AudioSource radarSound;
-    public Animator animator;
 
     GameObject lip_move;
     Animator _player_animator;
@@ -17,8 +18,8 @@ public class MobBase : MonoBehaviour
     private void Awake()
     {
         radarSound = RadarSound.GetComponent<AudioSource>();
+        RadarIMG = gameObject.GetComponent<SpriteRenderer>().sprite;
         _player_animator = GameObject.Find("Player").GetComponent<Animator>();
-        if(gameObject.GetComponent<Animator>() != null) animator = gameObject.GetComponent<Animator>();
     }
     private void OnEnable() // ������Ʈ�� Ȱ��ȭ�Ǹ� ����
     {
@@ -28,7 +29,6 @@ public class MobBase : MonoBehaviour
         }
         else
         {
-            gameObject.GetComponent<SpriteRenderer>().sprite = sprites[0];
             gameObject.SetActive(true);
         }
         transform.position = StartPosition;
@@ -40,9 +40,9 @@ public class MobBase : MonoBehaviour
         if (GameManager.isPlay)
         {
             transform.Translate(Vector2.down * Time.deltaTime * GameManager.gameSpeed * 12);
-            
             if (transform.position.y < -8) 
             {
+                gameObject.GetComponent<SpriteRenderer>().sprite = RadarIMG;
                 gameObject.SetActive(false);
             }
             
@@ -52,14 +52,17 @@ public class MobBase : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            if (_player_animator.GetBool("MJ")) // IF MOO JUCK STATE
+            if(_player_animator.GetBool("MJ")) // IF MOO JUCK STATE
                 return;
-
-            else if (_player_animator.GetBool("SMJ"))
+            
+            else if(_player_animator.GetBool("SMJ"))
             {
                 // SMALL MOO JUCK STATE
                 return;
-            }
+            } 
+
+            SpriteRenderer SideMob = gameObject.GetComponent<SpriteRenderer>();
+            SideMob.sprite = Surprise;
             if (MainMenu.AudioPlay)
                 radarSound.Play();
             bool isAdult = gameObject.name.Contains("Adult");
@@ -88,10 +91,10 @@ public class MobBase : MonoBehaviour
             }
 
             // lip move animation
-            lip_move.GetComponent<Animator>().SetBool("L", true);
+            lip_move.GetComponent<Animator>().SetBool("L",true);
 
         }
-        else if (collision.tag != "catMove" && gameObject.transform.position.y > 6)
-            gameObject.SetActive(false);
+        else if (collision.tag != "catMove")
+            gameObject.SetActive(false); 
     }
 }

@@ -28,21 +28,10 @@ public class GroundBase : MonoBehaviour
         if (GameManager.isPlay && gameObject.tag != "way")
         {
             transform.Translate(Vector2.down * Time.deltaTime * GameManager.gameSpeed * 12);
-            if (gameObject.tag == "toTown" || gameObject.tag == "toForest")
+            if (transform.position.y < -8)
             {
-                if (transform.position.y < -20)
-                {
-                    gameObject.SetActive(false);
-                    way1.SetActive(false);
-                    way2.SetActive(false);
-                }
-            }
-            else
-            {
-                if (transform.position.y < -8)
-                {
-                    gameObject.SetActive(false);
-                }
+                gameObject.SetActive(false);
+                if (way1 != null && way2 != null) { way1.SetActive(false); way2.SetActive(false); }
             }
         }
     }

@@ -94,7 +94,7 @@ public class ItemBase : MonoBehaviour
             if (this.type == 2)
             {
                 // ann_get_dye
-                if (_player_animator.GetInteger("State") >= 3) {
+                if (_player_animator.GetInteger("State") >= 4) {
                     _player_animator.SetBool("RED", true);
                     _player_animator.SetInteger("State", 9);
 
@@ -105,11 +105,7 @@ public class ItemBase : MonoBehaviour
         }
         else
         {
-            if (collision.tag == "Color" || collision.tag== "Road") 
-            {
-                if(gameObject.transform.position.y >6)
-                    collision.gameObject.SetActive(false);
-            }
+            if (collision.tag == "Color" || collision.tag== "Road") { collision.gameObject.SetActive(false);}
             if(collision.tag == "Berry") { gameObject.SetActive(false); }
         }
     }
