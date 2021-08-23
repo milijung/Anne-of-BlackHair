@@ -10,7 +10,6 @@ public class SpawnManager : MonoBehaviour
     List<GameObject> BerryPool = new List<GameObject>();
     List<int> StreetLightNum = new List<int>();
 
-    public Animator player_animator;
     public Sun sun;
     public GameObject[] SideMobs;
     public GameObject[] Item;
@@ -25,13 +24,13 @@ public class SpawnManager : MonoBehaviour
     public static int Speed_Num;
 
     public int objCnt = 4;
-    int x_Back, x_forest;
+    int x_Back, x_forest, x_Berry;
 
-    float[][] Back = new float[4][];
-    float[][] Mob = new float[4][];
+    float[][] Back = new float[3][];
+    float[][] Mob = new float[3][];
     float[] Obstacle;
-    float[][] ItemTerm = new float[4][]; // order: Item Berry color
-    float[] cat = { 2, 3, 5, 5 }; // cat_run create Term
+    float[][] ItemTerm = new float[3][]; // order: Item Berry color
+    float[] cat = { 2, 3, 5 }; // cat_run create Term
 
     private void Awake()
     {
@@ -41,20 +40,17 @@ public class SpawnManager : MonoBehaviour
         Road[3] = RoadFour;
 
         Back[0] = new float[] { 0.2f, 9.8f, 0.7f, 9.3f };
-        Back[1] = new float[] { 0.12f, 9.88f, 0.4f, 9.6f };
-        Back[2] = new float[] { 0.08f, 9.92f, 0.28f, 9.75f };
-        Back[3] = new float[] { 0.035f, 9f, 0.17f, 9f };
+        Back[1] = new float[] { 0.13f, 9.95f, 0.4f, 9.6f };
+        Back[2] = new float[] { 0.09f, 9.91f, 0.28f, 9.72f };
 
         Mob[0] = new float[] { 1, 2 };
         Mob[1] = new float[] { 0.6f, 0.8f };
         Mob[2] = new float[] { 0.5f, 0.8f };
-        Mob[3] = new float[] { 0.2f, 0.5f };
 
-        Obstacle = new float[] { 1, 0.7f, 0.5f, 0.2f };
-        ItemTerm[0] = new float[] { 10, 0.3f, 6.5f };
-        ItemTerm[1] = new float[] { 9, 0.2f, 6f };
-        ItemTerm[2] = new float[] { 8, 0.15f, 5.5f };
-        ItemTerm[3] = new float[] { 4, 0.06f, 2f };
+        Obstacle = new float[] { 1, 0.7f, 0.5f };
+        ItemTerm[0] = new float[] { 10, 0.3f, 5f };
+        ItemTerm[1] = new float[] { 9, 0.15f, 4.5f };
+        ItemTerm[2] = new float[] { 8, 0.1f, 4f };
 
 
 
@@ -82,12 +78,12 @@ public class SpawnManager : MonoBehaviour
             }
         }
         for (int i = 0; i < 5; i++)
-            BerryPool.Add(CreateObj(BerryBox[3],transform));
+            BerryPool.Add(CreateObj(BerryBox[3], transform));
     }
     
     private void Start()
     {
-        x_Back = x_forest = Speed_Num = 0;
+        x_Back = x_forest = x_Berry = Speed_Num = 0;
         isforest = false;
         StartCoroutine(CreateBack());
         StartCoroutine(CreateMob());
@@ -100,31 +96,7 @@ public class SpawnManager : MonoBehaviour
         if (isforest && x_forest == 0)
         {
             StartCoroutine(BackgroundScroll());
-            StartCoroutine(CreateBerry());
         }
-    }
-    IEnumerator CreateBerry()
-    {
-        while (true)
-        {
-            if (GameManager.isPlay)
-            {
-                
-                for(int i=0;i<5;i++)
-                {
-                    BerryPool[i].SetActive(true);
-                    yield return new WaitForSeconds(ItemTerm[GameManager.speedIndex][1]);
-                }
-                if (!Sun.sunRise)
-                {
-                    yield return new WaitForSeconds(ItemTerm[GameManager.speedIndex][1]);
-                    Road[2][0].SetActive(true);
-                }
-                break;
-            }
-            yield return null;
-        }
-        StopCoroutine(CreateBerry());
     }
     IEnumerator BackgroundScroll()
     {
@@ -209,17 +181,14 @@ public class SpawnManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         while (true)
         {
-            if (GameManager.isPlay)
+            if (GameManager.isPlay && !isforest&& !BackgroundScrollImage[0].activeSelf)
             {
-                if (!isforest)
-                {
-                    float time = Random.Range(Mob[GameManager.speedIndex][0], Mob[GameManager.speedIndex][1]); // ����������� �����ϴ� �ð� ����
-                    SideMobs[DeactiveMob()].SetActive(true); // ��Ȱ��ȭ�� Mob�� �߿��� 1���� Ȱ��ȭ
-                    yield return new WaitForSeconds(time);
+                float time = Random.Range(Mob[GameManager.speedIndex][0], Mob[GameManager.speedIndex][1]); // ����������� �����ϴ� �ð� ����
+                SideMobs[DeactiveMob()].SetActive(true); // ��Ȱ��ȭ�� Mob�� �߿��� 1���� Ȱ��ȭ
+                yield return new WaitForSeconds(time);
 
-                    if (MobStartNum == 0)
-                        MobStartNum++;
-                }
+                if (MobStartNum == 0)
+                    MobStartNum++;
             }
             else
             {
@@ -234,14 +203,24 @@ public class SpawnManager : MonoBehaviour
         {
             if (GameManager.isPlay)
             {
-                if (BackgroundScrollImage[1].activeSelf)
+                if (!isforest)
                 {
-                    while (!BackgroundScrollImage[0].activeSelf)
-                    {
-                        Item[0].SetActive(true); // �������ָӴ� Ȱ��ȭ
-                        yield return new WaitForSeconds(ItemTerm[GameManager.speedIndex][0]); // �������� ������ ��, ���� ������ ���� �������� ����
-                    }
+                    x_Berry = 0;
+                    Item[0].SetActive(true); // �������ָӴ� Ȱ��ȭ
+                    yield return new WaitForSeconds(ItemTerm[GameManager.speedIndex][0]); // �������� ������ ��, ���� ������ ���� �������� ����
                 }
+                else
+                {
+                    if (x_Berry < 5)
+                    {
+                        BerryPool[x_Berry].SetActive(true);
+                        x_Berry++;
+                        yield return new WaitForSeconds(ItemTerm[GameManager.speedIndex][1]);
+                    }
+                    else
+                        yield return null;
+                }
+
             }
             else
             {
@@ -256,16 +235,8 @@ public class SpawnManager : MonoBehaviour
         {
             if (GameManager.isPlay)
             {
-                if (player_animator.GetInteger("State") >= 4)
-                {
-                    Item[2].SetActive(true);
-                    yield return new WaitForSeconds(ItemTerm[GameManager.speedIndex][2]+1f);
-                }
-                else
-                {
-                    Item[1].SetActive(true);
-                    yield return new WaitForSeconds(ItemTerm[GameManager.speedIndex][2]);
-                }
+                Item[Random.Range(1, 3)].SetActive(true);
+                yield return new WaitForSeconds(ItemTerm[GameManager.speedIndex][2]);
             }
             else
             {
@@ -298,7 +269,9 @@ public class SpawnManager : MonoBehaviour
                 {
                     if (isforest)// ��
                     {
-                        yield return null;
+                        if (BackgroundScrollImage[0].transform.position.y < -4)
+                            Road[2][DeactiveRoad_night()].SetActive(true);
+                        yield return new WaitForSeconds(Obstacle[GameManager.speedIndex]);
                     }
                     else // ����
                     {

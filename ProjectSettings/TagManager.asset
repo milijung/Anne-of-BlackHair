@@ -58,12 +58,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: toForest
-    uniqueID: 2651717293
-    locked: 0
-  - name: toTown
-    uniqueID: 744659299
-    locked: 0
   - name: river
     uniqueID: 1218738255
     locked: 0
