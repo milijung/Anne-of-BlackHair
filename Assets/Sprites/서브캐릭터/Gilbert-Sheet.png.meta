@@ -142,12 +142,12 @@ TextureImporter:
       name: Gilbert-Sheet_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 11
-        width: 162
-        height: 102
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 32
+        y: 12
+        width: 160
+        height: 100
+      alignment: 9
+      pivot: {x: 0.19998112, y: 0.5599757}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -163,12 +163,12 @@ TextureImporter:
       name: Gilbert-Sheet_1
       rect:
         serializedVersion: 2
-        x: 319
-        y: 11
-        width: 162
-        height: 102
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 320
+        y: 12
+        width: 160
+        height: 100
+      alignment: 9
+      pivot: {x: 0.8002493, y: 0.5597775}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -184,12 +184,12 @@ TextureImporter:
       name: Gilbert-Sheet_2
       rect:
         serializedVersion: 2
-        x: 543
-        y: 11
-        width: 162
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 544
+        y: 12
+        width: 160
+        height: 88
+      alignment: 9
+      pivot: {x: 0.2000248, y: 0.4997776}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -205,12 +205,12 @@ TextureImporter:
       name: Gilbert-Sheet_3
       rect:
         serializedVersion: 2
-        x: 831
-        y: 11
-        width: 162
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 832
+        y: 12
+        width: 160
+        height: 88
+      alignment: 9
+      pivot: {x: 0.8002712, y: 0.49891567}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -226,12 +226,12 @@ TextureImporter:
       name: Gilbert-Sheet_4
       rect:
         serializedVersion: 2
-        x: 1054
+        x: 1056
         y: 8
-        width: 123
-        height: 105
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 120
+        height: 104
+      alignment: 9
+      pivot: {x: 0.26596984, y: 0.5765016}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -247,12 +247,12 @@ TextureImporter:
       name: Gilbert-Sheet_5
       rect:
         serializedVersion: 2
-        x: 1383
+        x: 1384
         y: 8
-        width: 121
-        height: 105
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 120
+        height: 104
+      alignment: 9
+      pivot: {x: 0.7335205, y: 0.5773566}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -268,12 +268,12 @@ TextureImporter:
       name: Gilbert-Sheet_6
       rect:
         serializedVersion: 2
-        x: 1567
-        y: 11
-        width: 110
-        height: 114
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1568
+        y: 12
+        width: 108
+        height: 112
+      alignment: 9
+      pivot: {x: 0.37058625, y: 0.4993957}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -289,12 +289,12 @@ TextureImporter:
       name: Gilbert-Sheet_7
       rect:
         serializedVersion: 2
-        x: 1906
-        y: 11
-        width: 111
-        height: 114
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1908
+        y: 12
+        width: 108
+        height: 112
+      alignment: 9
+      pivot: {x: 0.6298919, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -310,10 +310,10 @@ TextureImporter:
       name: Gilbert-Sheet_8
       rect:
         serializedVersion: 2
-        x: 2079
-        y: 11
-        width: 66
-        height: 102
+        x: 2080
+        y: 12
+        width: 64
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,10 +331,10 @@ TextureImporter:
       name: Gilbert-Sheet_9
       rect:
         serializedVersion: 2
-        x: 2463
-        y: 11
-        width: 66
-        height: 102
+        x: 2464
+        y: 12
+        width: 64
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,10 +352,10 @@ TextureImporter:
       name: Gilbert-Sheet_10
       rect:
         serializedVersion: 2
-        x: 2590
-        y: 15
-        width: 66
-        height: 90
+        x: 2592
+        y: 16
+        width: 64
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,10 +373,10 @@ TextureImporter:
       name: Gilbert-Sheet_11
       rect:
         serializedVersion: 2
-        x: 2974
-        y: 15
-        width: 66
-        height: 90
+        x: 2976
+        y: 16
+        width: 64
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

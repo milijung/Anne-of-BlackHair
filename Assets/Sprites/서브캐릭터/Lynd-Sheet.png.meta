@@ -148,12 +148,12 @@ TextureImporter:
       name: Lynd-Sheet_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 11
-        width: 161
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 32
+        y: 12
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.2, y: 0.541}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -169,12 +169,12 @@ TextureImporter:
       name: Lynd-Sheet_1
       rect:
         serializedVersion: 2
-        x: 318
-        y: 11
-        width: 163
-        height: 98
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 320
+        y: 12
+        width: 160
+        height: 96
+      alignment: 9
+      pivot: {x: 0.8, y: 0.541}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -190,12 +190,12 @@ TextureImporter:
       name: Lynd-Sheet_2
       rect:
         serializedVersion: 2
-        x: 542
-        y: 11
-        width: 163
-        height: 91
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 544
+        y: 12
+        width: 160
+        height: 88
+      alignment: 9
+      pivot: {x: 0.2, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -211,12 +211,12 @@ TextureImporter:
       name: Lynd-Sheet_3
       rect:
         serializedVersion: 2
-        x: 831
-        y: 11
-        width: 163
-        height: 91
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 832
+        y: 12
+        width: 160
+        height: 88
+      alignment: 9
+      pivot: {x: 0.8, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -232,12 +232,12 @@ TextureImporter:
       name: Lynd-Sheet_4
       rect:
         serializedVersion: 2
-        x: 1055
-        y: 14
-        width: 225
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1056
+        y: 16
+        width: 224
+        height: 84
+      alignment: 9
+      pivot: {x: 0.143, y: 0.475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -253,12 +253,12 @@ TextureImporter:
       name: Lynd-Sheet_5
       rect:
         serializedVersion: 2
-        x: 1566
+        x: 1568
         y: 4
-        width: 123
-        height: 105
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 120
+        height: 104
+      alignment: 9
+      pivot: {x: 0.266, y: 0.576}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -274,12 +274,12 @@ TextureImporter:
       name: Lynd-Sheet_6
       rect:
         serializedVersion: 2
-        x: 1895
+        x: 1896
         y: 4
-        width: 123
-        height: 105
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 120
+        height: 104
+      alignment: 9
+      pivot: {x: 0.734, y: 0.576}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -295,12 +295,12 @@ TextureImporter:
       name: Lynd-Sheet_7
       rect:
         serializedVersion: 2
-        x: 2079
-        y: 11
-        width: 110
-        height: 110
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2080
+        y: 12
+        width: 108
+        height: 108
+      alignment: 9
+      pivot: {x: 0.37026864, y: 0.48065013}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -316,12 +316,12 @@ TextureImporter:
       name: Lynd-Sheet_8
       rect:
         serializedVersion: 2
-        x: 2418
-        y: 11
-        width: 111
-        height: 110
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2420
+        y: 12
+        width: 108
+        height: 108
+      alignment: 9
+      pivot: {x: 0.6293471, y: 0.4815876}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -337,10 +337,10 @@ TextureImporter:
       name: Lynd-Sheet_9
       rect:
         serializedVersion: 2
-        x: 2590
-        y: 11
-        width: 66
-        height: 98
+        x: 2592
+        y: 12
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,10 +358,10 @@ TextureImporter:
       name: Lynd-Sheet_10
       rect:
         serializedVersion: 2
-        x: 2975
-        y: 11
-        width: 66
-        height: 98
+        x: 2976
+        y: 12
+        width: 64
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -379,10 +379,10 @@ TextureImporter:
       name: Lynd-Sheet_11
       rect:
         serializedVersion: 2
-        x: 3103
-        y: 11
-        width: 66
-        height: 91
+        x: 3104
+        y: 12
+        width: 64
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -400,10 +400,10 @@ TextureImporter:
       name: Lynd-Sheet_12
       rect:
         serializedVersion: 2
-        x: 3486
-        y: 11
-        width: 66
-        height: 91
+        x: 3488
+        y: 12
+        width: 64
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -422,11 +422,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1280
-        y: 14
-        width: 225
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 16
+        width: 224
+        height: 84
+      alignment: 9
+      pivot: {x: 0.856, y: 0.475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

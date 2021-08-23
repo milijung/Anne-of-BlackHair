@@ -98,11 +98,13 @@ public class RoadBase : MonoBehaviour
                 else if(gameObject.tag == "deer")
                 {
                     deerSit = false;
+                    transform.position = StartPosition;
+                    gameObject.GetComponent<SpriteRenderer>().sprite = deerStand;
                     StartCoroutine(deer());
                 }
                 else
                 {
-                    if (SpawnManager.isforest)
+                    if (SpawnManager.isforest || gameObject.tag == "Berry")
                     {
                         posX = 0;
                     }
@@ -137,7 +139,7 @@ public class RoadBase : MonoBehaviour
         if (GameManager.isPlay)
         {
             transform.Translate(Vector2.down * Time.deltaTime * GameManager.gameSpeed * 12);
-            if (transform.position.y < -8) 
+            if (transform.position.y < -8)
             {
                 if (gameObject.tag == "catSleep")
                     gameObject.GetComponent<SpriteRenderer>().sprite = catSleepIMG;
@@ -168,13 +170,13 @@ public class RoadBase : MonoBehaviour
             }
             else if (gameObject.tag == "river")
             {
-                if(_player_animator.GetBool("BST")) return;
+                if (_player_animator.GetBool("BST")) return;
 
                 StartCoroutine(BumpWithRiver(collision, bridge));
             }
             else if (gameObject.tag == "catMove")
             {
-                if(_player_animator.GetBool("BST")) return;
+                if (_player_animator.GetBool("BST")) return;
 
                 if (!jump && !ItemController.isBasket)
                 {
@@ -187,7 +189,7 @@ public class RoadBase : MonoBehaviour
             }
             else if (gameObject.tag == "catSleep")
             {
-                if(_player_animator.GetBool("BST")) return;
+                if (_player_animator.GetBool("BST")) return;
 
                 if (!jump)
                 {
@@ -199,9 +201,9 @@ public class RoadBase : MonoBehaviour
                     BerryController.BumpOntheRoad = true;
                 }
             }
-            else if(gameObject.tag == "deer")
+            else if (gameObject.tag == "deer")
             {
-                if(_player_animator.GetBool("BST")) return;
+                if (_player_animator.GetBool("BST")) return;
 
                 if (!jump || !deerSit)
                 {
@@ -212,7 +214,7 @@ public class RoadBase : MonoBehaviour
             }
             else
             {
-                if(_player_animator.GetBool("BST")) return;
+                if (_player_animator.GetBool("BST")) return;
 
                 if (!jump)
                 {
@@ -229,9 +231,9 @@ public class RoadBase : MonoBehaviour
         {
             if (collision.gameObject.tag != "Radar")
             {
-                if (gameObject.tag == "river") { bridge.SetActive(false); gameObject.SetActive(false); }
+                if (gameObject.tag == "river" && gameObject.transform.position.y>6) { bridge.SetActive(false); gameObject.SetActive(false); }
                 else if (gameObject.tag == "Berry") { collision.gameObject.SetActive(false); }
-                else { gameObject.SetActive(false); }
+                else { if (gameObject.transform.position.y > 6) gameObject.SetActive(false); }
             }
         }
         else if (gameObject.tag == "catMove")
@@ -240,8 +242,7 @@ public class RoadBase : MonoBehaviour
     IEnumerator deer()
     {
         while (true)
-        {
-            
+        {           
             if (GameManager.isPlay)
             {   GameObject target;
                 if (Input.GetMouseButtonDown(0))
@@ -260,7 +261,7 @@ public class RoadBase : MonoBehaviour
                 }
                 if (transform.position.y < -8)
                 {
-                    gameObject.GetComponent<SpriteRenderer>().sprite = deerStand;
+                    gameObject.SetActive(false);
                     StopCoroutine(deer());
                 }
             }
