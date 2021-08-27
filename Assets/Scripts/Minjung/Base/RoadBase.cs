@@ -285,13 +285,13 @@ public class RoadBase : MonoBehaviour
         {
             if (GameManager.isPlay)
             {
-                if (Math.Abs(gameObject.transform.position.x) <= 3.5f)
+                if (Math.Abs(gameObject.transform.position.y) <= 6.5f)
                 {
                     if (dir == 0)
-                        gameObject.transform.Translate(Vector2.right * Time.deltaTime * GameManager.gameSpeed * 12);
+                        gameObject.transform.Translate(Vector2.right * Time.deltaTime * GameManager.gameSpeed * 8);
 
                     else if (dir == 1)
-                        gameObject.transform.Translate(Vector2.left * Time.deltaTime * GameManager.gameSpeed * 12);
+                        gameObject.transform.Translate(Vector2.left * Time.deltaTime * GameManager.gameSpeed * 8);
                 }
                 else
                 {

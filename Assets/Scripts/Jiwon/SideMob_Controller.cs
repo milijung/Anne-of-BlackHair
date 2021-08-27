@@ -8,7 +8,7 @@ public class SideMob_Controller : MonoBehaviour
     public SpriteRenderer[] spriteRenderers;
     public BoxCollider[] mob_collider;
     public GameObject[] mobs;
-
+    
     //마녀의 열매 사용시 빙글빙글 애니메이션 ON
     public void Set()
     {

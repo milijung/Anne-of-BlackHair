@@ -28,7 +28,9 @@ public class MobBase : MonoBehaviour
         }
         else
         {
-            gameObject.GetComponent<SpriteRenderer>().sprite = sprites[0];
+            
+            if(animator != null) animator.SetBool("isTouch", false);
+            if (animator == null) gameObject.GetComponent<SpriteRenderer>().sprite = sprites[0];
             gameObject.SetActive(true);
         }
         transform.position = StartPosition;
@@ -43,6 +45,7 @@ public class MobBase : MonoBehaviour
             
             if (transform.position.y < -8) 
             {
+                if (animator != null) animator.SetBool("isErase", false);
                 gameObject.SetActive(false);
             }
             
@@ -62,6 +65,8 @@ public class MobBase : MonoBehaviour
             }
             if (MainMenu.AudioPlay)
                 radarSound.Play();
+            if (animator != null) animator.SetBool("isTouch", true);
+            if (animator == null) gameObject.GetComponent<SpriteRenderer>().sprite = sprites[1];
             bool isAdult = gameObject.name.Contains("Adult");
             bool isChildren = gameObject.name.Contains("Children");
 

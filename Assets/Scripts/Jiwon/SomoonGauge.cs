@@ -17,6 +17,7 @@ public class SomoonGauge : MonoBehaviour
     public float realTime;
 
     public float somoonGauge;
+    public GameObject lip_move;
     public float adultTouch_Num;
     public float childTouch_Num;
 
@@ -45,8 +46,11 @@ public class SomoonGauge : MonoBehaviour
     public void SomoonCtrl()
     {
         //Ʈ��Ŭ ������ �� somoonContinue false ����
-        if (animator.GetInteger("State") >= 8 && !animator.GetBool("G"))
-            somoonContinue = false;
+        if (animator.GetInteger("State") >= 8)
+        {
+            if (animator.GetBool("G")) somoonContinue = true;
+            else somoonContinue = false;
+        }
         else
         {
 
@@ -55,18 +59,18 @@ public class SomoonGauge : MonoBehaviour
                 GameManager.instance.GameOver();
             }
 
-            else if (somoonGauge < 100.0f && somoonContinue == true)
+            else if (somoonGauge < 100.0f && (somoonContinue|| lip_move.GetComponent<Animator>().GetBool("L")))
             {
-                somoonGauge = 10f * (adultTouch_Num + childTouch_Num * 2);
+                somoonGauge = 10f * (adultTouch_Num + childTouch_Num * 1.3f);
 
                 if (adultTouch_Num != 0)
                 {
-                    somoonGauge += 0.1f * (realTime - adultFirstTouchTime);
+                    somoonGauge += 0.3f * (realTime - adultFirstTouchTime);
                 }
 
                 if (childTouch_Num != 0)
                 {
-                    somoonGauge += 0.1f * (realTime - childFirstTouchTime);
+                    somoonGauge += 0.3f * (realTime - childFirstTouchTime);
                 }
 
                 if ((somoonGauge > 70 && somoonGauge < 100) && !isEmergency)
