@@ -36,7 +36,8 @@ public class CameraShake : MonoBehaviour
     }
     void StopShake()
     {
-        CancelInvoke("StartShake");
         mainCamera.transform.position = new Vector3(0,0,-10);
+        CancelInvoke("StartShake");
+        
     }
 }

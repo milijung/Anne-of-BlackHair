@@ -57,6 +57,8 @@ public class GameManager : MonoBehaviour
         if (!PlayerPrefs.HasKey("Score_SE"))      PlayerPrefs.SetInt("Score_SE", 0);
 
         player.SetActive(true);
+        score = 0;
+        player.GetComponent<Transform>().position = new Vector2(0, -4);
         player.GetComponent<Animator>().SetBool("START",true);
         Invoke("GamePlay",1.75f);
         StartCoroutine(ChangeSpeed());
