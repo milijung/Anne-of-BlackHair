@@ -11,9 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Start_Cartoon.unity
     guid: 19747185e04d3094c9a0547e9d086674
-  - enabled: 0
-    path: Assets/Scenes/endingLoading.unity
-    guid: a52f159eeaa8d8c43ac3859ec19176da
   - enabled: 1
     path: Assets/Scenes/Title.unity
     guid: 15f69938a4dc6e64ebb768eee7828398
