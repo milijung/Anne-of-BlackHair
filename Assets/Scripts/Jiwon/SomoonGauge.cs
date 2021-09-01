@@ -38,14 +38,6 @@ public class SomoonGauge : MonoBehaviour
     {
         //��������ð� ������Ʈ
         realTime = Time.time - startTime;
-
-        SomoonCtrl();
-    }
-
-
-    public void SomoonCtrl()
-    {
-        //Ʈ��Ŭ ������ �� somoonContinue false ����
         if (animator.GetInteger("State") >= 8)
         {
             if (animator.GetBool("G")) somoonContinue = true;
@@ -53,35 +45,41 @@ public class SomoonGauge : MonoBehaviour
         }
         else
         {
+            somoonContinue = true;
+        }
 
-            if (somoonGauge >= 100.0f)
+        SomoonCtrl();
+    }
+
+
+    public void SomoonCtrl()
+    {
+        if (somoonGauge >= 100.0f)
+        {
+            GameManager.instance.GameOver();
+        }
+
+        else if (somoonGauge < 100.0f && somoonContinue || lip_move.GetComponent<Animator>().GetBool("L"))
+        {
+            somoonGauge = 10f * (adultTouch_Num + childTouch_Num * 1.3f);
+
+            if (adultTouch_Num != 0)
             {
-                GameManager.instance.GameOver();
+                somoonGauge += 0.3f * (realTime - adultFirstTouchTime);
             }
 
-            else if (somoonGauge < 100.0f && (somoonContinue|| lip_move.GetComponent<Animator>().GetBool("L")))
+            if (childTouch_Num != 0)
             {
-                somoonGauge = 10f * (adultTouch_Num + childTouch_Num * 1.3f);
-
-                if (adultTouch_Num != 0)
-                {
-                    somoonGauge += 0.3f * (realTime - adultFirstTouchTime);
-                }
-
-                if (childTouch_Num != 0)
-                {
-                    somoonGauge += 0.3f * (realTime - childFirstTouchTime);
-                }
-
-                if ((somoonGauge > 70 && somoonGauge < 100) && !isEmergency)
-                {
-                    OnEmergency();
-                    Invoke("OffEmergency", 3.2f);
-                }
-                else if (somoonGauge < 70)
-                    isEmergency = false;
+                somoonGauge += 0.3f * (realTime - childFirstTouchTime);
             }
 
+            if ((somoonGauge > 70 && somoonGauge < 100) && !isEmergency)
+            {
+                OnEmergency();
+                Invoke("OffEmergency", 3.2f);
+            }
+            else if (somoonGauge < 70)
+                isEmergency = false;
         }
     }
     private void OnEmergency()
