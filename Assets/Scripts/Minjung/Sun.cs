@@ -6,6 +6,7 @@ public class Sun : MonoBehaviour
 {
     public static bool sunRise;
     public GameObject[] SunIMG;
+    public GameObject light;
     void Start()
     {
         for(int i = 1; i < SunIMG.Length; i++)
@@ -42,5 +43,12 @@ public class Sun : MonoBehaviour
             }
             yield return null;
         }
+    }
+    void Update()
+    {
+        if (!Sun.sunRise)
+            light.SetActive(true);
+        else
+            light.SetActive(false);
     }
 }

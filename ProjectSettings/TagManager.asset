@@ -21,6 +21,7 @@ TagManager:
   - toForest
   - catSleep
   - Road
+  - light
   layers:
   - Default
   - TransparentFX
