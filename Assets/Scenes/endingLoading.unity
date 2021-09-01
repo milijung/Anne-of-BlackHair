@@ -460,7 +460,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 358d04ff63661994ab3cf1c508329045, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fin: 0
   LoadingBar: {fileID: 1093017886}
+  LoadingAudio: {fileID: 0}
 --- !u!1 &1093017883
 GameObject:
   m_ObjectHideFlags: 0
