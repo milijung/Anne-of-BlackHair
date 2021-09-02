@@ -545,6 +545,7 @@ MonoBehaviour:
   fin: 0
   LoadingBar: {fileID: 1093017886}
   LoadingAudio: {fileID: 1275559083}
+  tip: {fileID: 1848921105}
 --- !u!1 &1093017883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,7 +1118,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 500, y: 100}
+  m_SizeDelta: {x: 500, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1848921105
 MonoBehaviour:
@@ -1132,7 +1133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.16532573, g: 0.16404413, b: 0.16981131, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1141,18 +1142,19 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 3664b7e6f3585614a952503a2c270e21, type: 3}
-    m_FontSize: 60
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 0
-    m_MaxSize: 60
+    m_MaxSize: 30
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Loading...
+  m_Text: "Tip.\uBE68\uAC04\uBA38\uB9AC\uB85C \uC5FC\uC0C9\uD558\uBA74\n\uC0AC\uB78C\uB4E4\uC758
+    \uC2DC\uC57C\uC5D0 \uB4E4\uC5B4\uC640\uB3C4 \uAD1C\uCC2E\uC544\uC694"
 --- !u!222 &1848921106
 CanvasRenderer:
   m_ObjectHideFlags: 0
