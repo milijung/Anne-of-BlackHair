@@ -209,6 +209,7 @@ public class RoadBase : MonoBehaviour
                 {
                     if (MainMenu.AudioPlay)
                         gameObject.GetComponent<AudioSource>().Play();
+                    gameObject.GetComponent<SpriteRenderer>().sprite = deerStand;
                     BerryController.BumpOntheRoad = true;
                 }
             }
