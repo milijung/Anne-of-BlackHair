@@ -100,9 +100,16 @@ public class ItemController : MonoBehaviour
         {
             // slot_full()
             // Delete the first item
-            item1_type = item_slot.q.Dequeue();
+            item_slot.q.Dequeue();
+            item1_type = (int)item_slot.q.Peek();
             // item0 <- item1
             GameObject_item0.GetComponent<Image>().sprite = ItemImage[item1_type];
+
+            // Add the new item
+            item_slot.q.Enqueue(new_item_type);
+            // item1 <- new item
+            GameObject_item1.GetComponent<Image>().sprite = ItemImage[new_item_type];
+            return;
         }
 
         if (item_slot.empty())
@@ -134,7 +141,7 @@ public class ItemController : MonoBehaviour
 
             if (item_slot.item_have() == 1)
             {
-                GameObject_item0.GetComponent<Image>().sprite = GameObject_item1.GetComponent<Image>().sprite;
+                GameObject_item0.GetComponent<Image>().sprite = ItemImage[(int)item_slot.q.Peek()];
                 // item1.Sprite
                 GameObject_item1.SetActive(false);
                 GameObject_item1.GetComponent<Image>().sprite = null;
