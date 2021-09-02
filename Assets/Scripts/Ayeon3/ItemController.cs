@@ -99,33 +99,26 @@ public class ItemController : MonoBehaviour
         if (item_slot.full())
         {
             // slot_full()
-            item1_type = item_slot.stack.Pop();
-            item_slot.stack.Clear();
-            // before : stack ( item0 - item1 )
-            // after : stack ( item1 - new_item )
-
-            item_slot.stack.Push(item1_type);
-            item_slot.stack.Push(new_item_type);
-
+            // Delete the first item
+            item1_type = item_slot.q.Dequeue();
             // item0 <- item1
             GameObject_item0.GetComponent<Image>().sprite = ItemImage[item1_type];
+        }
 
-            // item1 <- new item
-            GameObject_item1.GetComponent<Image>().sprite = ItemImage[new_item_type];
-            
+        if (item_slot.empty())
+        {
+            // Add the new item
+            item_slot.q.Enqueue(new_item_type);
+            // item0 <- new item
+            GameObject_item0.GetComponent<Image>().sprite = ItemImage[new_item_type];
             return;
         }
 
-        item_slot.stack.Push(new_item_type);
-
-        if (item_slot.item_have() == 1)
-            // item0.Sprite
-            GameObject_item0.GetComponent<Image>().sprite = ItemImage[new_item_type];
-
-        else if (item_slot.item_have() == 2)
-            // item1.Sprite
-            GameObject_item1.GetComponent<Image>().sprite = ItemImage[new_item_type];
-
+        // Add the new item
+        item_slot.q.Enqueue(new_item_type);
+        // item1 <- new item
+        GameObject_item1.GetComponent<Image>().sprite = ItemImage[new_item_type];
+        
     }
 
 
@@ -137,9 +130,11 @@ public class ItemController : MonoBehaviour
 
         if (!usingItem) // While one item is being used, the other cannot be used.
         {
-            Item.item_type typetype = (Item.item_type)item_slot.stack.Pop();
+            Item.item_type typetype = (Item.item_type)item_slot.q.Dequeue();
+
             if (item_slot.item_have() == 1)
             {
+                GameObject_item0.GetComponent<Image>().sprite = GameObject_item1.GetComponent<Image>().sprite;
                 // item1.Sprite
                 GameObject_item1.SetActive(false);
                 GameObject_item1.GetComponent<Image>().sprite = null;
@@ -151,7 +146,6 @@ public class ItemController : MonoBehaviour
                 GameObject_item0.GetComponent<Image>().sprite = null;
             }
             StartCoroutine(showItem());
-
 
             // ITEM USE FUNCTION 
             if (typetype == Item.item_type.wig)
@@ -230,25 +224,25 @@ public class Item
 
 public class Slot
 {
-    public Stack<int> stack;
+    public Queue<int> q;
 
     public void slot_init()
     {
-        stack = new Stack<int>();
+        q = new Queue<int>();
     }
 
     public int item_have()
     {
-        return stack.Count;
+        return q.Count;
     }
 
     public bool empty()
     {
-        return (stack.Count == 0);
+        return (q.Count == 0);
     }
 
     public bool full()
     {
-        return (stack.Count == 2);
+        return (q.Count == 2);
     }
 }
