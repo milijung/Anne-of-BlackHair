@@ -54,7 +54,7 @@ public class endingScene : MonoBehaviour
         scoreUpAudio.Play();
         while (_berry_number_>0){
             GameObject go = Instantiate(berryPrefab) as GameObject;
-            go.transform.position = new Vector3(130, -142, 0);
+            go.transform.position = new Vector3(0.76f, -0.94f, 0);
             _ending_score_ += 20;
             _berry_number_--;
             _berry_number.GetComponent<TextMeshProUGUI>().text = _berry_number_.ToString();
