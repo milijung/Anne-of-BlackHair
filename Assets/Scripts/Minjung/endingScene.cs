@@ -9,6 +9,7 @@ public class endingScene : MonoBehaviour
 {
     GameObject _ending_score;
     GameObject _berry_number;
+    public GameObject berryPrefab;  //Áö¿ø
     public GameObject[] Berry;
     public GameObject _best_score;
     AudioSource scoreUpAudio;
@@ -52,6 +53,8 @@ public class endingScene : MonoBehaviour
         yield return new WaitForSeconds(1f);
         scoreUpAudio.Play();
         while (_berry_number_>0){
+            GameObject go = Instantiate(berryPrefab) as GameObject;
+            go.transform.position = new Vector3(130, -142, 0);
             _ending_score_ += 20;
             _berry_number_--;
             _berry_number.GetComponent<TextMeshProUGUI>().text = _berry_number_.ToString();
@@ -88,7 +91,7 @@ public class endingScene : MonoBehaviour
 
     private void BestScore()
     {
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 3; i++)
         {
             Berry[i].SetActive(false);
         }
