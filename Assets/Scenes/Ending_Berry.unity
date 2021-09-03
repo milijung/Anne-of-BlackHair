@@ -536,6 +536,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2770fab2a189262468ce907045ee67b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Berry:
+  - {fileID: 420472318}
+  - {fileID: 775274273}
+  - {fileID: 1676588417}
+  - {fileID: 424965980}
+  _best_score: {fileID: 1640146422}
+--- !u!1 &420472318 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7158301163477173101, guid: eb611a4ed8045e74998d1785ceb0d46a, type: 3}
+  m_PrefabInstance: {fileID: 7158301162059205014}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &424965980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1197311315776041513, guid: f47b996400446d246932f0b7f77d7d0e, type: 3}
+  m_PrefabInstance: {fileID: 1197311314502384823}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &438873684
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,6 +975,11 @@ Transform:
   m_Father: {fileID: 1734120694}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &775274273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1341906486050307364, guid: 5c1c46674916b2446b6f4a06d943d24e, type: 3}
+  m_PrefabInstance: {fileID: 1341906485598769898}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &796822345
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,7 +1014,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 22.669998}
+  m_AnchoredPosition: {x: 0, y: 22.669994}
   m_SizeDelta: {x: 75.62, y: 31.349998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &796822347
@@ -1614,7 +1635,7 @@ RectTransform:
   - {fileID: 1970741395}
   - {fileID: 2099379611}
   m_Father: {fileID: 1695615997}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -2678,6 +2699,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1640146422}
   m_CullTransparentMesh: 1
+--- !u!1 &1676588417 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3094696305029511295, guid: fae749bff0bc8fc4c9d75e5905b78dc9, type: 3}
+  m_PrefabInstance: {fileID: 3094696305294422018}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1695615993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2775,10 +2801,10 @@ RectTransform:
   - {fileID: 2134789098}
   - {fileID: 1307440514}
   - {fileID: 1536985852}
+  - {fileID: 1041301260}
   - {fileID: 490368975}
   - {fileID: 808896638}
   - {fileID: 1276808863}
-  - {fileID: 1041301260}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2985,6 +3011,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2770fab2a189262468ce907045ee67b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Berry: []
+  _best_score: {fileID: 0}
 --- !u!1 &1876093320
 GameObject:
   m_ObjectHideFlags: 0
@@ -3747,6 +3775,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BerryNumber
       objectReference: {fileID: 0}
+    - target: {fileID: 1197311315776041513, guid: f47b996400446d246932f0b7f77d7d0e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f47b996400446d246932f0b7f77d7d0e, type: 3}
 --- !u!1001 &1341906485598769898
@@ -3759,6 +3791,10 @@ PrefabInstance:
     - target: {fileID: 1341906486050307364, guid: 5c1c46674916b2446b6f4a06d943d24e, type: 3}
       propertyPath: m_Name
       value: BerryMove
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341906486050307364, guid: 5c1c46674916b2446b6f4a06d943d24e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1341906486050307365, guid: 5c1c46674916b2446b6f4a06d943d24e, type: 3}
       propertyPath: m_RootOrder
@@ -3905,6 +3941,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: X
       objectReference: {fileID: 0}
+    - target: {fileID: 3094696305029511295, guid: fae749bff0bc8fc4c9d75e5905b78dc9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fae749bff0bc8fc4c9d75e5905b78dc9, type: 3}
 --- !u!1001 &7158301162059205014
@@ -3916,7 +3956,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7158301163477173098, guid: eb611a4ed8045e74998d1785ceb0d46a, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7158301163477173098, guid: eb611a4ed8045e74998d1785ceb0d46a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3961,6 +4001,10 @@ PrefabInstance:
     - target: {fileID: 7158301163477173101, guid: eb611a4ed8045e74998d1785ceb0d46a, type: 3}
       propertyPath: m_Name
       value: Berry
+      objectReference: {fileID: 0}
+    - target: {fileID: 7158301163477173101, guid: eb611a4ed8045e74998d1785ceb0d46a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb611a4ed8045e74998d1785ceb0d46a, type: 3}
