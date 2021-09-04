@@ -34,7 +34,7 @@ public class BerryController : MonoBehaviour
     {
         if (getBerryBox)
         {
-            if (BerryNum == 0)
+            if (GameManager.isPlay && BerryNum == 0)
             {
                 for (int i = 0; i < Berry_play.Length; i++)
                     Berry_play[i].SetActive(false);

@@ -19,7 +19,7 @@ public class set_state : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if(animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.BLACK")) return;
+        if(animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.BLACK")) animator.SetInteger("State",-1);
         else if(animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.BLACK1")) animator.SetInteger("State",0);
         else if(animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.BLACK2")) animator.SetInteger("State",1);
         else if(animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.BLACK3")) animator.SetInteger("State",2);

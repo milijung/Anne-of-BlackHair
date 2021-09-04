@@ -181,11 +181,10 @@ public class GameManager : MonoBehaviour
         }
 
     }
-    public void GameOver()
+    
+    IEnumerator GameOver2()
     {
-        isPlay = false;
-        BerryController.getBerryBox = false;
-        StopCoroutine(AddScore()); // score++ ����
+        yield return new WaitForSeconds(1.6f);
 
         if (MainMenu.AudioPlay == true)
         {
@@ -216,9 +215,17 @@ public class GameManager : MonoBehaviour
 
         }
 
+        StopCoroutine(GameOver2());
     }
 
+    public void GameOver()
+    {
+        player.GetComponent<Animator>().SetTrigger("end");
+        isPlay = false;
+        BerryController.getBerryBox = false;
+        StopCoroutine(AddScore()); // score++ ����
 
-
+        StartCoroutine(GameOver2());
+    }
 }
 
