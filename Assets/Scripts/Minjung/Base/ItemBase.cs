@@ -95,11 +95,12 @@ public class ItemBase : MonoBehaviour
             {
                 // ann_get_dye
                 if (_player_animator.GetInteger("State") >= 3) {
-                    _player_animator.SetBool("RED", true);
-                    _player_animator.SetInteger("State", 9);
 
                     // twinkle on
                     _twinkle.GetComponent<Animator>().SetBool("T", true);
+
+                    _player_animator.SetBool("RED", true);
+                    _player_animator.SetInteger("State", 9);
                 }
             }
         }

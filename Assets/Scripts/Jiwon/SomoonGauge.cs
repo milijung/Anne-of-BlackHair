@@ -51,10 +51,9 @@ public class SomoonGauge : MonoBehaviour
         SomoonCtrl();
     }
 
-
     public void SomoonCtrl()
     {
-        if (somoonGauge >= 100.0f)
+        if (GameManager.isPlay && somoonGauge >= 100.0f)
         {
             GameManager.instance.GameOver();
         }
