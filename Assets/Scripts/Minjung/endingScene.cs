@@ -98,5 +98,10 @@ public class endingScene : MonoBehaviour
         _best_score_ = PlayerPrefs.GetInt("BestScore");
         _best_score.GetComponent<TextMeshProUGUI>().text = _best_score_.ToString();
         _best_score.SetActive(true);
+        if(_ending_score_ == PlayerPrefs.GetInt("BestScore"))
+        {
+            GameObject panpare = GameObject.Find("Panpare");
+            panpare.SetActive(true);
+        }
     }
 }

@@ -1190,12 +1190,12 @@ GameObject:
   - component: {fileID: 736635059}
   - component: {fileID: 736635058}
   m_Layer: 0
-  m_Name: Pangpare-Sheet_0
+  m_Name: Pangpare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &736635058
 Animator:
   serializedVersion: 3
