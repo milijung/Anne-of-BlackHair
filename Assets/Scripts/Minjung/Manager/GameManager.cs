@@ -212,7 +212,6 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("Berry_BE", BerryController.BerryNum);
 
             GameObject.Find("SwitchScene").GetComponent<SwitchScene>().BerryGameOver();
-
         }
 
         StopCoroutine(GameOver2());
