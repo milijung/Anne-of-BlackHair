@@ -157,6 +157,8 @@ public class ItemController : MonoBehaviour
             // ITEM USE FUNCTION 
             if (typetype == Item.item_type.wig)
             {
+                // WIG = FULL DAMAGE COVER
+                
                 itemName.text = "빨간 가발" + System.Environment.NewLine + "착용중";
                 AudioManager.wigHatAudio.Play();
                 _player_animator.SetBool("W",true);
@@ -165,6 +167,8 @@ public class ItemController : MonoBehaviour
             }
             else if (typetype == Item.item_type.hat)
             {
+                // HAT = HALF DAMAGE COVER
+
                 itemName.text = "모자" + System.Environment.NewLine + "착용중";
                 AudioManager.wigHatAudio.Play();
                 _player_animator.SetBool("H",true);
