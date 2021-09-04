@@ -57,12 +57,12 @@ public class Sun : MonoBehaviour
     }
     IEnumerator JumpLight()
     {
-        light.transform.Translate(Vector2.up*0.014f);
+        light.transform.Translate(Vector2.up*0.019f);
         if (light.transform.position.y > -3.1f)
             light.transform.position = new Vector2(light.transform.position.x, -3.1f);
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.3f);
 
-        light.transform.Translate(Vector2.down*0.014f);
+        light.transform.Translate(Vector2.down*0.019f);
         if (light.transform.position.y < -4f)
             light.transform.position = new Vector2(light.transform.position.x, -4f);
         StopCoroutine(JumpLight());

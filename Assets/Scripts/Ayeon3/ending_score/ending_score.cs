@@ -9,9 +9,12 @@ public class ending_score : MonoBehaviour
 {
     GameObject _ending_score;
     GameObject _berry_number;
+    public GameObject[] Berry;
+    public GameObject _best_score;
 
     int _berry_number_;
     int _ending_score_;
+    int _best_score_;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +33,10 @@ public class ending_score : MonoBehaviour
         SaveScoreBoard();
     }
 
+    private void Update()
+    {
+        Invoke("BestScore", 2f);
+    }
     public void SaveScoreBoard()
     {
         // Save the SCORE BOARD
@@ -51,5 +58,16 @@ public class ending_score : MonoBehaviour
         PlayerPrefs.SetInt("ThirdScore", PlayerPrefs.GetInt("SecondScore"));
         PlayerPrefs.SetInt("SecondScore", PlayerPrefs.GetInt("BestScore"));
         PlayerPrefs.SetInt("BestScore", _ending_score_);
+    }
+
+    private void BestScore()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            Berry[i].SetActive(false);
+        }
+        _best_score_ = PlayerPrefs.GetInt("BestScore");
+        _best_score.GetComponent<TextMeshProUGUI>().text = _best_score_.ToString();
+        _best_score.SetActive(true);
     }
 }
