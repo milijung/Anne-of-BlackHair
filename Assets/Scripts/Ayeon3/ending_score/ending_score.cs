@@ -13,6 +13,7 @@ public class ending_score : MonoBehaviour
     public GameObject _best_score;
     public GameObject BestScoreAudio;
 
+    GameObject panpare;
     int _berry_number_;
     int _ending_score_;
     int _best_score_;
@@ -22,7 +23,8 @@ public class ending_score : MonoBehaviour
     {
         if (MainMenu.AudioPlay)
             AudioManager.BackgroundAudio.Play();
-
+        panpare = GameObject.Find("Pangpare");
+        panpare.SetActive(false);
         _ending_score = GameObject.Find("Score");
         _ending_score_ = PlayerPrefs.GetInt("Score_SE");
         _ending_score.GetComponent<TextMeshProUGUI>().text = _ending_score_.ToString();
@@ -72,7 +74,6 @@ public class ending_score : MonoBehaviour
         _best_score.SetActive(true);
         if (_ending_score_ == PlayerPrefs.GetInt("BestScore"))
         {
-            GameObject panpare = GameObject.Find("Panpare");
             panpare.SetActive(true);
             if (MainMenu.AudioPlay) BestScoreAudio.GetComponent<AudioSource>().Play();
         }

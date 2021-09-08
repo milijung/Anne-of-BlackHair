@@ -10,6 +10,7 @@ public class PopUp : MonoBehaviour
     public Image[] bubbles;
     public Text[] speech;
     public GameObject BackAudio;
+    public Text skip;
     Color[] background_colors = new Color[3];
     Color[] bubble_colors = new Color[3];
     Color[] text_colors = new Color[3];
@@ -37,8 +38,19 @@ public class PopUp : MonoBehaviour
     private void OnEnable()
     {
         StartCoroutine(Pop_Up());
+        StartCoroutine(skipMove());
     }
-
+    IEnumerator skipMove()
+    {
+        while (true)
+        {
+            skip.color = new Color(skip.color.r, skip.color.g, skip.color.b, 0.5f);
+            yield return new WaitForSeconds(0.5f);
+            skip.color = new Color(skip.color.r, skip.color.g, skip.color.b, 1f);
+            yield return new WaitForSeconds(0.5f);
+            yield return null;
+        }
+    }
     IEnumerator Pop_Up()
     {
         if (MainMenu.AudioPlay) BackAudio.GetComponent<AudioSource>().Play();
@@ -86,7 +98,8 @@ public class PopUp : MonoBehaviour
             speech[2].color = text_colors[2];
             yield return new WaitForSeconds(0.01f);
         }
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(4.15f);
+        StopCoroutine(skipMove());
         LoadingScene_Manager.LoadScene("Title");
     }
 }
