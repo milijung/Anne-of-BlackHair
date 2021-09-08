@@ -99,7 +99,7 @@ public class SpawnManager : MonoBehaviour
     {
         if (isforest && x_forest == 0)
         {
-            StartCoroutine(BackgroundScroll());
+            if(GameManager.speedIndex!=3) StartCoroutine(BackgroundScroll());
             StartCoroutine(CreateBerry());
         }
     }
@@ -134,7 +134,7 @@ public class SpawnManager : MonoBehaviour
             if (GameManager.isPlay)
             {
                 BackgroundScrollImage[0].SetActive(true);
-                while (isforest)
+                while (isforest || GameManager.speedIndex == 3)
                 {
                     yield return null;
                 }

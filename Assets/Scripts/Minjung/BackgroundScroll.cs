@@ -31,10 +31,10 @@ public class BackgroundScroll : MonoBehaviour
 
             if (GameManager.isPlay)
             {
-                if (SpawnManager.isforest )
+                if (SpawnManager.isforest)
                 {
                     gameObject.GetComponent<SpriteRenderer>().sprite = BackgroundImage[0]; // 한줄
-                    while (SpawnManager.isforest)
+                    while (SpawnManager.isforest || GameManager.speedIndex == 3)
                     {
                         yield return null;
                     }
@@ -42,7 +42,7 @@ public class BackgroundScroll : MonoBehaviour
                 else if(!SpawnManager.isforest)
                 {
                     gameObject.GetComponent<SpriteRenderer>().sprite = BackgroundImage[1]; // 세줄
-                    while (!SpawnManager.isforest)
+                    while (!SpawnManager.isforest || GameManager.speedIndex == 3)
                     {
                         yield return null;
                     }
