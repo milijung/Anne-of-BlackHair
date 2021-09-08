@@ -1,0 +1,1800 @@
+fileFormatVersion: 2
+guid: 4acf1136739655149a5badadb795dfee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4931266503747658290
+    second: Ending_animation-Sheet_0
+  - first:
+      213: 336906400168566108
+    second: Ending_animation-Sheet_1
+  - first:
+      213: -4657717421669544982
+    second: Ending_animation-Sheet_2
+  - first:
+      213: -7194877340609955745
+    second: Ending_animation-Sheet_3
+  - first:
+      213: 131285821859668111
+    second: Ending_animation-Sheet_4
+  - first:
+      213: -2887408049706835016
+    second: Ending_animation-Sheet_5
+  - first:
+      213: 4493994158222448141
+    second: Ending_animation-Sheet_6
+  - first:
+      213: 3955617967757693075
+    second: Ending_animation-Sheet_7
+  - first:
+      213: 8266047546650353046
+    second: Ending_animation-Sheet_8
+  - first:
+      213: 7081935049572966822
+    second: Ending_animation-Sheet_9
+  - first:
+      213: 3854779713233602048
+    second: Ending_animation-Sheet_10
+  - first:
+      213: 577016388052546056
+    second: Ending_animation-Sheet_11
+  - first:
+      213: 5188909529168971199
+    second: Ending_animation-Sheet_12
+  - first:
+      213: -4884533361172803054
+    second: Ending_animation-Sheet_13
+  - first:
+      213: -2507738758916068818
+    second: Ending_animation-Sheet_14
+  - first:
+      213: 1981533404816976210
+    second: Ending_animation-Sheet_15
+  - first:
+      213: -4869081167448385148
+    second: Ending_animation-Sheet_16
+  - first:
+      213: 331343291234837726
+    second: Ending_animation-Sheet_17
+  - first:
+      213: 1100264550774672542
+    second: Ending_animation-Sheet_18
+  - first:
+      213: -8899271909903065844
+    second: Ending_animation-Sheet_19
+  - first:
+      213: -5984720201592938073
+    second: Ending_animation-Sheet_20
+  - first:
+      213: -4890322892946369815
+    second: Ending_animation-Sheet_21
+  - first:
+      213: -5190205980957677107
+    second: Ending_animation-Sheet_22
+  - first:
+      213: 3582820545551320020
+    second: Ending_animation-Sheet_23
+  - first:
+      213: -9121968440530509858
+    second: Ending_animation-Sheet_24
+  - first:
+      213: 5046147685051859043
+    second: Ending_animation-Sheet_25
+  - first:
+      213: -5654615920829368069
+    second: Ending_animation-Sheet_26
+  - first:
+      213: -8704946779817574301
+    second: Ending_animation-Sheet_27
+  - first:
+      213: 4134563704145539806
+    second: Ending_animation-Sheet_28
+  - first:
+      213: 1225934960384789131
+    second: Ending_animation-Sheet_29
+  - first:
+      213: -6477753366326067329
+    second: Ending_animation-Sheet_30
+  - first:
+      213: -9026488277880617856
+    second: Ending_animation-Sheet_31
+  - first:
+      213: 3457071326065244234
+    second: Ending_animation-Sheet_32
+  - first:
+      213: 2564926037445007412
+    second: Ending_animation-Sheet_33
+  - first:
+      213: -4089235904351906303
+    second: Ending_animation-Sheet_34
+  - first:
+      213: 1331500936374656834
+    second: Ending_animation-Sheet_35
+  - first:
+      213: 1710513303793517740
+    second: Ending_animation-Sheet_36
+  - first:
+      213: -4638685606329977318
+    second: Ending_animation-Sheet_37
+  - first:
+      213: -3648381202262185114
+    second: Ending_animation-Sheet_38
+  - first:
+      213: -7935724943711136994
+    second: Ending_animation-Sheet_39
+  - first:
+      213: 8290184914868921335
+    second: Ending_animation-Sheet_40
+  - first:
+      213: 1981990688217584719
+    second: Ending_animation-Sheet_41
+  - first:
+      213: -5871453436251952202
+    second: Ending_animation-Sheet_42
+  - first:
+      213: 1750118988274917047
+    second: Ending_animation-Sheet_43
+  - first:
+      213: -8755282802059732086
+    second: Ending_animation-Sheet_44
+  - first:
+      213: -9149978646573607742
+    second: Ending_animation-Sheet_45
+  - first:
+      213: -6897395897658113009
+    second: Ending_animation-Sheet_46
+  - first:
+      213: 5839371286041116971
+    second: Ending_animation-Sheet_47
+  - first:
+      213: -660993818545049099
+    second: Ending_animation-Sheet_48
+  - first:
+      213: 327956869583566800
+    second: Ending_animation-Sheet_49
+  - first:
+      213: -1592259993533938308
+    second: Ending_animation-Sheet_50
+  - first:
+      213: -5111054486264469454
+    second: Ending_animation-Sheet_51
+  - first:
+      213: -5500473913265097029
+    second: Ending_animation-Sheet_52
+  - first:
+      213: 2958369379510693855
+    second: Ending_animation-Sheet_53
+  - first:
+      213: 1351205891381606320
+    second: Ending_animation-Sheet_54
+  - first:
+      213: 3037542757805579502
+    second: Ending_animation-Sheet_55
+  - first:
+      213: -2913855374754851827
+    second: Ending_animation-Sheet_56
+  - first:
+      213: -2331407508260783308
+    second: Ending_animation-Sheet_57
+  - first:
+      213: -7573784535420444664
+    second: Ending_animation-Sheet_58
+  - first:
+      213: 6231086408801137765
+    second: Ending_animation-Sheet_59
+  - first:
+      213: 3889730712193867924
+    second: Ending_animation-Sheet_60
+  - first:
+      213: 7969565113391227871
+    second: Ending_animation-Sheet_61
+  - first:
+      213: 458266842653463986
+    second: Ending_animation-Sheet_62
+  - first:
+      213: 7293814414216010453
+    second: Ending_animation-Sheet_63
+  - first:
+      213: -5609367804509963721
+    second: Ending_animation-Sheet_64
+  - first:
+      213: -4824440015894992438
+    second: Ending_animation-Sheet_65
+  - first:
+      213: 6189889567378098979
+    second: Ending_animation-Sheet_66
+  - first:
+      213: 9004802681745905319
+    second: Ending_animation-Sheet_67
+  - first:
+      213: 8280330271254367893
+    second: Ending_animation-Sheet_68
+  - first:
+      213: -376257840659773356
+    second: Ending_animation-Sheet_69
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1164
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23269a812c06f6440800000000000000
+      internalID: 4931266503747658290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1164
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d5a90069eeca400800000000000000
+      internalID: 336906400168566108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1164
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb0d31cea67c5fb0800000000000000
+      internalID: -4657717421669544982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1164
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58bf66cd29a62c90800000000000000
+      internalID: -7194877340609955745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1164
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80adf762cb62d100800000000000000
+      internalID: 131285821859668111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1164
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3ee9b4daddde7d0800000000000000
+      internalID: -2887408049706835016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1164
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06978f60efdd5e30800000000000000
+      internalID: 4493994158222448141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1036
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390995b759d25e630800000000000000
+      internalID: 3955617967757693075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1036
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d5592c276e6b270800000000000000
+      internalID: 8266047546650353046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1036
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a16f28e766184260800000000000000
+      internalID: 7081935049572966822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1036
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006cba6c9bdee7530800000000000000
+      internalID: 3854779713233602048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1036
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80273770959f10800800000000000000
+      internalID: 577016388052546056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1036
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb581c989b5b20840800000000000000
+      internalID: 5188909529168971199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1036
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21210c199c6a63cb0800000000000000
+      internalID: -4884533361172803054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 908
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a2455a2e8b23dd0800000000000000
+      internalID: -2507738758916068818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 908
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259afa01222df7b10800000000000000
+      internalID: 1981533404816976210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 908
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489d1b7c97c8d6cb0800000000000000
+      internalID: -4869081167448385148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 908
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4e2c4c7fa299400800000000000000
+      internalID: 331343291234837726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 908
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c01eb87cce44f00800000000000000
+      internalID: 1100264550774672542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 908
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d9d9a295f6f7480800000000000000
+      internalID: -8899271909903065844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 908
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1e2ff5fa002fca0800000000000000
+      internalID: -5984720201592938073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 780
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e298f82d35122cb0800000000000000
+      internalID: -4890322892946369815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 780
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc9e8e1c82fa8f7b0800000000000000
+      internalID: -5190205980957677107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 780
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3ce87bd4cb8b130800000000000000
+      internalID: 3582820545551320020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 780
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edfdad99802486180800000000000000
+      internalID: -9121968440530509858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 780
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3600dab7594870640800000000000000
+      internalID: 5046147685051859043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 780
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf872b987c4c681b0800000000000000
+      internalID: -5654615920829368069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 780
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3600b484601d13780800000000000000
+      internalID: -8704946779817574301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 652
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed271d678cbe06930800000000000000
+      internalID: 4134563704145539806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 652
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ac777e955630110800000000000000
+      internalID: 1225934960384789131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 652
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f3b8942a56a16a0800000000000000
+      internalID: -6477753366326067329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 652
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 084c2b35cb87bb280800000000000000
+      internalID: -9026488277880617856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 652
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48be410e0cf9ff20800000000000000
+      internalID: 3457071326065244234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 652
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4385f0934a2789320800000000000000
+      internalID: 2564926037445007412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 652
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106d4565c9d1047c0800000000000000
+      internalID: -4089235904351906303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 524
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f16ba0c017a7210800000000000000
+      internalID: 1331500936374656834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 524
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca4413089c6fcb710800000000000000
+      internalID: 1710513303793517740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 524
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a16fbf1940410afb0800000000000000
+      internalID: -4638685606329977318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 524
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b23f160a85e5dc0800000000000000
+      internalID: -3648381202262185114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 524
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1314ee7534aed190800000000000000
+      internalID: -7935724943711136994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 524
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3601db147ac0370800000000000000
+      internalID: 8290184914868921335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 524
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f445757a702718b10800000000000000
+      internalID: 1981990688217584719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 396
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bba4f04538648ea0800000000000000
+      internalID: -5871453436251952202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 396
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bedac282fba94810800000000000000
+      internalID: 1750118988274917047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 396
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b9423ddacfe7680800000000000000
+      internalID: -8755282802059732086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 396
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4129c46eeb40180800000000000000
+      internalID: -9149978646573607742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 396
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f040adc99f68740a0800000000000000
+      internalID: -6897395897658113009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 396
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b21c8101f3d990150800000000000000
+      internalID: 5839371286041116971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 396
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1b4e6cf9da3d6f0800000000000000
+      internalID: -660993818545049099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 268
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d77d2909032d8400800000000000000
+      internalID: 327956869583566800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 268
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c750857d8f727e9e0800000000000000
+      internalID: -1592259993533938308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 268
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2382a863603e119b0800000000000000
+      internalID: -5111054486264469454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 268
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6f78f5e146aa3b0800000000000000
+      internalID: -5500473913265097029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 268
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdfa02cc64d3e0920800000000000000
+      internalID: 2958369379510693855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 268
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b73736699270c210800000000000000
+      internalID: 1351205891381606320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 268
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eecdf0d6b05872a20800000000000000
+      internalID: 3037542757805579502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 140
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04dfd499f7ef87d0800000000000000
+      internalID: -2913855374754851827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 140
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bff6b393d25afd0800000000000000
+      internalID: -2331407508260783308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 140
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800eae8b71384e690800000000000000
+      internalID: -7573784535420444664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 140
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5643b593314497650800000000000000
+      internalID: 6231086408801137765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 140
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4902e3c59791bf530800000000000000
+      internalID: 3889730712193867924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 140
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3a70efe35999e60800000000000000
+      internalID: 7969565113391227871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 140
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b513b0f3471c5600800000000000000
+      internalID: 458266842653463986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 12
+        width: 72
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da18f0c095d83560800000000000000
+      internalID: 7293814414216010453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 12
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73abba593b58722b0800000000000000
+      internalID: -5609367804509963721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 12
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac92664dd552c0db0800000000000000
+      internalID: -4824440015894992438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 12
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32bc77e14c7e6e550800000000000000
+      internalID: 6189889567378098979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 12
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a613fd545c77fc70800000000000000
+      internalID: 9004802681745905319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 12
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ec709b284a9e270800000000000000
+      internalID: 8280330271254367893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ending_animation-Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 12
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458c487cc7347caf0800000000000000
+      internalID: -376257840659773356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
