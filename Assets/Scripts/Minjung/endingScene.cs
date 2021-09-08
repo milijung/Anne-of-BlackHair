@@ -12,7 +12,7 @@ public class endingScene : MonoBehaviour
     public GameObject berryPrefab;  //Áö¿ø
     public GameObject[] Berry;
     public GameObject _best_score;
-    public GameObject BestScoreAudio;
+    public AudioSource BestScoreAudio;
     GameObject panpare;
     AudioSource scoreUpAudio;
 
@@ -104,7 +104,7 @@ public class endingScene : MonoBehaviour
         if(_ending_score_ == PlayerPrefs.GetInt("BestScore"))
         {
             panpare.SetActive(true);
-            if (MainMenu.AudioPlay) BestScoreAudio.GetComponent<AudioSource>().Play();
+            if (MainMenu.AudioPlay) BestScoreAudio.Play();
         }
     }
 }
