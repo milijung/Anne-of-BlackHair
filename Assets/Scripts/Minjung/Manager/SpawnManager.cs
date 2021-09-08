@@ -109,7 +109,7 @@ public class SpawnManager : MonoBehaviour
         {
             if (GameManager.isPlay)
             {
-                
+                yield return new WaitForSeconds(0.3f);
                 for(int i=0;i<5;i++)
                 {
                     BerryPool[i].SetActive(true);
@@ -162,8 +162,12 @@ public class SpawnManager : MonoBehaviour
                     x_Back++;
                     if (x_Back == TreePool.Count)
                     {
-                        isforest = false;
-                        yield return new WaitForSeconds(Back[GameManager.speedIndex][1]);
+                        if (GameManager.speedIndex == 3) { x_Back = 0; }
+                        else
+                        {
+                            isforest = false;
+                            yield return new WaitForSeconds(Back[GameManager.speedIndex][1]);
+                        }
                     }
                 }
                 else
@@ -184,10 +188,14 @@ public class SpawnManager : MonoBehaviour
 
                     if (x_Back == BackGround.Count)
                     {
-                        yield return new WaitForSeconds(Back[GameManager.speedIndex][3]);
-                        x_Back = 0;
-                        if (Speed_Num < 5) { Speed_Num++; }
-                        x_forest = 0;
+                        if (GameManager.speedIndex == 3) { x_Back = TreePool.Count; }
+                        else
+                        {
+                            yield return new WaitForSeconds(Back[GameManager.speedIndex][3]);
+                            x_Back = 0;
+                            if (Speed_Num < 5) { Speed_Num++; }
+                            x_forest = 0;
+                        }
                     }
                 }
 
