@@ -43,7 +43,19 @@ public class ItemController : MonoBehaviour
         isBasket = false;
         GameManager.speedIndex = saveIndex;
         upSpeed = 1;
+        StartCoroutine(afterBooster());
         SomoonGauge.somoonContinue = true;
+    }
+    IEnumerator afterBooster()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            _player.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0.4f);
+            yield return new WaitForSeconds(0.2f);
+            _player.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
+            yield return new WaitForSeconds(0.2f);
+        }
+        StopCoroutine(afterBooster());
     }
 
     void Start()
@@ -206,8 +218,10 @@ public class ItemController : MonoBehaviour
     }
     IEnumerator showItem()
     {
+        Animator _player_animator = _player.GetComponent<Animator>();
         itemName.gameObject.SetActive(true);
-        yield return new WaitForSeconds(2f);
+        if(_player_animator.GetBool("B")) yield return new WaitForSeconds(5f);
+        else yield return new WaitForSeconds(2f);
         itemName.gameObject.SetActive(false);    
         StopCoroutine(showItem());
     }

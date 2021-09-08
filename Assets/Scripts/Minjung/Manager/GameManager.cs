@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public Slider rumor;
     public GameObject itemSlot;
+    public BoxCollider[] color_collider;
+    public SpriteRenderer[] color_sprite;
 
     public GameObject BackgroundMusic;
     AudioSource backmusic;
@@ -67,7 +69,23 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         gameSpeed = speed[speedIndex];
-        scoreTxt.text = score.ToString(); // score ���� Text ��������     
+        scoreTxt.text = score.ToString(); // score ���� Text ��������
+        if (player.GetComponent<Animator>().GetBool("ITEM"))
+        {
+            for (int i = 0; i < color_collider.Length; i++)
+            {
+                color_sprite[i].color = new Color(1, 1, 1, 0.4f);
+                color_collider[i].enabled = false;
+            }
+        }
+        if (!player.GetComponent<Animator>().GetBool("ITEM"))
+        {
+            for (int i = 0; i < color_collider.Length; i++)
+            {
+                color_sprite[i].color = new Color(1, 1, 1, 1);
+                color_collider[i].enabled = true;
+            }
+        }
     }
     public IEnumerator ChangeSpeed()
     {
@@ -79,6 +97,7 @@ public class GameManager : MonoBehaviour
                 {
                     if (SpawnManager.Speed_Num == 1)
                     {
+                        backmusic.pitch += 0.05f;
                         SpeedUpTxt.SetActive(true);
                         yield return new WaitForSeconds(0.5f);
                         SpeedUpTxt.SetActive(false);
@@ -92,6 +111,7 @@ public class GameManager : MonoBehaviour
                     }
                     else if(SpawnManager.Speed_Num == 5)
                     {
+                        backmusic.pitch += 0.05f;
                         SpeedUpTxt.SetActive(true);
                         yield return new WaitForSeconds(0.5f);
                         SpeedUpTxt.SetActive(false);
@@ -172,6 +192,7 @@ public class GameManager : MonoBehaviour
 
         if (MainMenu.AudioPlay == true)
         {
+            backmusic.pitch = 1;
             backmusic.Play();
             stepAudio.Play();
         }
