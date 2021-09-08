@@ -160,7 +160,7 @@ public class ItemController : MonoBehaviour
                 // WIG = FULL DAMAGE COVER
                 
                 itemName.text = "빨간 가발" + System.Environment.NewLine + "착용중";
-                AudioManager.wigHatAudio.Play();
+                if(MainMenu.AudioPlay) AudioManager.wigHatAudio.Play();
                 _player_animator.SetBool("W",true);
                 // twinkle on
                 _twinkle_.GetComponent<Animator>().SetBool("T",true);
@@ -170,7 +170,7 @@ public class ItemController : MonoBehaviour
                 // HAT = HALF DAMAGE COVER
 
                 itemName.text = "모자" + System.Environment.NewLine + "착용중";
-                AudioManager.wigHatAudio.Play();
+                if (MainMenu.AudioPlay) AudioManager.wigHatAudio.Play();
                 _player_animator.SetBool("H",true);
                 // twinkle on
                 _twinkle_.GetComponent<Animator>().SetBool("T",true);
@@ -178,7 +178,7 @@ public class ItemController : MonoBehaviour
             else if (typetype == Item.item_type.death_berry)
             {
                 itemName.text = "마녀의 열매"+System.Environment.NewLine+"사람들에게 먹이기 성공";
-                AudioManager.deathBerryAudio.Play();
+                if (MainMenu.AudioPlay) AudioManager.deathBerryAudio.Play();
                 somoon.LowerSomoon();
                 Mob_motion.Set();
             }
@@ -186,7 +186,7 @@ public class ItemController : MonoBehaviour
             {
                 _player_animator.SetBool("B",true);
                 itemName.text = "바구니 타고" + System.Environment.NewLine + "날아가는 중";
-
+                if (MainMenu.AudioPlay) AudioManager.boosterAudio.Play();
                 // twinkle on
                 _twinkle_.GetComponent<Animator>().SetBool("T",true);
                 booster_Controller.Collider_UnEnable();
@@ -198,7 +198,7 @@ public class ItemController : MonoBehaviour
                 itemName.text = "쓸데없는"+System.Environment.NewLine+"초록색 염색약이군..";
                 _player_animator.SetBool("MJ", false);
                 SomoonGauge.somoonContinue = true;
-                AudioManager.eraserAudio.Play();
+                if (MainMenu.AudioPlay) AudioManager.eraserAudio.Play();
             }
         }
         else

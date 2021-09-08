@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     AudioSource backmusic;
     public GameObject stepSound;
     AudioSource stepAudio;
+    public GameObject EndingAudio;
 
     public static float gameSpeed;
     public static int speedIndex = 0;
@@ -184,13 +185,8 @@ public class GameManager : MonoBehaviour
     
     IEnumerator GameOver2()
     {
-        yield return new WaitForSeconds(1.6f);
+        yield return new WaitForSeconds(2.3f);
 
-        if (MainMenu.AudioPlay == true)
-        {
-            backmusic.Pause();
-            stepAudio.Pause();
-        }
         if (GameObject.Find("SomoonGauge").GetComponent<SomoonGauge>().somoonGauge >= 100)
         {
             // Save the Now SCORE
@@ -221,9 +217,14 @@ public class GameManager : MonoBehaviour
     {
         player.GetComponent<Animator>().SetTrigger("end");
         isPlay = false;
+        if (MainMenu.AudioPlay == true)
+        {
+            backmusic.Pause();
+            stepAudio.Pause();
+            EndingAudio.GetComponent<AudioSource>().Play();
+        }
         BerryController.getBerryBox = false;
         StopCoroutine(AddScore()); // score++ ����
-
         StartCoroutine(GameOver2());
     }
 }

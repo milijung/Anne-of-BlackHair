@@ -9,6 +9,7 @@ public class PopUp : MonoBehaviour
     public Image[] background;
     public Image[] bubbles;
     public Text[] speech;
+    public GameObject BackAudio;
     Color[] background_colors = new Color[3];
     Color[] bubble_colors = new Color[3];
     Color[] text_colors = new Color[3];
@@ -40,6 +41,7 @@ public class PopUp : MonoBehaviour
 
     IEnumerator Pop_Up()
     {
+        if (MainMenu.AudioPlay) BackAudio.GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(0.2f);
         //±×¸² 1,2
         for(int i = 0; i < 25; i++)

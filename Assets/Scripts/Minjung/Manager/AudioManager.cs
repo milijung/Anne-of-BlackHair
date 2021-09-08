@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
     public static AudioSource wigHatAudio;
     public static AudioSource eraserAudio;
     public static AudioSource deathBerryAudio;
+    public static AudioSource boosterAudio;
     public static AudioSource BackgroundAudio;
     private void Awake()
     {
@@ -19,6 +20,7 @@ public class AudioManager : MonoBehaviour
         wigHatAudio = GameObject.Find("wigHatAudio").GetComponent<AudioSource>();
         eraserAudio = GameObject.Find("eraserAudio").GetComponent<AudioSource>();
         deathBerryAudio = GameObject.Find("deathBerryAudio").GetComponent<AudioSource>();
+        boosterAudio = GameObject.Find("boosterAudio").GetComponent<AudioSource>();
     }
     
 }
