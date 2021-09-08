@@ -36,6 +36,7 @@ public class BackgroundScroll : MonoBehaviour
                     gameObject.GetComponent<SpriteRenderer>().sprite = BackgroundImage[0]; // 한줄
                     while (SpawnManager.isforest || GameManager.speedIndex == 3)
                     {
+                        SpawnManager.isforest = true;
                         yield return null;
                     }
                 }
@@ -44,6 +45,7 @@ public class BackgroundScroll : MonoBehaviour
                     gameObject.GetComponent<SpriteRenderer>().sprite = BackgroundImage[1]; // 세줄
                     while (!SpawnManager.isforest || GameManager.speedIndex == 3)
                     {
+                        SpawnManager.isforest = false;
                         yield return null;
                     }
                     yield return new WaitForSeconds(2f);

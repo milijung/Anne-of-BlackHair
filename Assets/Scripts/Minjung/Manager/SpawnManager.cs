@@ -192,8 +192,12 @@ public class SpawnManager : MonoBehaviour
                         else
                         {
                             yield return new WaitForSeconds(Back[GameManager.speedIndex][3]);
+                            while (GameManager.speedIndex == 3) yield return null;
                             x_Back = 0;
-                            if (Speed_Num < 5) { Speed_Num++; }
+                            if (Speed_Num < 5) 
+                            {
+                                Speed_Num++; 
+                            }
                             x_forest = 0;
                         }
                     }

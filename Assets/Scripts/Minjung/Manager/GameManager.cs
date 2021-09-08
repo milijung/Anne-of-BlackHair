@@ -106,6 +106,7 @@ public class GameManager : MonoBehaviour
                         yield return new WaitForSeconds(0.5f);
                         SpeedUpTxt.SetActive(false);
                         yield return new WaitForSeconds(0.2f);
+                        while (GameManager.speedIndex == 3) yield return null;
                         GameManager.speedIndex++;
                         while (SpawnManager.Speed_Num == 1) yield return null;
                     }
@@ -120,6 +121,7 @@ public class GameManager : MonoBehaviour
                         yield return new WaitForSeconds(0.5f);
                         SpeedUpTxt.SetActive(false);
                         yield return new WaitForSeconds(0.2f);
+                        while (GameManager.speedIndex == 3) yield return null;
                         GameManager.speedIndex++;
                         break;
                     }
