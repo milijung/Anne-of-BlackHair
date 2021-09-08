@@ -12,6 +12,7 @@ public class endingScene : MonoBehaviour
     public GameObject berryPrefab;  //Áö¿ø
     public GameObject[] Berry;
     public GameObject _best_score;
+    public GameObject BestScoreAudio;
     AudioSource scoreUpAudio;
 
     int _berry_number_;
@@ -51,7 +52,7 @@ public class endingScene : MonoBehaviour
     
     IEnumerator BerryScoreUP() {
         yield return new WaitForSeconds(1f);
-        scoreUpAudio.Play();
+        if (MainMenu.AudioPlay) scoreUpAudio.Play();
         while (_berry_number_>0){
             GameObject go = Instantiate(berryPrefab) as GameObject;
             go.transform.position = new Vector3(0.76f, -0.94f, 0);
@@ -102,6 +103,7 @@ public class endingScene : MonoBehaviour
         {
             GameObject panpare = GameObject.Find("Panpare");
             panpare.SetActive(true);
+            if (MainMenu.AudioPlay) BestScoreAudio.GetComponent<AudioSource>().Play();
         }
     }
 }
