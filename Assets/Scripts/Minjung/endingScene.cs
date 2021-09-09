@@ -41,17 +41,6 @@ public class endingScene : MonoBehaviour
         StartCoroutine(BerryScoreUP());
     }
 
-    void Update()
-    {
-        if(_berry_number_ == 0){
-            StopCoroutine(BerryScoreUP());
-            scoreUpAudio.Stop();
-            SaveScoreBoard();
-
-            Invoke("BestScore", 2f);
-        }
-    }
-    
     IEnumerator BerryScoreUP() {
         yield return new WaitForSeconds(1f);
         if (MainMenu.AudioPlay) scoreUpAudio.Play();
@@ -65,6 +54,14 @@ public class endingScene : MonoBehaviour
             //
             //_berry_number_--;
             yield return new WaitForSeconds(0.4f);
+        }
+        if (_berry_number_ == 0)
+        {
+            scoreUpAudio.Stop();
+            SaveScoreBoard();
+
+            Invoke("BestScore", 1f);
+            StopCoroutine(BerryScoreUP());
         }
         //yield return new WaitForSeconds(10f);
     }
