@@ -95,8 +95,8 @@ public class SomoonGauge : MonoBehaviour
 
     public void LowerSomoon()
     {
-        if (adultTouch_Num != 0) adultFirstTouchTime = Time.time;
-        if (childTouch_Num != 0) childFirstTouchTime = Time.time;
+        if (adultTouch_Num != 0) adultFirstTouchTime = (Time.time + adultFirstTouchTime) / 2;
+        if (childTouch_Num != 0) childFirstTouchTime = (Time.time + childFirstTouchTime) / 2;
         if (adultTouch_Num != 0) adultTouch_Num *= 0.7f;
         if (childTouch_Num != 0) childTouch_Num *= 0.7f;
     }
