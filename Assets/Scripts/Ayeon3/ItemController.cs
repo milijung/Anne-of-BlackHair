@@ -191,6 +191,7 @@ public class ItemController : MonoBehaviour
             {
                 itemName.text = "마녀의 열매"+System.Environment.NewLine+"사람들에게 먹이기 성공";
                 if (MainMenu.AudioPlay) AudioManager.deathBerryAudio.Play();
+                else AudioManager.deathBerryAudio.Pause();
                 somoon.LowerSomoon();
                 Mob_motion.Set();
             }
