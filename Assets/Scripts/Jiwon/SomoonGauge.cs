@@ -95,7 +95,6 @@ public class SomoonGauge : MonoBehaviour
 
     public void LowerSomoon()
     {
-        if (childTouch_Num != 0) childFirstTouchTime = (Time.time + childFirstTouchTime) / 2;
         switch (adultTouch_Num)
         {
             case 0:
@@ -114,5 +113,7 @@ public class SomoonGauge : MonoBehaviour
                 childTouch_Num *= 0.7f;
                 break;
         }
+        if (MainMenu.AudioPlay) AudioManager.deathBerryAudio.Play();
+        else return;
     }
 }
