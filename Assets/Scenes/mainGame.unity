@@ -5137,7 +5137,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   booster_Controller: {fileID: 355926970}
-  Mob_motion: {fileID: 355926971}
   somoon: {fileID: 994894087}
   ItemImage:
   - {fileID: 6910042003115432476, guid: b8bcc895d3fe06447a9cad2b7ac82fb3, type: 3}
@@ -10381,6 +10380,7 @@ MonoBehaviour:
   lip_move: {fileID: 1818756940}
   adultTouch_Num: 0
   childTouch_Num: 0
+  Mob_motion: {fileID: 355926971}
 --- !u!4 &994894088
 Transform:
   m_ObjectHideFlags: 0
