@@ -63,40 +63,43 @@ public class MobBase : MonoBehaviour
                 // SMALL MOO JUCK STATE
                 return;
             }
-            if (MainMenu.AudioPlay)
-                radarSound.Play();
-            if (animator != null) animator.SetBool("isTouch", true);
-            if (animator == null) gameObject.GetComponent<SpriteRenderer>().sprite = sprites[1];
-            bool isAdult = gameObject.name.Contains("Adult");
-            bool isChildren = gameObject.name.Contains("Children");
-
-            if (isAdult && somoon.adultTouch_Num == 0)
+            else
             {
-                somoon.adultTouch_Num++;
-                somoon.adultFirstTouchTime = somoon.realTime;
-            }
+                if (MainMenu.AudioPlay) radarSound.Play();
 
-            if (isAdult && somoon.adultTouch_Num != 0)
-            {
-                somoon.adultTouch_Num++;
-            }
+                if (animator != null) animator.SetBool("isTouch", true);
+                else gameObject.GetComponent<SpriteRenderer>().sprite = sprites[1];
+                bool isAdult = gameObject.name.Contains("Adult");
+                bool isChildren = gameObject.name.Contains("Children");
 
-            if (isChildren && somoon.childTouch_Num == 0)
-            {
-                somoon.childTouch_Num++;
-                somoon.childFirstTouchTime = somoon.realTime;
-            }
+                if (isAdult)
+                {
+                    somoon.adultTouch_Num++;
+                    if (somoon.adultTouch_Num > 1) return;
+                    else somoon.adultFirstTouchTime = somoon.realTime;
+                }
 
-            if (isChildren && somoon.childTouch_Num != 0)
-            {
-                somoon.childTouch_Num++;
-            }
+                else // isChildren
+                {
+                    somoon.childTouch_Num++;
+                    if (somoon.childTouch_Num > 1) return;
+                    else somoon.childFirstTouchTime = somoon.realTime;
+                }
 
-            // lip move animation
-            lip_move.GetComponent<Animator>().SetBool("L", true);
+                // lip move animation
+                lip_move.GetComponent<Animator>().SetBool("L", true);
+            }
 
         }
-        else if (collision.tag != "catMove" && gameObject.transform.position.y > 6)
-            gameObject.SetActive(false);
+        else
+        {
+            if (gameObject.transform.position.y <= 6) return;
+            else
+            {
+                if (collision.tag == "catMove") return;
+                else
+                    gameObject.SetActive(false);
+            }
+        }
     }
 }

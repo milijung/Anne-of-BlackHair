@@ -10,7 +10,6 @@ public class ItemController : MonoBehaviour
     GameObject _twinkle_;
 
     public Booster_Controller booster_Controller;
-    public SideMob_Controller Mob_motion;
     public SomoonGauge somoon;
     public Sprite[] ItemImage;
     int saveIndex;
@@ -24,10 +23,10 @@ public class ItemController : MonoBehaviour
     Item item;
     public static bool isBasket, usingItem;
 
-    // Start is called before the first frame update
     private void UpSpeed()
     {
-        if (!isBasket)
+        if (isBasket) return;
+        else
         {
             isBasket = true;
             saveIndex = GameManager.speedIndex;
@@ -67,6 +66,9 @@ public class ItemController : MonoBehaviour
         item_slot.slot_init();
         isBasket = usingItem = false;
 
+        GameObject_item0.SetActive(false);
+        GameObject_item1.SetActive(false);
+
     }
 
     private void Update()
@@ -74,27 +76,16 @@ public class ItemController : MonoBehaviour
         itemName.transform.position = new Vector2(_player.transform.position.x, _player.transform.position.y + 1f);
         if (SwipeManager.doubleTap)
         {
-            if (item_slot.item_have() != 0)
-            {
-                _use_item_in_the_slot();
-            }
-            return;
+            if (item_slot.item_have() == 0) return;
+            else _use_item_in_the_slot();
         }
-        if (GameObject_item0.GetComponent<Image>().sprite == null)
-        {
-            GameObject_item0.SetActive(false);
-        }
-        if (GameObject_item0.GetComponent<Image>().sprite != null)
-        {
-            GameObject_item0.SetActive(true);
-        }
-        if (GameObject_item1.GetComponent<Image>().sprite == null)
+
+        if (GameObject_item1.GetComponent<Image>().sprite != null) GameObject_item1.SetActive(true);
+        else
         {
             GameObject_item1.SetActive(false);
-        }
-        if (GameObject_item1.GetComponent<Image>().sprite != null)
-        {
-            GameObject_item1.SetActive(true);
+            if(GameObject_item0.GetComponent<Image>().sprite != null) GameObject_item0.SetActive(true);
+            else GameObject_item0.SetActive(false);
         }
     }
 
@@ -124,7 +115,7 @@ public class ItemController : MonoBehaviour
             return;
         }
 
-        if (item_slot.empty())
+        else if (item_slot.empty())
         {
             // Add the new item
             item_slot.q.Enqueue(new_item_type);
@@ -147,7 +138,8 @@ public class ItemController : MonoBehaviour
         
         usingItem = _player.GetComponent<Animator>().GetBool("ITEM");
 
-        if (!usingItem) // While one item is being used, the other cannot be used.
+        if (usingItem) return;// While one item is being used, the other cannot be used.
+        else
         {
             Item.item_type typetype = (Item.item_type)item_slot.q.Dequeue();
 
@@ -191,7 +183,6 @@ public class ItemController : MonoBehaviour
             {
                 itemName.text = "마녀의 열매"+System.Environment.NewLine+"사람들에게 먹이기 성공";
                 somoon.LowerSomoon();
-                Mob_motion.Set();
             }
             else if (typetype == Item.item_type.basket)
             {
@@ -203,7 +194,7 @@ public class ItemController : MonoBehaviour
                 booster_Controller.Collider_UnEnable();
                 UpSpeed();
             }
-            else if (typetype == Item.item_type.green_yum)
+            else //typetype == Item.item_type.green_yum
             {
                _player_animator.SetBool("G",true);
                 itemName.text = "쓸데없는"+System.Environment.NewLine+"초록색 염색약이군..";
@@ -212,8 +203,6 @@ public class ItemController : MonoBehaviour
                 if (MainMenu.AudioPlay) AudioManager.eraserAudio.Play();
             }
         }
-        else
-            return;
     }
     IEnumerator showItem()
     {

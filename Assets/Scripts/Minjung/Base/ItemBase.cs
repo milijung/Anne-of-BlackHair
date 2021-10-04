@@ -61,10 +61,12 @@ public class ItemBase : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.isPlay)
+        if (!GameManager.isPlay) return;
+        else
         {
             transform.Translate(Vector2.down * Time.deltaTime * GameManager.gameSpeed * 12);
-            if (transform.position.y < -8) // ȭ�� ������ Mob�� �̵��ϸ� �ش� Mob ��Ȱ��ȭ
+            if (transform.position.y >= -8) return;
+            else
             {
                 gameObject.SetActive(false);
             }
@@ -85,15 +87,18 @@ public class ItemBase : MonoBehaviour
                 // ann_get_item_box
                 _item_controller._get_new_item_on_the_road();
             }
-            if (this.type == 1)
+            else if (this.type == 1)
             {
                 // ann_get_bleach
-                if (_player_animator.GetInteger("State") <= 5) _player_animator.SetInteger("State", 5);
+                if (_player_animator.GetInteger("State") > 5) return;
+                else _player_animator.SetInteger("State", 5);
             }
-            if (this.type == 2)
+            else
             {
                 // ann_get_dye
-                if (_player_animator.GetInteger("State") >= 3) {
+                if (_player_animator.GetInteger("State") < 3) return;
+                else
+                {
 
                     // twinkle on
                     _twinkle.GetComponent<Animator>().SetBool("T", true);
@@ -107,10 +112,10 @@ public class ItemBase : MonoBehaviour
         {
             if (collision.tag == "Color" || collision.tag== "Road") 
             {
-                if(gameObject.transform.position.y >6)
-                    collision.gameObject.SetActive(false);
+                if (gameObject.transform.position.y <= 6) return;
+                else collision.gameObject.SetActive(false);
             }
-            if(collision.tag == "Berry") { gameObject.SetActive(false); }
+            else gameObject.SetActive(false);
         }
     }
 }

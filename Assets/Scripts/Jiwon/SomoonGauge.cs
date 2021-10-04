@@ -20,6 +20,7 @@ public class SomoonGauge : MonoBehaviour
     public GameObject lip_move;
     public float adultTouch_Num;
     public float childTouch_Num;
+    public SideMob_Controller Mob_motion;
 
     private void Awake()
     {
@@ -44,9 +45,7 @@ public class SomoonGauge : MonoBehaviour
             else somoonContinue = false;
         }
         else
-        {
             somoonContinue = true;
-        }
 
         SomoonCtrl();
     }
@@ -58,62 +57,53 @@ public class SomoonGauge : MonoBehaviour
             GameManager.instance.GameOver();
         }
 
-        else if (somoonGauge < 100.0f && somoonContinue || lip_move.GetComponent<Animator>().GetBool("L"))
+        else if (!somoonContinue) return;
+        else
         {
-            somoonGauge = 10f * (adultTouch_Num + childTouch_Num * 1.3f);
-
-            if (adultTouch_Num != 0)
+            somoonGauge = 10f * (adultTouch_Num + childTouch_Num * 1.3f) + 0.3f * (realTime - adultFirstTouchTime) + 0.3f * (realTime - childFirstTouchTime);
+            if (isEmergency) return;
+            else if (somoonGauge <= 70) return;
+            else
             {
-                somoonGauge += 0.3f * (realTime - adultFirstTouchTime);
+                StartCoroutine(OnEmergency());
             }
-
-            if (childTouch_Num != 0)
-            {
-                somoonGauge += 0.3f * (realTime - childFirstTouchTime);
-            }
-
-            if ((somoonGauge > 70 && somoonGauge < 100) && !isEmergency)
-            {
-                OnEmergency();
-                Invoke("OffEmergency", 3.2f);
-            }
-            else if (somoonGauge < 70)
-                isEmergency = false;
         }
     }
-    private void OnEmergency()
+    public IEnumerator OnEmergency()
     {
-
-        Emergency.SetActive(true);
         isEmergency = true;
-    }
-
-    private void OffEmergency()
-    {
-        Emergency.SetActive(false);
+        while(true)
+        {
+            if (somoonGauge <= 70) break;
+            else {
+                Emergency.SetActive(true);
+                yield return new WaitForSeconds(3.2f);
+                Emergency.SetActive(false);
+                yield return new WaitForSeconds(3.2f); 
+            }
+        }
+        isEmergency = false;
+        StopCoroutine(OnEmergency());
     }
 
     public void LowerSomoon()
     {
-        switch (adultTouch_Num)
+        if (MainMenu.AudioPlay) AudioManager.deathBerryAudio.Play();
+        Mob_motion.Set();
+        if (adultTouch_Num == 0 && childTouch_Num == 0) return;
+        else
         {
-            case 0:
-                break;
-            default:
+            if (adultTouch_Num != 0)
+            {
                 adultFirstTouchTime = (Time.time + adultFirstTouchTime) / 2;
                 adultTouch_Num *= 0.7f;
-                break;
-        }
-        switch (childTouch_Num)
-        {
-            case 0:
-                break;
-            default:
+            }
+            if (childTouch_Num != 0)
+            {
                 childFirstTouchTime = (Time.time + childFirstTouchTime) / 2;
                 childTouch_Num *= 0.7f;
-                break;
+            }
+            somoonGauge = 10f * (adultTouch_Num + childTouch_Num * 1.3f) + 0.3f * (realTime - adultFirstTouchTime) + 0.3f * (realTime - childFirstTouchTime);
         }
-        if (MainMenu.AudioPlay) AudioManager.deathBerryAudio.Play();
-        else return;
     }
 }

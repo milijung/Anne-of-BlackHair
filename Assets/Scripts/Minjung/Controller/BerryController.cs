@@ -32,7 +32,8 @@ public class BerryController : MonoBehaviour
     }
     private void Update()
     {
-        if (getBerryBox)
+        if (!getBerryBox) return;
+        else
         {
             if (GameManager.isPlay && BerryNum == 0)
             {
@@ -66,15 +67,14 @@ public class BerryController : MonoBehaviour
     {
         while (true)
         {
-            if (getBerryBox)
+            if (!getBerryBox) yield return null;
+            else
             {
                 for (int i = 0; i < 2; i++)
                     Berry_play[i].SetActive(true);
                 BerryText.gameObject.SetActive(true);
-                
-                break;                
+                break;
             }
-            yield return null;
         }
         StopCoroutine(BerryStart());
     }
@@ -87,8 +87,10 @@ public class BerryController : MonoBehaviour
                 BerryNum++;
                 yield return new WaitForSeconds(0.1f);
                 getBerry = false;
+                yield return null;
             }
-            if (BumpOntheRoad)
+            else if (!BumpOntheRoad) yield return null;
+            else
             {
                 BerryNum--;
                 Berry_play[3].transform.position = new Vector2(player.transform.position.x + 0.2f, -4.5f);
@@ -98,7 +100,6 @@ public class BerryController : MonoBehaviour
                 yield return new WaitForSeconds(0.1f);
                 BumpOntheRoad = BumpWithCat = false;
             }
-            yield return null;
         }
     }
     public IEnumerator BerryDrop()
@@ -110,13 +111,13 @@ public class BerryController : MonoBehaviour
             if (Berry_play[3].transform.position.y > -5.5f)
             {
                 Berry_play[3].transform.Translate(Vector2.down * Time.deltaTime * GameManager.gameSpeed * 7);
+                yield return null;
             }
             else
             {
                 Berry_play[3].SetActive(false);
                 break;
-            }
-             yield return null;  
+            } 
         }
         StopCoroutine(BerryDrop());
     }
