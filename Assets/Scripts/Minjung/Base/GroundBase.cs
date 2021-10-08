@@ -16,7 +16,7 @@ public class GroundBase : MonoBehaviour
         else
         {
             if (way1 != null && way2 != null) { way1.SetActive(true); way2.SetActive(true); }
-            if (gameObject.tag != "collider") { transform.position = StartPosition; }
+            transform.position = StartPosition;
             gameObject.SetActive(true);
             
         }
@@ -25,23 +25,29 @@ public class GroundBase : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.isPlay && gameObject.tag != "way")
+        if (gameObject.tag != "way")
         {
-            transform.Translate(Vector2.down * Time.deltaTime * GameManager.gameSpeed * 12);
-            if (gameObject.tag == "toTown" || gameObject.tag == "toForest")
-            {
-                if (transform.position.y < -20)
-                {
-                    gameObject.SetActive(false);
-                    way1.SetActive(false);
-                    way2.SetActive(false);
-                }
-            }
+            if (!GameManager.isPlay) return;
             else
             {
-                if (transform.position.y < -8)
+                transform.Translate(Vector2.down * Time.deltaTime * GameManager.gameSpeed * 12);
+                if (gameObject.tag == "toTown" || gameObject.tag == "toForest")
                 {
-                    gameObject.SetActive(false);
+                    if (transform.position.y >= -20) { }
+                    else
+                    {
+                        gameObject.SetActive(false);
+                        way1.SetActive(false);
+                        way2.SetActive(false);
+                    }
+                }
+                else
+                {
+                    if (transform.position.y >= -8) { }
+                    else
+                    {
+                        gameObject.SetActive(false);
+                    }
                 }
             }
         }

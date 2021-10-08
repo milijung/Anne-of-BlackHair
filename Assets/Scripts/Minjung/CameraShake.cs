@@ -5,6 +5,7 @@ using UnityEngine;
 public class CameraShake : MonoBehaviour
 {
     public Camera mainCamera;
+    private bool isShake = false;
     Vector3 cameraPos;
 
     [SerializeField] [Range(0.01f, 0.1f)] float shakeRange = 0.03f;
@@ -12,14 +13,18 @@ public class CameraShake : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.isPlay)
+        if (!GameManager.isPlay) return;
+        else
         {
             if (BerryController.BumpOntheRoad)
                 Shake();
+            else
+                if(!isShake) mainCamera.transform.position = new Vector3(0, 0, -10);
         }
     }
     public void Shake()
     {
+        isShake = true;
         cameraPos = mainCamera.transform.position;
         InvokeRepeating("StartShake", 0f, 0.05f);
         Invoke("StopShake", duration);
@@ -36,6 +41,7 @@ public class CameraShake : MonoBehaviour
     }
     void StopShake()
     {
+        isShake = false;
         mainCamera.transform.position = new Vector3(0,0,-10);
         CancelInvoke("StartShake");
         
