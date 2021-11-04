@@ -125,6 +125,7 @@ public class GameManager : MonoBehaviour
                         GameManager.speedIndex++;
                         break;
                     }
+                    else {}
                 }
             }
             yield return null;
@@ -152,10 +153,8 @@ public class GameManager : MonoBehaviour
             Count[i].SetActive(true);
             while (true)
             {
-                if (Count[i].transform.position.x >= 0)
-                {
-                    break;
-                }
+                if (Count[i].transform.position.x >= 0) break;
+
                 Count[i].transform.Translate(Vector2.right * 20 * Time.deltaTime);
                 yield return null;
             }
@@ -163,10 +162,8 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
             while (true)
             {
-                if (Count[i].transform.position.x >= 5.5f)
-                {
-                    break;
-                }
+                if (Count[i].transform.position.x >= 5.5f) break;
+                
                 Count[i].transform.Translate(Vector2.right * 20 * Time.deltaTime);
                 yield return null;
             }

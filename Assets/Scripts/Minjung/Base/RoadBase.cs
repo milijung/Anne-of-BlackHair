@@ -140,8 +140,7 @@ public class RoadBase : MonoBehaviour
         else
         {
             transform.Translate(Vector2.down * Time.deltaTime * GameManager.gameSpeed * 12);
-            if (transform.position.y >= -8) return;
-            else
+            if (transform.position.y < -8)
             {
                 if (gameObject.tag == "catSleep")
                     gameObject.GetComponent<SpriteRenderer>().sprite = catSleepIMG;
@@ -251,8 +250,7 @@ public class RoadBase : MonoBehaviour
     {
         while (true)
         {
-            if (!GameManager.isPlay) yield return null;
-            else
+            if (GameManager.isPlay)
             {   
                 GameObject target;
                 if (transform.position.y < -8)
@@ -262,17 +260,14 @@ public class RoadBase : MonoBehaviour
                 }
                 else
                 {
-                    if (!Input.GetMouseButtonDown(0)) yield return null;
-                    else
+                    if (Input.GetMouseButtonDown(0))
                     {
                         Ray ray = getCamera.ScreenPointToRay(Input.mousePosition);
                         RaycastHit hit;
-                        if (!Physics.Raycast(ray, out hit)) yield return null;
-                        else
+                        if (Physics.Raycast(ray, out hit))
                         {
                             target = hit.collider.gameObject;
-                            if (!target.Equals(gameObject)) yield return null;
-                            else
+                            if (target.Equals(gameObject))
                             {
                                 gameObject.GetComponent<SpriteRenderer>().sprite = deerSitDown;
                                 deerSit = true;
@@ -299,8 +294,7 @@ public class RoadBase : MonoBehaviour
         }
         while (true)
         {
-            if (!GameManager.isPlay) yield return null;
-            else
+            if (GameManager.isPlay)
             {
                 if (Math.Abs(gameObject.transform.position.y) > 6.5f)
                 {
@@ -326,8 +320,7 @@ public class RoadBase : MonoBehaviour
     {
         while (true)
         {
-            if (!GameManager.isPlay) yield return null;
-            else
+            if (GameManager.isPlay)
             {
                 if (jump) break;
                 else

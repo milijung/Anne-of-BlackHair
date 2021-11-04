@@ -32,8 +32,7 @@ public class BerryController : MonoBehaviour
     }
     private void Update()
     {
-        if (!getBerryBox) return;
-        else
+        if (getBerryBox)
         {
             if (GameManager.isPlay && BerryNum == 0)
             {
@@ -67,8 +66,7 @@ public class BerryController : MonoBehaviour
     {
         while (true)
         {
-            if (!getBerryBox) yield return null;
-            else
+            if (getBerryBox)
             {
                 for (int i = 0; i < 2; i++)
                     Berry_play[i].SetActive(true);
@@ -89,8 +87,7 @@ public class BerryController : MonoBehaviour
                 getBerry = false;
                 yield return null;
             }
-            else if (!BumpOntheRoad) yield return null;
-            else
+            else if (BumpOntheRoad)
             {
                 BerryNum--;
                 Berry_play[3].transform.position = new Vector2(player.transform.position.x + 0.2f, -4.5f);
@@ -100,6 +97,7 @@ public class BerryController : MonoBehaviour
                 yield return new WaitForSeconds(0.1f);
                 BumpOntheRoad = BumpWithCat = false;
             }
+            else yield return null;
         }
     }
     public IEnumerator BerryDrop()

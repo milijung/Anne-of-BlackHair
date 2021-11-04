@@ -93,11 +93,9 @@ public class MobBase : MonoBehaviour
         }
         else
         {
-            if (gameObject.transform.position.y <= 6) return;
-            else
+            if (gameObject.transform.position.y > 6)
             {
-                if (collision.tag == "catMove") return;
-                else
+                if (collision.tag != "catMove")
                     gameObject.SetActive(false);
             }
         }

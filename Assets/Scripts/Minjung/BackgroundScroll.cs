@@ -7,8 +7,8 @@ public class BackgroundScroll : MonoBehaviour
 {
     public GameObject toForest, toTown;
     public Sprite[] BackgroundImage;
-    Material mat; // Material ÀÎ½ºÅÏ½º
-    float current_Y = 0; // ¹è°æ ÀÌ¹ÌÁöÀÇ YÁÂÇ¥
+    Material mat; // Material ï¿½Î½ï¿½ï¿½Ï½ï¿½
+    float current_Y = 0; // ï¿½ï¿½ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½ï¿½ï¿½ Yï¿½ï¿½Ç¥
 
     void Start()
     {
@@ -33,7 +33,7 @@ public class BackgroundScroll : MonoBehaviour
             {
                 if (SpawnManager.isforest)
                 {
-                    gameObject.GetComponent<SpriteRenderer>().sprite = BackgroundImage[0]; // ÇÑÁÙ
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BackgroundImage[0]; // ï¿½ï¿½ï¿½ï¿½
                     while (SpawnManager.isforest || GameManager.speedIndex == 3)
                     {
                         SpawnManager.isforest = true;
@@ -42,7 +42,7 @@ public class BackgroundScroll : MonoBehaviour
                 }
                 else if(!SpawnManager.isforest)
                 {
-                    gameObject.GetComponent<SpriteRenderer>().sprite = BackgroundImage[1]; // ¼¼ÁÙ
+                    gameObject.GetComponent<SpriteRenderer>().sprite = BackgroundImage[1]; // ï¿½ï¿½ï¿½ï¿½
                     while (!SpawnManager.isforest || GameManager.speedIndex == 3)
                     {
                         SpawnManager.isforest = false;
@@ -50,6 +50,7 @@ public class BackgroundScroll : MonoBehaviour
                     }
                     yield return new WaitForSeconds(2f);
                 }
+                else {}
             }
             yield return null;
         }
