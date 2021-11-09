@@ -6,7 +6,7 @@ public class GroundBase : MonoBehaviour
 {
     public Vector2 StartPosition;
     public GameObject way1, way2;
-    private void OnEnable() // ¿ÀºêÁ§Æ®°¡ È°¼ºÈ­µÇ¸é ½ÇÇà
+    private void OnEnable() // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ È°ï¿½ï¿½È­ï¿½Ç¸ï¿½ ï¿½ï¿½ï¿½ï¿½
     {
         
         if (SpawnManager.MobStartNum ==0)
@@ -27,14 +27,12 @@ public class GroundBase : MonoBehaviour
     {
         if (gameObject.tag != "way")
         {
-            if (!GameManager.isPlay) return;
-            else
+            if (GameManager.isPlay)
             {
                 transform.Translate(Vector2.down * Time.deltaTime * GameManager.gameSpeed * 12);
                 if (gameObject.tag == "toTown" || gameObject.tag == "toForest")
                 {
-                    if (transform.position.y >= -20) { }
-                    else
+                    if (transform.position.y < -20)
                     {
                         gameObject.SetActive(false);
                         way1.SetActive(false);
@@ -43,8 +41,7 @@ public class GroundBase : MonoBehaviour
                 }
                 else
                 {
-                    if (transform.position.y >= -8) { }
-                    else
+                    if (transform.position.y < -8)
                     {
                         gameObject.SetActive(false);
                     }

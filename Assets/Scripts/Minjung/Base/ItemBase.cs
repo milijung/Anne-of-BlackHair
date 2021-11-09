@@ -61,12 +61,10 @@ public class ItemBase : MonoBehaviour
 
     private void Update()
     {
-        if (!GameManager.isPlay) return;
-        else
+        if (GameManager.isPlay)
         {
             transform.Translate(Vector2.down * Time.deltaTime * GameManager.gameSpeed * 12);
-            if (transform.position.y >= -8) return;
-            else
+            if (transform.position.y < -8)
             {
                 gameObject.SetActive(false);
             }
@@ -96,8 +94,7 @@ public class ItemBase : MonoBehaviour
             else
             {
                 // ann_get_dye
-                if (_player_animator.GetInteger("State") < 3) return;
-                else
+                if (_player_animator.GetInteger("State") >= 3)
                 {
 
                     // twinkle on
@@ -112,8 +109,8 @@ public class ItemBase : MonoBehaviour
         {
             if (collision.tag == "Color" || collision.tag== "Road") 
             {
-                if (gameObject.transform.position.y <= 6) return;
-                else collision.gameObject.SetActive(false);
+                if (gameObject.transform.position.y > 6)
+                    collision.gameObject.SetActive(false);
             }
             else gameObject.SetActive(false);
         }
