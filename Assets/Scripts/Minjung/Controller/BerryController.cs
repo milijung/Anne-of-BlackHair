@@ -73,6 +73,7 @@ public class BerryController : MonoBehaviour
                 BerryText.gameObject.SetActive(true);
                 break;
             }
+            yield return null;
         }
         StopCoroutine(BerryStart());
     }
